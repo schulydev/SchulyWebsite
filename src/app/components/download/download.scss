@@ -3,6 +3,10 @@
   background: var(--bg-secondary);
   text-align: center;
   padding: 5rem 2rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &-content {
     max-width: 800px;
@@ -47,6 +51,10 @@
     fa-icon {
       flex-shrink: 0;
       transition: color 0.25s ease;
+    }
+
+    > div {
+      text-align: left;
     }
 
     &:hover {

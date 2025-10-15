@@ -21,18 +21,5 @@ import { Footer } from './components/footer/footer';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App implements OnInit {
-  protected stars = '...';
-
-  async ngOnInit() {
-    // Fetch real-time GitHub stars
-    try {
-      const response = await fetch('https://api.github.com/repos/PianoNic/schuly');
-      const data = await response.json();
-      this.stars = data.stargazers_count.toString();
-    } catch (error) {
-      console.error('Failed to fetch GitHub stars:', error);
-      this.stars = '0';
-    }
-  }
+export class App{
 }
