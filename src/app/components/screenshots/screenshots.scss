@@ -6,6 +6,8 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
   }
 
   .section-header {
@@ -58,5 +60,9 @@
 
   .screenshots-gallery {
     grid-template-columns: 1fr;
+  }
+
+  .screenshot-card img {
+    max-width: 300px;
   }
 }
