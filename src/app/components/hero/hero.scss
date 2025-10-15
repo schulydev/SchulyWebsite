@@ -50,7 +50,7 @@
   }
 
   &-gradient {
-    background: var(--gradient-primary);
+    background: var(--gradient-title);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -70,6 +70,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 4rem;
+    padding: 0.5rem;
 
     .btn-primary,
     .btn-secondary {
@@ -90,29 +91,10 @@
       background: var(--gradient-primary);
       color: white;
       box-shadow: 0 2px 4px rgba(61, 168, 255, 0.2);
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
-        opacity: 0;
-        transition: opacity 0.25s ease;
-        z-index: -1;
-      }
 
       &:hover {
+        background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-dark) 100%);
         box-shadow: 0 4px 12px rgba(61, 168, 255, 0.35);
-
-        &::before {
-          opacity: 1;
-        }
       }
     }
 
