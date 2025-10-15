@@ -1,0 +1,118 @@
+// Download Section
+.download {
+  background: var(--bg-secondary);
+  text-align: center;
+  padding: 5rem 2rem;
+
+  &-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+
+  &-description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  &-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  &-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    background: var(--bg-primary);
+    border: 2px solid var(--border);
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    min-width: 200px;
+    cursor: pointer;
+
+    fa-icon {
+      flex-shrink: 0;
+      transition: color 0.25s ease;
+    }
+
+    &:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      box-shadow: 0 4px 16px rgba(61, 168, 255, 0.3);
+
+      .download-platform,
+      .download-file {
+        color: white;
+      }
+
+      fa-icon {
+        color: white !important;
+      }
+    }
+
+    &.android fa-icon {
+      color: #3ddc84;
+    }
+
+    &.ios fa-icon {
+      color: #000000;
+    }
+  }
+
+  &-platform {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--text-primary);
+    transition: color 0.25s ease;
+  }
+
+  &-file {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    transition: color 0.25s ease;
+  }
+
+  &-note {
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .download {
+    padding: 3rem 1rem;
+
+    &-buttons {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    &-btn {
+      min-width: auto;
+    }
+  }
+}

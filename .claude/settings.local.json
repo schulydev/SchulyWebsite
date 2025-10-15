@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/GithubProjects/schuly/**)",
+      "WebSearch",
+      "Bash(xcopy:*)",
+      "Bash(npm start)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(del nul)",
+      "Bash(rm:*)",
+      "Bash(npm install:*)",
+      "Bash(npx ng generate component:*)",
+      "Bash(cat:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

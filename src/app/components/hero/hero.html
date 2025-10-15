@@ -1,0 +1,42 @@
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-badge">The Better Schulnetz App</div>
+    <h1 class="hero-title">
+      Modern Student Portal,
+      <span class="hero-gradient">Reimagined</span>
+    </h1>
+    <p class="hero-description">
+      Experience Schulnetz like never before. Beautiful design, lightning-fast performance, and
+      features that actually make sense. Available for Android, iOS, and Web.
+    </p>
+    <div class="hero-buttons">
+      <a href="#download" class="btn-primary">
+        Download Now
+        <fa-icon [icon]="faDownload"></fa-icon>
+      </a>
+      <a
+        href="https://github.com/PianoNic/schuly"
+        target="_blank"
+        rel="noopener"
+        class="btn-secondary"
+      >
+        View on GitHub
+        <fa-icon [icon]="faExternalLinkAlt"></fa-icon>
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number">{{ stars() }}</div>
+        <div class="stat-label">GitHub Stars</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">3</div>
+        <div class="stat-label">Platforms</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Open Source</div>
+      </div>
+    </div>
+  </div>
+</section>

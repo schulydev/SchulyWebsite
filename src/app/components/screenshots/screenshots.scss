@@ -1,0 +1,67 @@
+// Screenshots Section
+.screenshots {
+  padding: 5rem 2rem;
+
+  &-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+  }
+
+  .section-description {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.screenshot-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .screenshots {
+    padding: 3rem 1rem;
+
+    .section-title {
+      font-size: 1.75rem;
+    }
+
+    .section-description {
+      font-size: 1rem;
+    }
+  }
+
+  .screenshots-gallery {
+    grid-template-columns: 1fr;
+  }
+}
