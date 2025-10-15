@@ -124,3 +124,12 @@
     }
   }
 }
+
+// Dark mode overrides
+:host-context(html.dark) {
+  .download-btn {
+    &.ios fa-icon {
+      color: #ffffff !important;
+    }
+  }
+}

@@ -45,6 +45,20 @@
     gap: 2rem;
   }
 
+  &-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--primary);
+    }
+  }
+
   &-link {
     color: var(--text-secondary);
     text-decoration: none;
@@ -100,17 +114,57 @@
       padding: 1rem;
     }
 
+    &-hamburger {
+      display: block;
+    }
+
     &-links {
-      gap: 1rem;
+      position: fixed;
+      top: 73px;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      padding: 1rem 0;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+
+      &-open {
+        max-height: 400px;
+        opacity: 1;
+      }
     }
 
     &-link {
-      font-size: 0.875rem;
+      font-size: 1rem;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--border);
+
+      &::after {
+        display: none;
+      }
+
+      &:hover {
+        background: var(--bg-secondary);
+      }
     }
 
     &-link-github {
-      padding: 0.5rem 0.875rem;
-      font-size: 0.875rem;
+      padding: 1rem 2rem;
+      border-radius: 0;
+      font-size: 1rem;
+      justify-content: center;
+    }
+
+    app-theme-toggle {
+      padding: 1rem 2rem;
+      border-bottom: 1px solid var(--border);
     }
   }
 }
@@ -135,11 +189,26 @@
       color: #f1f5f9 !important;
     }
 
-    &-link {
-      color: #cbd5e1 !important;
+    &-hamburger {
+      color: #f1f5f9 !important;
 
       &:hover {
         color: #3da8ff !important;
+      }
+    }
+
+    &-links {
+      background: rgba(18, 23, 41, 0.98) !important;
+      border-bottom-color: #334155 !important;
+    }
+
+    &-link {
+      color: #cbd5e1 !important;
+      border-bottom-color: #334155 !important;
+
+      &:hover {
+        color: #3da8ff !important;
+        background: rgba(51, 65, 85, 0.3) !important;
       }
     }
 
