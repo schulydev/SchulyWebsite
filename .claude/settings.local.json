@@ -10,7 +10,8 @@
       "Bash(rm:*)",
       "Bash(npm install:*)",
       "Bash(npx ng generate component:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(npx ng generate:*)"
     ],
     "deny": [],
     "ask": []

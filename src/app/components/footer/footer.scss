@@ -1,8 +1,9 @@
 // Footer
 .footer {
-  background: var(--text-primary);
+  background: #0f172a;
   color: rgba(255, 255, 255, 0.8);
   padding: 3rem 2rem 2rem;
+  transition: background 0.25s ease, color 0.25s ease;
 
   &-content {
     max-width: 1280px;
@@ -127,6 +128,43 @@
 
     &-links {
       justify-content: center;
+    }
+  }
+}
+
+// Dark mode overrides
+html.dark {
+  .footer {
+    background: #f8fafc;
+    color: #0f172a;
+
+    &-title {
+      color: #0f172a;
+    }
+
+    &-links a {
+      color: #475569;
+    }
+
+    &-social .coffee {
+      background: #e2e8f0;
+      color: #0f172a;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    &-bottom {
+      border-top-color: #cbd5e1;
+    }
+
+    &-disclaimer {
+      color: #64748b;
+    }
+
+    &-copyright {
+      color: #475569;
     }
   }
 }

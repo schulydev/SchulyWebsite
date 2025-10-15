@@ -8,6 +8,7 @@
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
+  transition: background 0.25s ease, border-color 0.25s ease;
 
   &-container {
     max-width: 1280px;
@@ -118,6 +119,47 @@
   .nav-link-github {
     span {
       display: none;
+    }
+  }
+}
+
+// Dark mode overrides
+:host-context(html.dark) {
+  .nav {
+    background: rgba(18, 23, 41, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom-color: #334155 !important;
+
+    &-logo,
+    &-title {
+      color: #f1f5f9 !important;
+    }
+
+    &-link {
+      color: #cbd5e1 !important;
+
+      &:hover {
+        color: #3da8ff !important;
+      }
+    }
+
+    &-link-github {
+      background: #3da8ff !important;
+      color: white !important;
+
+      &:hover {
+        background: #2a8fd9 !important;
+        color: white !important;
+      }
+    }
+  }
+
+  .theme-toggle {
+    color: #cbd5e1 !important;
+
+    &:hover {
+      background: rgba(51, 65, 85, 0.5) !important;
+      color: #3da8ff !important;
     }
   }
 }

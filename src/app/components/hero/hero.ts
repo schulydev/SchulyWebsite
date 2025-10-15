@@ -12,6 +12,7 @@ import { faDownload, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons
 })
 export class Hero implements OnInit{
   stars = signal('...');
+  downloads = signal('...');
 
   protected readonly faDownload = faDownload;
   protected readonly faExternalLinkAlt = faExternalLinkAlt;
@@ -24,6 +25,28 @@ export class Hero implements OnInit{
     } catch (error) {
       console.error('Failed to fetch GitHub stars:', error);
       this.stars.set('0');
+    }
+
+    try {
+      const response = await fetch('https://api.github.com/repos/PianoNic/schuly/releases');
+      const releases = await response.json();
+
+      let totalDownloads = 0;
+      for (const release of releases) {
+        if (release.assets) {
+          for (const asset of release.assets) {
+            // Count only .apk files
+            if (asset.name.endsWith('.apk')) {
+              totalDownloads += asset.download_count;
+            }
+          }
+        }
+      }
+
+      this.downloads.set(totalDownloads.toString());
+    } catch (error) {
+      console.error('Failed to fetch GitHub release downloads:', error);
+      this.downloads.set('0');
     }
   }
 }
