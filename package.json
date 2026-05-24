@@ -1,7 +1,7 @@
 {
   "name": "schuly-website",
   "version": "0.0.0",
-  "packageManager": "bun@1.1.45",
+  "packageManager": "bun@1.2.21",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
