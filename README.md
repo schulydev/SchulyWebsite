@@ -1,6 +1,6 @@
 # <p align="center">SchulyWebsite</p>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/schulydev/Schuly/main/assets/app_icon.png" width="160" alt="Schuly Logo">
+  <img src="./assets/app_icon.png" width="160" alt="Schuly Logo">
 </p>
 <p align="center">
   <strong>Landing site for the Schuly project — <a href="https://schuly.dev">schuly.dev</a></strong>
