@@ -1,27 +1,25 @@
 <nav class="nav">
-  <div class="nav-container">
-    <div class="nav-logo">
-      <img src="/assets/app_icon.png" alt="Schuly Logo" width="40" height="40" />
-      <span class="nav-title">Schuly</span>
-    </div>
-    <button class="nav-hamburger" (click)="toggleMobileMenu()" [attr.aria-label]="mobileMenuOpen() ? 'Close menu' : 'Open menu'">
-      <fa-icon [icon]="mobileMenuOpen() ? faTimes : faBars" size="lg"></fa-icon>
-    </button>
-    <div class="nav-links" [class.nav-links-open]="mobileMenuOpen()">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">
+      <img src="/assets/app_icon.png" alt="Schuly" width="28" height="28" />
+      <span>Schuly</span>
+    </a>
+
+    <div class="nav-links" [class.open]="mobileMenuOpen()">
       <a href="#features" class="nav-link" (click)="closeMobileMenu()">Features</a>
       <a href="#screenshots" class="nav-link" (click)="closeMobileMenu()">Screenshots</a>
       <a href="#download" class="nav-link" (click)="closeMobileMenu()">Download</a>
-      <app-theme-toggle></app-theme-toggle>
-      <a
-        href="https://github.com/PianoNic/schuly"
-        target="_blank"
-        rel="noopener"
-        class="nav-link-github"
-        (click)="closeMobileMenu()"
-      >
-        <fa-icon [icon]="faGithub" size="lg"></fa-icon>
-        GitHub
+      <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener" class="nav-link" (click)="closeMobileMenu()">Open Source</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub">
+        <fa-icon [icon]="faGithub"></fa-icon>
       </a>
+      <a href="#download" class="nav-cta">Get Schuly</a>
+      <button class="nav-hamburger" (click)="toggleMobileMenu()" [attr.aria-label]="mobileMenuOpen() ? 'Close menu' : 'Open menu'">
+        <fa-icon [icon]="mobileMenuOpen() ? faTimes : faBars"></fa-icon>
+      </button>
     </div>
   </div>
 </nav>

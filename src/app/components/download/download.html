@@ -1,40 +1,45 @@
 <section id="download" class="download">
   <div class="container">
-    <div class="download-content">
-      <h2 class="download-title">Ready to Transform Your Student Experience?</h2>
-      <p class="download-description">
-        Get started with Schuly today. Available for all major platforms.
-      </p>
-      <div class="download-buttons">
-        <a
-          href="https://github.com/PianoNic/schuly/releases"
-          target="_blank"
-          rel="noopener"
-          class="download-btn android"
-        >
-          <fa-icon [icon]="faAndroid" size="2x"></fa-icon>
-          <div>
-            <div class="download-platform">Android</div>
-            <div class="download-file">.apk file</div>
-          </div>
-        </a>
-        <a
-          href="https://github.com/PianoNic/schuly/releases"
-          target="_blank"
-          rel="noopener"
-          class="download-btn ios"
-        >
-          <fa-icon [icon]="faApple" size="2x"></fa-icon>
-          <div>
-            <div class="download-platform">iOS</div>
-            <div class="download-file">.ipa file (sideload)</div>
-          </div>
-        </a>
+    <div class="download-card">
+      <div class="download-grid" aria-hidden="true"></div>
+      <div class="download-content">
+        <div class="eyebrow">Get Schuly</div>
+        <h2 class="download-title">Ready when you are.</h2>
+        <p class="download-description">
+          Available on every platform a student carries. Open source, free, and built in public.
+        </p>
+        <div class="download-buttons">
+          <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="download-btn">
+            <fa-icon [icon]="faAndroid" class="dl-icon"></fa-icon>
+            <div>
+              <div class="dl-platform">Android</div>
+              <div class="dl-file">Download .apk</div>
+            </div>
+            <fa-icon [icon]="faArrowRight" class="dl-arrow"></fa-icon>
+          </a>
+          <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="download-btn">
+            <fa-icon [icon]="faApple" class="dl-icon"></fa-icon>
+            <div>
+              <div class="dl-platform">iOS</div>
+              <div class="dl-file">Sideload .ipa</div>
+            </div>
+            <fa-icon [icon]="faArrowRight" class="dl-arrow"></fa-icon>
+          </a>
+          <a href="https://schuly.dev" class="download-btn">
+            <fa-icon [icon]="faGlobe" class="dl-icon"></fa-icon>
+            <div>
+              <div class="dl-platform">Web</div>
+              <div class="dl-file">Coming soon</div>
+            </div>
+            <fa-icon [icon]="faArrowRight" class="dl-arrow"></fa-icon>
+          </a>
+        </div>
+        <p class="download-note">
+          Requires a SchulyBackend instance. See the
+          <a href="https://github.com/schulydev/SchulyBackend" target="_blank" rel="noopener">backend repo</a>
+          for self-hosting docs.
+        </p>
       </div>
-      <p class="download-note">
-        Requires <a href="https://github.com/PianoNic/SchulwareAPI" target="_blank">SchulwareAPI</a>
-        backend. See documentation for setup instructions.
-      </p>
     </div>
   </div>
 </section>

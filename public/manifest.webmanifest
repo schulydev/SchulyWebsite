@@ -1,0 +1,17 @@
+{
+  "name": "Schuly - The better Schulnetz",
+  "short_name": "Schuly",
+  "description": "The better Schulnetz - open-source, mobile-first alternative to the official Schulnetz client.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/assets/app_icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
