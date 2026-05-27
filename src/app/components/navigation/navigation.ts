@@ -2,11 +2,10 @@ import { Component, signal } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { ThemeToggle } from '../theme-toggle/theme-toggle';
 
 @Component({
   selector: 'app-navigation',
-  imports: [FontAwesomeModule, ThemeToggle],
+  imports: [FontAwesomeModule],
   templateUrl: './navigation.html',
   styleUrl: './navigation.scss'
 })
@@ -18,7 +17,7 @@ export class Navigation {
   mobileMenuOpen = signal(false);
 
   toggleMobileMenu() {
-    this.mobileMenuOpen.update(value => !value);
+    this.mobileMenuOpen.update(v => !v);
   }
 
   closeMobileMenu() {

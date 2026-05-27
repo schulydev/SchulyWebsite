@@ -1,13 +1,23 @@
-import { Component } from '@angular/core';
+import { afterNextRender, Component, ElementRef, viewChild } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import {
-  faChartBar,
+  faChartLine,
   faUsers,
   faPalette,
   faBell,
-  faCalendar,
-  faMobileAlt,
+  faCalendarDays,
+  faMobileScreen,
+  faPuzzlePiece,
+  faShieldHalved,
+  faBolt,
 } from '@fortawesome/free-solid-svg-icons';
+
+interface Feature {
+  icon: IconDefinition;
+  title: string;
+  description: string;
+}
 
 @Component({
   selector: 'app-features',
@@ -16,10 +26,36 @@ import {
   styleUrl: './features.scss'
 })
 export class Features {
-  protected readonly faChartBar = faChartBar;
-  protected readonly faUsers = faUsers;
-  protected readonly faPalette = faPalette;
-  protected readonly faBell = faBell;
-  protected readonly faCalendar = faCalendar;
-  protected readonly faMobileAlt = faMobileAlt;
+  private grid = viewChild<ElementRef<HTMLElement>>('grid');
+
+  features: Feature[] = [
+    { icon: faChartLine, title: 'Grades & analytics', description: 'Every grade visualised with averages, trends, and breakdowns. See your trajectory at a glance.' },
+    { icon: faCalendarDays, title: 'Agenda & absences', description: 'Schedule, exams, and absence records - synced live, designed to fit on a phone screen.' },
+    { icon: faBell, title: 'Push notifications', description: 'New grades, schedule changes, important announcements. Delivered the moment they appear.' },
+    { icon: faPuzzlePiece, title: 'Plugin architecture', description: 'A stable contract lets any school system plug in. Schulware, Example, and more - without touching the core.' },
+    { icon: faUsers, title: 'Multi-account', description: 'Switch between profiles in a tap. Built for students juggling more than one identity.' },
+    { icon: faPalette, title: 'shadcn-style UI', description: 'Composable primitives, neutral defaults, dark-first. Themeable down to the token - no design-system lock-in.' },
+    { icon: faMobileScreen, title: 'iOS · Android · Web', description: 'One Flutter codebase, three first-class targets. Your data follows you everywhere.' },
+    { icon: faShieldHalved, title: 'OIDC, end-to-end', description: 'Authentication delegated to your provider. Tokens validated server-side. No password handling.' },
+    { icon: faBolt, title: 'Lightning fast', description: 'Native compilation, aggressive caching, and a backend that does the heavy lifting once.' },
+  ];
+
+  constructor() {
+    afterNextRender(() => {
+      const el = this.grid()?.nativeElement;
+      if (!el) return;
+      const cards = Array.from(el.querySelectorAll<HTMLElement>('.feature-card'));
+      cards.forEach(c => c.classList.add('animatable'));
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const idx = cards.indexOf(entry.target as HTMLElement);
+            setTimeout(() => entry.target.classList.add('in-view'), Math.max(0, idx % 3) * 80);
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      cards.forEach(c => io.observe(c));
+    });
+  }
 }

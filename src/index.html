@@ -2,18 +2,187 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Schuly - The Better Schulnetz App</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Experience Schulnetz like never before. Beautiful design, lightning-fast performance, and features that actually make sense. Available for Android, iOS, and Web.">
-  <meta name="keywords" content="Schuly, Schulnetz, student portal, grades, school app">
-  <meta name="author" content="Pianonic">
-  <meta property="og:title" content="Schuly - The Better Schulnetz App">
-  <meta property="og:description" content="Modern student portal with beautiful design and intuitive features">
-  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+
+  <title>Schuly - The better Schulnetz app | Open-source student portal for iOS, Android & Web</title>
+
+  <meta name="description" content="Schuly is the better Schulnetz - a modern, open-source, mobile-first alternative to the official Schulnetz client. Grades, agenda, absences, and push notifications in a fast Flutter app for iOS, Android, and Web.">
+  <meta name="keywords" content="Schuly, Schulnetz, Schulnetz app, better Schulnetz, Schulnetz alternative, Schulnetz iOS, Schulnetz Android, Schulware, Centerboard, student portal, Schulnoten, Stundenplan, Absenzen, school app, open source Schulnetz, Schulnetz Flutter, KSO, Kantonsschule, Gymnasium, Berufsschule">
+  <meta name="author" content="schulydev">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="application-name" content="Schuly">
+  <meta name="apple-mobile-web-app-title" content="Schuly">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="canonical" href="https://schuly.dev/">
+  <link rel="alternate" hreflang="en" href="https://schuly.dev/">
+  <link rel="alternate" hreflang="de" href="https://schuly.dev/">
+  <link rel="alternate" hreflang="x-default" href="https://schuly.dev/">
+
   <link rel="icon" type="image/png" href="/assets/app_icon.png">
+  <link rel="apple-touch-icon" href="/assets/app_icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.github.com">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Schuly">
+  <meta property="og:title" content="Schuly - The better Schulnetz app">
+  <meta property="og:description" content="Open-source, mobile-first alternative to the official Schulnetz client. Grades, agenda, absences, and push notifications - on iOS, Android, and Web.">
+  <meta property="og:url" content="https://schuly.dev/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="de_CH">
+  <meta property="og:image" content="https://schuly.dev/assets/app_icon.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="Schuly app icon">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Schuly - The better Schulnetz app">
+  <meta name="twitter:description" content="Open-source, mobile-first alternative to the official Schulnetz client. iOS, Android, Web.">
+  <meta name="twitter:image" content="https://schuly.dev/assets/app_icon.png">
+  <meta name="twitter:image:alt" content="Schuly app icon">
+
+  <!-- Structured data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Schuly",
+    "url": "https://schuly.dev/",
+    "description": "The better Schulnetz - open-source, mobile-first alternative to the official Schulnetz client.",
+    "inLanguage": ["en", "de-CH"],
+    "publisher": {
+      "@type": "Organization",
+      "name": "schulydev",
+      "url": "https://github.com/schulydev",
+      "logo": "https://schuly.dev/assets/app_icon.png"
+    }
+  }
+  </script>
+
+  <!-- Structured data: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Schuly",
+    "alternateName": ["Schuly App", "Schulnetz App", "The better Schulnetz"],
+    "url": "https://schuly.dev/",
+    "image": "https://schuly.dev/assets/app_icon.png",
+    "description": "Schuly is the better Schulnetz: a modern, open-source, mobile-first student portal for Schulnetz / Schulware. Grades, agenda, absences, push notifications, multi-account, plugin architecture. iOS, Android, Web.",
+    "applicationCategory": "EducationApplication",
+    "applicationSubCategory": "Student portal",
+    "operatingSystem": "Android, iOS, Web",
+    "softwareVersion": "latest",
+    "downloadUrl": "https://github.com/schulydev/Schuly/releases",
+    "installUrl": "https://github.com/schulydev/Schuly/releases",
+    "license": "https://github.com/schulydev/Schuly/blob/main/LICENSE",
+    "isAccessibleForFree": true,
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "schulydev",
+      "url": "https://github.com/schulydev"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "schulydev",
+      "url": "https://github.com/schulydev"
+    },
+    "screenshot": [
+      "https://schuly.dev/assets/schuly-start-page.png",
+      "https://schuly.dev/assets/schuly-agenda-page.png",
+      "https://schuly.dev/assets/schuly-grades-page.png",
+      "https://schuly.dev/assets/schuly-absences-page.png",
+      "https://schuly.dev/assets/schuly-account-page.png"
+    ],
+    "featureList": [
+      "Grades and analytics",
+      "Agenda and absences",
+      "Push notifications",
+      "Plugin architecture",
+      "Multi-account support",
+      "OIDC authentication",
+      "iOS, Android, and Web"
+    ],
+    "keywords": "Schulnetz, Schulware, student portal, Schulnoten, Stundenplan, Absenzen"
+  }
+  </script>
+
+  <!-- Structured data: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Schuly?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Schuly is a modern, open-source, mobile-first alternative to the official Schulnetz client. It provides grades, agenda, absences, and push notifications in a fast Flutter app for iOS, Android, and Web."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Schuly affiliated with Schulnetz or Centerboard AG?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Schuly is an independent open-source project and is not affiliated with, endorsed by, or connected to Schulnetz or Centerboard AG."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which platforms does Schuly support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Schuly runs on Android, iOS, and the Web from a single Flutter codebase."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Schuly cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Schuly is free and open source. The source code, releases, and plugin SDK are available on GitHub at github.com/schulydev."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Schuly support other school systems besides Schulnetz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Schuly is built on a plugin architecture: any school system can plug in by implementing the SchulyPluginAbstractions contract, without touching the core."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <noscript>
+      <h1>Schuly - The better Schulnetz app</h1>
+      <p>
+        Schuly is a modern, open-source, mobile-first alternative to the official Schulnetz client.
+        Download for Android and iOS, or view the source on GitHub at
+        <a href="https://github.com/schulydev/Schuly">github.com/schulydev/Schuly</a>.
+      </p>
+      <p>Please enable JavaScript to view the full site.</p>
+    </noscript>
+  </app-root>
 </body>
 </html>

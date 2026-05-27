@@ -10,4 +10,5 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 })
 export class Footer {
   protected readonly faHeart = faHeart;
+  protected readonly year = new Date().getFullYear();
 }

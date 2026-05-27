@@ -1,40 +1,50 @@
-<section class="hero">
-  <div class="hero-container">
-    <div class="hero-badge">The Better Schulnetz App</div>
-    <h1 class="hero-title">
-      Modern Student Portal,
-      <span class="hero-gradient">Reimagined</span>
+<section id="top" class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-noise" aria-hidden="true"></div>
+
+  <div class="hero-content">
+    <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="hero-pill" #pill>
+      <span class="hero-pill-badge">New</span>
+      <span class="hero-pill-text">Open source · plugin-based architecture</span>
+      <fa-icon [icon]="faArrowRight" class="hero-pill-arrow"></fa-icon>
+    </a>
+
+    <h1 class="hero-title" #title>
+      The better Schulnetz app.<br />
+      <span class="hero-title-dim">Built in the open.</span>
     </h1>
-    <p class="hero-description">
-      Experience Schulnetz like never before. Beautiful design, lightning-fast performance, and
-      features that actually make sense. Available for Android, iOS, and Web.
+
+    <p class="hero-sub" #sub>
+      Schuly is a modern, mobile-first alternative to the official Schulnetz client.
+      Grades, agenda, and absences in a fast Flutter app for iOS, Android, and Web -
+      backed by a plugin-driven C# backend that any school system can plug in to.
     </p>
-    <div class="hero-buttons">
-      <a href="#download" class="btn-primary">
-        Download Now
-        <fa-icon [icon]="faDownload"></fa-icon>
+
+    <div class="hero-actions" #actions>
+      <a href="#download" class="btn btn-primary">
+        Download Schuly
+        <fa-icon [icon]="faArrowRight"></fa-icon>
       </a>
-      <a
-        href="https://github.com/PianoNic/schuly"
-        target="_blank"
-        rel="noopener"
-        class="btn-secondary"
-      >
+      <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener" class="btn btn-secondary">
+        <fa-icon [icon]="faGithub"></fa-icon>
         View on GitHub
-        <fa-icon [icon]="faExternalLinkAlt"></fa-icon>
       </a>
     </div>
-    <div class="hero-stats">
+
+    <div class="hero-stats" #stage>
       <div class="stat">
-        <div class="stat-number">{{ stars() }}</div>
-        <div class="stat-label">GitHub Stars</div>
+        <div class="stat-num">{{ stars() }}</div>
+        <div class="stat-label">GitHub stars</div>
       </div>
+      <div class="stat-sep"></div>
       <div class="stat">
-        <div class="stat-number">{{ downloads() }}</div>
-        <div class="stat-label">APK Downloads</div>
+        <div class="stat-num">{{ downloads() }}</div>
+        <div class="stat-label">App downloads</div>
       </div>
+      <div class="stat-sep"></div>
       <div class="stat">
-        <div class="stat-number">3</div>
+        <div class="stat-num">3</div>
         <div class="stat-label">Platforms</div>
       </div>
     </div>

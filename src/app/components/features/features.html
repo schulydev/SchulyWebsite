@@ -1,67 +1,25 @@
 <section id="features" class="features">
   <div class="container">
     <div class="section-header">
-      <h2 class="section-title">Everything You Need, Nothing You Don't</h2>
+      <div class="eyebrow">Features</div>
+      <h2 class="section-title">Designed for students.<br />Built for everyone.</h2>
       <p class="section-description">
-        Built with modern technology and designed with students in mind. Every feature serves a
-        purpose.
+        Every feature serves a purpose. No bloat, no clutter - just the tools you actually use,
+        wrapped in an interface that gets out of your way.
       </p>
     </div>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">
-          <fa-icon [icon]="faChartBar" size="2x"></fa-icon>
+
+    <div class="features-grid" #grid>
+      @for (f of features; track f.title) {
+        <div class="feature-card">
+          <div class="feature-icon">
+            <fa-icon [icon]="f.icon"></fa-icon>
+          </div>
+          <h3 class="feature-title">{{ f.title }}</h3>
+          <p class="feature-description">{{ f.description }}</p>
+          <div class="feature-glow"></div>
         </div>
-        <h3 class="feature-title">Grades & Analytics</h3>
-        <p class="feature-description">
-          View your grades at a glance with beautiful charts and detailed breakdowns. Track your progress over time.
-        </p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <fa-icon [icon]="faUsers" size="2x"></fa-icon>
-        </div>
-        <h3 class="feature-title">Multi-User Support</h3>
-        <p class="feature-description">
-          Switch between multiple accounts seamlessly. Perfect for students managing different profiles.
-        </p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <fa-icon [icon]="faPalette" size="2x"></fa-icon>
-        </div>
-        <h3 class="feature-title">Material 3 Design</h3>
-        <p class="feature-description">
-          Modern, beautiful interface with dark and light themes. Customizable to match your style.
-        </p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <fa-icon [icon]="faBell" size="2x"></fa-icon>
-        </div>
-        <h3 class="feature-title">Push Notifications</h3>
-        <p class="feature-description">
-          Stay updated with instant notifications for new grades, schedule changes, and important announcements.
-        </p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <fa-icon [icon]="faCalendar" size="2x"></fa-icon>
-        </div>
-        <h3 class="feature-title">Agenda & Absences</h3>
-        <p class="feature-description">
-          Keep track of your schedule, upcoming events, and absence records all in one place.
-        </p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">
-          <fa-icon [icon]="faMobileAlt" size="2x"></fa-icon>
-        </div>
-        <h3 class="feature-title">Cross-Platform</h3>
-        <p class="feature-description">
-          Available on Android, iOS, and Web. Your data syncs seamlessly across all your devices.
-        </p>
-      </div>
+      }
     </div>
   </div>
 </section>
