@@ -7,34 +7,55 @@
         <h2 class="download-title">Ready when you are.</h2>
         <p class="download-description">
           Available on every platform a student carries. Open source, free, and built in public.
-          Connects to Schulnetz out of the box - or any school system with a Schuly plugin.
         </p>
-        <div class="download-buttons">
-          <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="download-btn">
-            <fa-icon [icon]="faAndroid" class="dl-icon"></fa-icon>
-            <div>
-              <div class="dl-platform">Android</div>
-              <div class="dl-file">Download .apk</div>
-            </div>
-            <fa-icon [icon]="faArrowRight" class="dl-arrow"></fa-icon>
+
+        <div class="store-buttons">
+          <a
+            href="https://apps.apple.com/app/schuly"
+            target="_blank"
+            rel="noopener"
+            class="store-badge store-badge--apple"
+            aria-label="Download on the App Store"
+          >
+            <fa-icon [icon]="faApple" class="store-badge-icon"></fa-icon>
+            <span class="store-badge-text">
+              <span class="store-badge-pre">Download on the</span>
+              <span class="store-badge-name">App Store</span>
+            </span>
           </a>
-          <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="download-btn">
-            <fa-icon [icon]="faApple" class="dl-icon"></fa-icon>
-            <div>
-              <div class="dl-platform">iOS</div>
-              <div class="dl-file">Sideload .ipa</div>
-            </div>
-            <fa-icon [icon]="faArrowRight" class="dl-arrow"></fa-icon>
-          </a>
-          <a href="https://schuly.dev" class="download-btn">
-            <fa-icon [icon]="faGlobe" class="dl-icon"></fa-icon>
-            <div>
-              <div class="dl-platform">Web</div>
-              <div class="dl-file">Coming soon</div>
-            </div>
-            <fa-icon [icon]="faArrowRight" class="dl-arrow"></fa-icon>
+
+          <a
+            href="https://play.google.com/store/apps/details?id=dev.schuly.app"
+            target="_blank"
+            rel="noopener"
+            class="store-badge store-badge--google"
+            aria-label="Get it on Google Play"
+          >
+            <fa-icon [icon]="faGooglePlay" class="store-badge-icon"></fa-icon>
+            <span class="store-badge-text">
+              <span class="store-badge-pre">Get it on</span>
+              <span class="store-badge-name">Google Play</span>
+            </span>
           </a>
         </div>
+
+        <div class="alt-downloads">
+          <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="alt-link">
+            <fa-icon [icon]="faAndroid"></fa-icon>
+            <span>.apk on GitHub</span>
+          </a>
+          <span class="alt-sep">·</span>
+          <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="alt-link">
+            <fa-icon [icon]="faApple"></fa-icon>
+            <span>.ipa on GitHub</span>
+          </a>
+          <span class="alt-sep">·</span>
+          <a href="https://schuly.dev" class="alt-link">
+            <fa-icon [icon]="faGlobe"></fa-icon>
+            <span>Web (soon)</span>
+          </a>
+        </div>
+
         <p class="download-note">
           Requires a SchulyBackend instance. See the
           <a href="https://github.com/schulydev/SchulyBackend" target="_blank" rel="noopener">backend repo</a>

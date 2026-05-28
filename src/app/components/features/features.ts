@@ -29,10 +29,10 @@ export class Features {
   private grid = viewChild<ElementRef<HTMLElement>>('grid');
 
   features: Feature[] = [
-    { icon: faPuzzlePiece, title: 'Plugin-driven backend', description: 'The core handles UI, auth, and storage. School-system adapters live as plugins - Schulnetz (via Schulware) ships first-class, others implement the SDK contract.' },
     { icon: faChartLine, title: 'Grades & analytics', description: 'Every grade visualised with averages, trends, and breakdowns. See your trajectory at a glance.' },
     { icon: faCalendarDays, title: 'Agenda & absences', description: 'Schedule, exams, and absence records - synced live, designed to fit on a phone screen.' },
     { icon: faBell, title: 'Push notifications', description: 'New grades, schedule changes, important announcements. Delivered the moment they appear.' },
+    { icon: faPuzzlePiece, title: 'Schulnetz, and more', description: 'Schulnetz works out of the box. Additional school systems are added on the backend - the app just connects.' },
     { icon: faUsers, title: 'Multi-account', description: 'Switch between profiles in a tap. Built for students juggling more than one identity.' },
     { icon: faPalette, title: 'shadcn-style UI', description: 'Composable primitives, neutral defaults, dark-first. Themeable down to the token - no design-system lock-in.' },
     { icon: faMobileScreen, title: 'iOS · Android · Web', description: 'One Flutter codebase, three first-class targets. Your data follows you everywhere.' },
