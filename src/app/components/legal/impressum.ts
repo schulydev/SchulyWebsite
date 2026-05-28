@@ -9,7 +9,7 @@ import { Component, signal } from '@angular/core';
       <div class="legal-container">
         <div class="legal-eyebrow">Legal</div>
         <h1 class="legal-title">{{ lang() === 'de' ? 'Impressum' : 'Legal Notice' }}</h1>
-        <p class="legal-updated">{{ lang() === 'de' ? 'Stand:' : 'Last updated:' }} 2026-05-28</p>
+        <p class="legal-updated">{{ lang() === 'de' ? 'Stand:' : 'Last updated:' }} 28.05.2026</p>
 
         <div class="legal-body">
           <div class="lang-toggle">

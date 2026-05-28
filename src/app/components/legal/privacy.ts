@@ -9,7 +9,7 @@ import { Component, signal } from '@angular/core';
       <div class="legal-container">
         <div class="legal-eyebrow">Privacy</div>
         <h1 class="legal-title">{{ lang() === 'de' ? 'Datenschutzerklärung' : 'Privacy Policy' }}</h1>
-        <p class="legal-updated">{{ lang() === 'de' ? 'Stand:' : 'Last updated:' }} 2026-05-28</p>
+        <p class="legal-updated">{{ lang() === 'de' ? 'Stand:' : 'Last updated:' }} 28.05.2026</p>
 
         <div class="legal-body">
           <div class="lang-toggle">
@@ -22,7 +22,7 @@ import { Component, signal } from '@angular/core';
               Diese Datenschutzerklärung informiert dich darüber, wie wir mit deinen personenbezogenen Daten
               umgehen, wenn du die Website <a href="https://schuly.dev">schuly.dev</a> besuchst oder die
               Schuly-App und das zugehörige Backend nutzt. Die Erklärung erfüllt die Anforderungen des
-              schweizerischen Datenschutzgesetzes (revDSG, in Kraft seit 1. September 2023) sowie der
+              schweizerischen Datenschutzgesetzes (revDSG, in Kraft seit 01.09.2023) sowie der
               EU-Datenschutz-Grundverordnung (DSGVO).
             </p>
 
@@ -41,7 +41,7 @@ import { Component, signal } from '@angular/core';
               Referrer-URL, aufgerufene Ressource, Antwortstatus. Diese Daten sind technisch nötig für die
               Auslieferung und werden gemäss Cloudflare-Logaufbewahrung (in der Regel bis 30 Tage)
               gespeichert. Cloudflare ist nach dem <strong>Swiss-US Data Privacy Framework</strong>
-              (in Kraft seit 15. September 2024) zertifiziert; ein angemessenes Schutzniveau im Sinn von
+              (in Kraft seit 15.09.2024) zertifiziert; ein angemessenes Schutzniveau im Sinn von
               Art. 16 revDSG ist damit gewährleistet. Rechtsgrundlage: berechtigtes Interesse (Art. 31 Abs. 2
               lit. d revDSG) am sicheren Betrieb der Website.
             </p>
@@ -136,32 +136,66 @@ import { Component, signal } from '@angular/core';
               <a href="https://github.com/schulydev/SchulyBackend/issues/79" target="_blank" rel="noopener">Issue #79</a>).
             </p>
 
-            <h2>5. Deine Rechte</h2>
-            <p>Du hast jederzeit das Recht auf:</p>
-            <ul>
-              <li>Auskunft über die zu deiner Person gespeicherten Daten (Art. 25 revDSG, Art. 15 DSGVO)</li>
-              <li>Berichtigung unrichtiger Daten (Art. 32 Abs. 1 revDSG, Art. 16 DSGVO)</li>
-              <li>Löschung deiner Daten (Art. 32 revDSG, Art. 17 DSGVO)</li>
-              <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
-              <li>Datenübertragbarkeit (Art. 28 revDSG, Art. 20 DSGVO)</li>
-              <li>Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft</li>
-            </ul>
+            <h2>5. Wer ist wofür verantwortlich?</h2>
             <p>
-              Wende dich dazu an <a href="mailto:privacy&#64;schuly.dev">privacy&#64;schuly.dev</a>.
-              Für Daten, die deine Schule im Schulsystem führt (Schulnetz / andere), wende dich bitte
-              direkt an die Datenschutzverantwortlichen deiner Schule - wir spiegeln diese Daten nur in
-              die App.
+              Schuly ist <strong>kein Schulsystem</strong>, sondern im Kern ein
+              <strong>Daten-Cache mit Sync-Funktion</strong>. Deine Noten, Absenzen, Stundenpläne und
+              persönlichen Stammdaten werden <strong>von deiner Schule</strong> in deren Schulsystem
+              (z.&nbsp;B. Schulnetz) erfasst und gepflegt. Schuly synchronisiert diese Daten in deinem
+              Namen und speichert sie als Kopie auf dem Backend (IONOS, Deutschland), damit die App
+              schnell und offline funktioniert.
+            </p>
+            <p>Daraus ergeben sich zwei Verantwortungsbereiche:</p>
+            <ul>
+              <li>
+                <strong>Deine Schule</strong> ist Verantwortliche für die <em>Originaldaten</em>
+                (z.&nbsp;B. Noten, Absenzgründe, Klassenzugehörigkeit, Stammdaten). Falsche oder
+                veraltete Angaben dort kannst nur die Schule berichtigen.
+              </li>
+              <li>
+                <strong>Schuly</strong> ist Verantwortlicher für die <em>Kopie</em> dieser Daten im
+                Backend sowie für die wenigen Daten, die Schuly selbst erhebt (deine OIDC-Identität:
+                E-Mail, Anzeigename, Profilbild, Login-Zeitpunkt).
+              </li>
+            </ul>
+
+            <h2>6. Deine Rechte</h2>
+            <p>
+              Du hast unter revDSG und DSGVO die folgenden Rechte. Wohin du dich wenden musst, hängt
+              davon ab, worum es geht:
             </p>
 
-            <h2>6. Beschwerderecht</h2>
-            <p>Du kannst dich bei der zuständigen Datenschutzbehörde beschweren:</p>
+            <h3>6.1 Rechte gegenüber Schuly</h3>
+            <p>Bei uns kannst du folgende Rechte direkt ausüben:</p>
             <ul>
-              <li><strong>Schweiz:</strong> Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB), Feldeggweg 1, 3003 Bern - <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">edoeb.admin.ch</a></li>
-              <li><strong>Deutschland:</strong> Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI), Graurheindorfer Str. 153, 53117 Bonn - <a href="https://www.bfdi.bund.de" target="_blank" rel="noopener">bfdi.bund.de</a></li>
-              <li><strong>Österreich:</strong> Datenschutzbehörde, Barichgasse 40-42, 1030 Wien - <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">dsb.gv.at</a></li>
+              <li><strong>Auskunft</strong> über die Kopie deiner Daten im Schuly-Backend (Art. 25 revDSG, Art. 15 DSGVO)</li>
+              <li><strong>Löschung</strong> der Kopie deiner Daten im Schuly-Backend (Art. 32 revDSG, Art. 17 DSGVO) - die Originaldaten bei deiner Schule bleiben davon unberührt</li>
+              <li><strong>Datenübertragbarkeit</strong> der bei uns gespeicherten Daten (Art. 28 revDSG, Art. 20 DSGVO)</li>
+              <li><strong>Einschränkung der Verarbeitung</strong> (Art. 18 DSGVO)</li>
+              <li><strong>Widerruf erteilter Einwilligungen</strong> mit Wirkung für die Zukunft</li>
+            </ul>
+            <p>
+              Kontakt: <a href="mailto:privacy&#64;schuly.dev">privacy&#64;schuly.dev</a>.
+            </p>
+
+            <h3>6.2 Rechte gegenüber deiner Schule</h3>
+            <p>Diese Rechte musst du direkt bei deiner Schule geltend machen, da sie die Originaldaten verwaltet:</p>
+            <ul>
+              <li><strong>Berichtigung</strong> falscher Daten (Art. 32 Abs. 1 revDSG, Art. 16 DSGVO) - z.&nbsp;B. eine falsch erfasste Note oder Absenz. Schuly kann nichts an dem ändern, was das Schulsystem liefert; sobald die Schule es korrigiert, übernimmt es Schuly bei der nächsten Synchronisation.</li>
+              <li><strong>Auskunft</strong> über die vollständigen Originaldaten</li>
+              <li><strong>Beschwerden</strong> über die Erfassung von Schul-Daten an sich</li>
             </ul>
 
-            <h2>7. Sicherheit</h2>
+            <h2>7. Beschwerderecht</h2>
+            <p>
+              Du kannst dich beim <strong>Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten
+              (EDÖB)</strong>, Feldeggweg 1, 3003 Bern -
+              <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">edoeb.admin.ch</a> beschweren.
+              Wenn du in einem EU-/EWR-Staat wohnst, kannst du dich zusätzlich an die für dich zuständige
+              nationale Datenschutzbehörde wenden.
+            </p>
+
+            <h2>8. Sicherheit</h2>
             <p>
               Die Übertragung erfolgt durchgehend per TLS. Datenbanken laufen auf verschlüsselten Volumes.
               Eine Spalten-Verschlüsselung für besonders sensible Felder (Noten, Absenzgründe) ist in
@@ -169,13 +203,13 @@ import { Component, signal } from '@angular/core';
               und haben keinen Zugriff auf andere Plugin-Daten oder Kern-Tabellen.
             </p>
 
-            <h2>8. Keine automatisierte Entscheidungsfindung</h2>
+            <h2>9. Keine automatisierte Entscheidungsfindung</h2>
             <p>
               Es findet keine automatisierte Einzelentscheidung im Sinn von Art. 21 revDSG / Art. 22 DSGVO
               statt. Schuly bewertet dich nicht und trifft keine automatisierten Entscheidungen über dich.
             </p>
 
-            <h2>9. Änderungen</h2>
+            <h2>10. Änderungen</h2>
             <p>
               Wir können diese Erklärung anpassen, wenn sich Funktionen, Anbieter oder rechtliche
               Anforderungen ändern. Wesentliche Änderungen werden auf dieser Seite mit aktualisiertem
@@ -186,7 +220,7 @@ import { Component, signal } from '@angular/core';
               This Privacy Policy explains how we handle your personal data when you visit
               <a href="https://schuly.dev">schuly.dev</a> or use the Schuly app and its backend. It is
               written to satisfy both the Swiss Federal Act on Data Protection (revDSG, in force since
-              1 September 2023) and the EU General Data Protection Regulation (GDPR).
+              01.09.2023) and the EU General Data Protection Regulation (GDPR).
             </p>
 
             <h2>1. Controller</h2>
@@ -203,7 +237,7 @@ import { Component, signal } from '@angular/core';
               request Cloudflare processes: IP address, date and time, user agent, referrer, requested
               resource, response status. These are required for delivery and are retained per Cloudflare's
               log retention (typically up to 30 days). Cloudflare is certified under the
-              <strong>Swiss-US Data Privacy Framework</strong> (in force since 15 September 2024), which
+              <strong>Swiss-US Data Privacy Framework</strong> (in force since 15.09.2024), which
               provides an adequate level of protection within the meaning of Art. 16 revDSG. Legal basis:
               legitimate interest in secure operation of the site (Art. 31(2)(d) revDSG).
             </p>
@@ -271,31 +305,65 @@ import { Component, signal } from '@angular/core';
               <a href="https://github.com/schulydev/SchulyBackend/issues/79" target="_blank" rel="noopener">Issue #79</a>).
             </p>
 
-            <h2>5. Your rights</h2>
-            <p>You have the right to:</p>
-            <ul>
-              <li>Access the data we hold about you (Art. 25 revDSG, Art. 15 GDPR)</li>
-              <li>Have inaccurate data rectified (Art. 32(1) revDSG, Art. 16 GDPR)</li>
-              <li>Have your data erased (Art. 32 revDSG, Art. 17 GDPR)</li>
-              <li>Restrict processing (Art. 18 GDPR)</li>
-              <li>Data portability (Art. 28 revDSG, Art. 20 GDPR)</li>
-              <li>Withdraw any consent at any time, with effect going forward</li>
-            </ul>
+            <h2>5. Who is responsible for what?</h2>
             <p>
-              Contact <a href="mailto:privacy&#64;schuly.dev">privacy&#64;schuly.dev</a>. For data your
-              school holds in its own school system (Schulnetz or other), please contact your school's
-              data protection officer - Schuly only mirrors that data into the app.
+              Schuly is <strong>not a school system</strong> - at heart it's a
+              <strong>data cache with sync</strong>. Your grades, absences, schedule, and personal master
+              data are recorded and maintained <strong>by your school</strong> in their school system
+              (e.g. Schulnetz). Schuly syncs that data on your behalf and keeps a copy on the backend
+              (IONOS, Germany) so the app is fast and works offline.
+            </p>
+            <p>This creates two distinct areas of responsibility:</p>
+            <ul>
+              <li>
+                <strong>Your school</strong> is controller for the <em>original</em> data
+                (e.g. grades, absence reasons, class membership, master data). Only the school can
+                correct anything that is wrong or out of date there.
+              </li>
+              <li>
+                <strong>Schuly</strong> is controller for the <em>copy</em> of that data on the
+                backend, plus the small amount of data Schuly itself collects (your OIDC identity:
+                email, display name, profile picture, login timestamp).
+              </li>
+            </ul>
+
+            <h2>6. Your rights</h2>
+            <p>
+              You have the following rights under revDSG and GDPR. Where you exercise them depends on
+              what you want:
             </p>
 
-            <h2>6. Right to lodge a complaint</h2>
-            <p>You may complain to the competent supervisory authority:</p>
+            <h3>6.1 Rights you exercise with Schuly</h3>
+            <p>You can exercise these directly with us:</p>
             <ul>
-              <li><strong>Switzerland:</strong> Federal Data Protection and Information Commissioner (EDÖB), Feldeggweg 1, 3003 Bern - <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">edoeb.admin.ch</a></li>
-              <li><strong>Germany:</strong> Federal Commissioner for Data Protection and Freedom of Information (BfDI), Graurheindorfer Str. 153, 53117 Bonn - <a href="https://www.bfdi.bund.de" target="_blank" rel="noopener">bfdi.bund.de</a></li>
-              <li><strong>Austria:</strong> Datenschutzbehörde, Barichgasse 40-42, 1030 Vienna - <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">dsb.gv.at</a></li>
+              <li><strong>Access</strong> to the copy of your data on the Schuly backend (Art. 25 revDSG, Art. 15 GDPR)</li>
+              <li><strong>Erasure</strong> of the copy on the Schuly backend (Art. 32 revDSG, Art. 17 GDPR) - the original data at your school remains untouched</li>
+              <li><strong>Data portability</strong> of what we hold (Art. 28 revDSG, Art. 20 GDPR)</li>
+              <li><strong>Restriction of processing</strong> (Art. 18 GDPR)</li>
+              <li><strong>Withdrawal of consent</strong>, with effect going forward</li>
+            </ul>
+            <p>
+              Contact: <a href="mailto:privacy&#64;schuly.dev">privacy&#64;schuly.dev</a>.
+            </p>
+
+            <h3>6.2 Rights you exercise with your school</h3>
+            <p>Exercise these directly with your school, since they hold the original data:</p>
+            <ul>
+              <li><strong>Rectification</strong> of inaccurate data (Art. 32(1) revDSG, Art. 16 GDPR) - e.g. a wrongly recorded grade or absence. Schuly cannot change what the school system delivers; as soon as the school corrects it, Schuly picks up the correction on next sync.</li>
+              <li><strong>Access</strong> to the complete original record</li>
+              <li><strong>Complaints</strong> about the collection of school data as such</li>
             </ul>
 
-            <h2>7. Security</h2>
+            <h2>7. Right to lodge a complaint</h2>
+            <p>
+              You may complain to the <strong>Federal Data Protection and Information Commissioner (EDÖB)</strong>,
+              Feldeggweg 1, 3003 Bern -
+              <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">edoeb.admin.ch</a>.
+              If you reside in an EU/EEA state, you may additionally contact your national supervisory
+              authority.
+            </p>
+
+            <h2>8. Security</h2>
             <p>
               All transport uses TLS. Databases run on encrypted volumes. Column-level encryption for
               especially sensitive fields (grades, absence reasons) is in progress (see Issue #79
@@ -303,14 +371,14 @@ import { Component, signal } from '@angular/core';
               plugins' data or the core tables.
             </p>
 
-            <h2>8. No automated decision-making</h2>
+            <h2>9. No automated decision-making</h2>
             <p>
               We do not engage in automated individual decision-making within the meaning of
               Art. 21 revDSG / Art. 22 GDPR. Schuly does not score you or make automated decisions
               about you.
             </p>
 
-            <h2>9. Changes</h2>
+            <h2>10. Changes</h2>
             <p>
               We may update this policy when features, providers, or legal requirements change. Material
               changes are published here with an updated "last updated" date.
