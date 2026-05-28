@@ -41,9 +41,9 @@ import { Component, signal } from '@angular/core';
 
             <h2>2. Keine Verbindung zu Centerboard AG</h2>
             <p>
-              Schuly ist ein unabhängiges Projekt. «Schulnetz» und «Schulware» sind Marken bzw.
-              Produktbezeichnungen der Centerboard AG. Es besteht keine vertragliche, gesellschaftsrechtliche
-              oder geschäftliche Verbindung zur Centerboard AG. Eine Empfehlung oder Sponsoring durch
+              Schuly ist ein unabhängiges Projekt. «Schulnetz» ist eine Marke bzw. Produktbezeichnung
+              der Centerboard AG. Es besteht keine vertragliche, gesellschaftsrechtliche oder
+              geschäftliche Verbindung zur Centerboard AG. Eine Empfehlung oder Sponsoring durch
               Centerboard AG findet nicht statt.
             </p>
 
@@ -136,9 +136,9 @@ import { Component, signal } from '@angular/core';
 
             <h2>2. No affiliation with Centerboard AG</h2>
             <p>
-              Schuly is an independent project. "Schulnetz" and "Schulware" are trademarks or product
-              names of Centerboard AG. There is no contractual, corporate, or commercial relationship
-              with Centerboard AG, and no endorsement or sponsorship by Centerboard AG.
+              Schuly is an independent project. "Schulnetz" is a trademark or product name of
+              Centerboard AG. There is no contractual, corporate, or commercial relationship with
+              Centerboard AG, and no endorsement or sponsorship by Centerboard AG.
             </p>
 
             <h2>3. Your responsibility</h2>
