@@ -7,9 +7,9 @@
   <meta name="theme-color" content="#000000">
   <meta name="color-scheme" content="dark">
 
-  <title>Schuly - Open-source student portal · Schulnetz support out of the box</title>
+  <title>Schuly · Open student portal for Schulnetz &amp; more</title>
 
-  <meta name="description" content="Schuly is an open-source, plugin-driven student portal for iOS, Android, and Web. Schulnetz is supported out of the box - any other school system plugs in by implementing the Schuly plugin contract.">
+  <meta name="description" content="Open-source student portal for iOS, Android, and Web. Schulnetz works out of the box; more school systems supported via backend plugins. Free, built in the open.">
   <meta name="keywords" content="Schuly, Schulnetz, Schulnetz app, Schulnetz alternative, Schulnetz iOS, Schulnetz Android, Schulware, Centerboard, student portal, school CRM, school app, Schulnoten, Stundenplan, Absenzen, open source student portal, Flutter school app, Kantonsschule, Gymnasium, Berufsschule, KSO">
   <meta name="author" content="schulydev">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -28,12 +28,13 @@
   <link rel="manifest" href="/manifest.webmanifest">
 
   <link rel="preconnect" href="https://api.github.com">
+  <link rel="preload" as="image" href="/assets/app_icon.png">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Schuly">
-  <meta property="og:title" content="Schuly - Open-source student portal · Schulnetz out of the box">
-  <meta property="og:description" content="Plugin-driven student portal for iOS, Android, and Web. Schulnetz supported out of the box - any school system plugs in via the plugin SDK.">
+  <meta property="og:title" content="Schuly · Open student portal for Schulnetz &amp; more">
+  <meta property="og:description" content="Open-source student portal for iOS, Android, and Web. Schulnetz works out of the box. Free and built in the open.">
   <meta property="og:url" content="https://schuly.dev/">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="de_CH">
@@ -44,10 +45,29 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Schuly - Open-source student portal · Schulnetz out of the box">
-  <meta name="twitter:description" content="Plugin-driven student portal for iOS, Android, and Web. Schulnetz supported out of the box.">
+  <meta name="twitter:title" content="Schuly · Open student portal for Schulnetz &amp; more">
+  <meta name="twitter:description" content="Open-source student portal for iOS, Android, and Web. Schulnetz works out of the box.">
   <meta name="twitter:image" content="https://schuly.dev/assets/app_icon.png">
   <meta name="twitter:image:alt" content="Schuly app icon">
+
+  <!-- Structured data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Schuly",
+    "alternateName": "schulydev",
+    "url": "https://schuly.dev/",
+    "logo": "https://schuly.dev/assets/app_icon.png",
+    "email": "hello@schuly.dev",
+    "sameAs": [
+      "https://github.com/schulydev",
+      "https://github.com/schulydev/Schuly",
+      "https://github.com/schulydev/SchulyBackend"
+    ],
+    "description": "Open-source student portal for iOS, Android, and Web with Schulnetz support out of the box."
+  }
+  </script>
 
   <!-- Structured data: WebSite -->
   <script type="application/ld+json">
@@ -132,7 +152,7 @@
         "name": "What is Schuly?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Schuly is an open-source, plugin-driven student portal for iOS, Android, and Web. The app handles UI, authentication, and storage; school-system integrations live as plugins. Schulnetz is supported out of the box via the Schulware plugin."
+          "text": "Schuly is a free, open-source student portal app. It gives you a modern interface for the school system your school already uses - grades, schedule, agenda, absences, push notifications. Available for iOS, Android, and Web."
         }
       },
       {
@@ -140,7 +160,7 @@
         "name": "Does Schuly work with Schulnetz?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Schulnetz is supported out of the box via the official Schulware plugin, with grades, agenda, absences, exams, and push notifications. Schulnetz is currently the most widely used integration."
+          "text": "Yes. Schulnetz is supported out of the box via the official Schulware plugin: grades, agenda, absences, exams, push notifications. Schulnetz is currently the most widely used integration."
         }
       },
       {
@@ -148,15 +168,7 @@
         "name": "Is Schuly affiliated with Schulnetz or Centerboard AG?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Schuly is an independent open-source project and is not affiliated with, endorsed by, or connected to Schulnetz or Centerboard AG."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Which platforms does Schuly support?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Schuly runs on Android, iOS, and the Web from a single Flutter codebase."
+          "text": "No. Schuly is an independent open-source project. It is not affiliated with, endorsed by, or sponsored by Centerboard AG or any other school system, company, or institution."
         }
       },
       {
@@ -164,15 +176,39 @@
         "name": "How much does Schuly cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Schuly is free and open source. The source code, releases, and plugin SDK are available on GitHub at github.com/schulydev."
+          "text": "Schuly is free. The app, the backend, and the plugin SDK are open source. Source code is on GitHub under github.com/schulydev."
         }
       },
       {
         "@type": "Question",
-        "name": "Can Schuly support other school systems besides Schulnetz?",
+        "name": "Where is my data stored?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Schuly is built on a plugin architecture: any school system can plug in by implementing the SchulyPluginAbstractions contract, without touching the core."
+          "text": "The backend runs on IONOS in Germany. Your data stays in the EU/EEA - no third-country transfer. The marketing site is on Cloudflare Pages and processes only your IP for delivery."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Schuly know my school password?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Authentication is delegated to your school's identity provider via OIDC. Schuly never sees or stores your password."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can my school system be added?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your school system exposes an API and someone can write a backend plugin against the Schuly plugin SDK, yes. The app itself works with any system that has a plugin - you do not need to choose a plugin in the app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Schuly open source? Can I contribute?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every component - app, backend, plugins, plugin SDK, and this website - is on GitHub at github.com/schulydev. Issues with the bug or feature label are the easiest place to start."
         }
       }
     ]
