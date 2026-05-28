@@ -51,59 +51,91 @@
   margin: 0 auto 2.5rem;
 }
 
-.download-buttons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+// === Primary store badges ===
+.store-buttons {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.75rem;
-  margin-bottom: 2rem;
+  justify-content: center;
+  margin-bottom: 1.75rem;
 }
 
-.download-btn {
-  display: flex;
+.store-badge {
+  display: inline-flex;
   align-items: center;
-  gap: 0.875rem;
-  padding: 1rem 1.25rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border-strong);
-  border-radius: 14px;
-  color: #fff;
+  gap: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  background: #fff;
+  color: #000;
+  border-radius: 12px;
+  min-width: 200px;
   text-align: left;
-  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  border: 1px solid transparent;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.25);
     transform: translateY(-2px);
-
-    .dl-arrow {
-      transform: translateX(3px);
-      color: #fff;
-    }
+    background: #f5f5f5;
+    box-shadow: 0 14px 36px -10px rgba(255, 255, 255, 0.35);
   }
 
-  > div { flex: 1; }
+  &-icon {
+    font-size: 1.75rem;
+    flex-shrink: 0;
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+
+  &-pre {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    opacity: 0.7;
+  }
+
+  &-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-top: 1px;
+  }
 }
 
-.dl-icon {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.dl-platform {
-  font-weight: 600;
-  font-size: 0.9375rem;
-  letter-spacing: -0.01em;
-}
-
-.dl-file {
+// === Secondary alt downloads ===
+.alt-downloads {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  margin-bottom: 2rem;
+  padding: 0.625rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 999px;
   font-size: 0.8125rem;
-  color: var(--text-mute);
-  margin-top: 0.125rem;
 }
 
-.dl-arrow {
+.alt-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-dim);
+  transition: color 0.2s ease;
+
+  &:hover { color: #fff; }
+
+  fa-icon { font-size: 0.875rem; }
+}
+
+.alt-sep {
   color: var(--text-mute);
-  transition: transform 0.2s ease, color 0.2s ease;
+  user-select: none;
 }
 
 .download-note {
@@ -119,7 +151,9 @@
   }
 }
 
-@media (max-width: 768px) {
-  .download-buttons { grid-template-columns: 1fr; }
+@media (max-width: 540px) {
   .download-card { padding: 3rem 1.25rem; }
+  .store-buttons { flex-direction: column; align-items: stretch; }
+  .store-badge { justify-content: center; min-width: 0; }
+  .alt-downloads { flex-wrap: wrap; }
 }
