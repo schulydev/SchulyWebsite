@@ -65,11 +65,15 @@ export class Faq {
     },
     {
       q: 'Does Schuly know my school password?',
-      a: 'No. Authentication is delegated to your school\'s identity provider via OIDC. Schuly never sees or stores your password.',
+      a: 'No. Your Schuly account itself runs on Keycloak (OIDC) - Schuly never sees a password there. School accounts are added separately inside the app; how they authenticate depends on the school system\'s plugin, but credentials are scoped to that plugin and never shared across schools.',
     },
     {
       q: 'Can my school system be added?',
-      a: 'If your school system exposes an API and you (or someone) can write a backend plugin against the Schuly plugin SDK, yes. The app itself works with any system that has a plugin - you do not need to choose a plugin in the app.',
+      a: 'Yes. If the school system has an API, write an API-wrapper plugin against the Schuly plugin SDK. If it does not, a scraper plugin works just as well. The app itself works with any system that has a plugin - you do not need to choose a plugin in the app.',
+    },
+    {
+      q: 'I do not trust my data to Schuly. What can I do?',
+      a: 'Fair. Schuly is fully open source - the app, the backend, the plugins, the plugin SDK, the Keycloak setup, and this website all live on GitHub at github.com/schulydev. You can read every line of code, audit what we do with your data, and if you still prefer your own instance: clone the repos and self-host the entire stack. The app can be pointed at your own backend; nothing has to go through ours.',
     },
     {
       q: 'Is Schuly open source? Can I contribute?',
