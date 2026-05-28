@@ -73,7 +73,20 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
   border: 1px solid transparent;
 
-  &:hover {
+  &--disabled {
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--text-mute);
+    border-color: var(--border);
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+
+    .store-badge-pre { color: var(--text-mute); opacity: 1; }
+    .store-badge-name { color: var(--text-dim); }
+    .store-badge-icon { color: var(--text-mute); }
+  }
+
+  &:not(.store-badge--disabled):hover {
     transform: translateY(-2px);
     background: #f5f5f5;
     box-shadow: 0 14px 36px -10px rgba(255, 255, 255, 0.35);
