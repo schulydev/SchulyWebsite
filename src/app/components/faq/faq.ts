@@ -69,11 +69,11 @@ export class Faq {
     },
     {
       q: 'Can my school system be added?',
-      a: 'Yes. If the school system has an API, write an API-wrapper plugin against the Schuly plugin SDK. If it does not, a scraper plugin works just as well. The app itself works with any system that has a plugin - you do not need to choose a plugin in the app.',
+      a: 'Yes. The backend loads plugins that wrap each school system - an API wrapper if the system has an API, a scraper if it does not. Once a plugin is installed on the backend, the school simply shows up in the app as a newly supported school. Plugins are written against the Schuly plugin SDK on GitHub.',
     },
     {
       q: 'I do not trust my data to Schuly. What can I do?',
-      a: 'Fair. Schuly is fully open source - the app, the backend, the plugins, the plugin SDK, the Keycloak setup, and this website all live on GitHub at github.com/schulydev. You can read every line of code, audit what we do with your data, and if you still prefer your own instance: clone the repos and self-host the entire stack. The app can be pointed at your own backend; nothing has to go through ours.',
+      a: 'Fair. Schuly is fully open source - the app, the backend, the plugins, the plugin SDK, the Keycloak setup, and this website all live on GitHub at github.com/schulydev. You can read every line of code, audit what we do with your data, and if you still prefer your own instance: a ready-made docker-compose brings the entire stack up with one command. The app can then be pointed at your own backend; nothing has to go through ours.',
     },
     {
       q: 'Is Schuly open source? Can I contribute?',

@@ -11,7 +11,10 @@
     <div class="screens" #stage>
       @for (s of shots; track s.src; let i = $index) {
         <div class="screen" [style.--i]="i" [style.--total]="shots.length">
-          <img [src]="s.src" [alt]="s.alt" loading="lazy" />
+          <picture>
+            <source type="image/webp" [srcset]="s.webp" />
+            <img [src]="s.src" [alt]="s.alt" loading="lazy" decoding="async" width="800" height="1733" />
+          </picture>
         </div>
       }
     </div>

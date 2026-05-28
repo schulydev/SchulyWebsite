@@ -3,11 +3,13 @@ import { Home } from './pages/home/home';
 import { Impressum } from './components/legal/impressum';
 import { Privacy } from './components/legal/privacy';
 import { Terms } from './components/legal/terms';
+import { NotFound } from './pages/not-found/not-found';
 
 export const routes: Routes = [
   { path: '', component: Home, pathMatch: 'full' },
   { path: 'impressum', component: Impressum, title: 'Impressum · Schuly' },
   { path: 'privacy', component: Privacy, title: 'Privacy Policy · Schuly' },
   { path: 'terms', component: Terms, title: 'Terms of Use · Schuly' },
-  { path: '**', redirectTo: '' },
+  { path: '404', component: NotFound, title: '404 · Schuly' },
+  { path: '**', component: NotFound, title: '404 · Schuly' },
 ];
