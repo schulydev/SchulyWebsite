@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 })
 export class Screenshots {
   shots = [
-    { src: '/assets/schuly-start-page.png', alt: 'Start page' },
-    { src: '/assets/schuly-agenda-page.png', alt: 'Agenda' },
-    { src: '/assets/schuly-grades-page.png', alt: 'Grades' },
-    { src: '/assets/schuly-absences-page.png', alt: 'Absences' },
-    { src: '/assets/schuly-account-page.png', alt: 'Account' },
+    { src: '/assets/schuly-start-page.png',    webp: '/assets/schuly-start-page.webp',    alt: 'Schuly start page on iOS - shows grade overview and agenda' },
+    { src: '/assets/schuly-agenda-page.png',   webp: '/assets/schuly-agenda-page.webp',   alt: 'Schuly agenda page - daily schedule and upcoming exams' },
+    { src: '/assets/schuly-grades-page.png',   webp: '/assets/schuly-grades-page.webp',   alt: 'Schuly grades page - subject averages and trend chart' },
+    { src: '/assets/schuly-absences-page.png', webp: '/assets/schuly-absences-page.webp', alt: 'Schuly absences page - excused and unexcused list' },
+    { src: '/assets/schuly-account-page.png',  webp: '/assets/schuly-account-page.webp',  alt: 'Schuly account page - profile and multi-school switcher' },
   ];
 }
