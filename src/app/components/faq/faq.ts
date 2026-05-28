@@ -45,7 +45,7 @@ export class Faq {
   items: FaqItem[] = [
     {
       q: 'What is Schuly?',
-      a: 'Schuly is a free, open-source student portal app. It gives you a modern interface for the school system your school already uses - grades, schedule, agenda, absences, push notifications. Available for iOS, Android, and Web.',
+      a: 'Schuly is a free, open-source student portal app. It gives you a modern interface for the school systems your schools already use - grades, schedule, agenda, absences, push notifications - and lets you keep multiple schools in one app. Available for iOS, Android, and Web.',
     },
     {
       q: 'Does Schuly work with Schulnetz?',
