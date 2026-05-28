@@ -33,7 +33,7 @@ export class Features {
     { icon: faCalendarDays, title: 'Agenda & absences', description: 'Schedule, exams, and absence records - synced live, designed to fit on a phone screen.' },
     { icon: faBell, title: 'Push notifications', description: 'New grades, schedule changes, important announcements. Delivered the moment they appear.' },
     { icon: faPuzzlePiece, title: 'Schulnetz, and more', description: 'Schulnetz works out of the box. Additional school systems are added on the backend - the app just connects.' },
-    { icon: faUsers, title: 'Multi-account', description: 'Switch between profiles in a tap. Built for students juggling more than one identity.' },
+    { icon: faUsers, title: 'Multiple schools, one app', description: 'Add every school you attend - past or present, primary, secondary, university. Switch between them in a tap; everything stays separated.' },
     { icon: faPalette, title: 'shadcn-style UI', description: 'Composable primitives, neutral defaults, dark-first. Themeable down to the token - no design-system lock-in.' },
     { icon: faMobileScreen, title: 'iOS · Android · Web', description: 'One Flutter codebase, three first-class targets. Your data follows you everywhere.' },
     { icon: faShieldHalved, title: 'OIDC, end-to-end', description: 'Authentication delegated to your provider. Tokens validated server-side. No password handling.' },
