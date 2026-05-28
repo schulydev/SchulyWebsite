@@ -70,8 +70,13 @@ import { Component, signal } from '@angular/core';
             <p>Wenn du dich in der App anmeldest, werden folgende Daten verarbeitet:</p>
             <ul>
               <li>
-                <strong>Identitätsdaten</strong> aus deinem Schul-Login (OIDC): E-Mail-Adresse, Anzeigename,
-                Profilbild, eindeutige Subject-ID des Identitätsanbieters.
+                <strong>Identitätsdaten deines Schuly-Accounts</strong>, ausgestellt von unserem
+                Keycloak-OIDC-Anbieter: E-Mail-Adresse, Anzeigename, Profilbild, eindeutige Subject-ID.
+              </li>
+              <li>
+                <strong>Schul-Account-Zugangsdaten</strong>, die du innerhalb der App pro Schul-System
+                hinterlegst. Wie diese authentifiziert werden, hängt vom jeweiligen Plugin ab. Tokens
+                werden nur in dem für das jeweilige Schul-System zuständigen Plugin verarbeitet.
               </li>
               <li>
                 <strong>Schuldaten</strong>, sofern dein Schulsystem sie liefert: Vor- und Nachname,
@@ -101,7 +106,8 @@ import { Component, signal } from '@angular/core';
 
             <h3>2.3 Was wir <em>nicht</em> verarbeiten</h3>
             <ul>
-              <li>Keine Speicherung deines Schul-Passworts. Die Anmeldung erfolgt ausschliesslich über deinen Schul-OIDC-Anbieter.</li>
+              <li>Für deinen Schuly-Account: kein Passwort, da die Anmeldung über unseren Keycloak-OIDC-Anbieter erfolgt.</li>
+              <li>Für Schul-Accounts: Zugangsdaten werden nur an das zuständige Plugin weitergegeben und nicht zentral im Schuly-Kern gespeichert.</li>
               <li>Keine dauerhafte Speicherung von Refresh-Tokens.</li>
               <li>Keine Push-Notification-Tokens (FCM/APNs) im Backend.</li>
               <li>Kein Analytics- oder Telemetry-SDK in der Produktion.</li>
@@ -123,7 +129,13 @@ import { Component, signal } from '@angular/core';
                 Website angezeigten Stern- und Download-Statistiken.
               </li>
               <li>
-                <strong>OIDC-Anbieter deiner Schule</strong> - Authentifizierung.
+                <strong>Keycloak-OIDC-Anbieter</strong> (von uns betrieben, IONOS Deutschland) -
+                Authentifizierung deines Schuly-Accounts.
+              </li>
+              <li>
+                <strong>Schul-System(e)</strong>, die du in der App hinterlegt hast - die in den
+                jeweiligen Plugins implementierten Endpunkte werden im Rahmen der Synchronisation
+                aufgerufen.
               </li>
             </ul>
 
@@ -263,7 +275,8 @@ import { Component, signal } from '@angular/core';
             <h3>2.2 When you use the Schuly app</h3>
             <p>When you sign in, the following data is processed:</p>
             <ul>
-              <li><strong>Identity</strong> from your school login (OIDC): email, display name, profile picture, the identity provider's subject identifier.</li>
+              <li><strong>Schuly-account identity</strong>, issued by our Keycloak OIDC provider: email, display name, profile picture, subject identifier.</li>
+              <li><strong>School-account credentials</strong> you add inside the app per school system. How they authenticate depends on the relevant plugin; tokens are only processed inside that plugin.</li>
               <li><strong>School data</strong>, where your school system provides it: first and last name, private and school email, phone, address, date of birth, entry/leave date, class, role (student, teacher).</li>
               <li><strong>Academic data</strong>: grades, weightings, semester reports, promotion decisions, schedule, agenda, exams.</li>
               <li>
@@ -281,7 +294,8 @@ import { Component, signal } from '@angular/core';
 
             <h3>2.3 What we do <em>not</em> process</h3>
             <ul>
-              <li>We do not store your school password. Authentication is delegated to your school's OIDC provider.</li>
+              <li>For your Schuly account: no password, since authentication runs through our Keycloak OIDC provider.</li>
+              <li>For school accounts: credentials are handed to the relevant plugin only and not stored centrally in the Schuly core.</li>
               <li>No long-lived storage of refresh tokens.</li>
               <li>No push-notification tokens (FCM/APNs) in the backend.</li>
               <li>No analytics or telemetry SDK in production.</li>
@@ -293,7 +307,8 @@ import { Component, signal } from '@angular/core';
               <li><strong>Cloudflare Inc.</strong> (USA) - website hosting. Swiss-US Data Privacy Framework (certified).</li>
               <li><strong>IONOS SE</strong> (Montabaur, Germany) - SchulyBackend hosting, ISO 27001 certified, Art. 28 GDPR DPA in place.</li>
               <li><strong>GitHub Inc.</strong> (USA) - source-code and release hosting; source of the stats shown on the site.</li>
-              <li><strong>Your school's OIDC provider</strong> - authentication.</li>
+              <li><strong>Keycloak OIDC provider</strong> (operated by us on IONOS Germany) - authentication for your Schuly account.</li>
+              <li><strong>The school system(s)</strong> you have added in the app - their endpoints (as implemented in the relevant plugin) are called during sync.</li>
             </ul>
 
             <h2>4. Retention</h2>
