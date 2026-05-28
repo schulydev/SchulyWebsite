@@ -1,0 +1,37 @@
+# Schuly
+
+> Open-source student portal for iOS, Android, and Web. Schulnetz supported out of the box; more school systems via backend plugins. Free and built in the open.
+
+Schuly is a free, open-source mobile and web app that gives students a modern interface on top of their school's existing student information system. The Flutter app handles UI, authentication, and local caching; a C# / ASP.NET Core backend (hosted on IONOS Germany) handles sync. Different school systems are integrated by writing backend plugins against the Schuly plugin SDK - the app itself just connects.
+
+Schuly is an independent project. It is not affiliated with, endorsed by, or sponsored by Centerboard AG or any school, company, or institution.
+
+## Core links
+
+- [Website](https://schuly.dev/): Marketing site
+- [Privacy policy](https://schuly.dev/privacy): Data protection under Swiss revDSG and GDPR
+- [Imprint](https://schuly.dev/impressum): Operator information
+- [Terms of use](https://schuly.dev/terms): Use at your own risk
+
+## Source code
+
+- [Schuly](https://github.com/schulydev/Schuly): Flutter app for iOS, Android, Web
+- [SchulyBackend](https://github.com/schulydev/SchulyBackend): C# / ASP.NET Core backend
+- [SchulyPlugins](https://github.com/schulydev/SchulyPlugins): Official plugins (Schulware for Schulnetz, Example)
+- [SchulyPluginAbstractions](https://github.com/schulydev/SchulyPluginAbstractions): Stable plugin SDK contract (NuGet)
+
+## Features
+
+- Grades and analytics: trends, averages, semester reports
+- Agenda and absences: schedule, exams, absence records
+- Push notifications: new grades, schedule changes
+- Multi-account: switch between school identities
+- Cross-platform: one Flutter codebase, three first-class targets
+
+## Technical
+
+- Frontend: Flutter (mobile + web)
+- Backend: ASP.NET Core, PostgreSQL, S3-compatible object storage
+- Auth: OIDC via the school's identity provider; no passwords stored
+- Marketing site: Angular 20, prerendered static HTML on Cloudflare Pages
+- License: see each repository's LICENSE file
