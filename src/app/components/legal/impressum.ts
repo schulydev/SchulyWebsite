@@ -53,7 +53,7 @@ import { Component, signal } from '@angular/core';
 
             <h2>Markenhinweis</h2>
             <p>
-              «Schulnetz» und «Schulware» sind Marken bzw. Produktbezeichnungen der Centerboard AG.
+              «Schulnetz» ist eine Marke bzw. Produktbezeichnung der Centerboard AG.
               Schuly ist ein unabhängiges Open-Source-Hobby-Projekt und steht in keiner Verbindung zur
               Centerboard AG und wird von dieser weder unterstützt noch gesponsert.
             </p>
@@ -107,7 +107,7 @@ import { Component, signal } from '@angular/core';
 
             <h2>Trademark notice</h2>
             <p>
-              "Schulnetz" and "Schulware" are trademarks or product names of Centerboard AG. Schuly is an
+              "Schulnetz" is a trademark or product name of Centerboard AG. Schuly is an
               independent open-source hobby project, not affiliated with, endorsed by, or sponsored by
               Centerboard AG.
             </p>
