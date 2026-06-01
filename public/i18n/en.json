@@ -1,0 +1,183 @@
+{
+  "nav": {
+    "features": "Features",
+    "screenshots": "Screenshots",
+    "download": "Download",
+    "openSource": "Open Source",
+    "githubAria": "GitHub",
+    "getSchuly": "Get Schuly",
+    "language": "Language"
+  },
+  "hero": {
+    "pillBadge": "Open",
+    "pillText": "Schulnetz, OdaOrg, and more — in one app",
+    "title1": "All your schools,",
+    "title2": "in one app.",
+    "sub": "Schuly is your school portal, but made by someone who actually opened it. Grades, agenda, absences — on iOS, Android, and Web. Schulnetz works out of the box, OdaOrg too, more on the way.",
+    "ctaDownload": "Download Schuly",
+    "ctaGithub": "View on GitHub",
+    "stats": {
+      "stars": "GitHub stars",
+      "downloads": "App downloads",
+      "platforms": "Platforms"
+    }
+  },
+  "features": {
+    "eyebrow": "Features",
+    "title1": "Everything a student needs.",
+    "title2": "Nothing they don't.",
+    "description": "Built mobile-first. Every feature serves a purpose — no bloat, no ads, no \"watch a 30-second video to see your grade\".",
+    "items": {
+      "grades": {
+        "title": "Grades & analytics",
+        "description": "Every grade visualised with averages, trends, and breakdowns. See your trajectory at a glance — or just see if you're cooked."
+      },
+      "agenda": {
+        "title": "Agenda & absences",
+        "description": "Schedule, exams, and absences — synced live, designed to fit on a phone screen. The agony stays in your school system; the convenience is here."
+      },
+      "schulnetz": {
+        "title": "Schulnetz, OdaOrg, and more",
+        "description": "Schulnetz and OdaOrg work today. Adding a new school system means writing one backend plugin; the app picks it up automatically."
+      },
+      "multi": {
+        "title": "Multiple schools, one app",
+        "description": "Add every school you attend — past, present, primary, secondary, university. Switch between them in a tap; everything stays separate."
+      },
+      "design": {
+        "title": "shadcn-style UI",
+        "description": "Composable primitives, neutral defaults, dark by default. Looks like you'd actually want to open it during a free period."
+      },
+      "platforms": {
+        "title": "iOS · Android · Web",
+        "description": "One Flutter codebase, three first-class targets. Your data follows you on every device you forgot to charge."
+      },
+      "oidc": {
+        "title": "OIDC, end-to-end",
+        "description": "Authentication delegated to your identity provider. No passwords through Schuly, no \"please re-enter your details for the 9th time today\"."
+      },
+      "fast": {
+        "title": "Lightning fast",
+        "description": "Native compilation, aggressive caching, and a backend that does the heavy lifting once. Opens before your teacher notices."
+      }
+    }
+  },
+  "screenshots": {
+    "eyebrow": "In the app",
+    "title": "A glimpse inside.",
+    "description": "Built mobile-first. Every screen designed to make the boring parts of school admin disappear.",
+    "alts": {
+      "start": "Schuly start page — grades and agenda at a glance",
+      "agenda": "Schuly agenda page — schedule and upcoming exams",
+      "grades": "Schuly grades page — subject averages and trend chart",
+      "absences": "Schuly absences page — excused and unexcused list",
+      "account": "Schuly account page — profile and multi-school switcher"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions, answered.",
+    "description": "What Schuly is, what it isn't, and how it fits next to the school system you already use (and complain about).",
+    "items": [
+      {
+        "q": "What is Schuly, really?",
+        "a": "Schuly is a free, open-source student portal app. It puts a clean interface on the school systems your schools already use — grades, schedule, agenda, absences — and lets you keep multiple schools in one app. iOS, Android, and Web."
+      },
+      {
+        "q": "Which school systems does Schuly support?",
+        "a": "Today: Schulnetz (via the Schulware plugin) and OdaOrg. Schulnetz is the most-used integration. Each system is wrapped by a backend plugin, so more can be added without changing the app."
+      },
+      {
+        "q": "Wait — is Schuly Schulnetz?",
+        "a": "Nope. Schuly is an independent open-source project. It is not affiliated with, endorsed by, or sponsored by Centerboard AG, your school, or any other company or institution. We just consume their data more politely."
+      },
+      {
+        "q": "How much does Schuly cost?",
+        "a": "Zero francs. The app, the backend, and the plugin SDK are all open source on GitHub at github.com/schulydev. If it ever costs money, we'll be very loud about it."
+      },
+      {
+        "q": "Where is my data stored?",
+        "a": "The backend runs on IONOS in Germany. Your data stays in the EU/EEA — no third-country transfer. This website is on Cloudflare Pages and processes only your IP for delivery. That's it."
+      },
+      {
+        "q": "Does Schuly know my school password?",
+        "a": "Your Schuly account runs on an external OIDC provider (Pocket ID by default; the authority is configurable). Schulnetz uses its own OAuth flow, so no password reaches us. OdaOrg currently uses username and password, posted to the OdaOrg plugin and stored only inside that plugin's isolated database — never read by, or shared with, the rest of the system."
+      },
+      {
+        "q": "Can my school system be added?",
+        "a": "Yes. The backend loads plugins that wrap each school system — an API wrapper if the system has an API, a scraper if it doesn't. Once the plugin is installed, the school system shows up in the app's \"Add school\" flow. Plugins are written against the Schuly plugin SDK on GitHub."
+      },
+      {
+        "q": "I don't trust my data to Schuly. What can I do?",
+        "a": "Healthy. Schuly is fully open source — the app, the backend, the plugins, the plugin SDK, and this website all live on GitHub at github.com/schulydev. Read every line, audit what we do with your data, and self-host the backend if you want full control. The app can be pointed at your own backend; nothing has to go through ours."
+      },
+      {
+        "q": "Is Schuly open source? Can I contribute?",
+        "a": "Yes and yes. Every component is on GitHub at github.com/schulydev. Issues with the \"bug\" or \"feature\" label are the easiest place to start. Bonus points for fixing a typo in this FAQ."
+      }
+    ]
+  },
+  "download": {
+    "eyebrow": "Get Schuly",
+    "title": "Ready when you are.",
+    "description": "Available on every device a student carries. Open source, free, and built in public.",
+    "comingSoon": "Coming soon",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "appStoreAria": "App Store — coming soon",
+    "googlePlayAria": "Google Play — coming soon",
+    "alt": {
+      "apk": ".apk on GitHub",
+      "ipa": ".ipa on GitHub",
+      "webSoon": "Web (soon)"
+    },
+    "note": {
+      "prefix": "Requires a SchulyBackend instance. See the ",
+      "linkText": "backend repo",
+      "suffix": " for self-hosting docs."
+    }
+  },
+  "footer": {
+    "cols": {
+      "project": "Project",
+      "resources": "Resources",
+      "legal": "Legal"
+    },
+    "links": {
+      "app": "Schuly app",
+      "backend": "Backend",
+      "plugins": "Plugins",
+      "sdk": "Plugin SDK",
+      "releases": "Releases",
+      "issues": "Issues",
+      "features": "Features",
+      "faq": "FAQ",
+      "download": "Download",
+      "impressum": "Impressum",
+      "privacy": "Privacy",
+      "terms": "Terms of Use",
+      "coffee": "Buy me a coffee"
+    },
+    "disclaimer": "Not affiliated with Schulnetz, Centerboard AG, or any other school system, company, or institution. Independent open-source project.",
+    "copyright": "© {{ year }} Schuly · Built with",
+    "builtBy": "in the open."
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page not found.",
+    "sub": "The URL you followed does not exist on schuly.dev. It might have moved, been renamed, or never existed at all. Like that homework deadline your teacher swears they mentioned.",
+    "back": "Back home",
+    "report": "Report a broken link"
+  },
+  "legal": {
+    "lastUpdated": "Last updated:",
+    "impressum": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "tabFor": {
+      "de": "Deutsch",
+      "en": "English"
+    },
+    "fallbackNotice": "This legal page is available in German and English only. Your selected language ({{ lang }}) defaults to German for precision."
+  }
+}

@@ -1,23 +1,23 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
+import { LanguageService } from '../../services/language';
 
 @Component({
   selector: 'app-terms',
-  imports: [],
+  imports: [TranslatePipe],
   styleUrl: './legal-layout.scss',
   template: `
     <section class="legal">
       <div class="legal-container">
         <div class="legal-eyebrow">Terms</div>
-        <h1 class="legal-title">{{ lang() === 'de' ? 'Nutzungsbedingungen' : 'Terms of Use' }}</h1>
-        <p class="legal-updated">{{ lang() === 'de' ? 'Stand:' : 'Last updated:' }} 28.05.2026</p>
+        <h1 class="legal-title">{{ 'legal.terms' | translate }}</h1>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 28.05.2026</p>
 
         <div class="legal-body">
-          <div class="lang-toggle">
-            <button [class.active]="lang() === 'de'" (click)="lang.set('de')">Deutsch</button>
-            <button [class.active]="lang() === 'en'" (click)="lang.set('en')">English</button>
-          </div>
-
-          @if (lang() === 'de') {
+          @if (showFallbackNotice()) {
+            <p class="legal-notice">{{ 'legal.fallbackNotice' | translate: { lang: lang.current() } }}</p>
+          }
+          @if (showDe()) {
             <div class="callout">
               <strong>Nutzung auf eigene Gefahr.</strong> Schuly ist ein kostenloses, offenes
               Hobby-Projekt eines einzelnen Entwicklers. Die Software wird ohne jegliche Gewährleistung
@@ -212,5 +212,7 @@ import { Component, signal } from '@angular/core';
   `,
 })
 export class Terms {
-  protected lang = signal<'de' | 'en'>('de');
+  protected lang = inject(LanguageService);
+  protected showDe = computed(() => this.lang.current() !== 'en');
+  protected showFallbackNotice = computed(() => !['de', 'en'].includes(this.lang.current()));
 }

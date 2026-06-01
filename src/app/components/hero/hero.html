@@ -5,47 +5,45 @@
 
   <div class="hero-content">
     <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="hero-pill" #pill>
-      <span class="hero-pill-badge">Open</span>
-      <span class="hero-pill-text">Schulnetz and more, in one app</span>
+      <span class="hero-pill-badge">{{ 'hero.pillBadge' | translate }}</span>
+      <span class="hero-pill-text">{{ 'hero.pillText' | translate }}</span>
       <fa-icon [icon]="faArrowRight" class="hero-pill-arrow"></fa-icon>
     </a>
 
     <h1 class="hero-title" #title>
-      All your schools,<br />
-      <span class="hero-title-dim">in one app.</span>
+      {{ 'hero.title1' | translate }}<br />
+      <span class="hero-title-dim">{{ 'hero.title2' | translate }}</span>
     </h1>
 
     <p class="hero-sub" #sub>
-      Schuly is an open-source student portal for iOS, Android, and Web.
-      Grades, agenda, and absences in a fast Flutter app -
-      with Schulnetz supported out of the box and more school systems already on board.
+      {{ 'hero.sub' | translate }}
     </p>
 
     <div class="hero-actions" #actions>
       <a href="#download" class="btn btn-primary">
-        Download Schuly
+        {{ 'hero.ctaDownload' | translate }}
         <fa-icon [icon]="faArrowRight"></fa-icon>
       </a>
       <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener" class="btn btn-secondary">
         <fa-icon [icon]="faGithub"></fa-icon>
-        View on GitHub
+        {{ 'hero.ctaGithub' | translate }}
       </a>
     </div>
 
     <div class="hero-stats" #stage>
       <div class="stat">
         <div class="stat-num">{{ stars() }}</div>
-        <div class="stat-label">GitHub stars</div>
+        <div class="stat-label">{{ 'hero.stats.stars' | translate }}</div>
       </div>
       <div class="stat-sep"></div>
       <div class="stat">
         <div class="stat-num">{{ downloads() }}</div>
-        <div class="stat-label">App downloads</div>
+        <div class="stat-label">{{ 'hero.stats.downloads' | translate }}</div>
       </div>
       <div class="stat-sep"></div>
       <div class="stat">
         <div class="stat-num">3</div>
-        <div class="stat-label">Platforms</div>
+        <div class="stat-label">{{ 'hero.stats.platforms' | translate }}</div>
       </div>
     </div>
   </div>

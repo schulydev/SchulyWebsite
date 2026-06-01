@@ -1,22 +1,21 @@
 <section id="features" class="features">
   <div class="container">
     <div class="section-header">
-      <div class="eyebrow">Features</div>
-      <h2 class="section-title">Everything a student needs.<br />Nothing they don't.</h2>
+      <div class="eyebrow">{{ 'features.eyebrow' | translate }}</div>
+      <h2 class="section-title">{{ 'features.title1' | translate }}<br />{{ 'features.title2' | translate }}</h2>
       <p class="section-description">
-        Built mobile-first. Every feature serves a purpose - no bloat, no clutter, just the
-        tools you actually open every day.
+        {{ 'features.description' | translate }}
       </p>
     </div>
 
     <div class="features-grid" #grid>
-      @for (f of features; track f.title) {
+      @for (f of features; track f.key) {
         <div class="feature-card">
           <div class="feature-icon">
             <fa-icon [icon]="f.icon"></fa-icon>
           </div>
-          <h3 class="feature-title">{{ f.title }}</h3>
-          <p class="feature-description">{{ f.description }}</p>
+          <h3 class="feature-title">{{ 'features.items.' + f.key + '.title' | translate }}</h3>
+          <p class="feature-description">{{ 'features.items.' + f.key + '.description' | translate }}</p>
           <div class="feature-glow"></div>
         </div>
       }
