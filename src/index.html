@@ -129,11 +129,11 @@
     "featureList": [
       "Plugin-driven backend (any school system)",
       "Schulnetz support out of the box (Schulware plugin)",
+      "OdaOrg support",
       "Grades and analytics",
       "Agenda and absences",
-      "Push notifications",
       "Multiple schools in one app",
-      "OIDC authentication",
+      "OIDC authentication via Pocket ID",
       "iOS, Android, and Web"
     ],
     "keywords": "Schulnetz, Schulware, student portal, plugin architecture, Schulnoten, Stundenplan, Absenzen"
@@ -156,10 +156,10 @@
       },
       {
         "@type": "Question",
-        "name": "Does Schuly work with Schulnetz?",
+        "name": "Which school systems does Schuly support?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Schulnetz is supported out of the box via the official Schulware plugin: grades, agenda, absences, exams, push notifications. Schulnetz is currently the most widely used integration."
+          "text": "Currently Schulnetz (via the Schulware plugin) and OdaOrg. Schulnetz is the most widely used integration. Each system is wrapped by a backend plugin, so more can be added without changing the app."
         }
       },
       {
@@ -191,7 +191,7 @@
         "name": "Does Schuly know my school password?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Your Schuly account itself runs on Keycloak (OIDC) - Schuly never sees a password there. School accounts are added separately inside the app; how they authenticate depends on the school system's plugin, but credentials are scoped to that plugin and never shared across schools."
+          "text": "Your Schuly account runs on an external OIDC provider (Pocket ID by default; the authority is configurable). Schulnetz uses its own OAuth flow, so no password reaches us. OdaOrg currently uses username and password, posted to the OdaOrg plugin and stored only inside that plugin's isolated database - never read by, or shared with, the rest of the system."
         }
       },
       {
@@ -199,7 +199,7 @@
         "name": "Can my school system be added?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. The backend loads plugins that wrap each school system - an API wrapper if the system has an API, a scraper if it does not. Once a plugin is installed on the backend, the school simply shows up in the app as a newly supported school. Plugins are written against the Schuly plugin SDK on GitHub."
+          "text": "Yes. The backend loads plugins that wrap each school system - an API wrapper if the system has an API, a scraper if it does not. Once a plugin is installed, the school system shows up in the app's Add school flow. Plugins are written against the Schuly plugin SDK on GitHub."
         }
       },
       {
@@ -207,7 +207,7 @@
         "name": "I do not trust my data to Schuly. What can I do?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Fair. Schuly is fully open source - the app, the backend, the plugins, the plugin SDK, the Keycloak setup, and this website all live on GitHub at github.com/schulydev. You can read every line of code, audit what we do with your data, and if you still prefer your own instance: a ready-made docker-compose brings the entire stack up with one command. The app can then be pointed at your own backend; nothing has to go through ours."
+          "text": "Fair. Schuly is fully open source - the app, the backend, the plugins, the plugin SDK, and this website all live on GitHub at github.com/schulydev. You can read every line of code, audit what we do with your data, and self-host the backend if you want full control. The app can be pointed at your own backend instance; nothing has to go through ours."
         }
       },
       {

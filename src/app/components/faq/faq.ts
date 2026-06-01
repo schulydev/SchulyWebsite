@@ -1,4 +1,6 @@
 import { Component, signal } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 interface FaqItem {
   q: string;
@@ -7,7 +9,7 @@ interface FaqItem {
 
 @Component({
   selector: 'app-faq',
-  imports: [],
+  imports: [FontAwesomeModule],
   styleUrl: './faq.scss',
   template: `
     <section id="faq" class="faq">
@@ -22,17 +24,21 @@ interface FaqItem {
 
         <div class="faq-list">
           @for (item of items; track item.q; let i = $index) {
-            <details
-              class="faq-item"
-              [attr.open]="open() === i ? '' : null"
-              (toggle)="onToggle(i, $event)"
-            >
-              <summary class="faq-q">
+            <div class="faq-item" [class.is-open]="open() === i">
+              <button
+                type="button"
+                class="faq-q"
+                [attr.aria-expanded]="open() === i"
+                [attr.aria-controls]="'faq-a-' + i"
+                (click)="toggle(i)"
+              >
                 <span>{{ item.q }}</span>
-                <span class="faq-icon" aria-hidden="true">+</span>
-              </summary>
-              <div class="faq-a">{{ item.a }}</div>
-            </details>
+                <fa-icon [icon]="faChevronDown" class="faq-icon" aria-hidden="true" />
+              </button>
+              <div class="faq-a-wrap" [id]="'faq-a-' + i" role="region">
+                <div class="faq-a">{{ item.a }}</div>
+              </div>
+            </div>
           }
         </div>
       </div>
@@ -41,6 +47,7 @@ interface FaqItem {
 })
 export class Faq {
   protected open = signal<number | null>(0);
+  protected readonly faChevronDown = faChevronDown;
 
   items: FaqItem[] = [
     {
@@ -48,8 +55,8 @@ export class Faq {
       a: 'Schuly is a free, open-source student portal app. It gives you a modern interface for the school systems your schools already use - grades, schedule, agenda, absences, push notifications - and lets you keep multiple schools in one app. Available for iOS, Android, and Web.',
     },
     {
-      q: 'Does Schuly work with Schulnetz?',
-      a: 'Yes. Schulnetz is supported out of the box via the official Schulware plugin: grades, agenda, absences, exams, push notifications. Schulnetz is currently the most widely used integration.',
+      q: 'Which school systems does Schuly support?',
+      a: 'Currently Schulnetz (via the Schulware plugin) and OdaOrg. Schulnetz is the most widely used integration. Each system is wrapped by a backend plugin, so more can be added without changing the app.',
     },
     {
       q: 'Is Schuly affiliated with Schulnetz or Centerboard AG?',
@@ -65,15 +72,15 @@ export class Faq {
     },
     {
       q: 'Does Schuly know my school password?',
-      a: 'No. Your Schuly account itself runs on Keycloak (OIDC) - Schuly never sees a password there. School accounts are added separately inside the app; how they authenticate depends on the school system\'s plugin, but credentials are scoped to that plugin and never shared across schools.',
+      a: 'Your Schuly account runs on an external OIDC provider (Pocket ID by default; the authority is configurable). Schulnetz uses its own OAuth flow, so no password reaches us. OdaOrg currently uses username and password, posted to the OdaOrg plugin and stored only inside that plugin\'s isolated database - never read by, or shared with, the rest of the system.',
     },
     {
       q: 'Can my school system be added?',
-      a: 'Yes. The backend loads plugins that wrap each school system - an API wrapper if the system has an API, a scraper if it does not. Once a plugin is installed on the backend, the school simply shows up in the app as a newly supported school. Plugins are written against the Schuly plugin SDK on GitHub.',
+      a: 'Yes. The backend loads plugins that wrap each school system - an API wrapper if the system has an API, a scraper if it does not. Once a plugin is installed, the school system shows up in the app\'s "Add school" flow. Plugins are written against the Schuly plugin SDK on GitHub.',
     },
     {
       q: 'I do not trust my data to Schuly. What can I do?',
-      a: 'Fair. Schuly is fully open source - the app, the backend, the plugins, the plugin SDK, the Keycloak setup, and this website all live on GitHub at github.com/schulydev. You can read every line of code, audit what we do with your data, and if you still prefer your own instance: a ready-made docker-compose brings the entire stack up with one command. The app can then be pointed at your own backend; nothing has to go through ours.',
+      a: 'Fair. Schuly is fully open source - the app, the backend, the plugins, the plugin SDK, and this website all live on GitHub at github.com/schulydev. You can read every line of code, audit what we do with your data, and self-host the backend if you want full control. The app can be pointed at your own backend instance; nothing has to go through ours.',
     },
     {
       q: 'Is Schuly open source? Can I contribute?',
@@ -81,12 +88,7 @@ export class Faq {
     },
   ];
 
-  onToggle(index: number, event: Event) {
-    const el = event.target as HTMLDetailsElement;
-    if (el.open) {
-      this.open.set(index);
-    } else if (this.open() === index) {
-      this.open.set(null);
-    }
+  toggle(index: number) {
+    this.open.update(current => (current === index ? null : index));
   }
 }
