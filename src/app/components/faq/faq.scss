@@ -23,7 +23,10 @@
     border-color: var(--border-strong);
 
     .faq-icon { transform: rotate(180deg); }
-    .faq-a-wrap { grid-template-rows: 1fr; }
+    .faq-a-wrap {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
   }
 }
 
@@ -63,7 +66,20 @@
 .faq-a-wrap {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease,
+    visibility 0s linear 0.35s;
+}
+
+.is-open .faq-a-wrap {
+  visibility: visible;
+  transition:
+    grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.25s ease 0.05s,
+    visibility 0s linear 0s;
 }
 
 .faq-a {
