@@ -1,23 +1,23 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
+import { LanguageService } from '../../services/language';
 
 @Component({
   selector: 'app-privacy',
-  imports: [],
+  imports: [TranslatePipe],
   styleUrl: './legal-layout.scss',
   template: `
     <section class="legal">
       <div class="legal-container">
         <div class="legal-eyebrow">Privacy</div>
-        <h1 class="legal-title">{{ lang() === 'de' ? 'Datenschutzerklärung' : 'Privacy Policy' }}</h1>
-        <p class="legal-updated">{{ lang() === 'de' ? 'Stand:' : 'Last updated:' }} 28.05.2026</p>
+        <h1 class="legal-title">{{ 'legal.privacy' | translate }}</h1>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 28.05.2026</p>
 
         <div class="legal-body">
-          <div class="lang-toggle">
-            <button [class.active]="lang() === 'de'" (click)="lang.set('de')">Deutsch</button>
-            <button [class.active]="lang() === 'en'" (click)="lang.set('en')">English</button>
-          </div>
-
-          @if (lang() === 'de') {
+          @if (showFallbackNotice()) {
+            <p class="legal-notice">{{ 'legal.fallbackNotice' | translate: { lang: lang.current() } }}</p>
+          }
+          @if (showDe()) {
             <p>
               Diese Datenschutzerklärung informiert dich darüber, wie wir mit deinen personenbezogenen Daten
               umgehen, wenn du die Website <a href="https://schuly.dev">schuly.dev</a> besuchst oder die
@@ -228,6 +228,7 @@ import { Component, signal } from '@angular/core';
               Stand-Datum veröffentlicht.
             </p>
           } @else {
+            <!-- English version -->
             <p>
               This Privacy Policy explains how we handle your personal data when you visit
               <a href="https://schuly.dev">schuly.dev</a> or use the Schuly app and its backend. It is
@@ -405,5 +406,7 @@ import { Component, signal } from '@angular/core';
   `,
 })
 export class Privacy {
-  protected lang = signal<'de' | 'en'>('de');
+  protected lang = inject(LanguageService);
+  protected showDe = computed(() => this.lang.current() !== 'en');
+  protected showFallbackNotice = computed(() => !['de', 'en'].includes(this.lang.current()));
 }

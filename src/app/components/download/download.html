@@ -3,34 +3,34 @@
     <div class="download-card">
       <div class="download-grid" aria-hidden="true"></div>
       <div class="download-content">
-        <div class="eyebrow">Get Schuly</div>
-        <h2 class="download-title">Ready when you are.</h2>
+        <div class="eyebrow">{{ 'download.eyebrow' | translate }}</div>
+        <h2 class="download-title">{{ 'download.title' | translate }}</h2>
         <p class="download-description">
-          Available on every platform a student carries. Open source, free, and built in public.
+          {{ 'download.description' | translate }}
         </p>
 
         <div class="store-buttons">
           <span
             class="store-badge store-badge--disabled"
-            aria-label="App Store - coming soon"
+            [attr.aria-label]="'download.appStoreAria' | translate"
             aria-disabled="true"
           >
             <fa-icon [icon]="faApple" class="store-badge-icon"></fa-icon>
             <span class="store-badge-text">
-              <span class="store-badge-pre">Coming soon</span>
-              <span class="store-badge-name">App Store</span>
+              <span class="store-badge-pre">{{ 'download.comingSoon' | translate }}</span>
+              <span class="store-badge-name">{{ 'download.appStore' | translate }}</span>
             </span>
           </span>
 
           <span
             class="store-badge store-badge--disabled"
-            aria-label="Google Play - coming soon"
+            [attr.aria-label]="'download.googlePlayAria' | translate"
             aria-disabled="true"
           >
             <fa-icon [icon]="faGooglePlay" class="store-badge-icon"></fa-icon>
             <span class="store-badge-text">
-              <span class="store-badge-pre">Coming soon</span>
-              <span class="store-badge-name">Google Play</span>
+              <span class="store-badge-pre">{{ 'download.comingSoon' | translate }}</span>
+              <span class="store-badge-name">{{ 'download.googlePlay' | translate }}</span>
             </span>
           </span>
         </div>
@@ -38,24 +38,22 @@
         <div class="alt-downloads">
           <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="alt-link">
             <fa-icon [icon]="faAndroid"></fa-icon>
-            <span>.apk on GitHub</span>
+            <span>{{ 'download.alt.apk' | translate }}</span>
           </a>
           <span class="alt-sep">·</span>
           <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="alt-link">
             <fa-icon [icon]="faApple"></fa-icon>
-            <span>.ipa on GitHub</span>
+            <span>{{ 'download.alt.ipa' | translate }}</span>
           </a>
           <span class="alt-sep">·</span>
           <a href="https://schuly.dev" class="alt-link">
             <fa-icon [icon]="faGlobe"></fa-icon>
-            <span>Web (soon)</span>
+            <span>{{ 'download.alt.webSoon' | translate }}</span>
           </a>
         </div>
 
         <p class="download-note">
-          Requires a SchulyBackend instance. See the
-          <a href="https://github.com/schulydev/SchulyBackend" target="_blank" rel="noopener">backend repo</a>
-          for self-hosting docs.
+          {{ 'download.note.prefix' | translate }}<a href="https://github.com/schulydev/SchulyBackend" target="_blank" rel="noopener">{{ 'download.note.linkText' | translate }}</a>{{ 'download.note.suffix' | translate }}
         </p>
       </div>
     </div>

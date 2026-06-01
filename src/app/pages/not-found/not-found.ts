@@ -1,24 +1,24 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-not-found',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   styleUrl: './not-found.scss',
   template: `
     <section class="nf">
       <div class="nf-bg" aria-hidden="true"></div>
       <div class="nf-content">
-        <div class="nf-code">404</div>
-        <h1 class="nf-title">Page not found.</h1>
+        <div class="nf-code">{{ 'notFound.code' | translate }}</div>
+        <h1 class="nf-title">{{ 'notFound.title' | translate }}</h1>
         <p class="nf-sub">
-          The URL you followed does not exist on schuly.dev. It might have moved, been renamed,
-          or never existed at all.
+          {{ 'notFound.sub' | translate }}
         </p>
         <div class="nf-actions">
-          <a routerLink="/" class="btn btn-primary">Back home</a>
+          <a routerLink="/" class="btn btn-primary">{{ 'notFound.back' | translate }}</a>
           <a href="https://github.com/schulydev/Schuly/issues" target="_blank" rel="noopener" class="btn btn-secondary">
-            Report a broken link
+            {{ 'notFound.report' | translate }}
           </a>
         </div>
       </div>

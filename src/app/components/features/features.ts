@@ -1,5 +1,6 @@
 import { afterNextRender, Component, ElementRef, viewChild } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TranslatePipe } from '@ngx-translate/core';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import {
   faChartLine,
@@ -13,14 +14,13 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 interface Feature {
+  key: string;
   icon: IconDefinition;
-  title: string;
-  description: string;
 }
 
 @Component({
   selector: 'app-features',
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, TranslatePipe],
   templateUrl: './features.html',
   styleUrl: './features.scss'
 })
@@ -28,14 +28,14 @@ export class Features {
   private grid = viewChild<ElementRef<HTMLElement>>('grid');
 
   features: Feature[] = [
-    { icon: faChartLine, title: 'Grades & analytics', description: 'Every grade visualised with averages, trends, and breakdowns. See your trajectory at a glance.' },
-    { icon: faCalendarDays, title: 'Agenda & absences', description: 'Schedule, exams, and absence records - synced live, designed to fit on a phone screen.' },
-    { icon: faPuzzlePiece, title: 'Schulnetz, OdaOrg, and more', description: 'Schulnetz and OdaOrg work today. Additional school systems are added by writing a backend plugin - the app picks them up automatically.' },
-    { icon: faUsers, title: 'Multiple schools, one app', description: 'Add every school you attend - past or present, primary, secondary, university. Switch between them in a tap; everything stays separated.' },
-    { icon: faPalette, title: 'shadcn-style UI', description: 'Composable primitives, neutral defaults, dark-first. Themeable down to the token - no design-system lock-in.' },
-    { icon: faMobileScreen, title: 'iOS · Android · Web', description: 'One Flutter codebase, three first-class targets. Your data follows you everywhere.' },
-    { icon: faShieldHalved, title: 'OIDC, end-to-end', description: 'Authentication delegated to your provider. Tokens validated server-side. No password handling.' },
-    { icon: faBolt, title: 'Lightning fast', description: 'Native compilation, aggressive caching, and a backend that does the heavy lifting once.' },
+    { key: 'grades',     icon: faChartLine },
+    { key: 'agenda',     icon: faCalendarDays },
+    { key: 'schulnetz',  icon: faPuzzlePiece },
+    { key: 'multi',      icon: faUsers },
+    { key: 'design',     icon: faPalette },
+    { key: 'platforms',  icon: faMobileScreen },
+    { key: 'oidc',       icon: faShieldHalved },
+    { key: 'fast',       icon: faBolt },
   ];
 
   constructor() {

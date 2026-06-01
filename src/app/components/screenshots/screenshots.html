@@ -1,10 +1,10 @@
 <section id="screenshots" class="screenshots">
   <div class="container">
     <div class="section-header">
-      <div class="eyebrow">In the app</div>
-      <h2 class="section-title">A glimpse inside.</h2>
+      <div class="eyebrow">{{ 'screenshots.eyebrow' | translate }}</div>
+      <h2 class="section-title">{{ 'screenshots.title' | translate }}</h2>
       <p class="section-description">
-        Built mobile-first. Every screen designed to make the boring parts of school admin disappear.
+        {{ 'screenshots.description' | translate }}
       </p>
     </div>
 
@@ -13,7 +13,7 @@
         <div class="screen" [style.--i]="i" [style.--total]="shots.length">
           <picture>
             <source type="image/webp" [srcset]="s.webp" />
-            <img [src]="s.src" [alt]="s.alt" loading="lazy" decoding="async" width="800" height="1733" />
+            <img [src]="s.src" [alt]="'screenshots.alts.' + s.altKey | translate" loading="lazy" decoding="async" width="800" height="1733" />
           </picture>
         </div>
       }

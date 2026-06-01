@@ -8,33 +8,33 @@
 
       <div class="footer-cols">
         <div class="footer-col">
-          <div class="footer-col-title">Project</div>
-          <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener">Schuly app</a>
-          <a href="https://github.com/schulydev/SchulyBackend" target="_blank" rel="noopener">Backend</a>
-          <a href="https://github.com/schulydev/SchulyPlugins" target="_blank" rel="noopener">Plugins</a>
-          <a href="https://github.com/schulydev/SchulyPluginAbstractions" target="_blank" rel="noopener">Plugin SDK</a>
+          <div class="footer-col-title">{{ 'footer.cols.project' | translate }}</div>
+          <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener">{{ 'footer.links.app' | translate }}</a>
+          <a href="https://github.com/schulydev/SchulyBackend" target="_blank" rel="noopener">{{ 'footer.links.backend' | translate }}</a>
+          <a href="https://github.com/schulydev/SchulyPlugins" target="_blank" rel="noopener">{{ 'footer.links.plugins' | translate }}</a>
+          <a href="https://github.com/schulydev/SchulyPluginAbstractions" target="_blank" rel="noopener">{{ 'footer.links.sdk' | translate }}</a>
         </div>
         <div class="footer-col">
-          <div class="footer-col-title">Resources</div>
-          <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener">Releases</a>
-          <a href="https://github.com/schulydev/Schuly/issues" target="_blank" rel="noopener">Issues</a>
-          <a href="/#features">Features</a>
-          <a href="/#faq">FAQ</a>
-          <a href="/#download">Download</a>
+          <div class="footer-col-title">{{ 'footer.cols.resources' | translate }}</div>
+          <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener">{{ 'footer.links.releases' | translate }}</a>
+          <a href="https://github.com/schulydev/Schuly/issues" target="_blank" rel="noopener">{{ 'footer.links.issues' | translate }}</a>
+          <a href="/#features">{{ 'footer.links.features' | translate }}</a>
+          <a href="/#faq">{{ 'footer.links.faq' | translate }}</a>
+          <a href="/#download">{{ 'footer.links.download' | translate }}</a>
         </div>
         <div class="footer-col">
-          <div class="footer-col-title">Legal</div>
-          <a routerLink="/impressum">Impressum</a>
-          <a routerLink="/privacy">Privacy</a>
-          <a routerLink="/terms">Terms of Use</a>
-          <a href="https://buymeacoffee.com/pianonic" target="_blank" rel="noopener">Buy me a coffee</a>
+          <div class="footer-col-title">{{ 'footer.cols.legal' | translate }}</div>
+          <a routerLink="/impressum">{{ 'footer.links.impressum' | translate }}</a>
+          <a routerLink="/privacy">{{ 'footer.links.privacy' | translate }}</a>
+          <a routerLink="/terms">{{ 'footer.links.terms' | translate }}</a>
+          <a href="https://buymeacoffee.com/pianonic" target="_blank" rel="noopener">{{ 'footer.links.coffee' | translate }}</a>
         </div>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <p>Not affiliated with Schulnetz, Centerboard AG, or any other school system, company, or institution. Independent open-source project.</p>
-      <p>© {{ year }} Schuly · Built with <fa-icon [icon]="faHeart" class="heart"></fa-icon> in the open.</p>
+      <p>{{ 'footer.disclaimer' | translate }}</p>
+      <p>{{ 'footer.copyright' | translate: { year: year } }} <fa-icon [icon]="faHeart" class="heart"></fa-icon> {{ 'footer.builtBy' | translate }}</p>
     </div>
   </div>
 </footer>
