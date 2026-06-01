@@ -26,7 +26,7 @@
     "eyebrow": "Funzionalità",
     "title1": "Tutto ciò che serve a uno studente.",
     "title2": "Niente che non serva.",
-    "description": "Pensata mobile-first. Ogni funzione ha uno scopo – niente fronzoli, niente pubblicità, niente «guarda un video di 30 secondi per vedere il voto».",
+    "description": "Pensata mobile-first. Ogni funzione ha uno scopo – niente fronzoli, niente caricamenti infiniti, niente «sistema occupato, riprova più tardi».",
     "items": {
       "grades": {
         "title": "Voti e statistiche",
