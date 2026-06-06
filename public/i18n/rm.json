@@ -158,9 +158,8 @@
       "terms": "Cundiziuns d'utilisaziun",
       "coffee": "Cumprai a mai in café"
     },
-    "disclaimer": "Schuly è in project independent open source e n'ha nagina relaziun cun Schulnetz, la Centerboard AG u in auter sistem da scola, interpresa u instituziun d'educaziun.",
-    "copyright": "© {{ year }} Schuly · Construì cun",
-    "builtBy": "en public."
+    "disclaimer": "Project independent open source. Nagina relaziun cun Schulnetz, la Centerboard AG u auters sistems da scola.",
+    "copyright": "© {{ year }} Schuly · Construì cun"
   },
   "notFound": {
     "code": "404",

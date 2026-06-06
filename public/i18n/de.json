@@ -158,9 +158,8 @@
       "terms": "Nutzungsbedingungen",
       "coffee": "Buy me a coffee"
     },
-    "disclaimer": "Schuly ist ein unabhängiges Open-Source-Projekt und steht in keiner Verbindung zu Schulnetz, der Centerboard AG oder anderen Schulsystemen, Unternehmen oder Bildungseinrichtungen.",
-    "copyright": "© {{ year }} Schuly · Gebaut mit",
-    "builtBy": "in der Öffentlichkeit."
+    "disclaimer": "Unabhängiges Open-Source-Projekt. Keine Verbindung zu Schulnetz, der Centerboard AG oder anderen Schulsystemen.",
+    "copyright": "© {{ year }} Schuly · Gebaut mit"
   },
   "notFound": {
     "code": "404",
