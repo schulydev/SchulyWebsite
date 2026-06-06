@@ -13,7 +13,7 @@
     "pillText": "Schulnetz, OdaOrg, and more — in one app",
     "title1": "All your schools,",
     "title2": "in one app.",
-    "sub": "Schuly is your school portal, but made by someone who actually opened it. Grades, agenda, absences — on iOS, Android, and Web. Schulnetz works out of the box, OdaOrg too, more on the way.",
+    "sub": "Schuly brings your grades, schedule, agenda, and absences together in one place. Built for students who want quick access to the school data that matters — on iOS, Android, and the web. Schulnetz and OdaOrg are already supported, with more systems on the way.",
     "ctaDownload": "Download Schuly",
     "ctaGithub": "View on GitHub",
     "stats": {
@@ -24,48 +24,48 @@
   },
   "features": {
     "eyebrow": "Features",
-    "title1": "Everything a student needs.",
-    "title2": "Nothing they don't.",
-    "description": "Built mobile-first. Every feature serves a purpose — no bloat, no eight-second loading screens, no \"system busy, please try again later\".",
+    "title1": "Everything you need.",
+    "title2": "Nothing that slows you down.",
+    "description": "Schuly is built mobile-first — fast, clear, and focused on what matters.",
     "items": {
       "grades": {
         "title": "Grades & analytics",
-        "description": "Every grade visualised with averages, trends, and breakdowns. See your trajectory at a glance — or just see if you're cooked."
+        "description": "Keep track of your performance at any time. Schuly presents grades, averages, and trends in a clear, easy-to-read way."
       },
       "agenda": {
         "title": "Agenda & absences",
-        "description": "Schedule, exams, and absences — synced live, designed to fit on a phone screen. The agony stays in your school system; the convenience is here."
+        "description": "Schedule, exams, and absences sync automatically and are laid out for comfortable use on mobile devices."
       },
       "schulnetz": {
         "title": "Schulnetz, OdaOrg, and more",
-        "description": "Schulnetz and OdaOrg work today. Adding a new school system means writing one backend plugin; the app picks it up automatically."
+        "description": "Schulnetz and OdaOrg work today. Thanks to the modular architecture, more systems can be integrated through a backend plugin, with no changes to the app."
       },
       "multi": {
         "title": "Multiple schools, one app",
-        "description": "Add every school you attend — past, present, primary, secondary, university. Switch between them in a tap; everything stays separate."
+        "description": "Add every school you attend — past, present, or future. Switch between them in a single tap while your data stays cleanly separated."
       },
       "design": {
-        "title": "shadcn-style UI",
-        "description": "Composable primitives, neutral defaults, dark by default. Looks like you'd actually want to open it during a free period."
+        "title": "Modern design",
+        "description": "A clean, modern interface with dark mode and a consistent experience across every platform."
       },
       "platforms": {
         "title": "iOS · Android · Web",
-        "description": "One Flutter codebase, three first-class targets. Your data follows you on every device you forgot to charge."
+        "description": "A shared codebase delivers a native experience on every device — with no compromise on performance or usability."
       },
       "oidc": {
-        "title": "OIDC, end-to-end",
-        "description": "Authentication delegated to your identity provider. No passwords through Schuly, no \"please re-enter your details for the 9th time today\"."
+        "title": "Secure sign-in",
+        "description": "Authentication goes through your school's existing identity provider. Schuly never handles passwords and stores no credentials."
       },
       "fast": {
-        "title": "Lightning fast",
-        "description": "Native compilation, aggressive caching, and a backend that does the heavy lifting once. Opens before your teacher notices."
+        "title": "Fast and reliable",
+        "description": "Aggressive caching, optimized data handling, and a modern architecture keep load times short and the app responsive."
       }
     }
   },
   "screenshots": {
     "eyebrow": "In the app",
-    "title": "A glimpse inside.",
-    "description": "Built mobile-first. Every screen designed to make the boring parts of school admin disappear.",
+    "title": "A look inside the app.",
+    "description": "Schuly is built for everyday use. The information that matters is right where you expect it — no detours.",
     "alts": {
       "start": "Schuly start page — grades and agenda at a glance",
       "agenda": "Schuly agenda page — schedule and upcoming exams",
@@ -76,51 +76,51 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Questions, answered.",
-    "description": "What Schuly is, what it isn't, and how it fits next to the school system you already use (and complain about).",
+    "title": "Frequently asked questions.",
+    "description": "What Schuly is, what it isn't, and how it fits alongside the school system you already use.",
     "items": [
       {
-        "q": "What is Schuly, really?",
-        "a": "Schuly is a free, open-source student portal app. It puts a clean interface on the school systems your schools already use — grades, schedule, agenda, absences — and lets you keep multiple schools in one app. iOS, Android, and Web."
+        "q": "What is Schuly?",
+        "a": "Schuly is a free, open-source app for students. It adds a modern, user-friendly interface for grades, schedule, agenda, and absences on top of the school systems your school already uses — and lets you manage multiple schools in one app. iOS, Android, and Web."
       },
       {
-        "q": "Which school systems does Schuly support?",
-        "a": "Today: Schulnetz (via the Schulware plugin) and OdaOrg. Schulnetz is the most-used integration. Each system is wrapped by a backend plugin, so more can be added without changing the app."
+        "q": "Which school systems are supported?",
+        "a": "Currently Schulnetz (via the Schulware plugin) and OdaOrg, with Schulnetz being the most-used integration. Each system is wrapped by a backend plugin, so more can be added without changing the app."
       },
       {
-        "q": "Wait — is Schuly Schulnetz?",
-        "a": "Nope. Schuly is an independent open-source project. It is not affiliated with, endorsed by, or sponsored by Centerboard AG, your school, or any other company or institution. We just consume their data more politely."
+        "q": "Is Schuly an official part of Schulnetz?",
+        "a": "No. Schuly is an independent open-source project and is not affiliated with Centerboard AG, your school, or any other company or institution."
       },
       {
         "q": "How much does Schuly cost?",
-        "a": "Zero francs. The app, the backend, and the plugin SDK are all open source on GitHub at github.com/schulydev. If it ever costs money, we'll be very loud about it."
+        "a": "Nothing. The app, the backend, and the plugin SDK are fully open source and available on GitHub at github.com/schulydev."
       },
       {
         "q": "Where is my data stored?",
-        "a": "The backend runs on IONOS in Germany. Your data stays in the EU/EEA — no third-country transfer. This website is on Cloudflare Pages and processes only your IP for delivery. That's it."
+        "a": "The backend runs on IONOS in Germany; your data stays within the EU/EEA, with no transfer to third countries. This website is served via Cloudflare Pages, which processes only your IP address for delivery."
       },
       {
         "q": "Does Schuly know my school password?",
-        "a": "Your Schuly account runs on an external OIDC provider (Pocket ID by default; the authority is configurable). Schulnetz uses its own OAuth flow, so no password reaches us. OdaOrg currently uses username and password, posted to the OdaOrg plugin and stored only inside that plugin's isolated database — never read by, or shared with, the rest of the system."
+        "a": "No. Your Schuly account runs on an external OIDC provider (Pocket ID by default, configurable). Schulnetz uses its own OAuth flow, so no password ever reaches us. OdaOrg currently uses a username and password, which are sent only to the OdaOrg plugin and stored only in its isolated database — never read by, or shared with, the rest of the system."
       },
       {
-        "q": "Can my school system be added?",
-        "a": "Yes. The backend loads plugins that wrap each school system — an API wrapper if the system has an API, a scraper if it doesn't. Once the plugin is installed, the school system shows up in the app's \"Add school\" flow. Plugins are written against the Schuly plugin SDK on GitHub."
+        "q": "Can my school system be integrated?",
+        "a": "Yes. The backend loads plugins that wrap a school system — an API wrapper where an interface exists, otherwise a scraper. Once installed, the system appears in the app's \"Add school\" flow. Plugins are developed against the Schuly plugin SDK on GitHub."
       },
       {
-        "q": "I don't trust my data to Schuly. What can I do?",
-        "a": "Healthy. Schuly is fully open source — the app, the backend, the plugins, the plugin SDK, and this website all live on GitHub at github.com/schulydev. Read every line, audit what we do with your data, and self-host the backend if you want full control. The app can be pointed at your own backend; nothing has to go through ours."
+        "q": "I don't want to trust Schuly with my data. What can I do?",
+        "a": "An understandable position. The entire source code — app, backend, plugins, SDK, and this website — is publicly available on GitHub at github.com/schulydev. You can review every line, verify how your data is handled, and run the backend yourself if you want full control. The app can be pointed at your own backend."
       },
       {
         "q": "Is Schuly open source? Can I contribute?",
-        "a": "Yes and yes. Every component is on GitHub at github.com/schulydev. Issues with the \"bug\" or \"feature\" label are the easiest place to start. Bonus points for fixing a typo in this FAQ."
+        "a": "Yes. Every component lives on GitHub at github.com/schulydev. Issues labelled \"bug\" or \"feature\" are the easiest place to start. Contributions from the community are always welcome."
       }
     ]
   },
   "download": {
     "eyebrow": "Get Schuly",
-    "title": "Ready when you are.",
-    "description": "Available on every device a student carries. Open source, free, and built in public.",
+    "title": "Ready to get started?",
+    "description": "Schuly is free, open source, and available on every major platform.",
     "comingSoon": "Coming soon",
     "appStore": "App Store",
     "googlePlay": "Google Play",
@@ -132,9 +132,9 @@
       "webSoon": "Web (soon)"
     },
     "note": {
-      "prefix": "Requires a SchulyBackend instance. See the ",
-      "linkText": "backend repo",
-      "suffix": " for self-hosting docs."
+      "prefix": "A compatible SchulyBackend instance is required. You'll find self-hosting documentation in the ",
+      "linkText": "backend repository",
+      "suffix": "."
     }
   },
   "footer": {
@@ -158,14 +158,14 @@
       "terms": "Terms of Use",
       "coffee": "Buy me a coffee"
     },
-    "disclaimer": "Not affiliated with Schulnetz, Centerboard AG, or any other school system, company, or institution. Independent open-source project.",
+    "disclaimer": "Schuly is an independent open-source project and is not affiliated with Schulnetz, Centerboard AG, or any other school system, company, or educational institution.",
     "copyright": "© {{ year }} Schuly · Built with",
     "builtBy": "in the open."
   },
   "notFound": {
     "code": "404",
     "title": "Page not found.",
-    "sub": "The URL you followed does not exist on schuly.dev. It might have moved, been renamed, or never existed at all. Like that homework deadline your teacher swears they mentioned.",
+    "sub": "The address you followed does not exist on schuly.dev. It may have moved, been renamed, or never existed at all.",
     "back": "Back home",
     "report": "Report a broken link"
   },
