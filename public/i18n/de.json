@@ -13,7 +13,7 @@
     "pillText": "Schulnetz, OdaOrg und mehr – in einer App",
     "title1": "Alle deine Schulen,",
     "title2": "in einer App.",
-    "sub": "Schuly ist dein Schulportal, aber gebaut von jemandem, der es tatsächlich öffnet. Noten, Stundenplan, Absenzen – auf iOS, Android und Web. Schulnetz läuft out of the box, OdaOrg auch, mehr ist unterwegs.",
+    "sub": "Schuly bringt Noten, Stundenplan, Agenda und Absenzen an einen Ort. Entwickelt für Lernende und Studierende, die schnellen Zugriff auf ihre wichtigsten Schuldaten möchten – auf iOS, Android und im Browser. Schulnetz und OdaOrg werden bereits unterstützt, weitere Systeme folgen.",
     "ctaDownload": "Schuly herunterladen",
     "ctaGithub": "Auf GitHub ansehen",
     "stats": {
@@ -25,47 +25,47 @@
   "features": {
     "eyebrow": "Features",
     "title1": "Alles, was du brauchst.",
-    "title2": "Nichts, was du nicht brauchst.",
-    "description": "Mobile First gebaut. Jedes Feature hat einen Zweck – kein Bloat, keine drölf Sekunden Ladezeit, kein «System ausgelastet, bitte später nochmals versuchen».",
+    "title2": "Nichts, was dich aufhält.",
+    "description": "Schuly wurde von Grund auf für mobile Geräte entwickelt. Schnell, übersichtlich und auf das Wesentliche fokussiert.",
     "items": {
       "grades": {
-        "title": "Noten & Statistik",
-        "description": "Jede Note visualisiert mit Durchschnitten, Trends und Aufschlüsselungen. Schau auf einen Blick, wo du stehst – oder ob du eh cooked bist."
+        "title": "Noten & Auswertungen",
+        "description": "Behalte deine Leistungen jederzeit im Blick. Schuly stellt Noten, Durchschnitte und Entwicklungen übersichtlich und verständlich dar."
       },
       "agenda": {
         "title": "Agenda & Absenzen",
-        "description": "Stundenplan, Prüfungen und Absenzen – live synchronisiert, designt für den Handy-Screen. Das Drama bleibt im Schulsystem, die Bedienung ist hier."
+        "description": "Stundenplan, Prüfungen und Absenzen werden automatisch synchronisiert und für die Nutzung auf mobilen Geräten optimiert dargestellt."
       },
       "schulnetz": {
         "title": "Schulnetz, OdaOrg und mehr",
-        "description": "Schulnetz und OdaOrg laufen schon. Ein neues Schulsystem heisst: ein Backend-Plugin schreiben. Die App fängt es automatisch auf."
+        "description": "Schulnetz und OdaOrg funktionieren bereits heute. Dank der modularen Architektur lassen sich weitere Systeme über ein Backend-Plugin integrieren, ohne dass die App geändert werden muss."
       },
       "multi": {
         "title": "Mehrere Schulen, eine App",
-        "description": "Füg jede Schule hinzu, an der du bist – vergangen, aktuell, Primar, Sek, Uni. Wechsle mit einem Tap, alles bleibt schön getrennt."
+        "description": "Füge alle deine Schulen hinzu – vergangene, aktuelle oder zukünftige. Wechsle mit einem Klick zwischen ihnen, während die Daten sauber getrennt bleiben."
       },
       "design": {
-        "title": "shadcn-Style-UI",
-        "description": "Kombinierbare Bausteine, neutrale Defaults, Dark Mode by default. Sieht so aus, dass du sie freiwillig in der Freistunde öffnest."
+        "title": "Modernes Design",
+        "description": "Ein klares, modernes Interface mit Dark Mode und einer konsistenten Bedienung auf allen Plattformen."
       },
       "platforms": {
         "title": "iOS · Android · Web",
-        "description": "Eine Flutter-Codebase, drei First-Class-Targets. Deine Daten folgen dir auf jedes Gerät, das du vergessen hast zu laden."
+        "description": "Eine gemeinsame Codebasis sorgt für eine native Erfahrung auf allen Geräten – ohne Kompromisse bei Leistung oder Bedienung."
       },
       "oidc": {
-        "title": "OIDC, end-to-end",
-        "description": "Authentifizierung läuft über deinen Identity-Provider. Kein Passwort durch Schuly, kein «bitte gib zum 9. Mal heute deine Daten ein»."
+        "title": "Sichere Anmeldung",
+        "description": "Die Authentifizierung erfolgt über den bestehenden Identity Provider deiner Schule. Schuly verarbeitet keine Passwörter und speichert keine Zugangsdaten."
       },
       "fast": {
-        "title": "Schnell",
-        "description": "Native kompiliert, aggressiv gecached, ein Backend, das die Arbeit einmal macht. Schneller offen, als deine Lehrperson schaut."
+        "title": "Schnell und zuverlässig",
+        "description": "Aggressives Caching, optimierte Datenverarbeitung und eine moderne Architektur sorgen für kurze Ladezeiten und eine reaktionsschnelle App."
       }
     }
   },
   "screenshots": {
     "eyebrow": "In der App",
-    "title": "Ein kleiner Blick rein.",
-    "description": "Mobile First gebaut. Jedes Screen so designt, dass der langweilige Teil von Schule verschwindet.",
+    "title": "Ein Blick in die App.",
+    "description": "Schuly wurde für den Alltag entwickelt. Die wichtigsten Informationen sind dort, wo du sie erwartest – ohne Umwege.",
     "alts": {
       "start": "Schuly-Startseite – Noten und Agenda auf einen Blick",
       "agenda": "Schuly-Agenda – Stundenplan und kommende Prüfungen",
@@ -76,51 +76,51 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Fragen, beantwortet.",
-    "description": "Was Schuly ist, was es nicht ist und wie es zu dem Schulsystem passt, das du eh schon (gezwungenermassen) nutzt.",
+    "title": "Häufige Fragen.",
+    "description": "Was Schuly ist, was es nicht ist und wie es sich in das Schulsystem einfügt, das du bereits nutzt.",
     "items": [
       {
-        "q": "Was ist Schuly eigentlich?",
-        "a": "Schuly ist eine kostenlose, Open-Source-Studierenden-App. Sie legt eine saubere Oberfläche über das Schulsystem, das deine Schule eh schon benutzt – Noten, Stundenplan, Agenda, Absenzen – und lässt dich mehrere Schulen in einer App halten. iOS, Android und Web."
+        "q": "Was ist Schuly?",
+        "a": "Schuly ist eine kostenlose Open-Source-App für Lernende und Studierende. Sie ergänzt bestehende Schulsysteme um eine moderne, benutzerfreundliche Oberfläche für Noten, Stundenplan, Agenda und Absenzen – und lässt dich mehrere Schulen in einer App verwalten. iOS, Android und Web."
       },
       {
-        "q": "Welche Schulsysteme unterstützt Schuly?",
-        "a": "Heute: Schulnetz (via Schulware-Plugin) und OdaOrg. Schulnetz ist die meistgenutzte Integration. Jedes System ist von einem Backend-Plugin umhüllt, also können weitere dazukommen, ohne dass die App geändert wird."
+        "q": "Welche Schulsysteme werden unterstützt?",
+        "a": "Aktuell Schulnetz (über das Schulware-Plugin) und OdaOrg, wobei Schulnetz die meistgenutzte Integration ist. Jedes System wird von einem Backend-Plugin gekapselt, sodass weitere ohne Änderung der App hinzukommen können."
       },
       {
-        "q": "Moment – ist Schuly Schulnetz?",
-        "a": "Nein. Schuly ist ein unabhängiges Open-Source-Projekt. Keine Verbindung zur Centerboard AG, zu deiner Schule oder irgendeiner anderen Firma oder Institution. Wir konsumieren ihre Daten einfach höflicher."
+        "q": "Ist Schuly ein offizieller Teil von Schulnetz?",
+        "a": "Nein. Schuly ist ein unabhängiges Open-Source-Projekt und steht in keiner Verbindung zur Centerboard AG, zu deiner Schule oder zu einem anderen Unternehmen oder einer Institution."
       },
       {
         "q": "Was kostet Schuly?",
-        "a": "Null Franken. App, Backend und Plugin-SDK sind alle Open Source auf GitHub unter github.com/schulydev. Falls es jemals etwas kostet, sagen wir es sehr laut."
+        "a": "Nichts. App, Backend und Plugin-SDK sind vollständig Open Source und auf GitHub unter github.com/schulydev verfügbar."
       },
       {
         "q": "Wo werden meine Daten gespeichert?",
-        "a": "Das Backend läuft bei IONOS in Deutschland. Deine Daten bleiben im EU/EWR-Raum – keine Übermittlung in Drittländer. Diese Website läuft auf Cloudflare Pages und verarbeitet nur deine IP für die Auslieferung. Mehr nicht."
+        "a": "Das Backend läuft bei IONOS in Deutschland; deine Daten bleiben im EU/EWR-Raum, ohne Übermittlung in Drittländer. Diese Website wird über Cloudflare Pages ausgeliefert und verarbeitet dafür lediglich deine IP-Adresse."
       },
       {
-        "q": "Kennt Schuly mein Schul-Passwort?",
-        "a": "Dein Schuly-Konto läuft über einen externen OIDC-Anbieter (standardmässig Pocket ID, konfigurierbar). Schulnetz nutzt seinen eigenen OAuth-Flow, also erreicht uns kein Passwort. OdaOrg verwendet aktuell Benutzername und Passwort, die ans OdaOrg-Plugin gepostet und nur in dessen isolierter Datenbank gespeichert werden – nie vom Rest des Systems gelesen oder geteilt."
+        "q": "Kennt Schuly mein Schulpasswort?",
+        "a": "Nein. Dein Schuly-Konto läuft über einen externen OIDC-Anbieter (standardmässig Pocket ID, konfigurierbar). Schulnetz nutzt seinen eigenen OAuth-Flow, sodass uns kein Passwort erreicht. OdaOrg verwendet derzeit Benutzername und Passwort, die ausschliesslich an das OdaOrg-Plugin übermittelt und nur in dessen isolierter Datenbank gespeichert werden – vom übrigen System weder gelesen noch geteilt."
       },
       {
-        "q": "Kann mein Schulsystem hinzugefügt werden?",
-        "a": "Ja. Das Backend lädt Plugins, die jedes Schulsystem umhüllen – ein API-Wrapper, wenn das System eine API hat, ein Scraper, wenn nicht. Sobald das Plugin installiert ist, taucht das Schulsystem im «Schule hinzufügen»-Flow der App auf. Plugins werden gegen das Schuly-Plugin-SDK auf GitHub geschrieben."
+        "q": "Kann mein Schulsystem integriert werden?",
+        "a": "Ja. Das Backend lädt Plugins, die ein Schulsystem kapseln – einen API-Wrapper, wenn eine Schnittstelle vorhanden ist, andernfalls einen Scraper. Nach der Installation erscheint das System im «Schule hinzufügen»-Dialog der App. Plugins werden gegen das Schuly-Plugin-SDK auf GitHub entwickelt."
       },
       {
-        "q": "Ich vertraue Schuly meine Daten nicht. Was kann ich tun?",
-        "a": "Gesunde Einstellung. Schuly ist komplett Open Source – App, Backend, Plugins, SDK und diese Website liegen alle auf GitHub unter github.com/schulydev. Lies jede Zeile, prüf was wir mit deinen Daten machen, und hoste das Backend selbst, wenn du volle Kontrolle willst. Die App kann auf dein eigenes Backend zeigen; nichts muss durch unseres."
+        "q": "Ich möchte Schuly meine Daten nicht anvertrauen. Was kann ich tun?",
+        "a": "Eine nachvollziehbare Haltung. Der gesamte Quellcode – App, Backend, Plugins, SDK und diese Website – ist auf GitHub unter github.com/schulydev öffentlich einsehbar. Du kannst jede Zeile prüfen, nachvollziehen, wie mit deinen Daten umgegangen wird, und das Backend selbst betreiben, wenn du die volle Kontrolle möchtest. Die App lässt sich auf dein eigenes Backend richten."
       },
       {
         "q": "Ist Schuly Open Source? Kann ich beitragen?",
-        "a": "Ja und ja. Jede Komponente liegt auf GitHub unter github.com/schulydev. Issues mit dem «bug»- oder «feature»-Label sind der einfachste Einstieg. Bonuspunkte für einen Tippfehler in diesem FAQ."
+        "a": "Ja. Sämtliche Komponenten liegen auf GitHub unter github.com/schulydev. Issues mit dem Label «bug» oder «feature» sind der einfachste Einstieg. Beiträge aus der Community sind jederzeit willkommen."
       }
     ]
   },
   "download": {
     "eyebrow": "Schuly holen",
-    "title": "Wenn du bereit bist.",
-    "description": "Verfügbar auf jedem Gerät, das du sowieso dabei hast. Open Source, kostenlos, in der Öffentlichkeit gebaut.",
+    "title": "Bereit loszulegen?",
+    "description": "Schuly ist kostenlos, Open Source und auf allen wichtigen Plattformen verfügbar.",
     "comingSoon": "Bald verfügbar",
     "appStore": "App Store",
     "googlePlay": "Google Play",
@@ -132,9 +132,9 @@
       "webSoon": "Web (bald)"
     },
     "note": {
-      "prefix": "Benötigt eine SchulyBackend-Instanz. Siehe das ",
-      "linkText": "Backend-Repo",
-      "suffix": " für Self-Hosting-Docs."
+      "prefix": "Für die Nutzung wird eine kompatible SchulyBackend-Instanz benötigt. Informationen zum Selbsthosting findest du im ",
+      "linkText": "Backend-Repository",
+      "suffix": "."
     }
   },
   "footer": {
@@ -158,14 +158,14 @@
       "terms": "Nutzungsbedingungen",
       "coffee": "Buy me a coffee"
     },
-    "disclaimer": "Nicht verbunden mit Schulnetz, Centerboard AG oder irgendeinem anderen Schulsystem, Unternehmen oder Institution. Unabhängiges Open-Source-Projekt.",
+    "disclaimer": "Schuly ist ein unabhängiges Open-Source-Projekt und steht in keiner Verbindung zu Schulnetz, der Centerboard AG oder anderen Schulsystemen, Unternehmen oder Bildungseinrichtungen.",
     "copyright": "© {{ year }} Schuly · Gebaut mit",
     "builtBy": "in der Öffentlichkeit."
   },
   "notFound": {
     "code": "404",
     "title": "Seite nicht gefunden.",
-    "sub": "Die URL, der du gefolgt bist, gibt es auf schuly.dev nicht. Vielleicht ist sie umgezogen, umbenannt worden oder hat nie existiert. Wie diese Hausaufgaben-Deadline, die deine Lehrperson schwört, erwähnt zu haben.",
+    "sub": "Die aufgerufene Adresse existiert auf schuly.dev nicht. Möglicherweise wurde sie verschoben, umbenannt oder hat nie existiert.",
     "back": "Zurück zur Startseite",
     "report": "Defekten Link melden"
   },

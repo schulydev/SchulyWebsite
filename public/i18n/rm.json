@@ -13,7 +13,7 @@
     "pillText": "Schulnetz, OdaOrg ed auter – en in'app",
     "title1": "Tut tias scolas,",
     "title2": "en in'app.",
-    "sub": "Schuly è tes portal da scola, ma fatg da insatgi che l'avra propi. Notas, agenda, absenzas – sin iOS, Android e Web. Schulnetz funcziuna immediat, OdaOrg er, ulteriurs vegnan.",
+    "sub": "Schuly reunescha notas, urari, agenda ed absenzas en in sulet lieu. Concepì per scolars che vulan in access svelt a las datas da scola impurtantas – sin iOS, Android ed en l'internet. Schulnetz ed OdaOrg vegnan gia sustegnids, ulteriurs sistems suandan.",
     "ctaDownload": "Telechargiar Schuly",
     "ctaGithub": "Guardar sin GitHub",
     "stats": {
@@ -24,103 +24,103 @@
   },
   "features": {
     "eyebrow": "Funcziuns",
-    "title1": "Tut quai ch'in scolar dovra.",
-    "title2": "Nagut auter.",
-    "description": "Concepì per il telefonin. Mintga funcziun ha in intent – nagin overhead, nagins temps da chargiar senza fin, nagin «sistem occupà, emprova pli tard».",
+    "title1": "Tut quai che ti dovras.",
+    "title2": "Nagut che ta retegna.",
+    "description": "Schuly è concepì en emprima lingia per il telefonin – svelt, cler e concentrà sin l'essenzial.",
     "items": {
       "grades": {
         "title": "Notas e statistica",
-        "description": "Mintga nota visualisada cun medias, tendenzas e dettagls. Vesa tia situaziun cun in egliada."
+        "description": "Mantegna tias prestaziuns adina en vista. Schuly preschenta notas, medias e tendenzas en moda clera e leghibla."
       },
       "agenda": {
         "title": "Agenda ed absenzas",
-        "description": "Urari, examens ed absenzas – sincronisads en directa, fatgs per il schermin dal telefonin."
+        "description": "Urari, examens ed absenzas vegnan sincronisads automaticamain e preschentads optimads per apparats mobils."
       },
       "schulnetz": {
         "title": "Schulnetz, OdaOrg ed auter",
-        "description": "Schulnetz ed OdaOrg funcziunan oz. Per agiuntar in nov sistem da scola dovra in plugin per il backend; l'app il prenda automaticamain."
+        "description": "Schulnetz ed OdaOrg funcziunan gia oz. Grazia a l'architectura modulara pon vegnir integrads ulteriurs sistems cun in plugin per il backend, senza midar l'app."
       },
       "multi": {
         "title": "Pliras scolas, in'app",
-        "description": "Agiunta mintga scola che ti visitas – passada, actuala, primara, secundara, universitad. Mida cun in tap, tut resta separà."
+        "description": "Agiunta mintga scola che ti visitas – passada, actuala u futura. Mida tranter ellas cun in tap, las datas restan separadas a moda netta."
       },
       "design": {
-        "title": "UI da stil shadcn",
-        "description": "Elements combinabels, defaults neutrals, dark mode tar standard. Para in'app che ti vuls propi avrir."
+        "title": "Design modern",
+        "description": "In'interfatscha clera e moderna cun dark mode ed ina experientscha coerenta sin tut las plattafurmas."
       },
       "platforms": {
         "title": "iOS · Android · Web",
-        "description": "Ina basa Flutter, trais finamiras da prima classa. Tias datas ta seguan sin mintga apparat che ti has emblidà da chargiar."
+        "description": "Ina basa da code communabla porscha in'experientscha nativa sin mintga apparat – senza cumpromiss areguard prestaziun u maniabladad."
       },
       "oidc": {
-        "title": "OIDC, end-to-end",
-        "description": "L'autenticaziun va sur tes purvider d'identitad. Nagin pled-clav tras Schuly."
+        "title": "Login segir",
+        "description": "L'autenticaziun va sur il purvider d'identitad existent da tia scola. Schuly na tracta nagins pleds-clav e na memorisescha nagins datas d'access."
       },
       "fast": {
-        "title": "Sveltissim",
-        "description": "Compilaziun nativa, caching aggressiv ed in backend che fa il lavur ina giada. S'avra avant che l'instructur al remartga."
+        "title": "Svelt e fidabel",
+        "description": "Caching aggressiv, tractament da datas optimà ed in'architectura moderna garanteschan temps da chargiar curts ed in'app reactiva."
       }
     }
   },
   "screenshots": {
     "eyebrow": "En l'app",
-    "title": "In sguard a l'intern.",
-    "description": "Concepì per il telefonin. Mintga pagina è fatga per laschar svanir la part naussa da l'administraziun da scola.",
+    "title": "In sguard en l'app.",
+    "description": "Schuly è concepì per il mintgadi. Las infurmaziuns impurtantas èn là nua che ti las spetgas – senza deturs.",
     "alts": {
       "start": "Pagina da partenza Schuly – notas ed agenda",
       "agenda": "Pagina agenda Schuly – urari ed examens",
       "grades": "Pagina da notas Schuly – medias e diagram",
-      "absences": "Pagina d'absenzas Schuly – sxcusadas e nunsxcusadas",
+      "absences": "Pagina d'absenzas Schuly – scusadas e nunscusadas",
       "account": "Pagina da conto Schuly – profil e tschernidur da scolas"
     }
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Dumondas, respostas.",
-    "description": "Tge è Schuly, tge na n'è el betg e co s'adatta al sistem da scola che ti utiliseschas gia.",
+    "title": "Dumondas frequentas.",
+    "description": "Tge è Schuly, tge n'è el betg e co s'adatta al sistem da scola che ti utiliseschas gia.",
     "items": [
       {
-        "q": "Tge è Schuly propi?",
-        "a": "Schuly è in'app open source e gratuita per scolars. Metta ina interfatscha sauberga sin il sistem da scola che tia scola utilisescha gia – notas, urari, agenda, absenzas – e ta lascha tegnair pliras scolas en in'app. iOS, Android e Web."
+        "q": "Tge è Schuly?",
+        "a": "Schuly è in'app open source e gratuita per scolars. Ella agiunta ina interfatscha moderna e maniabla per notas, urari, agenda ed absenzas sin ils sistems da scola che tia scola utilisescha gia – e ta lascha administrar pliras scolas en in'app. iOS, Android e Web."
       },
       {
-        "q": "Tge sistems da scola sustegna Schuly?",
-        "a": "Oz: Schulnetz (cun il plugin Schulware) ed OdaOrg. Schulnetz è la pli utilisada integraziun. Mintga sistem è cuvert d'in plugin per il backend, talmain che ulteriurs pon vegnir agiuntads senza midar l'app."
+        "q": "Tge sistems da scola vegnan sustegnids?",
+        "a": "Actualmain Schulnetz (cun il plugin Schulware) ed OdaOrg, cun Schulnetz sco l'integraziun la pli utilisada. Mintga sistem è cuvert d'in plugin per il backend, talmain che ulteriurs pon vegnir agiuntads senza midar l'app."
       },
       {
-        "q": "Spetga – è Schuly Schulnetz?",
-        "a": "Na. Schuly è in project independent open source. Nagina relaziun cun Centerboard AG, cun tia scola u cun in'autra interpresa u instituziun."
+        "q": "È Schuly ina part uffiziala da Schulnetz?",
+        "a": "Na. Schuly è in project independent open source e n'ha nagina relaziun cun Centerboard AG, cun tia scola u cun in'autra interpresa u instituziun."
       },
       {
         "q": "Quant custa Schuly?",
-        "a": "Nagins francs. L'app, il backend ed il plugin SDK èn tuts open source sin GitHub sut github.com/schulydev."
+        "a": "Nagut. L'app, il backend ed il plugin SDK èn cumplettamain open source e disponibels sin GitHub sut github.com/schulydev."
       },
       {
         "q": "Nua èn mias datas memorisadas?",
-        "a": "Il backend gira tar IONOS en Germania. Tias datas restan en il spazi UE/SEE – nagina transmissiun en pajais tiers. Questa pagina è sin Cloudflare Pages e tracta mo tia IP per la furnitura."
+        "a": "Il backend gira tar IONOS en Germania; tias datas restan en il spazi UE/SEE, senza transmissiun en pajais tiers. Questa pagina vegn furnida via Cloudflare Pages, che tracta mo tia adressa IP per la furnitura."
       },
       {
         "q": "Sa Schuly mes pled-clav da scola?",
-        "a": "Tes conto Schuly gira sur in purvider OIDC extern (Pocket ID tar standard, configurabel). Schulnetz utilisescha sia atgna procedura OAuth, talmain ch'i na vegn nagin pled-clav tar nus. OdaOrg utilisescha actualmain num e pled-clav, transmessas al plugin OdaOrg e memorisadas mo en sia banca da datas isolada – mai legidas u cundividas cun il rest dal sistem."
+        "a": "Na. Tes conto Schuly gira sur in purvider OIDC extern (Pocket ID tar standard, configurabel). Schulnetz utilisescha sia atgna procedura OAuth, talmain ch'i na vegn nagin pled-clav tar nus. OdaOrg utilisescha actualmain num e pled-clav, transmess mo al plugin OdaOrg e memorisads mo en sia banca da datas isolada – mai legids u cundividids cun il rest dal sistem."
       },
       {
-        "q": "Po mes sistem da scola vegnir agiuntà?",
-        "a": "Gea. Il backend chargia plugins che cuvran mintga sistem da scola – in wrapper d'API sch'il sistem ha in'API, in scraper schal n'ha betg. Sch'il plugin è installà, cumpara il sistem da scola en la procedura «Agiuntar scola» da l'app."
+        "q": "Po mes sistem da scola vegnir integrà?",
+        "a": "Gea. Il backend chargia plugins che cuvran in sistem da scola – in wrapper d'API sch'i exista in'interfatscha, uschiglio in scraper. Suenter l'installaziun cumpara il sistem en la procedura «Agiuntar scola» da l'app. Ils plugins vegnan sviluppads cun il plugin SDK da Schuly sin GitHub."
       },
       {
-        "q": "Jau na confid betg en Schuly cun mias datas. Tge poss jau far?",
-        "a": "Bun atgnant. Schuly è cumplettamain open source – l'app, il backend, ils plugins, l'SDK e questa pagina vivan sin GitHub sut github.com/schulydev. Legia mintga lingia, controllescha tge che nus fain cun tias datas ed ospitescha sez il backend, sche ti vuls cuntrolla cumpletta."
+        "q": "Jau na vi betg confidar mias datas a Schuly. Tge poss jau far?",
+        "a": "Ina posiziun chapibla. Tut il code da funtauna – l'app, il backend, ils plugins, l'SDK e questa pagina – è disponibel publicamain sin GitHub sut github.com/schulydev. Ti pos controllar mintga lingia, verifitgar co che tias datas vegnan tractadas ed ospitar sez il backend, sche ti vuls la cuntrolla cumpletta. L'app po vegnir drizzada sin tes agen backend."
       },
       {
         "q": "Èsi Schuly open source? Poss jau cuntribuir?",
-        "a": "Gea e gea. Mintga component è sin GitHub sut github.com/schulydev. Ils issues cun il label «bug» u «feature» èn il punct d'entrada il pli simpel."
+        "a": "Gea. Mintga component è sin GitHub sut github.com/schulydev. Ils issues cun il label «bug» u «feature» èn il punct d'entrada il pli simpel. Cuntribuziuns da la communitad èn adina bainvegnidas."
       }
     ]
   },
   "download": {
     "eyebrow": "Telechargiar Schuly",
-    "title": "Pront cur che ti es.",
-    "description": "Disponibel sin mintga apparat ch'in scolar porta cun el. Open source, gratuit, construì en public.",
+    "title": "Pront da cumenzar?",
+    "description": "Schuly è gratuit, open source e disponibel sin tut las plattafurmas impurtantas.",
     "comingSoon": "Prest disponibel",
     "appStore": "App Store",
     "googlePlay": "Google Play",
@@ -132,9 +132,9 @@
       "webSoon": "Web (prest)"
     },
     "note": {
-      "prefix": "Pretenda in'instanza SchulyBackend. Vesair il ",
+      "prefix": "I dovra in'instanza SchulyBackend cumpatibla. La documentaziun da self-hosting chattas ti en il ",
       "linkText": "repo dal backend",
-      "suffix": " per la documentaziun da self-hosting."
+      "suffix": "."
     }
   },
   "footer": {
@@ -158,14 +158,14 @@
       "terms": "Cundiziuns d'utilisaziun",
       "coffee": "Cumprai a mai in café"
     },
-    "disclaimer": "Nagina relaziun cun Schulnetz, Centerboard AG u in auter sistem da scola, interpresa u instituziun. Project independent open source.",
+    "disclaimer": "Schuly è in project independent open source e n'ha nagina relaziun cun Schulnetz, la Centerboard AG u in auter sistem da scola, interpresa u instituziun d'educaziun.",
     "copyright": "© {{ year }} Schuly · Construì cun",
     "builtBy": "en public."
   },
   "notFound": {
     "code": "404",
     "title": "Pagina betg chattada.",
-    "sub": "L'URL che ti has suandà n'exista betg sin schuly.dev. Probablamain è ella vegnida spustada, renumnada u n'è mai existida.",
+    "sub": "L'adressa che ti has suandà n'exista betg sin schuly.dev. Probablamain è ella vegnida spustada, renumnada u n'è mai existida.",
     "back": "Enavos a la pagina principala",
     "report": "Annunziar in link rut"
   },
