@@ -2,7 +2,7 @@
 
 > Open-source student portal for iOS, Android, and Web. Schulnetz supported out of the box; more school systems via backend plugins. Free and built in the open.
 
-Schuly is a free, open-source mobile and web app that gives students a modern interface on top of their school's existing student information system. The Flutter app handles UI; a C# / ASP.NET Core backend (hosted on IONOS Germany) handles sync. Different school systems are integrated by writing backend plugins against the Schuly plugin SDK - the app picks up a new system once its plugin is installed. Currently shipping plugins cover Schulnetz (via Schulware) and OdaOrg. Authentication for the Schuly account itself goes through an external OIDC provider (Pocket ID by default; configurable).
+Schuly is a free, open-source mobile and web app that gives students a modern interface on top of their school's existing student information system. The Flutter app handles UI; a C# / ASP.NET Core backend (hosted on IONOS France) handles sync. Different school systems are integrated by writing backend plugins against the Schuly plugin SDK - the app picks up a new system once its plugin is installed. Currently shipping plugins cover Schulnetz (via Schulware) and OdaOrg. Authentication for the Schuly account itself goes through an external OIDC provider (Pocket ID by default; configurable).
 
 Schuly is an independent project. It is not affiliated with, endorsed by, or sponsored by Centerboard AG or any school, company, or institution.
 
