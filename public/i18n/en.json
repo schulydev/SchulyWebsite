@@ -97,7 +97,7 @@
       },
       {
         "q": "Where is my data stored?",
-        "a": "The backend runs on IONOS in Germany; your data stays within the EU/EEA, with no transfer to third countries. This website is served via Cloudflare Pages, which processes only your IP address for delivery."
+        "a": "The backend runs on IONOS in France; your data stays within the EU/EEA, with no transfer to third countries. This website is served via Cloudflare Pages, which processes only your IP address for delivery."
       },
       {
         "q": "Does Schuly know my school password?",
