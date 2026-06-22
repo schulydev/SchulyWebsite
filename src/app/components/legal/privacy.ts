@@ -11,7 +11,7 @@ import { LanguageService } from '../../services/language';
       <div class="legal-container">
         <div class="legal-eyebrow">Privacy</div>
         <h1 class="legal-title">{{ 'legal.privacy' | translate }}</h1>
-        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 28.05.2026</p>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 22.06.2026</p>
 
         <div class="legal-body">
           @if (showFallbackNotice()) {
@@ -47,7 +47,7 @@ import { LanguageService } from '../../services/language';
             </p>
             <p>
               <strong>Backend-Server:</strong> Das SchulyBackend, das die App nutzt, wird bei
-              <strong>IONOS SE</strong> in Deutschland betrieben. Es findet <em>keine</em> Übermittlung in
+              <strong>IONOS SE</strong> in Frankreich betrieben. Es findet <em>keine</em> Übermittlung in
               ein Drittland statt; die App-Daten verbleiben im EU-/EWR-Raum. Mit IONOS besteht ein
               Auftragsverarbeitungsvertrag nach Art. 28 DSGVO bzw. Art. 9 revDSG.
             </p>
@@ -121,7 +121,7 @@ import { LanguageService } from '../../services/language';
                 Framework (zertifiziert).
               </li>
               <li>
-                <strong>IONOS SE</strong> (Montabaur, Deutschland) - Hosting des SchulyBackends, ISO-27001-
+                <strong>IONOS SE</strong> (Montabaur, Deutschland) - Hosting des SchulyBackends in Frankreich, ISO-27001-
                 zertifiziert, AVV nach Art. 28 DSGVO.
               </li>
               <li>
@@ -129,7 +129,7 @@ import { LanguageService } from '../../services/language';
                 Website angezeigten Stern- und Download-Statistiken.
               </li>
               <li>
-                <strong>Pocket-ID-OIDC-Anbieter</strong> (von uns betrieben, IONOS Deutschland) -
+                <strong>Pocket-ID-OIDC-Anbieter</strong> (von uns betrieben, IONOS Frankreich) -
                 Authentifizierung deines Schuly-Accounts.
               </li>
               <li>
@@ -154,7 +154,7 @@ import { LanguageService } from '../../services/language';
               <strong>Daten-Cache mit Sync-Funktion</strong>. Deine Noten, Absenzen, Stundenpläne und
               persönlichen Stammdaten werden <strong>von deiner Schule</strong> in deren Schulsystem
               (z.&nbsp;B. Schulnetz) erfasst und gepflegt. Schuly synchronisiert diese Daten in deinem
-              Namen und speichert sie als Kopie auf dem Backend (IONOS, Deutschland), damit die App
+              Namen und speichert sie als Kopie auf dem Backend (IONOS, Frankreich), damit die App
               schnell und offline funktioniert.
             </p>
             <p>Daraus ergeben sich zwei Verantwortungsbereiche:</p>
@@ -256,7 +256,7 @@ import { LanguageService } from '../../services/language';
             </p>
             <p>
               <strong>Backend servers:</strong> The SchulyBackend used by the app is hosted at
-              <strong>IONOS SE</strong> in Germany. There is <em>no</em> transfer to a third country;
+              <strong>IONOS SE</strong> in France. There is <em>no</em> transfer to a third country;
               app data stays in the EU/EEA. A data processing agreement under Art. 28 GDPR / Art. 9 revDSG
               is in place with IONOS.
             </p>
@@ -306,9 +306,9 @@ import { LanguageService } from '../../services/language';
             <h2>3. Recipients / processors</h2>
             <ul>
               <li><strong>Cloudflare Inc.</strong> (USA) - website hosting. Swiss-US Data Privacy Framework (certified).</li>
-              <li><strong>IONOS SE</strong> (Montabaur, Germany) - SchulyBackend hosting, ISO 27001 certified, Art. 28 GDPR DPA in place.</li>
+              <li><strong>IONOS SE</strong> (Montabaur, Germany) - SchulyBackend hosting in France, ISO 27001 certified, Art. 28 GDPR DPA in place.</li>
               <li><strong>GitHub Inc.</strong> (USA) - source-code and release hosting; source of the stats shown on the site.</li>
-              <li><strong>Pocket ID OIDC provider</strong> (operated by us on IONOS Germany) - authentication for your Schuly account.</li>
+              <li><strong>Pocket ID OIDC provider</strong> (operated by us on IONOS France) - authentication for your Schuly account.</li>
               <li><strong>The school system(s)</strong> you have added in the app - their endpoints (as implemented in the relevant plugin) are called during sync.</li>
             </ul>
 
@@ -327,7 +327,7 @@ import { LanguageService } from '../../services/language';
               <strong>data cache with sync</strong>. Your grades, absences, schedule, and personal master
               data are recorded and maintained <strong>by your school</strong> in their school system
               (e.g. Schulnetz). Schuly syncs that data on your behalf and keeps a copy on the backend
-              (IONOS, Germany) so the app is fast and works offline.
+              (IONOS, France) so the app is fast and works offline.
             </p>
             <p>This creates two distinct areas of responsibility:</p>
             <ul>

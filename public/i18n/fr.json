@@ -97,7 +97,7 @@
       },
       {
         "q": "Où mes données sont-elles stockées ?",
-        "a": "Le backend tourne chez IONOS en Allemagne ; tes données restent dans l'UE/EEE, sans transfert vers des pays tiers. Ce site est diffusé via Cloudflare Pages, qui ne traite que ton adresse IP pour la livraison."
+        "a": "Le backend tourne chez IONOS en France ; tes données restent dans l'UE/EEE, sans transfert vers des pays tiers. Ce site est diffusé via Cloudflare Pages, qui ne traite que ton adresse IP pour la livraison."
       },
       {
         "q": "Schuly connaît-il mon mot de passe scolaire ?",
