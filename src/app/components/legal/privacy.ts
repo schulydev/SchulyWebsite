@@ -79,8 +79,10 @@ import { LanguageService } from '../../services/language';
                 werden nur in dem für das jeweilige Schul-System zuständigen Plugin verarbeitet.
                 Bei <strong>Schulnetz</strong> werden deine Schul-E-Mail und dein Passwort über die
                 SchulwareAPI an die Microsoft-Anmeldung deiner Schule übermittelt, um eine Sitzung zu
-                erhalten, und <em>nicht</em> gespeichert; bei <strong>OdaOrg</strong> werden Benutzername
-                und Passwort in der isolierten Datenbank des Plugins gespeichert.
+                erhalten; E-Mail und Passwort werden <em>nicht</em> gespeichert, die daraus
+                resultierenden Session- und Refresh-Tokens werden jedoch vom Plugin gespeichert, damit
+                die Synchronisation ohne erneute Anmeldung funktioniert. Bei <strong>OdaOrg</strong>
+                werden Benutzername und Passwort in der isolierten Datenbank des Plugins gespeichert.
               </li>
               <li>
                 <strong>Schuldaten</strong>, sofern dein Schulsystem sie liefert: Vor- und Nachname,
@@ -112,7 +114,7 @@ import { LanguageService } from '../../services/language';
             <ul>
               <li>Für deinen Schuly-Account: kein Passwort, da die Anmeldung über unseren Pocket-ID-OIDC-Anbieter erfolgt.</li>
               <li>Für Schul-Accounts: Zugangsdaten werden nur an das zuständige Plugin weitergegeben und nicht zentral im Schuly-Kern gespeichert.</li>
-              <li>Keine dauerhafte Speicherung von Refresh-Tokens.</li>
+              <li>Für deinen Schuly-Account: kein serverseitig gespeicherter Refresh-Token; der OIDC-Access-Token wird pro Anfrage geprüft. Die Session- und Refresh-Tokens der Schul-Systeme werden hingegen vom jeweiligen Plugin gespeichert (siehe Ziffer 2.2).</li>
               <li>Keine Push-Notification-Tokens (FCM/APNs) im Backend.</li>
               <li>Kein Analytics- oder Telemetry-SDK in der Produktion.</li>
               <li>Kein Logging von Request-Bodies in der Produktion.</li>
@@ -290,7 +292,7 @@ import { LanguageService } from '../../services/language';
             <p>When you sign in, the following data is processed:</p>
             <ul>
               <li><strong>Schuly-account identity</strong>, issued by our Pocket ID OIDC provider: email, display name, profile picture, subject identifier.</li>
-              <li><strong>School-account credentials</strong> you add inside the app per school system. How they authenticate depends on the relevant plugin; tokens are only processed inside that plugin. For <strong>Schulnetz</strong>, your school email and password are sent via SchulwareAPI to your school's Microsoft sign-in to obtain a session and are <em>not</em> stored; for <strong>OdaOrg</strong>, username and password are stored in the plugin's isolated database.</li>
+              <li><strong>School-account credentials</strong> you add inside the app per school system. How they authenticate depends on the relevant plugin; tokens are only processed inside that plugin. For <strong>Schulnetz</strong>, your school email and password are sent via SchulwareAPI to your school's Microsoft sign-in to obtain a session; the email and password are <em>not</em> stored, but the resulting session and refresh tokens are kept by the plugin so it can sync without you signing in again. For <strong>OdaOrg</strong>, username and password are stored in the plugin's isolated database.</li>
               <li><strong>School data</strong>, where your school system provides it: first and last name, private and school email, phone, address, date of birth, entry/leave date, class, role (student, teacher).</li>
               <li><strong>Academic data</strong>: grades, weightings, semester reports, promotion decisions, schedule, agenda, exams.</li>
               <li>
@@ -310,7 +312,7 @@ import { LanguageService } from '../../services/language';
             <ul>
               <li>For your Schuly account: no password, since authentication runs through our Pocket ID OIDC provider.</li>
               <li>For school accounts: credentials are handed to the relevant plugin only and not stored centrally in the Schuly core.</li>
-              <li>No long-lived storage of refresh tokens.</li>
+              <li>For your Schuly account: no refresh token stored server-side; the OIDC access token is verified per request. School-system session and refresh tokens, by contrast, are stored by the relevant plugin (see §2.2).</li>
               <li>No push-notification tokens (FCM/APNs) in the backend.</li>
               <li>No analytics or telemetry SDK in production.</li>
               <li>No request-body logging in production.</li>
