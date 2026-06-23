@@ -54,7 +54,7 @@
       },
       "oidc": {
         "title": "Secure sign-in",
-        "description": "Authentication goes through your school's existing identity provider. Schuly never handles passwords and stores no credentials."
+        "description": "Your Schuly account signs in through an external identity provider (OIDC) — no Schuly password for us to store. Each school system's own credentials are handled only by its dedicated plugin."
       },
       "fast": {
         "title": "Fast and reliable",
@@ -101,7 +101,7 @@
       },
       {
         "q": "Does Schuly know my school password?",
-        "a": "No. Your Schuly account runs on an external OIDC provider (Pocket ID by default, configurable). Schulnetz uses its own OAuth flow, so no password ever reaches us. OdaOrg currently uses a username and password, which are sent only to the OdaOrg plugin and stored only in its isolated database — never read by, or shared with, the rest of the system."
+        "a": "Your Schuly account runs on an external OIDC provider (Pocket ID by default, configurable), so there's no Schuly password involved. The school login depends on the system: Schulnetz signs in with your school email and password (plus your MFA secret, if you use one) — these authenticate you and aren't stored; only the resulting session tokens are kept. OdaOrg uses a username and password, stored only in the OdaOrg plugin's isolated database — never read by, or shared with, the rest of the system."
       },
       {
         "q": "Can my school system be integrated?",

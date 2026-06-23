@@ -54,7 +54,7 @@
       },
       "oidc": {
         "title": "Sichere Anmeldung",
-        "description": "Die Authentifizierung erfolgt über den bestehenden Identity Provider deiner Schule. Schuly verarbeitet keine Passwörter und speichert keine Zugangsdaten."
+        "description": "Die Anmeldung an deinem Schuly-Konto erfolgt über einen externen Identity Provider (OIDC) – ein Schuly-Passwort speichern wir nicht. Die Zugangsdaten des jeweiligen Schul-Systems werden nur vom zuständigen Plugin verarbeitet."
       },
       "fast": {
         "title": "Schnell und zuverlässig",
@@ -101,7 +101,7 @@
       },
       {
         "q": "Kennt Schuly mein Schulpasswort?",
-        "a": "Nein. Dein Schuly-Konto läuft über einen externen OIDC-Anbieter (standardmässig Pocket ID, konfigurierbar). Schulnetz nutzt seinen eigenen OAuth-Flow, sodass uns kein Passwort erreicht. OdaOrg verwendet derzeit Benutzername und Passwort, die ausschliesslich an das OdaOrg-Plugin übermittelt und nur in dessen isolierter Datenbank gespeichert werden – vom übrigen System weder gelesen noch geteilt."
+        "a": "Dein Schuly-Konto läuft über einen externen OIDC-Anbieter (standardmässig Pocket ID, konfigurierbar) – ein Schuly-Passwort gibt es also nicht. Beim Schul-Login kommt es auf das System an: Schulnetz meldet dich mit deiner Schul-E-Mail und deinem Passwort an (plus MFA-Secret, falls aktiviert); diese dienen nur der Anmeldung und werden nicht gespeichert – behalten werden lediglich die resultierenden Sitzungs-Tokens. OdaOrg verwendet Benutzername und Passwort, die nur in der isolierten Datenbank des OdaOrg-Plugins gespeichert werden – vom übrigen System weder gelesen noch geteilt."
       },
       {
         "q": "Kann mein Schulsystem integriert werden?",
