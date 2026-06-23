@@ -54,7 +54,7 @@
       },
       "oidc": {
         "title": "Login segir",
-        "description": "L'autenticaziun va sur il purvider d'identitad existent da tia scola. Schuly na tracta nagins pleds-clav e na memorisescha nagins datas d'access."
+        "description": "L'annunzia a tes conto Schuly va sur in purvider d'identitad extern (OIDC) – nus na memoriseschan nagin pled-clav da Schuly. Ils datas d'access da mintga sistem da scola vegnan tractads mo dal plugin correspundent."
       },
       "fast": {
         "title": "Svelt e fidabel",
@@ -101,7 +101,7 @@
       },
       {
         "q": "Sa Schuly mes pled-clav da scola?",
-        "a": "Na. Tes conto Schuly gira sur in purvider OIDC extern (Pocket ID tar standard, configurabel). Schulnetz utilisescha sia atgna procedura OAuth, talmain ch'i na vegn nagin pled-clav tar nus. OdaOrg utilisescha actualmain num e pled-clav, transmess mo al plugin OdaOrg e memorisads mo en sia banca da datas isolada – mai legids u cundividids cun il rest dal sistem."
+        "a": "Tes conto Schuly gira sur in purvider OIDC extern (Pocket ID tar standard, configurabel), uschia ch'i n'exista nagin pled-clav da Schuly. Tar il login da la scola dependa quai dal sistem: Schulnetz t'annunzia cun tia e-mail e tes pled-clav da la scola (plus il secret MFA, sch'el è activà); quels servan a l'autentificaziun e na vegnan betg memorisads – mo ils tokens da sessiun resultants vegnan tegnids. OdaOrg utilisescha num e pled-clav, memorisads mo en la banca da datas isolada dal plugin OdaOrg – mai legids u cundividids cun il rest dal sistem."
       },
       {
         "q": "Po mes sistem da scola vegnir integrà?",

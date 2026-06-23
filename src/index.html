@@ -191,7 +191,7 @@
         "name": "Does Schuly know my school password?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Your Schuly account runs on an external OIDC provider (Pocket ID by default; the authority is configurable). Schulnetz uses its own OAuth flow, so no password reaches us. OdaOrg currently uses username and password, posted to the OdaOrg plugin and stored only inside that plugin's isolated database - never read by, or shared with, the rest of the system."
+          "text": "Your Schuly account runs on an external OIDC provider (Pocket ID by default; the authority is configurable), so there is no Schuly password. Schulnetz signs in with your school email and password (plus your MFA secret if enabled), which authenticate you and are not stored - only the session tokens are kept. OdaOrg uses a username and password, stored only inside the OdaOrg plugin's isolated database - never read by, or shared with, the rest of the system."
         }
       },
       {
