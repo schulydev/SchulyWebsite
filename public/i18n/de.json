@@ -13,7 +13,7 @@
     "pillText": "Schulnetz, OdaOrg und mehr – in einer App",
     "title1": "Alle deine Schulen,",
     "title2": "in einer App.",
-    "sub": "Schuly bringt Noten, Stundenplan, Agenda und Absenzen an einen Ort. Entwickelt für Lernende und Studierende, die schnellen Zugriff auf ihre wichtigsten Schuldaten möchten – auf iOS, Android und im Browser. Schulnetz und OdaOrg werden bereits unterstützt, weitere Systeme folgen.",
+    "sub": "Schuly bringt Noten, Stundenplan, Agenda und Absenzen an einen Ort. Entwickelt für Lernende und Studierende, die schnellen Zugriff auf ihre wichtigsten Schuldaten möchten – auf iOS und Android, der Browser folgt bald. Schulnetz und OdaOrg werden bereits unterstützt, weitere Systeme folgen.",
     "ctaDownload": "Schuly herunterladen",
     "ctaGithub": "Auf GitHub ansehen",
     "stats": {
@@ -81,7 +81,7 @@
     "items": [
       {
         "q": "Was ist Schuly?",
-        "a": "Schuly ist eine kostenlose Open-Source-App für Lernende und Studierende. Sie ergänzt bestehende Schulsysteme um eine moderne, benutzerfreundliche Oberfläche für Noten, Stundenplan, Agenda und Absenzen – und lässt dich mehrere Schulen in einer App verwalten. iOS, Android und Web."
+        "a": "Schuly ist eine kostenlose Open-Source-App für Lernende und Studierende. Sie ergänzt bestehende Schulsysteme um eine moderne, benutzerfreundliche Oberfläche für Noten, Stundenplan, Agenda und Absenzen – und lässt dich mehrere Schulen in einer App verwalten. iOS und Android, Web folgt bald."
       },
       {
         "q": "Welche Schulsysteme werden unterstützt?",

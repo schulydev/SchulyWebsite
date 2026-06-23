@@ -11,7 +11,7 @@ import { LanguageService } from '../../services/language';
       <div class="legal-container">
         <div class="legal-eyebrow">Privacy</div>
         <h1 class="legal-title">{{ 'legal.privacy' | translate }}</h1>
-        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 22.06.2026</p>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 23.06.2026</p>
 
         <div class="legal-body">
           @if (showFallbackNotice()) {
@@ -47,8 +47,8 @@ import { LanguageService } from '../../services/language';
             </p>
             <p>
               <strong>Backend-Server:</strong> Das SchulyBackend, das die App nutzt, wird bei
-              <strong>IONOS SE</strong> in Frankreich betrieben. Es findet <em>keine</em> Übermittlung in
-              ein Drittland statt; die App-Daten verbleiben im EU-/EWR-Raum. Mit IONOS besteht ein
+              <strong>IONOS SE</strong> in Frankreich betrieben. Die gespeicherten App-Daten werden <em>nicht</em>
+              in ein Drittland übermittelt und verbleiben im EU-/EWR-Raum. Mit IONOS besteht ein
               Auftragsverarbeitungsvertrag nach Art. 28 DSGVO bzw. Art. 9 revDSG.
             </p>
             <p>
@@ -77,6 +77,10 @@ import { LanguageService } from '../../services/language';
                 <strong>Schul-Account-Zugangsdaten</strong>, die du innerhalb der App pro Schul-System
                 hinterlegst. Wie diese authentifiziert werden, hängt vom jeweiligen Plugin ab. Tokens
                 werden nur in dem für das jeweilige Schul-System zuständigen Plugin verarbeitet.
+                Bei <strong>Schulnetz</strong> werden deine Schul-E-Mail und dein Passwort über die
+                SchulwareAPI an die Microsoft-Anmeldung deiner Schule übermittelt, um eine Sitzung zu
+                erhalten, und <em>nicht</em> gespeichert; bei <strong>OdaOrg</strong> werden Benutzername
+                und Passwort in der isolierten Datenbank des Plugins gespeichert.
               </li>
               <li>
                 <strong>Schuldaten</strong>, sofern dein Schulsystem sie liefert: Vor- und Nachname,
@@ -136,6 +140,15 @@ import { LanguageService } from '../../services/language';
                 <strong>Schul-System(e)</strong>, die du in der App hinterlegt hast - die in den
                 jeweiligen Plugins implementierten Endpunkte werden im Rahmen der Synchronisation
                 aufgerufen.
+              </li>
+              <li>
+                <strong>SchulwareAPI</strong> (von uns betrieben) - vermittelt die Schulnetz-Anmeldung und
+                den Datenabruf; übermittelte Zugangsdaten werden nur transient zur Anmeldung verarbeitet.
+              </li>
+              <li>
+                <strong>Microsoft (Entra ID)</strong> (USA / global) - Identitätsanbieter deiner Schule für
+                die Schulnetz-Anmeldung. Schul-E-Mail und Passwort werden zur Authentifizierung an Microsoft
+                übermittelt; dies betrifft nur den Login-Vorgang, nicht die in Schuly gespeicherten Daten.
               </li>
             </ul>
 
@@ -256,8 +269,8 @@ import { LanguageService } from '../../services/language';
             </p>
             <p>
               <strong>Backend servers:</strong> The SchulyBackend used by the app is hosted at
-              <strong>IONOS SE</strong> in France. There is <em>no</em> transfer to a third country;
-              app data stays in the EU/EEA. A data processing agreement under Art. 28 GDPR / Art. 9 revDSG
+              <strong>IONOS SE</strong> in France. The stored app data is <em>not</em> transferred to a third
+              country and stays in the EU/EEA. A data processing agreement under Art. 28 GDPR / Art. 9 revDSG
               is in place with IONOS.
             </p>
             <p>
@@ -277,7 +290,7 @@ import { LanguageService } from '../../services/language';
             <p>When you sign in, the following data is processed:</p>
             <ul>
               <li><strong>Schuly-account identity</strong>, issued by our Pocket ID OIDC provider: email, display name, profile picture, subject identifier.</li>
-              <li><strong>School-account credentials</strong> you add inside the app per school system. How they authenticate depends on the relevant plugin; tokens are only processed inside that plugin.</li>
+              <li><strong>School-account credentials</strong> you add inside the app per school system. How they authenticate depends on the relevant plugin; tokens are only processed inside that plugin. For <strong>Schulnetz</strong>, your school email and password are sent via SchulwareAPI to your school's Microsoft sign-in to obtain a session and are <em>not</em> stored; for <strong>OdaOrg</strong>, username and password are stored in the plugin's isolated database.</li>
               <li><strong>School data</strong>, where your school system provides it: first and last name, private and school email, phone, address, date of birth, entry/leave date, class, role (student, teacher).</li>
               <li><strong>Academic data</strong>: grades, weightings, semester reports, promotion decisions, schedule, agenda, exams.</li>
               <li>
@@ -310,6 +323,8 @@ import { LanguageService } from '../../services/language';
               <li><strong>GitHub Inc.</strong> (USA) - source-code and release hosting; source of the stats shown on the site.</li>
               <li><strong>Pocket ID OIDC provider</strong> (operated by us on IONOS France) - authentication for your Schuly account.</li>
               <li><strong>The school system(s)</strong> you have added in the app - their endpoints (as implemented in the relevant plugin) are called during sync.</li>
+              <li><strong>SchulwareAPI</strong> (operated by us) - bridges Schulnetz sign-in and data retrieval; credentials passed through are processed only transiently for login.</li>
+              <li><strong>Microsoft (Entra ID)</strong> (USA / global) - your school's identity provider for Schulnetz sign-in. School email and password are sent to Microsoft to authenticate; this concerns the login step only, not the data stored in Schuly.</li>
             </ul>
 
             <h2>4. Retention</h2>
