@@ -36,6 +36,6 @@ Schuly is an independent project. It is not affiliated with, endorsed by, or spo
 
 - Frontend: Flutter (mobile + web)
 - Backend: ASP.NET Core, PostgreSQL, S3-compatible object storage
-- Auth: external OIDC for the Schuly account (Pocket ID by default); per-plugin auth for school accounts (OAuth for Schulnetz, username/password for OdaOrg)
+- Auth: external OIDC for the Schuly account (Pocket ID by default); per-plugin auth for school accounts (email/password for Schulnetz, username/password for OdaOrg)
 - Marketing site: Angular 20, prerendered static HTML on Cloudflare Pages
 - License: see each repository's LICENSE file

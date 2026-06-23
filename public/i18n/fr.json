@@ -54,7 +54,7 @@
       },
       "oidc": {
         "title": "Connexion sécurisée",
-        "description": "L'authentification passe par le fournisseur d'identité existant de ton école. Schuly ne traite aucun mot de passe et ne stocke aucun identifiant."
+        "description": "La connexion à ton compte Schuly passe par un fournisseur d'identité externe (OIDC) – aucun mot de passe Schuly à stocker. Les identifiants de chaque système scolaire ne sont traités que par son plugin dédié."
       },
       "fast": {
         "title": "Rapide et fiable",
@@ -101,7 +101,7 @@
       },
       {
         "q": "Schuly connaît-il mon mot de passe scolaire ?",
-        "a": "Non. Ton compte Schuly fonctionne via un fournisseur OIDC externe (Pocket ID par défaut, configurable). Schulnetz utilise son propre flux OAuth, donc aucun mot de passe ne nous parvient. OdaOrg utilise actuellement un nom d'utilisateur et un mot de passe, transmis uniquement au plugin OdaOrg et stockés uniquement dans sa base de données isolée – jamais lus ni partagés avec le reste du système."
+        "a": "Ton compte Schuly fonctionne via un fournisseur OIDC externe (Pocket ID par défaut, configurable), il n'y a donc pas de mot de passe Schuly. Pour le système scolaire, cela dépend de l'intégration : Schulnetz te connecte avec ton e-mail et ton mot de passe scolaires (plus ton secret MFA, le cas échéant) ; ils servent à l'authentification et ne sont pas conservés – seuls les jetons de session obtenus sont gardés. OdaOrg utilise un nom d'utilisateur et un mot de passe, stockés uniquement dans la base de données isolée du plugin OdaOrg – jamais lus ni partagés avec le reste du système."
       },
       {
         "q": "Mon système scolaire peut-il être intégré ?",
