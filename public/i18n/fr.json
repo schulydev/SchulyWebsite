@@ -13,7 +13,7 @@
     "pillText": "Schulnetz, OdaOrg et plus – dans une seule app",
     "title1": "Toutes tes écoles,",
     "title2": "dans une seule app.",
-    "sub": "Schuly réunit tes notes, ton horaire, ton agenda et tes absences au même endroit. Conçu pour les élèves qui veulent un accès rapide aux données scolaires essentielles – sur iOS, Android et le web. Schulnetz et OdaOrg sont déjà pris en charge, d'autres systèmes suivront.",
+    "sub": "Schuly réunit tes notes, ton horaire, ton agenda et tes absences au même endroit. Conçu pour les élèves qui veulent un accès rapide aux données scolaires essentielles – sur iOS et Android, le web bientôt disponible. Schulnetz et OdaOrg sont déjà pris en charge, d'autres systèmes suivront.",
     "ctaDownload": "Télécharger Schuly",
     "ctaGithub": "Voir sur GitHub",
     "stats": {
@@ -81,7 +81,7 @@
     "items": [
       {
         "q": "Qu'est-ce que Schuly ?",
-        "a": "Schuly est une app open-source gratuite pour les élèves. Elle ajoute une interface moderne et conviviale pour les notes, l'horaire, l'agenda et les absences par-dessus les systèmes scolaires que ton école utilise déjà – et te permet de gérer plusieurs écoles dans une seule app. iOS, Android et Web."
+        "a": "Schuly est une app open-source gratuite pour les élèves. Elle ajoute une interface moderne et conviviale pour les notes, l'horaire, l'agenda et les absences par-dessus les systèmes scolaires que ton école utilise déjà – et te permet de gérer plusieurs écoles dans une seule app. iOS et Android, web bientôt disponible."
       },
       {
         "q": "Quels systèmes scolaires sont pris en charge ?",
