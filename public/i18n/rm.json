@@ -1,4 +1,26 @@
 {
+  "meta": {
+    "home": {
+      "title": "Schuly · Portal da scolars avert per Schulnetz e dapli",
+      "description": "Portal da scolars open source per iOS, Android ed il web. Schulnetz funcziuna directamain; ulteriurs sistems via plugins backend. Gratuit."
+    },
+    "privacy": {
+      "title": "Protecziun da datas · Schuly",
+      "description": "Co che Schuly tracta tias datas persunalas tenor revDSG e DSGVO."
+    },
+    "impressum": {
+      "title": "Impressum · Schuly",
+      "description": "Infurmaziuns giuridicas e contact per Schuly."
+    },
+    "terms": {
+      "title": "Cundiziuns d'utilisaziun · Schuly",
+      "description": "Las cundiziuns per l'utilisaziun da Schuly."
+    },
+    "notFound": {
+      "title": "Pagina betg chattada · Schuly",
+      "description": "Questa pagina n'exista betg sin schuly.dev."
+    }
+  },
   "nav": {
     "features": "Funcziuns",
     "screenshots": "Maletgs",

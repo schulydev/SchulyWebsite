@@ -19,15 +19,15 @@
           <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener">{{ 'footer.links.releases' | translate }}</a>
           <a href="https://docs.schuly.dev" target="_blank" rel="noopener">{{ 'footer.links.docs' | translate }}</a>
           <a href="https://github.com/schulydev/Schuly/issues" target="_blank" rel="noopener">{{ 'footer.links.issues' | translate }}</a>
-          <a href="/#features">{{ 'footer.links.features' | translate }}</a>
-          <a href="/#faq">{{ 'footer.links.faq' | translate }}</a>
-          <a href="/#download">{{ 'footer.links.download' | translate }}</a>
+          <a [href]="base() + '#features'">{{ 'footer.links.features' | translate }}</a>
+          <a [href]="base() + '#faq'">{{ 'footer.links.faq' | translate }}</a>
+          <a [href]="base() + '#download'">{{ 'footer.links.download' | translate }}</a>
         </div>
         <div class="footer-col">
           <div class="footer-col-title">{{ 'footer.cols.legal' | translate }}</div>
-          <a routerLink="/impressum">{{ 'footer.links.impressum' | translate }}</a>
-          <a routerLink="/privacy">{{ 'footer.links.privacy' | translate }}</a>
-          <a routerLink="/terms">{{ 'footer.links.terms' | translate }}</a>
+          <a [routerLink]="['/', lang(), 'impressum']">{{ 'footer.links.impressum' | translate }}</a>
+          <a [routerLink]="['/', lang(), 'privacy']">{{ 'footer.links.privacy' | translate }}</a>
+          <a [routerLink]="['/', lang(), 'terms']">{{ 'footer.links.terms' | translate }}</a>
           <a href="https://buymeacoffee.com/pianonic" target="_blank" rel="noopener">{{ 'footer.links.coffee' | translate }}</a>
         </div>
       </div>

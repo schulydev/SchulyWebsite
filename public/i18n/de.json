@@ -1,4 +1,26 @@
 {
+  "meta": {
+    "home": {
+      "title": "Schuly · Offenes Schülerportal für Schulnetz & mehr",
+      "description": "Open-Source-Schülerportal für iOS, Android und Web. Schulnetz funktioniert sofort; weitere Schulsysteme über Backend-Plugins. Kostenlos."
+    },
+    "privacy": {
+      "title": "Datenschutz · Schuly",
+      "description": "Wie Schuly deine personenbezogenen Daten nach revDSG und DSGVO verarbeitet."
+    },
+    "impressum": {
+      "title": "Impressum · Schuly",
+      "description": "Rechtliche Angaben und Kontakt zu Schuly."
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen · Schuly",
+      "description": "Die Bedingungen für die Nutzung von Schuly."
+    },
+    "notFound": {
+      "title": "Seite nicht gefunden · Schuly",
+      "description": "Diese Seite existiert auf schuly.dev nicht."
+    }
+  },
   "nav": {
     "features": "Features",
     "screenshots": "Screenshots",

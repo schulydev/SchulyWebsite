@@ -44,6 +44,16 @@ The `.github/workflows/build.yml` CI is independent - it only verifies the build
 
 Stack is plain Angular standalone components. Look in `src/app/`. SCSS, no Tailwind. FontAwesome via `@fortawesome/angular-fontawesome`.
 
+## i18n / SEO
+
+Every page lives under a language prefix: `/en`, `/de`, `/fr`, `/it`, `/rm` (+ `/<lang>/privacy|impressum|terms`). There is **no unprefixed page**.
+
+- Routes are generated per language in `app.routes.ts`; `langResolver` (`services/lang.resolver.ts`) sets the active language and `await`s the translation load so each route prerenders with its language baked in (`app.routes.server.ts` lists the prerender params).
+- `services/seo.ts` injects per-route `<title>`, description, canonical, `og:`/twitter, and the full `hreflang` alternate set (5 langs + `x-default`) at SSR time. Per-page meta strings live under `meta.*` in each `public/i18n/<lang>.json`.
+- `scripts/postbuild.ts` generates the multilingual `sitemap.xml` (with `xhtml:link` hreflang) and writes `404.html`; keep its `LANGS`/`PAGES` in sync when adding a language or page.
+- `/` and the old unprefixed paths are redirected in `public/_redirects`; `functions/index.js` is a Cloudflare Pages Function that negotiates `Accept-Language` for `/` only (explicit `/<lang>` URLs are never auto-redirected).
+- The language switcher navigates to the same sub-path under the new prefix — it does not swap text in place.
+
 ## Release
 
 Driven by `application.properties`. `sync-version-on-release.yml` updates both `application.properties` and the top-level `version` in `package.json` when a release is published.
