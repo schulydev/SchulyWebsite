@@ -1,4 +1,4 @@
-# Notes for Claude (and humans) — SchulyWebsite
+# Notes for Claude (and humans) - SchulyWebsite
 
 Angular 20 marketing site for [schuly.dev](https://schuly.dev). **Bun is the package manager** (no npm, no `package-lock.json`).
 
@@ -7,7 +7,7 @@ Angular 20 marketing site for [schuly.dev](https://schuly.dev). **Bun is the pac
 - Never work on `main`. Create an issue (labeled) → branch `feature/<issue#>_PascalCase`
   or `fix/<issue#>_PascalCase` → PR (labeled) with `Closes #<issue>` → squash-merge +
   delete branch.
-- Use **bun** as the package manager / task runner — never npm, npx, or node directly.
+- Use **bun** as the package manager / task runner - never npm, npx, or node directly.
 - Use CLI tooling whenever one exists (`gh issue create`, `gh pr create`, generators, etc.).
 - No AI / Claude attribution in commits or PRs. Ever.
 - No test plans in PRs. PR body is **Summary** + `Closes #<issue>` only.
@@ -27,7 +27,7 @@ Required bun version: `1.2.21+` (text `bun.lock` format isn't readable by 1.1.x)
 
 ## Build output
 
-Angular 20 uses `@angular/build:application` builder → output at `dist/SchulyWebsite/browser`. **Cloudflare Pages is configured for that path** — verify if you change `angular.json`.
+Angular 20 uses `@angular/build:application` builder → output at `dist/SchulyWebsite/browser`. **Cloudflare Pages is configured for that path** - verify if you change `angular.json`.
 
 ## Deploy
 
@@ -38,7 +38,7 @@ Cloudflare build settings:
 - Output: `dist/SchulyWebsite/browser`
 - Env: `BUN_VERSION=1.2.21`
 
-The `.github/workflows/build.yml` CI is independent — it only verifies the build passes on PRs so broken code is caught before Cloudflare attempts a preview deploy.
+The `.github/workflows/build.yml` CI is independent - it only verifies the build passes on PRs so broken code is caught before Cloudflare attempts a preview deploy.
 
 ## Add a feature
 

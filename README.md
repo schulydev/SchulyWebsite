@@ -3,7 +3,7 @@
   <img src="./assets/app_icon.png" width="160" alt="Schuly Logo">
 </p>
 <p align="center">
-  <strong>Landing site for the Schuly project — <a href="https://schuly.dev">schuly.dev</a></strong>
+  <strong>Landing site for the Schuly project - <a href="https://schuly.dev">schuly.dev</a></strong>
 </p>
 <p align="center">
   <a href="https://github.com/schulydev/SchulyWebsite/stargazers"><img src="https://img.shields.io/github/stars/schulydev/SchulyWebsite?style=flat&color=3da8ff" alt="GitHub stars"/></a>
