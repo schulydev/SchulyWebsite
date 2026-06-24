@@ -82,9 +82,12 @@
     visibility 0s linear 0s;
 }
 
-.faq-a {
+.faq-a-inner {
   overflow: hidden;
   min-height: 0;
+}
+
+.faq-a {
   padding: 0 1.25rem 1.25rem;
   color: var(--text-dim);
   font-size: 0.9375rem;

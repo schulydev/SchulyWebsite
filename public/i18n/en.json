@@ -10,18 +10,11 @@
     "language": "Language"
   },
   "hero": {
-    "pillBadge": "Open",
-    "pillText": "Schulnetz, OdaOrg, and more — in one app",
     "title1": "All your schools,",
     "title2": "in one app.",
-    "sub": "Schuly brings your grades, schedule, agenda, and absences together in one place. Built for students who want quick access to the school data that matters — on iOS and Android, with the web coming soon. Schulnetz and OdaOrg are already supported, with more systems on the way.",
+    "sub": "Grades, schedule, agenda, and absences in one place. On iOS and Android, with the web coming soon. Schulnetz and OdaOrg are already supported, with more systems on the way.",
     "ctaDownload": "Download Schuly",
-    "ctaGithub": "View on GitHub",
-    "stats": {
-      "stars": "GitHub stars",
-      "downloads": "App downloads",
-      "platforms": "Platforms"
-    }
+    "ctaGithub": "View on GitHub"
   },
   "features": {
     "eyebrow": "Features",
@@ -150,6 +143,7 @@
       "plugins": "Plugins",
       "sdk": "Plugin SDK",
       "releases": "Releases",
+      "docs": "Docs",
       "issues": "Issues",
       "features": "Features",
       "faq": "FAQ",

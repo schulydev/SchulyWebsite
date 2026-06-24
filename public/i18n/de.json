@@ -6,22 +6,15 @@
     "docs": "Doku",
     "openSource": "Open Source",
     "githubAria": "GitHub",
-    "getSchuly": "Schuly holen",
+    "getSchuly": "Schuly herunterladen",
     "language": "Sprache"
   },
   "hero": {
-    "pillBadge": "Offen",
-    "pillText": "Schulnetz, OdaOrg und mehr – in einer App",
     "title1": "Alle deine Schulen,",
     "title2": "in einer App.",
-    "sub": "Schuly bringt Noten, Stundenplan, Agenda und Absenzen an einen Ort. Entwickelt für Lernende und Studierende, die schnellen Zugriff auf ihre wichtigsten Schuldaten möchten – auf iOS und Android, der Browser folgt bald. Schulnetz und OdaOrg werden bereits unterstützt, weitere Systeme folgen.",
+    "sub": "Noten, Stundenplan, Agenda und Absenzen an einem Ort. Auf iOS und Android, der Browser folgt bald. Schulnetz und OdaOrg werden bereits unterstützt, weitere Systeme folgen.",
     "ctaDownload": "Schuly herunterladen",
-    "ctaGithub": "Auf GitHub ansehen",
-    "stats": {
-      "stars": "GitHub-Stars",
-      "downloads": "App-Downloads",
-      "platforms": "Plattformen"
-    }
+    "ctaGithub": "Auf GitHub ansehen"
   },
   "features": {
     "eyebrow": "Features",
@@ -119,7 +112,7 @@
     ]
   },
   "download": {
-    "eyebrow": "Schuly holen",
+    "eyebrow": "Schuly herunterladen",
     "title": "Bereit loszulegen?",
     "description": "Schuly ist kostenlos, Open Source und auf allen wichtigen Plattformen verfügbar.",
     "comingSoon": "Bald verfügbar",
@@ -150,6 +143,7 @@
       "plugins": "Plugins",
       "sdk": "Plugin-SDK",
       "releases": "Releases",
+      "docs": "Doku",
       "issues": "Issues",
       "features": "Features",
       "faq": "FAQ",

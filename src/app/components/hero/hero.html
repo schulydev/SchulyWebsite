@@ -4,22 +4,16 @@
   <div class="hero-noise" aria-hidden="true"></div>
 
   <div class="hero-content">
-    <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener" class="hero-pill" #pill>
-      <span class="hero-pill-badge">{{ 'hero.pillBadge' | translate }}</span>
-      <span class="hero-pill-text">{{ 'hero.pillText' | translate }}</span>
-      <fa-icon [icon]="faArrowRight" class="hero-pill-arrow"></fa-icon>
-    </a>
-
-    <h1 class="hero-title" #title>
+    <h1 class="hero-title">
       {{ 'hero.title1' | translate }}<br />
       <span class="hero-title-dim">{{ 'hero.title2' | translate }}</span>
     </h1>
 
-    <p class="hero-sub" #sub>
+    <p class="hero-sub">
       {{ 'hero.sub' | translate }}
     </p>
 
-    <div class="hero-actions" #actions>
+    <div class="hero-actions">
       <a href="#download" class="btn btn-primary">
         {{ 'hero.ctaDownload' | translate }}
         <fa-icon [icon]="faArrowRight"></fa-icon>
@@ -28,23 +22,6 @@
         <fa-icon [icon]="faGithub"></fa-icon>
         {{ 'hero.ctaGithub' | translate }}
       </a>
-    </div>
-
-    <div class="hero-stats" #stage>
-      <div class="stat">
-        <div class="stat-num">{{ stars() }}</div>
-        <div class="stat-label">{{ 'hero.stats.stars' | translate }}</div>
-      </div>
-      <div class="stat-sep"></div>
-      <div class="stat">
-        <div class="stat-num">{{ downloads() }}</div>
-        <div class="stat-label">{{ 'hero.stats.downloads' | translate }}</div>
-      </div>
-      <div class="stat-sep"></div>
-      <div class="stat">
-        <div class="stat-num">3</div>
-        <div class="stat-label">{{ 'hero.stats.platforms' | translate }}</div>
-      </div>
     </div>
   </div>
 </section>
