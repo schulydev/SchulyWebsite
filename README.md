@@ -1,4 +1,4 @@
-# <p align="center">SchulyWebsite</p>
+# <p align="center">SchulyWebsite</p> 
 <p align="center">
   <img src="./assets/app_icon.png" width="160" alt="Schuly Logo">
 </p>
