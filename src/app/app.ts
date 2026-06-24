@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navigation } from './components/navigation/navigation';
 import { Footer } from './components/footer/footer';
+import { SeoService } from './services/seo';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,10 @@ import { Footer } from './components/footer/footer';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {}
+export class App {
+  private seo = inject(SeoService);
+
+  constructor() {
+    this.seo.init();
+  }
+}

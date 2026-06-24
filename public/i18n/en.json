@@ -1,4 +1,26 @@
 {
+  "meta": {
+    "home": {
+      "title": "Schuly · Open student portal for Schulnetz & more",
+      "description": "Open-source student portal for iOS, Android, and Web. Schulnetz works out of the box; more school systems via backend plugins. Free."
+    },
+    "privacy": {
+      "title": "Privacy Policy · Schuly",
+      "description": "How Schuly handles your personal data under the Swiss revDSG and the EU GDPR."
+    },
+    "impressum": {
+      "title": "Imprint · Schuly",
+      "description": "Legal information and contact details for Schuly."
+    },
+    "terms": {
+      "title": "Terms of Use · Schuly",
+      "description": "The terms that govern your use of Schuly."
+    },
+    "notFound": {
+      "title": "Page not found · Schuly",
+      "description": "This page does not exist on schuly.dev."
+    }
+  },
   "nav": {
     "features": "Features",
     "screenshots": "Screenshots",

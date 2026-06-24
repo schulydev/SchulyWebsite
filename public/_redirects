@@ -1,3 +1,12 @@
+# Canonicalize host (www / http -> https apex)
 https://www.schuly.dev/* https://schuly.dev/:splat 301!
 http://www.schuly.dev/* https://schuly.dev/:splat 301!
 http://schuly.dev/* https://schuly.dev/:splat 301!
+
+# Old unprefixed paths -> default-language equivalents (preserve indexing)
+/impressum /en/impressum 301
+/privacy /en/privacy 301
+/terms /en/terms 301
+
+# Root -> default language. Browser-preferred language is handled client-side after load.
+/ /en 302

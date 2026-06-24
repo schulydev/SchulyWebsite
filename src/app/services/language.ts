@@ -1,48 +1,45 @@
-import { Injectable, PLATFORM_ID, afterNextRender, computed, effect, inject, signal } from '@angular/core';
+import { Injectable, PLATFORM_ID, computed, effect, inject, signal } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
 export type Lang = 'de' | 'fr' | 'it' | 'rm' | 'en';
 
-export const LANGS: { code: Lang; label: string; flag: string }[] = [
-  { code: 'de', label: 'Deutsch',   flag: 'DE' },
-  { code: 'fr', label: 'Français',  flag: 'FR' },
-  { code: 'it', label: 'Italiano',  flag: 'IT' },
-  { code: 'rm', label: 'Rumantsch', flag: 'RM' },
-  { code: 'en', label: 'English',   flag: 'EN' },
+export const LANGS: { code: Lang; label: string; flag: string; ogLocale: string }[] = [
+  { code: 'de', label: 'Deutsch',   flag: 'DE', ogLocale: 'de_CH' },
+  { code: 'fr', label: 'Français',  flag: 'FR', ogLocale: 'fr_CH' },
+  { code: 'it', label: 'Italiano',  flag: 'IT', ogLocale: 'it_CH' },
+  { code: 'rm', label: 'Rumantsch', flag: 'RM', ogLocale: 'rm_CH' },
+  { code: 'en', label: 'English',   flag: 'EN', ogLocale: 'en_US' },
 ];
 
+export const LANG_CODES = LANGS.map(l => l.code);
+
 const STORAGE_KEY = 'schuly-lang';
-const DEFAULT: Lang = 'en';
+export const DEFAULT_LANG: Lang = 'en';
+
+export function isLang(value: string | null | undefined): value is Lang {
+  return !!value && LANG_CODES.includes(value as Lang);
+}
 
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
   private translate = inject(TranslateService);
+  private router = inject(Router);
   private isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
 
-  /** Active language signal. Components read this for reactive language-dependent rendering. */
-  current = signal<Lang>(DEFAULT);
+  /** Active language signal. The router resolver drives this from the URL. */
+  current = signal<Lang>(DEFAULT_LANG);
   /** Convenience: true if the global lang is anything other than English. Used by legal pages to pick a sensible fallback body. */
   prefersDeForLegal = computed(() => this.current() !== 'en');
 
   constructor() {
-    this.translate.addLangs(LANGS.map(l => l.code));
-    this.translate.setFallbackLang(DEFAULT);
-    this.translate.use(DEFAULT);
-
-    // Auto-detect on the client only, after hydration. The server pass and the
-    // first hydration pass both render in English so no mismatch occurs; if the
-    // visitor's browser asks for another supported language, we switch
-    // immediately afterwards. We set the signal directly (no localStorage
-    // write) so we don't trample an explicit prior choice on the next visit.
-    afterNextRender(() => {
-      const detected = this.detect();
-      if (detected !== this.current()) this.current.set(detected);
-    });
+    this.translate.addLangs(LANG_CODES);
+    this.translate.setFallbackLang(DEFAULT_LANG);
 
     // Keep TranslateService and the <html lang> attribute in sync with the
-    // signal. This effect does NOT persist — only explicit user actions via
-    // setLang() write to localStorage.
+    // signal. The signal is set by the route resolver, so by the time this runs
+    // the language always matches the URL.
     effect(() => {
       const lang = this.current();
       this.translate.use(lang);
@@ -50,32 +47,29 @@ export class LanguageService {
     });
   }
 
-  /** Called when the user picks a language from the switcher. Persists the choice. */
+  /** Called by the route resolver to align the active language with the URL. Does not persist. */
+  applyFromRoute(lang: Lang) {
+    if (this.current() !== lang) this.current.set(lang);
+  }
+
+  /**
+   * Called when the user picks a language from the switcher. Persists the
+   * choice and navigates to the same page under the new language prefix so the
+   * URL always reflects the active language.
+   */
   setLang(lang: Lang) {
-    this.current.set(lang);
     if (this.isBrowser) {
       try { localStorage.setItem(STORAGE_KEY, lang); } catch {}
     }
+    const rest = this.pathWithoutLang();
+    this.router.navigateByUrl(`/${lang}${rest}`);
   }
 
-  private detect(): Lang {
-    if (!this.isBrowser) return DEFAULT;
-
-    // 1. Explicit prior user choice.
-    try {
-      const stored = localStorage.getItem(STORAGE_KEY) as Lang | null;
-      if (stored && LANGS.some(l => l.code === stored)) return stored;
-    } catch {}
-
-    // 2. navigator.languages — covers de-CH, de-DE, de, fr-CH, fr, etc.
-    //    Any variation maps to its base code; falls through to English if none match.
-    const navLangs = navigator.languages?.length ? Array.from(navigator.languages) : [navigator.language];
-    for (const raw of navLangs) {
-      if (!raw) continue;
-      const code = raw.slice(0, 2).toLowerCase() as Lang;
-      if (LANGS.some(l => l.code === code)) return code;
-    }
-
-    return DEFAULT;
+  /** The current path (with hash) stripped of its leading language segment. */
+  private pathWithoutLang(): string {
+    if (!this.isBrowser) return '';
+    const { pathname, search, hash } = window.location;
+    const stripped = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, '');
+    return `${stripped || ''}${search}${hash}`;
   }
 }

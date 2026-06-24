@@ -1,4 +1,26 @@
 {
+  "meta": {
+    "home": {
+      "title": "Schuly · Portail élève ouvert pour Schulnetz et plus",
+      "description": "Portail élève open source pour iOS, Android et le web. Schulnetz fonctionne d'emblée ; d'autres systèmes via des plugins backend. Gratuit."
+    },
+    "privacy": {
+      "title": "Confidentialité · Schuly",
+      "description": "Comment Schuly traite tes données personnelles selon la revLPD et le RGPD."
+    },
+    "impressum": {
+      "title": "Mentions légales · Schuly",
+      "description": "Informations légales et contact pour Schuly."
+    },
+    "terms": {
+      "title": "Conditions d'utilisation · Schuly",
+      "description": "Les conditions régissant ton utilisation de Schuly."
+    },
+    "notFound": {
+      "title": "Page introuvable · Schuly",
+      "description": "Cette page n'existe pas sur schuly.dev."
+    }
+  },
   "nav": {
     "features": "Fonctionnalités",
     "screenshots": "Captures",
