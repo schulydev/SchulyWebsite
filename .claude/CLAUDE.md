@@ -2,6 +2,18 @@
 
 Angular 20 marketing site for [schuly.dev](https://schuly.dev). **Bun is the package manager** (no npm, no `package-lock.json`).
 
+## Workflow rules (enforced)
+
+- Never work on `main`. Create an issue (labeled) → branch `feature/<issue#>_PascalCase`
+  or `fix/<issue#>_PascalCase` → PR (labeled) with `Closes #<issue>` → squash-merge +
+  delete branch.
+- Use **bun** as the package manager / task runner — never npm, npx, or node directly.
+- Use CLI tooling whenever one exists (`gh issue create`, `gh pr create`, generators, etc.).
+- No AI / Claude attribution in commits or PRs. Ever.
+- No test plans in PRs. PR body is **Summary** + `Closes #<issue>` only.
+- Commit subject: short imperative.
+- PR labels: `bug`, `enhancement`, `feature`, `refactor`, `CI/CD`, `dependencies`, `documentation`.
+
 ## Run / build
 
 ```sh
