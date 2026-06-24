@@ -32,7 +32,9 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
                 <fa-icon [icon]="faChevronDown" class="faq-icon" aria-hidden="true" />
               </button>
               <div class="faq-a-wrap" [id]="'faq-a-' + i" role="region">
-                <div class="faq-a">{{ 'faq.items.' + i + '.a' | translate }}</div>
+                <div class="faq-a-inner">
+                  <div class="faq-a">{{ 'faq.items.' + i + '.a' | translate }}</div>
+                </div>
               </div>
             </div>
           }

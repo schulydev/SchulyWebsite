@@ -10,18 +10,11 @@
     "language": "Lingua"
   },
   "hero": {
-    "pillBadge": "Open",
-    "pillText": "Schulnetz, OdaOrg e altro – in un'unica app",
     "title1": "Tutte le tue scuole,",
     "title2": "in un'unica app.",
-    "sub": "Schuly riunisce voti, orario, agenda e assenze in un unico posto. Pensata per gli studenti che vogliono un accesso rapido ai dati scolastici essenziali – su iOS e Android, il web in arrivo. Schulnetz e OdaOrg sono già supportati, altri sistemi seguiranno.",
+    "sub": "Voti, orario, agenda e assenze in un unico posto. Su iOS e Android, il web in arrivo. Schulnetz e OdaOrg sono già supportati, altri sistemi seguiranno.",
     "ctaDownload": "Scarica Schuly",
-    "ctaGithub": "Vedi su GitHub",
-    "stats": {
-      "stars": "Stelle GitHub",
-      "downloads": "Download app",
-      "platforms": "Piattaforme"
-    }
+    "ctaGithub": "Vedi su GitHub"
   },
   "features": {
     "eyebrow": "Funzionalità",
@@ -150,6 +143,7 @@
       "plugins": "Plugin",
       "sdk": "SDK plugin",
       "releases": "Versioni",
+      "docs": "Docs",
       "issues": "Issue",
       "features": "Funzionalità",
       "faq": "FAQ",
