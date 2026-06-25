@@ -64,6 +64,10 @@ Driven by `application.properties`. `sync-version-on-release.yml` updates both `
 
 You are an expert in TypeScript, Angular, and scalable web application development. Write maintainable, performant, and accessible code following Angular and TypeScript best practices.
 
+### Formatting
+
+**Declaration signatures go on one line** - don't wrap a function / method / arrow parameter list across multiple lines, however long it gets. This applies to *declarations*, not call sites: leave templates, fluent chains, object / array literals, and multi-line conditionals wrapped as they are.
+
 ### TypeScript
 
 - Use strict type checking
