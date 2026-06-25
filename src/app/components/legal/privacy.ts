@@ -1,6 +1,6 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
-import { LanguageService } from '../../services/language';
+import { LegalPageBase } from './legal-page-base';
 
 @Component({
   selector: 'app-privacy',
@@ -422,8 +422,4 @@ import { LanguageService } from '../../services/language';
     </section>
   `,
 })
-export class Privacy {
-  protected lang = inject(LanguageService);
-  protected showDe = computed(() => this.lang.current() !== 'en');
-  protected showFallbackNotice = computed(() => !['de', 'en'].includes(this.lang.current()));
-}
+export class Privacy extends LegalPageBase {}
