@@ -41,7 +41,6 @@ jobs:
 
           sed -i "s|<version>$FILE_VERSION</version>|<version>$TAG_VERSION</version>|" application.properties
 
-          # Update top-level "version" in package.json without disturbing anything else
           sed -i -E "0,/\"version\":\s*\"[^\"]+\"/s|\"version\":\s*\"[^\"]+\"|\"version\": \"$TAG_VERSION\"|" package.json
 
           BRANCH="release-sync/$TAG_VERSION"
