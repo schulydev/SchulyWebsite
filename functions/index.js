@@ -1,7 +1,7 @@
-// Cloudflare Pages Function for the bare "/" route only.
-// Negotiates the visitor's language from Accept-Language and 302-redirects to
-// the matching /<lang> home. Explicit /<lang> URLs never hit this function, so
-// Falls back to the default language; the static `/ -> /en` rule in _redirects
+// Handles only the bare "/" route: negotiates the visitor's language from
+// Accept-Language and 302-redirects to the matching /<lang> home. Explicit
+// /<lang> URLs never hit this function; the static "/ -> /en" rule in
+// _redirects is the fallback if this function doesn't run.
 
 const LANGS = ['en', 'de', 'fr', 'it', 'rm'];
 const DEFAULT_LANG = 'en';

@@ -25,7 +25,8 @@ const PAGES: { path: string; changefreq: string; priority: string; images?: stri
   { path: '/terms', changefreq: 'monthly', priority: '0.4' },
 ];
 
-// 1. Render the /404 route output to 404.html so Cloudflare Pages serves it for
+// Cloudflare Pages serves a top-level 404.html for unmatched routes; copy the
+// prerendered /404 route output there.
 function writeNotFound() {
   const src = join(browser, '404', 'index.html');
   const dest = join(browser, '404.html');
@@ -38,7 +39,8 @@ function writeNotFound() {
   console.log(`[postbuild] wrote ${dest}`);
 }
 
-// 2. The root '' route only redirects to /<default-lang>. Drop any prerendered
+// The root '' route only redirects to /<default-lang>; drop the prerendered
+// index.html so the "/" -> "/<lang>" rule in _redirects handles it instead.
 function dropRootIndex() {
   const root = join(browser, 'index.html');
   if (existsSync(root)) {
@@ -47,7 +49,6 @@ function dropRootIndex() {
   }
 }
 
-// 3. Generate a multilingual sitemap with hreflang alternates for every page.
 function writeSitemap() {
   const lastmod = new Date().toISOString().slice(0, 10);
 
