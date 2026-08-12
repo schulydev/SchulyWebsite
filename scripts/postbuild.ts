@@ -26,7 +26,6 @@ const PAGES: { path: string; changefreq: string; priority: string; images?: stri
 ];
 
 // 1. Render the /404 route output to 404.html so Cloudflare Pages serves it for
-//    any unknown URL with a real HTTP 404 status.
 function writeNotFound() {
   const src = join(browser, '404', 'index.html');
   const dest = join(browser, '404.html');
@@ -40,8 +39,6 @@ function writeNotFound() {
 }
 
 // 2. The root '' route only redirects to /<default-lang>. Drop any prerendered
-//    root index.html so Cloudflare's `/ -> /en` edge redirect in _redirects
-//    applies instead of serving a static shell.
 function dropRootIndex() {
   const root = join(browser, 'index.html');
   if (existsSync(root)) {

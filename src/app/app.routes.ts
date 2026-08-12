@@ -7,7 +7,6 @@ import { NotFound } from './pages/not-found/not-found';
 import { DEFAULT_LANG, LANG_CODES } from './services/language';
 import { langResolver } from './services/lang.resolver';
 
-/** Pages that exist under every language prefix. `path` is the sub-path after `/<lang>`. */
 const pageRoutes: Routes = [
   { path: '', component: Home, data: { seo: 'home', path: '' } },
   { path: 'impressum', component: Impressum, data: { seo: 'impressum', path: '/impressum' } },

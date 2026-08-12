@@ -28,18 +28,13 @@ export class LanguageService {
   private router = inject(Router);
   private isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
 
-  /** Active language signal. The router resolver drives this from the URL. */
   current = signal<Lang>(DEFAULT_LANG);
-  /** Convenience: true if the global lang is anything other than English. Used by legal pages to pick a sensible fallback body. */
   prefersDeForLegal = computed(() => this.current() !== 'en');
 
   constructor() {
     this.translate.addLangs(LANG_CODES);
     this.translate.setFallbackLang(DEFAULT_LANG);
 
-    // Keep TranslateService and the <html lang> attribute in sync with the
-    // signal. The signal is set by the route resolver, so by the time this runs
-    // the language always matches the URL.
     effect(() => {
       const lang = this.current();
       this.translate.use(lang);
@@ -47,16 +42,10 @@ export class LanguageService {
     });
   }
 
-  /** Called by the route resolver to align the active language with the URL. Does not persist. */
   applyFromRoute(lang: Lang) {
     if (this.current() !== lang) this.current.set(lang);
   }
 
-  /**
-   * Called when the user picks a language from the switcher. Persists the
-   * choice and navigates to the same page under the new language prefix so the
-   * URL always reflects the active language.
-   */
   setLang(lang: Lang) {
     if (this.isBrowser) {
       try { localStorage.setItem(STORAGE_KEY, lang); } catch {}
@@ -65,7 +54,6 @@ export class LanguageService {
     this.router.navigateByUrl(`/${lang}${rest}`);
   }
 
-  /** The current path (with hash) stripped of its leading language segment. */
   private pathWithoutLang(): string {
     if (!this.isBrowser) return '';
     const { pathname, search, hash } = window.location;

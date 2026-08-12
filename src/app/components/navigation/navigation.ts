@@ -19,7 +19,6 @@ export class Navigation {
   protected readonly faBars = faBars;
   protected readonly faTimes = faTimes;
 
-  /** Base path for the active language, e.g. `/de`, so in-page anchors stay within the localized home. */
   protected readonly base = computed(() => `/${this.language.current()}`);
 
   mobileMenuOpen = signal(false);
