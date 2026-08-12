@@ -17,8 +17,6 @@ export class Footer {
   protected readonly faHeart = faHeart;
   protected readonly year = new Date().getFullYear();
 
-  /** Active language prefix for in-page anchors, e.g. `/de`. */
   protected readonly base = computed(() => `/${this.language.current()}`);
-  /** Active language code for routerLink segments. */
   protected readonly lang = this.language.current;
 }

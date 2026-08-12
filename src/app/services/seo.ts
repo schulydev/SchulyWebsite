@@ -7,7 +7,6 @@ import { DEFAULT_LANG, Lang, LANGS, LanguageService } from './language';
 
 const ORIGIN = 'https://schuly.dev';
 
-/** Page key carried in route data; maps to the `meta.<key>` i18n block. */
 export type SeoPage = 'home' | 'privacy' | 'impressum' | 'terms' | 'notFound';
 
 @Injectable({ providedIn: 'root' })
@@ -20,7 +19,6 @@ export class SeoService {
   private language = inject(LanguageService);
   private doc = inject(DOCUMENT);
 
-  /** Subscribe once (from the root component) to update head tags on every navigation. */
   init() {
     this.router.events
       .pipe(filter((e): e is NavigationEnd => e instanceof NavigationEnd))
@@ -39,8 +37,6 @@ export class SeoService {
     const title = t('title');
     const description = t('description');
 
-    // Set <html lang> here so it is correct in prerendered HTML too (the
-    // LanguageService effect only runs in the browser).
     this.doc.documentElement.setAttribute('lang', lang);
 
     this.title.setTitle(title);
@@ -66,7 +62,6 @@ export class SeoService {
     this.upsertLink('canonical', 'canonical', { href: url });
   }
 
-  /** Emit hreflang alternates for every language plus x-default (default language). */
   private setAlternates(subPath: string, _active: Lang) {
     for (const { code } of LANGS) {
       this.upsertLink(`alt-${code}`, 'alternate', {
@@ -80,10 +75,6 @@ export class SeoService {
     });
   }
 
-  /**
-   * Create or update a <link> in <head>, keyed by a stable data attribute so we
-   * reuse the same element across navigations instead of piling up duplicates.
-   */
   private upsertLink(key: string, rel: string, attrs: Record<string, string>) {
     const head = this.doc.head;
     let el = head.querySelector<HTMLLinkElement>(`link[data-seo="${key}"]`);
