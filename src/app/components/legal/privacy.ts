@@ -243,7 +243,6 @@ import { LegalPageBase } from './legal-page-base';
               Stand-Datum veröffentlicht.
             </p>
           } @else {
-            <!-- English version -->
             <p>
               This Privacy Policy explains how we handle your personal data when you visit
               <a href="https://schuly.dev">schuly.dev</a> or use the Schuly app and its backend. It is
