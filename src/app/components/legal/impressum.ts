@@ -11,7 +11,7 @@ import { LegalPageBase } from './legal-page-base';
       <div class="legal-container">
         <div class="legal-eyebrow">Legal</div>
         <h1 class="legal-title">{{ 'legal.impressum' | translate }}</h1>
-        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 28.05.2026</p>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 25.10.2026</p>
 
         <div class="legal-body">
           @if (showEn()) {
@@ -27,7 +27,7 @@ import { LegalPageBase } from './legal-page-base';
               GitHub: <a href="https://github.com/PianoNic" target="_blank" rel="noopener">github.com/PianoNic</a>
             </p>
             <p>
-              A postal address will be provided on reasoned request by email.
+              Postal address: [TODO: postal address of the operator]
             </p>
 
             <h2>Responsible for content</h2>
@@ -37,21 +37,22 @@ import { LegalPageBase } from './legal-page-base';
             <p>
               Content on this site is prepared with the greatest possible care, but no warranty is given as to
               its accuracy, completeness, or timeliness. The use of any content on this site and of the
-              software linked from it (Schuly App, SchulyBackend, plugins) is at your own risk.
+              software linked from it (Schuly app, SchulyBackend, plugins, SchulwareAPI, SchulyMicrosoft) is at your own risk.
             </p>
 
             <h2>External links</h2>
             <p>
-              This site contains links to third-party websites (notably GitHub, the App Store, and Google
-              Play). I have no influence over their content. Responsibility for the content of linked sites
+              This site contains links to third-party websites (notably GitHub and the documentation at
+              docs.schuly.dev). I have no influence over their content. Responsibility for the content of linked sites
               lies with the respective provider or operator.
             </p>
 
             <h2>Trademark notice</h2>
             <p>
-              "Schulnetz" is a trademark or product name of Centerboard AG. Schuly is an
-              independent open-source hobby project, not affiliated with, endorsed by, or sponsored by
-              Centerboard AG.
+              "Schulnetz" is a trademark or product name of Centerboard AG. "Microsoft 365" is a trademark
+              of Microsoft Corporation. Schuly is an unofficial, independent open-source hobby project. It
+              is not affiliated with, endorsed by, sponsored by, or operated by Centerboard AG, Microsoft,
+              OdA Org, or any school. Names of school systems are used only to describe compatibility.
             </p>
 
             <h2>Note on the imprint requirement</h2>
@@ -64,8 +65,9 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>Copyright</h2>
             <p>
-              Source code is published under the open-source licence stated in the relevant GitHub repository.
-              Text, graphics, and screenshots on this site are, unless otherwise marked, the copyright of the
+              The source code is public on GitHub at github.com/schulydev. Licence terms are stated in the
+              relevant repository [TODO: add a LICENSE file to each repository; most have none yet]. Text,
+              graphics, and screenshots on this site are, unless otherwise marked, the copyright of the
               operator.
             </p>
           } @else {
@@ -84,7 +86,7 @@ import { LegalPageBase } from './legal-page-base';
               GitHub: <a href="https://github.com/PianoNic" target="_blank" rel="noopener">github.com/PianoNic</a>
             </p>
             <p>
-              Eine Postanschrift wird auf begründete Anfrage per E-Mail zur Verfügung gestellt.
+              Postanschrift: [TODO: Postanschrift des Anbieters]
             </p>
 
             <h2>Verantwortlich für den Inhalt</h2>
@@ -94,22 +96,24 @@ import { LegalPageBase } from './legal-page-base';
             <p>
               Die Inhalte dieser Website werden mit grösstmöglicher Sorgfalt erstellt. Für die Richtigkeit,
               Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. Die Nutzung der
-              auf dieser Website abrufbaren Inhalte und der über sie verlinkten Software (Schuly App,
-              SchulyBackend, Plugins) erfolgt auf eigene Gefahr.
+              auf dieser Website abrufbaren Inhalte und der über sie verlinkten Software (Schuly-App,
+              SchulyBackend, Plugins, SchulwareAPI, SchulyMicrosoft) erfolgt auf eigene Gefahr.
             </p>
 
             <h2>Links auf Drittseiten</h2>
             <p>
-              Diese Website enthält Links zu externen Websites Dritter (insbesondere GitHub, App Store,
-              Google Play). Auf deren Inhalte habe ich keinen Einfluss. Für die Inhalte der verlinkten
+              Diese Website enthält Links zu externen Websites Dritter (insbesondere GitHub und die
+              Dokumentation unter docs.schuly.dev). Auf deren Inhalte habe ich keinen Einfluss. Für die Inhalte der verlinkten
               Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.
             </p>
 
             <h2>Markenhinweis</h2>
             <p>
-              «Schulnetz» ist eine Marke bzw. Produktbezeichnung der Centerboard AG.
-              Schuly ist ein unabhängiges Open-Source-Hobby-Projekt und steht in keiner Verbindung zur
-              Centerboard AG und wird von dieser weder unterstützt noch gesponsert.
+              «Schulnetz» ist eine Marke bzw. Produktbezeichnung der Centerboard AG. «Microsoft 365» ist eine
+              Marke der Microsoft Corporation. Schuly ist ein inoffizielles, unabhängiges
+              Open-Source-Hobby-Projekt. Es steht in keiner Verbindung zur Centerboard AG, zu Microsoft, zu
+              OdA Org oder zu einer Schule und wird von diesen weder unterstützt, gesponsert noch betrieben.
+              Namen von Schulsystemen werden nur verwendet, um die Kompatibilität zu beschreiben.
             </p>
 
             <h2>Hinweis zur Impressumspflicht</h2>
@@ -118,6 +122,14 @@ import { LegalPageBase } from './legal-page-base';
               nach UWG Art. 3 Abs. 1 lit. s besteht für rein nicht-kommerzielle Angebote nicht. Diese
               Angaben werden freiwillig zur Verfügung gestellt, damit du jederzeit weisst, mit wem du es
               zu tun hast.
+            </p>
+
+            <h2>Urheberrecht</h2>
+            <p>
+              Der Quellcode ist öffentlich auf GitHub unter github.com/schulydev einsehbar. Die
+              Lizenzbedingungen stehen im jeweiligen Repository [TODO: LICENSE-Datei in jedem Repository
+              ergänzen; die meisten haben noch keine]. Texte, Grafiken und Screenshots auf dieser Website
+              sind, sofern nicht anders gekennzeichnet, urheberrechtlich geschützt und gehören dem Anbieter.
             </p>
           }
         </div>

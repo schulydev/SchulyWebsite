@@ -1,12 +1,12 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · Open student portal for Schulnetz & more",
-      "description": "Open-source student portal for iOS, Android, and Web. Schulnetz works out of the box; more school systems via backend plugins. Free."
+      "title": "Schuly · Unofficial open-source app for Swiss school portals",
+      "description": "Free, unofficial open-source app for Swiss school portals on Android and iOS. Works with Schulnetz and OdA Org. Not affiliated with Centerboard AG or your school."
     },
     "privacy": {
       "title": "Privacy Policy · Schuly",
-      "description": "How Schuly handles your personal data under the Swiss revDSG and the EU GDPR."
+      "description": "How Schuly handles your personal data under the Swiss Data Protection Act and, where applicable, the GDPR."
     },
     "impressum": {
       "title": "Imprint · Schuly",
@@ -34,7 +34,7 @@
   "hero": {
     "title1": "All your schools,",
     "title2": "in one app.",
-    "sub": "Grades, schedule, agenda, and absences in one place. On iOS and Android, with the web coming soon. Schulnetz and OdaOrg are already supported, with more systems on the way.",
+    "sub": "Grades, exams, timetable, absences and documents from your school portal in one place. For Android and iOS, with Schulnetz and OdA Org supported today. Unofficial and not affiliated with Centerboard AG or your school.",
     "ctaDownload": "Download Schuly",
     "ctaGithub": "View on GitHub"
   },
@@ -42,39 +42,39 @@
     "eyebrow": "Features",
     "title1": "Everything you need.",
     "title2": "Nothing that slows you down.",
-    "description": "Schuly is built mobile-first — fast, clear, and focused on what matters.",
+    "description": "Schuly is built for your phone: fast, clear and focused on what matters.",
     "items": {
       "grades": {
-        "title": "Grades & analytics",
-        "description": "Keep track of your performance at any time. Schuly presents grades, averages, and trends in a clear, easy-to-read way."
+        "title": "Grades & averages",
+        "description": "See every grade with its weighting, your subject averages and the class average, for one semester or the whole year."
       },
       "agenda": {
-        "title": "Agenda & absences",
-        "description": "Schedule, exams, and absences sync automatically and are laid out for comfortable use on mobile devices."
+        "title": "Timetable, exams & absences",
+        "description": "Your timetable, upcoming exams, absences, documents and report cards in one place, laid out for your phone."
       },
       "schulnetz": {
-        "title": "Schulnetz, OdaOrg, and more",
-        "description": "Schulnetz and OdaOrg work today. Thanks to the modular architecture, more systems can be integrated through a backend plugin, with no changes to the app."
+        "title": "Schulnetz, OdA Org and more",
+        "description": "Schulnetz and OdA Org work today. Each school system is connected through a backend plugin, so new systems can be added without an app update."
       },
       "multi": {
         "title": "Multiple schools, one app",
-        "description": "Add every school you attend — past, present, or future. Switch between them in a single tap while your data stays cleanly separated."
+        "description": "Add several school accounts and switch between them from the sidebar. Each school's data stays separate."
       },
       "design": {
         "title": "Modern design",
-        "description": "A clean, modern interface with dark mode and a consistent experience across every platform."
+        "description": "A clean, modern interface with light and dark mode, plus a built-in authenticator for your two-factor codes."
       },
       "platforms": {
-        "title": "iOS · Android · Web",
-        "description": "A shared codebase delivers a native experience on every device — with no compromise on performance or usability."
+        "title": "Android · iOS",
+        "description": "One Flutter codebase for Android and iOS. Get the latest builds on GitHub; store listings are coming soon."
       },
       "oidc": {
-        "title": "Secure sign-in",
-        "description": "Your Schuly account signs in through an external identity provider (OIDC) — no Schuly password for us to store. Each school system's own credentials are handled only by its dedicated plugin."
+        "title": "Account or private mode",
+        "description": "Use a Schuly account (passkey or password, optional two-factor) for background sync, or private mode without an account, where your school login stays on your device."
       },
       "fast": {
-        "title": "Fast and reliable",
-        "description": "Aggressive caching, optimized data handling, and a modern architecture keep load times short and the app responsive."
+        "title": "Always up to date",
+        "description": "In account mode Schuly syncs in the background and can notify you about new grades, absences and agenda changes. Your last data is kept on the phone, so the app opens instantly."
       }
     }
   },
@@ -85,9 +85,9 @@
     "alts": {
       "start": "Schuly start page — grades and agenda at a glance",
       "agenda": "Schuly agenda page — schedule and upcoming exams",
-      "grades": "Schuly grades page — subject averages and trend chart",
+      "grades": "Schuly grades page with subject averages",
       "absences": "Schuly absences page — excused and unexcused list",
-      "account": "Schuly account page — profile and multi-school switcher"
+      "account": "Schuly account page with profile and school switcher"
     }
   },
   "faq": {
@@ -97,46 +97,46 @@
     "items": [
       {
         "q": "What is Schuly?",
-        "a": "Schuly is a free, open-source app for students. It adds a modern, user-friendly interface for grades, schedule, agenda, and absences on top of the school systems your school already uses — and lets you manage multiple schools in one app. iOS and Android, with web coming soon."
+        "a": "Schuly is a free, open-source and unofficial app for students in Switzerland. It shows grades, exams, timetable, absences and documents from your school portal in a modern interface and lets you keep several school accounts in one app. Available for Android and iOS."
       },
       {
         "q": "Which school systems are supported?",
-        "a": "Currently Schulnetz (via the Schulware plugin) and OdaOrg, with Schulnetz being the most-used integration. Each system is wrapped by a backend plugin, so more can be added without changing the app."
+        "a": "Schulnetz (via the Schulware plugin) and OdA Org. Each system is connected through a backend plugin, so more can be added without an app update. A read-only Microsoft 365 connection can be linked in the settings and is still being built out."
       },
       {
-        "q": "Is Schuly an official part of Schulnetz?",
-        "a": "No. Schuly is an independent open-source project and is not affiliated with Centerboard AG, your school, or any other company or institution."
+        "q": "Is Schuly an official app of Schulnetz or my school?",
+        "a": "No. Schuly is an unofficial, independent project. It is not affiliated with, endorsed by or operated by Centerboard AG (the maker of Schulnetz), your school, OdA Org or Microsoft."
       },
       {
         "q": "How much does Schuly cost?",
-        "a": "Nothing. The app, the backend, and the plugin SDK are fully open source and available on GitHub at github.com/schulydev."
+        "a": "Nothing. Schuly is free, and the source code of the app, backend, plugins and this website is public on GitHub at github.com/schulydev."
       },
       {
         "q": "Where is my data stored?",
-        "a": "The backend runs on IONOS in France; your data stays within the EU/EEA, with no transfer to third countries. This website is served via Cloudflare Pages, which processes only your IP address for delivery."
+        "a": "That depends on the mode. In account mode the Schuly server stores your synced school data, and your school login data encrypted in a vault, so it can sync in the background. In private mode your login stays on your phone and requests pass through the Schuly server without being stored. Details are in the privacy policy."
       },
       {
         "q": "Does Schuly know my school password?",
-        "a": "Your Schuly account runs on an external OIDC provider (Pocket ID by default, configurable), so there's no Schuly password involved. The school login depends on the system: Schulnetz signs in with your school email and password (plus your MFA secret, if you use one) — these authenticate you and aren't stored; only the resulting session tokens are kept. OdaOrg uses a username and password, stored only in the OdaOrg plugin's isolated database — never read by, or shared with, the rest of the system."
+        "a": "For Schulnetz, your email and password are only used to sign in and are not stored; Schuly keeps the resulting session encrypted. For OdA Org, username and password are stored encrypted so Schuly can sign in again. In private mode all of this stays on your device. Your Schuly account itself is managed by Schuly's own sign-in service at auth.schuly.dev."
       },
       {
         "q": "Can my school system be integrated?",
-        "a": "Yes. The backend loads plugins that wrap a school system — an API wrapper where an interface exists, otherwise a scraper. Once installed, the system appears in the app's \"Add school\" flow. Plugins are developed against the Schuly plugin SDK on GitHub."
+        "a": "Possibly. The backend loads plugins that each connect one school system, using its API where one exists or reading its web portal otherwise. Once a plugin is installed, the system appears in the app's school list. Plugins are written against the Schuly plugin SDK on GitHub."
       },
       {
         "q": "I don't want to trust Schuly with my data. What can I do?",
-        "a": "An understandable position. The entire source code — app, backend, plugins, SDK, and this website — is publicly available on GitHub at github.com/schulydev. You can review every line, verify how your data is handled, and run the backend yourself if you want full control. The app can be pointed at your own backend."
+        "a": "Use private mode: there is no Schuly account and nothing about your school data is stored on the Schuly server. You can also run your own backend and point the app at it under \"Self-hosted\". All source code is public on GitHub at github.com/schulydev, so you can check how your data is handled."
       },
       {
-        "q": "Is Schuly open source? Can I contribute?",
-        "a": "Yes. Every component lives on GitHub at github.com/schulydev. Issues labelled \"bug\" or \"feature\" are the easiest place to start. Contributions from the community are always welcome."
+        "q": "Can I contribute?",
+        "a": "Yes. Every component lives on GitHub at github.com/schulydev. Issues labelled \"bug\" or \"feature\" are the easiest place to start, and contributions are welcome."
       }
     ]
   },
   "download": {
     "eyebrow": "Get Schuly",
     "title": "Ready to get started?",
-    "description": "Schuly is free, open source, and available on every major platform.",
+    "description": "Schuly is free and open source. Get the latest Android and iOS builds on GitHub; App Store and Google Play listings are coming soon.",
     "comingSoon": "Coming soon",
     "appStore": "App Store",
     "googlePlay": "Google Play",
@@ -144,12 +144,11 @@
     "googlePlayAria": "Google Play — coming soon",
     "alt": {
       "apk": ".apk on GitHub",
-      "ipa": ".ipa on GitHub",
-      "webSoon": "Web (soon)"
+      "ipa": ".ipa on GitHub (sideload)"
     },
     "note": {
-      "prefix": "A compatible SchulyBackend instance is required. You'll find self-hosting documentation in the ",
-      "linkText": "backend repository",
+      "prefix": "The app uses the Schuly server by default. Want to run your own? See the ",
+      "linkText": "self-hosting guide",
       "suffix": "."
     }
   },
@@ -175,7 +174,7 @@
       "terms": "Terms of Use",
       "coffee": "Buy me a coffee"
     },
-    "disclaimer": "Independent open-source project. Not affiliated with Schulnetz, Centerboard AG, or any other school system.",
+    "disclaimer": "Unofficial, independent open-source project. Not affiliated with Centerboard AG (Schulnetz), OdA Org, Microsoft or any school.",
     "copyright": "© {{ year }} Schuly · Built with"
   },
   "notFound": {
