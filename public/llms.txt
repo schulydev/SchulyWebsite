@@ -1,41 +1,49 @@
 # Schuly
 
-> Open-source student portal for iOS, Android, and Web. Schulnetz supported out of the box; more school systems via backend plugins. Free and built in the open.
+> Free, unofficial open-source app for Swiss school portals on Android and iOS. Schulnetz and OdA Org are supported through backend plugins. Not affiliated with Centerboard AG or any school.
 
-Schuly is a free, open-source mobile and web app that gives students a modern interface on top of their school's existing student information system. The Flutter app handles UI; a C# / ASP.NET Core backend (hosted on IONOS France) handles sync. Different school systems are integrated by writing backend plugins against the Schuly plugin SDK - the app picks up a new system once its plugin is installed. Currently shipping plugins cover Schulnetz (via Schulware) and OdaOrg. Authentication for the Schuly account itself goes through an external OIDC provider (Pocket ID by default; configurable).
+Schuly is a free mobile app that gives students a modern interface on top of their school's existing portal. The Flutter app (Android and iOS) handles the UI; a C# / ASP.NET Core backend handles sync. School systems are integrated as backend plugins written against the Schuly plugin SDK. Current plugins cover Schulnetz (via the Schulware plugin and the SchulwareAPI service) and OdA Org. A read-only Microsoft 365 connection (via the SchulyMicrosoft service) can be linked and is still being built out.
 
-Schuly is an independent project. It is not affiliated with, endorsed by, or sponsored by Centerboard AG or any school, company, or institution.
+The app has two modes. Account mode uses a Schuly account from Schuly's own Keycloak sign-in service at auth.schuly.dev; the backend stores the synced school data and the school login data (encrypted), syncs in the background and can send push notifications. Private mode needs no account; login data stays on the device and requests pass through the Schuly server without being stored.
+
+Schuly is an independent, unofficial project. It is not affiliated with, endorsed by, or operated by Centerboard AG (maker of Schulnetz), OdA Org, Microsoft, or any school.
 
 ## Core links
 
-- [Website](https://schuly.dev/): Marketing site
-- [Privacy policy](https://schuly.dev/privacy): Data protection under Swiss revDSG and GDPR
-- [Imprint](https://schuly.dev/impressum): Operator information
-- [Terms of use](https://schuly.dev/terms): Use at your own risk
+- [Website](https://schuly.dev/en): Marketing site (also in de, fr, it, rm)
+- [Documentation](https://docs.schuly.dev): Getting-started guide and per-repository docs
+- [Privacy policy](https://schuly.dev/en/privacy): Data protection under the Swiss FADP and, where applicable, the GDPR
+- [Imprint](https://schuly.dev/en/impressum): Operator information
+- [Terms of use](https://schuly.dev/en/terms): Use at your own risk
 
 ## Source code
 
-- [Schuly](https://github.com/schulydev/Schuly): Flutter app for iOS, Android, Web
-- [SchulyBackend](https://github.com/schulydev/SchulyBackend): C# / ASP.NET Core backend
-- [SchulyPlugins](https://github.com/schulydev/SchulyPlugins): Official plugins (Schulware for Schulnetz, Example)
-- [SchulyPluginAbstractions](https://github.com/schulydev/SchulyPluginAbstractions): Stable plugin SDK contract (NuGet)
+- [Schuly](https://github.com/schulydev/Schuly): Flutter app for Android and iOS
+- [SchulyBackend](https://github.com/schulydev/SchulyBackend): C# / ASP.NET Core backend and plugin host
+- [SchulyPlugins](https://github.com/schulydev/SchulyPlugins): Official plugins (Schulware for Schulnetz, OdA Org, Microsoft, Example)
+- [SchulyPluginAbstractions](https://github.com/schulydev/SchulyPluginAbstractions): Plugin SDK contract (NuGet)
+- [SchulyKeycloak](https://github.com/schulydev/SchulyKeycloak): Keycloak image and the schuly realm (auth.schuly.dev)
+- [SchulwareAPI](https://github.com/PianoNic/SchulwareAPI): Schulnetz access service used by the Schulware plugin
+- [SchulyMicrosoft](https://github.com/schulydev/SchulyMicrosoft): Microsoft 365 access service used by the Microsoft plugin
 
 ## Features
 
-- Grades and analytics: trends, averages, semester reports
-- Agenda and absences: schedule, exams, absence records
-- Multiple schools in one app: add several schools at once and switch between them
-- Cross-platform: one Flutter codebase, three first-class targets (iOS, Android, Web)
+- Grades with weightings, subject averages and class average, per semester or year
+- Timetable, exams, absences, documents and report cards
+- Multiple school accounts in one app
+- Account mode with background sync and push notifications; private mode without an account
+- Built-in authenticator for two-factor codes
+- In-app data export (JSON) and account deletion
 
-## Supported school systems (today)
+## Downloads
 
-- Schulnetz (Centerboard AG) via the Schulware plugin - currently the most widely used integration
-- OdaOrg via the OdaOrg plugin
+- Android: signed .apk on [GitHub releases](https://github.com/schulydev/Schuly/releases)
+- iOS: unsigned .ipa on GitHub releases (sideload)
+- App Store and Google Play: not yet available
 
 ## Technical
 
-- Frontend: Flutter (mobile + web)
-- Backend: ASP.NET Core, PostgreSQL, S3-compatible object storage
-- Auth: external OIDC for the Schuly account (Pocket ID by default); per-plugin auth for school accounts (email/password for Schulnetz, username/password for OdaOrg)
+- App: Flutter (Android, iOS)
+- Backend: ASP.NET Core, PostgreSQL, S3-compatible document storage
+- Auth: Keycloak (auth.schuly.dev) for the Schuly account; per-plugin login for school accounts
 - Marketing site: Angular 20, prerendered static HTML on Cloudflare Pages
-- License: see each repository's LICENSE file

@@ -1,12 +1,12 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · Portail élève ouvert pour Schulnetz et plus",
-      "description": "Portail élève open source pour iOS, Android et le web. Schulnetz fonctionne d'emblée ; d'autres systèmes via des plugins backend. Gratuit."
+      "title": "Schuly · App open source non officielle pour les portails scolaires suisses",
+      "description": "App gratuite, open source et non officielle pour les portails scolaires suisses, sur Android et iOS. Fonctionne avec Schulnetz et OdA Org. Aucun lien avec Centerboard AG ni avec ton école."
     },
     "privacy": {
       "title": "Confidentialité · Schuly",
-      "description": "Comment Schuly traite tes données personnelles selon la revLPD et le RGPD."
+      "description": "Comment Schuly traite tes données personnelles selon la loi suisse sur la protection des données et, le cas échéant, le RGPD."
     },
     "impressum": {
       "title": "Mentions légales · Schuly",
@@ -34,7 +34,7 @@
   "hero": {
     "title1": "Toutes tes écoles,",
     "title2": "dans une seule app.",
-    "sub": "Notes, horaire, agenda et absences au même endroit. Sur iOS et Android, le web bientôt disponible. Schulnetz et OdaOrg sont déjà pris en charge, d'autres systèmes suivront.",
+    "sub": "Notes, examens, horaire, absences et documents de ton portail scolaire au même endroit. Pour Android et iOS, avec Schulnetz et OdA Org déjà pris en charge. Non officielle et sans lien avec Centerboard AG ni avec ton école.",
     "ctaDownload": "Télécharger Schuly",
     "ctaGithub": "Voir sur GitHub"
   },
@@ -42,39 +42,39 @@
     "eyebrow": "Fonctionnalités",
     "title1": "Tout ce dont tu as besoin.",
     "title2": "Rien qui te ralentit.",
-    "description": "Schuly est conçu en priorité pour le mobile – rapide, clair et concentré sur l'essentiel.",
+    "description": "Schuly est conçue pour ton téléphone : rapide, claire et centrée sur l'essentiel.",
     "items": {
       "grades": {
-        "title": "Notes et statistiques",
-        "description": "Garde tes résultats en vue à tout moment. Schuly présente notes, moyennes et tendances de façon claire et lisible."
+        "title": "Notes et moyennes",
+        "description": "Vois chaque note avec sa pondération, tes moyennes par branche et la moyenne de la classe, pour un semestre ou toute l'année."
       },
       "agenda": {
-        "title": "Agenda et absences",
-        "description": "Horaire, examens et absences se synchronisent automatiquement et sont présentés de manière optimisée pour les appareils mobiles."
+        "title": "Horaire, examens et absences",
+        "description": "Ton horaire, tes prochains examens, tes absences, documents et bulletins au même endroit, pensés pour ton téléphone."
       },
       "schulnetz": {
-        "title": "Schulnetz, OdaOrg et plus",
-        "description": "Schulnetz et OdaOrg fonctionnent déjà. Grâce à l'architecture modulaire, d'autres systèmes peuvent être intégrés via un plugin backend, sans modifier l'app."
+        "title": "Schulnetz, OdA Org et plus",
+        "description": "Schulnetz et OdA Org fonctionnent déjà. Chaque système scolaire est connecté par un plugin backend, ce qui permet d'en ajouter sans mise à jour de l'app."
       },
       "multi": {
         "title": "Plusieurs écoles, une app",
-        "description": "Ajoute toutes les écoles que tu fréquentes – passées, actuelles ou futures. Bascule de l'une à l'autre en un clic, tes données restent bien séparées."
+        "description": "Ajoute plusieurs comptes scolaires et passe de l'un à l'autre depuis la barre latérale. Les données de chaque école restent séparées."
       },
       "design": {
         "title": "Design moderne",
-        "description": "Une interface claire et moderne avec mode sombre et une expérience cohérente sur toutes les plateformes."
+        "description": "Une interface claire et moderne avec mode clair et sombre, plus un authentificateur intégré pour tes codes à deux facteurs."
       },
       "platforms": {
-        "title": "iOS · Android · Web",
-        "description": "Une base de code commune offre une expérience native sur chaque appareil – sans compromis sur les performances ou l'utilisation."
+        "title": "Android · iOS",
+        "description": "Une seule base de code Flutter pour Android et iOS. Les dernières versions sont sur GitHub ; les fiches dans les stores arrivent bientôt."
       },
       "oidc": {
-        "title": "Connexion sécurisée",
-        "description": "La connexion à ton compte Schuly passe par un fournisseur d'identité externe (OIDC) – aucun mot de passe Schuly à stocker. Les identifiants de chaque système scolaire ne sont traités que par son plugin dédié."
+        "title": "Mode compte ou mode privé",
+        "description": "Utilise un compte Schuly (passkey ou mot de passe, double authentification facultative) pour la synchronisation en arrière-plan, ou le mode privé sans compte, où ton identifiant scolaire reste sur ton appareil."
       },
       "fast": {
-        "title": "Rapide et fiable",
-        "description": "Mise en cache agressive, traitement des données optimisé et architecture moderne assurent des temps de chargement courts et une app réactive."
+        "title": "Toujours à jour",
+        "description": "En mode compte, Schuly synchronise en arrière-plan et peut te notifier des nouvelles notes, absences et modifications de l'agenda. Tes dernières données restent sur le téléphone, l'app s'ouvre donc instantanément."
       }
     }
   },
@@ -85,9 +85,9 @@
     "alts": {
       "start": "Page d'accueil Schuly – notes et agenda en un coup d'œil",
       "agenda": "Page agenda Schuly – horaire et examens à venir",
-      "grades": "Page notes Schuly – moyennes par branche et graphique",
+      "grades": "Page des notes de Schuly avec les moyennes par branche",
       "absences": "Page absences Schuly – justifiées et non justifiées",
-      "account": "Page compte Schuly – profil et sélecteur multi-écoles"
+      "account": "Page du compte Schuly avec profil et sélecteur d'école"
     }
   },
   "faq": {
@@ -97,46 +97,46 @@
     "items": [
       {
         "q": "Qu'est-ce que Schuly ?",
-        "a": "Schuly est une app open-source gratuite pour les élèves. Elle ajoute une interface moderne et conviviale pour les notes, l'horaire, l'agenda et les absences par-dessus les systèmes scolaires que ton école utilise déjà – et te permet de gérer plusieurs écoles dans une seule app. iOS et Android, web bientôt disponible."
+        "a": "Schuly est une app gratuite, open source et non officielle pour les élèves en Suisse. Elle affiche les notes, examens, horaire, absences et documents de ton portail scolaire dans une interface moderne et réunit plusieurs comptes scolaires dans une seule app. Disponible pour Android et iOS."
       },
       {
         "q": "Quels systèmes scolaires sont pris en charge ?",
-        "a": "Actuellement Schulnetz (via le plugin Schulware) et OdaOrg, Schulnetz étant l'intégration la plus utilisée. Chaque système est encapsulé par un plugin backend, ce qui permet d'en ajouter d'autres sans modifier l'app."
+        "a": "Schulnetz (via le plugin Schulware) et OdA Org. Chaque système est connecté par un plugin backend, d'autres peuvent donc être ajoutés sans mise à jour de l'app. Une connexion en lecture seule à Microsoft 365 peut être liée dans les réglages et est encore en développement."
       },
       {
-        "q": "Schuly fait-il officiellement partie de Schulnetz ?",
-        "a": "Non. Schuly est un projet open-source indépendant et n'a aucun lien avec Centerboard AG, ton école ou toute autre entreprise ou institution."
+        "q": "Schuly est-elle une app officielle de Schulnetz ou de mon école ?",
+        "a": "Non. Schuly est un projet non officiel et indépendant. Il n'a aucun lien avec Centerboard AG (l'éditeur de Schulnetz), ton école, OdA Org ou Microsoft, et n'est ni soutenu ni exploité par eux."
       },
       {
         "q": "Combien coûte Schuly ?",
-        "a": "Rien. L'app, le backend et le plugin SDK sont entièrement open source et disponibles sur GitHub à github.com/schulydev."
+        "a": "Rien. Schuly est gratuite, et le code source de l'app, du backend, des plugins et de ce site est public sur GitHub sous github.com/schulydev."
       },
       {
         "q": "Où mes données sont-elles stockées ?",
-        "a": "Le backend tourne chez IONOS en France ; tes données restent dans l'UE/EEE, sans transfert vers des pays tiers. Ce site est diffusé via Cloudflare Pages, qui ne traite que ton adresse IP pour la livraison."
+        "a": "Cela dépend du mode. En mode compte, le serveur Schuly stocke tes données scolaires synchronisées, et tes identifiants scolaires chiffrés dans un coffre, pour pouvoir synchroniser en arrière-plan. En mode privé, ton identifiant reste sur ton téléphone et les requêtes passent par le serveur Schuly sans y être stockées. Les détails figurent dans la politique de confidentialité."
       },
       {
-        "q": "Schuly connaît-il mon mot de passe scolaire ?",
-        "a": "Ton compte Schuly fonctionne via un fournisseur OIDC externe (Pocket ID par défaut, configurable), il n'y a donc pas de mot de passe Schuly. Pour le système scolaire, cela dépend de l'intégration : Schulnetz te connecte avec ton e-mail et ton mot de passe scolaires (plus ton secret MFA, le cas échéant) ; ils servent à l'authentification et ne sont pas conservés – seuls les jetons de session obtenus sont gardés. OdaOrg utilise un nom d'utilisateur et un mot de passe, stockés uniquement dans la base de données isolée du plugin OdaOrg – jamais lus ni partagés avec le reste du système."
+        "q": "Schuly connaît-elle mon mot de passe scolaire ?",
+        "a": "Pour Schulnetz, ton e-mail et ton mot de passe servent uniquement à la connexion et ne sont pas stockés ; Schuly conserve la session obtenue sous forme chiffrée. Pour OdA Org, le nom d'utilisateur et le mot de passe sont stockés chiffrés afin que Schuly puisse se reconnecter. En mode privé, tout cela reste sur ton appareil. Ton compte Schuly lui-même est géré par le propre service de connexion de Schuly, auth.schuly.dev."
       },
       {
         "q": "Mon système scolaire peut-il être intégré ?",
-        "a": "Oui. Le backend charge des plugins qui encapsulent un système scolaire – un wrapper d'API lorsqu'une interface existe, sinon un scraper. Une fois installé, le système apparaît dans le flux «Ajouter une école» de l'app. Les plugins sont développés avec le SDK plugin Schuly sur GitHub."
+        "a": "Peut-être. Le backend charge des plugins qui connectent chacun un système scolaire, via son API s'il en a une, sinon via son portail web. Une fois le plugin installé, le système apparaît dans la liste des écoles de l'app. Les plugins sont développés avec le SDK de plugins Schuly sur GitHub."
       },
       {
-        "q": "Je ne veux pas confier mes données à Schuly. Que puis-je faire ?",
-        "a": "Une position compréhensible. L'intégralité du code source – app, backend, plugins, SDK et ce site – est publiquement disponible sur GitHub à github.com/schulydev. Tu peux examiner chaque ligne, vérifier comment tes données sont traitées et héberger le backend toi-même si tu veux le contrôle total. L'app peut pointer vers ton propre backend."
+        "q": "Je ne veux pas confier mes données à Schuly. Que faire ?",
+        "a": "Utilise le mode privé : il n'y a pas de compte Schuly et rien de tes données scolaires n'est stocké sur le serveur Schuly. Tu peux aussi exploiter ton propre backend et y connecter l'app via « Self-hosted ». Tout le code source est public sur GitHub sous github.com/schulydev, tu peux donc vérifier comment tes données sont traitées."
       },
       {
-        "q": "Schuly est-il open source ? Puis-je contribuer ?",
-        "a": "Oui. Chaque composant se trouve sur GitHub à github.com/schulydev. Les issues étiquetées «bug» ou «feature» sont le point d'entrée le plus simple. Les contributions de la communauté sont toujours les bienvenues."
+        "q": "Puis-je contribuer ?",
+        "a": "Oui. Tous les composants sont sur GitHub sous github.com/schulydev. Les issues avec le label « bug » ou « feature » sont le point de départ le plus simple, et les contributions sont les bienvenues."
       }
     ]
   },
   "download": {
     "eyebrow": "Obtenir Schuly",
     "title": "Prêt à commencer ?",
-    "description": "Schuly est gratuit, open source et disponible sur toutes les plateformes principales.",
+    "description": "Schuly est gratuite et open source. Les dernières versions pour Android et iOS sont sur GitHub ; App Store et Google Play arrivent bientôt.",
     "comingSoon": "Bientôt disponible",
     "appStore": "App Store",
     "googlePlay": "Google Play",
@@ -144,12 +144,11 @@
     "googlePlayAria": "Google Play – bientôt disponible",
     "alt": {
       "apk": ".apk sur GitHub",
-      "ipa": ".ipa sur GitHub",
-      "webSoon": "Web (bientôt)"
+      "ipa": ".ipa sur GitHub (sideload)"
     },
     "note": {
-      "prefix": "Une instance SchulyBackend compatible est requise. Tu trouveras la documentation d'auto-hébergement dans le ",
-      "linkText": "dépôt backend",
+      "prefix": "L'app utilise par défaut le serveur Schuly. Tu veux exploiter le tien ? Consulte le ",
+      "linkText": "guide d'auto-hébergement",
       "suffix": "."
     }
   },
@@ -175,7 +174,7 @@
       "terms": "Conditions",
       "coffee": "Offre-moi un café"
     },
-    "disclaimer": "Projet open-source indépendant. Aucun lien avec Schulnetz, Centerboard AG ou tout autre système scolaire.",
+    "disclaimer": "Projet open source non officiel et indépendant. Aucun lien avec Centerboard AG (Schulnetz), OdA Org, Microsoft ou une école.",
     "copyright": "© {{ year }} Schuly · Construit avec"
   },
   "notFound": {

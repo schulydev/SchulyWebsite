@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faAndroid, faApple, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-download',
@@ -14,6 +14,5 @@ export class Download {
   protected readonly faAndroid = faAndroid;
   protected readonly faApple = faApple;
   protected readonly faGooglePlay = faGooglePlay;
-  protected readonly faGlobe = faGlobe;
   protected readonly faArrowRight = faArrowRight;
 }

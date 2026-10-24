@@ -1,7 +1,7 @@
 {
-  "name": "Schuly - The better Schulnetz",
+  "name": "Schuly",
   "short_name": "Schuly",
-  "description": "The better Schulnetz - open-source, mobile-first alternative to the official Schulnetz client.",
+  "description": "Unofficial open-source app for Swiss school portals such as Schulnetz and OdA Org. Not affiliated with Centerboard AG or any school.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

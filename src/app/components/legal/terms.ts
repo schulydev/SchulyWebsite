@@ -11,7 +11,7 @@ import { LegalPageBase } from './legal-page-base';
       <div class="legal-container">
         <div class="legal-eyebrow">Terms</div>
         <h1 class="legal-title">{{ 'legal.terms' | translate }}</h1>
-        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 28.05.2026</p>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 25.10.2026</p>
 
         <div class="legal-body">
           @if (showFallbackNotice()) {
@@ -27,24 +27,28 @@ import { LegalPageBase } from './legal-page-base';
             </div>
 
             <p>
-              Diese Nutzungsbedingungen regeln die Nutzung der Website schuly.dev und der Schuly-Apps für
-              iOS, Android und Web. Mit dem Zugriff auf die Website oder dem Download und der Nutzung der
+              Diese Nutzungsbedingungen regeln die Nutzung der Website schuly.dev, der Schuly-App für
+              Android und iOS und des von uns betriebenen Schuly-Servers. Mit dem Zugriff auf die Website oder dem Download und der Nutzung der
               App erklärst du dich mit diesen Bedingungen einverstanden.
             </p>
 
             <h2>1. Leistung</h2>
             <p>
-              Schuly ist ein Open-Source-Studierendenportal. Die App stellt Inhalte deines Schulsystems
-              (z. B. Schulnetz) in einer modernen Benutzeroberfläche dar. Schuly speichert oder verarbeitet
-              keine Schul-Passwörter; die Authentifizierung erfolgt über den OIDC-Anbieter deiner Schule.
+              Schuly ist eine inoffizielle Open-Source-App für Schulportale. Sie ruft mit deinen
+              Zugangsdaten Inhalte deines Schulsystems (z. B. Schulnetz oder OdA Org) ab und stellt sie in
+              einer modernen Benutzeroberfläche dar. Im Kontomodus speichert der Schuly-Server deine
+              Schuldaten und die nötigen Zugangsdaten verschlüsselt, um sie im Hintergrund zu
+              synchronisieren; im privaten Modus bleiben die Zugangsdaten auf deinem Gerät. Details stehen
+              in der Datenschutzerklärung. Es besteht kein Anspruch auf bestimmte Funktionen oder auf die
+              Unterstützung eines bestimmten Schulsystems.
             </p>
 
-            <h2>2. Keine Verbindung zu Centerboard AG</h2>
+            <h2>2. Inoffizielles Projekt, keine Verbindung zu Dritten</h2>
             <p>
-              Schuly ist ein unabhängiges Projekt. «Schulnetz» ist eine Marke bzw. Produktbezeichnung
-              der Centerboard AG. Es besteht keine vertragliche, gesellschaftsrechtliche oder
-              geschäftliche Verbindung zur Centerboard AG. Eine Empfehlung oder Sponsoring durch
-              Centerboard AG findet nicht statt.
+              Schuly ist ein inoffizielles, unabhängiges Projekt. «Schulnetz» ist eine Marke bzw.
+              Produktbezeichnung der Centerboard AG. Es besteht keine vertragliche, gesellschaftsrechtliche
+              oder geschäftliche Verbindung zur Centerboard AG, zu Microsoft, zu OdA Org oder zu deiner
+              Schule. Keine dieser Stellen betreibt, empfiehlt oder sponsert Schuly.
             </p>
 
             <h2>3. Eigenverantwortung</h2>
@@ -57,10 +61,10 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>4. Open-Source-Lizenz</h2>
             <p>
-              Der Quellcode der App, des Backends und der Plugins steht unter der jeweils im
-              GitHub-Repository angegebenen Open-Source-Lizenz. Diese gilt für die Software selbst und
-              hat Vorrang vor Punkt 5 (Haftungsbeschränkung) dieser Bedingungen, soweit sie weitergehende
-              Rechte gewährt.
+              Der Quellcode der App, des Backends und der Plugins ist öffentlich auf GitHub einsehbar.
+              Für die Software gilt die im jeweiligen Repository angegebene Lizenz [TODO: LICENSE-Datei in
+              jedem Repository ergänzen; die meisten haben noch keine]. Diese hat Vorrang vor Punkt 5
+              (Haftungsbeschränkung) dieser Bedingungen, soweit sie weitergehende Rechte gewährt.
             </p>
 
             <h2>5. Haftungsbeschränkung</h2>
@@ -123,22 +127,26 @@ import { LegalPageBase } from './legal-page-base';
             </div>
 
             <p>
-              These Terms govern your use of the schuly.dev website and the Schuly apps for iOS, Android,
-              and Web. By accessing the site or downloading and using the app you agree to these Terms.
+              These Terms govern your use of the schuly.dev website, the Schuly app for Android and iOS,
+              and the Schuly server we operate. By accessing the site or downloading and using the app you agree to these Terms.
             </p>
 
             <h2>1. Service</h2>
             <p>
-              Schuly is an open-source student portal. The app surfaces content from your school system
-              (e.g. Schulnetz) in a modern interface. Schuly does not store or process your school
-              password; authentication is delegated to your school's OIDC provider.
+              Schuly is an unofficial open-source app for school portals. Using your login data, it fetches
+              content from your school system (e.g. Schulnetz or OdA Org) and shows it in a modern
+              interface. In account mode the Schuly server stores your school data and the required login
+              data encrypted so it can sync in the background; in private mode your login data stays on your
+              device. Details are in the Privacy Policy. There is no entitlement to specific features or to
+              support for a particular school system.
             </p>
 
-            <h2>2. No affiliation with Centerboard AG</h2>
+            <h2>2. Unofficial project, no affiliation</h2>
             <p>
-              Schuly is an independent project. "Schulnetz" is a trademark or product name of
+              Schuly is an unofficial, independent project. "Schulnetz" is a trademark or product name of
               Centerboard AG. There is no contractual, corporate, or commercial relationship with
-              Centerboard AG, and no endorsement or sponsorship by Centerboard AG.
+              Centerboard AG, Microsoft, OdA Org, or your school, and none of them operates, endorses, or
+              sponsors Schuly.
             </p>
 
             <h2>3. Your responsibility</h2>
@@ -150,9 +158,9 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>4. Open-source licence</h2>
             <p>
-              The source code of the app, backend, and plugins is published under the open-source licence
-              stated in the relevant GitHub repository. That licence applies to the software itself and
-              takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
+              The source code of the app, backend, and plugins is public on GitHub. The software is covered
+              by the licence stated in the relevant repository [TODO: add a LICENSE file to each repository;
+              most have none yet]. That licence takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
               grants broader rights.
             </p>
 
