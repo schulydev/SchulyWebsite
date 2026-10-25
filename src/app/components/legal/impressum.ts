@@ -65,9 +65,11 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>Copyright</h2>
             <p>
-              The source code is public on GitHub at github.com/schulydev and is released under the MIT
-              Licence; each repository carries its LICENSE file. Text, graphics, and screenshots on this
-              site are, unless otherwise marked, the copyright of the operator.
+              The source code is public on GitHub at github.com/schulydev. The app, backend, website, and
+              related services are released under the PolyForm Noncommercial License 1.0.0; the plugins and
+              the plugin contract remain under the MIT License. Each repository carries its LICENSE file.
+              Text, graphics, and screenshots on this site are, unless otherwise marked, the copyright of
+              the operator.
             </p>
           } @else {
             @if (showFallbackNotice()) {
@@ -125,8 +127,10 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>Urheberrecht</h2>
             <p>
-              Der Quellcode ist öffentlich auf GitHub unter github.com/schulydev einsehbar und steht unter
-              der MIT-Lizenz; jedes Repository enthält seine LICENSE-Datei. Texte, Grafiken und Screenshots
+              Der Quellcode ist öffentlich auf GitHub unter github.com/schulydev einsehbar. Die App, das
+              Backend, die Website und die zugehörigen Dienste stehen unter der PolyForm Noncommercial
+              License 1.0.0; die Plugins und der Plugin-Vertrag bleiben unter der MIT-Lizenz. Jedes
+              Repository enthält seine LICENSE-Datei. Texte, Grafiken und Screenshots
               auf dieser Website sind, sofern nicht anders gekennzeichnet, urheberrechtlich geschützt und
               gehören dem Anbieter.
             </p>
