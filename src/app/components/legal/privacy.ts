@@ -77,7 +77,7 @@ import { LegalPageBase } from './legal-page-base';
               <strong>auth.schuly.dev</strong>) verwaltet. Gespeichert werden Benutzername, E-Mail-Adresse,
               dein Passwort (nur als Hash) bzw. deine Passkeys, optional ein zweiter Faktor
               (Authenticator-App, Wiederherstellungscodes) und optional ein Profilbild. Für
-              Bestätigungscodes erhältst du E-Mails, die über [TODO: E-Mail-/SMTP-Anbieter] versendet
+              Bestätigungscodes erhältst du E-Mails, die über Resend (Resend, Inc.) versendet
               werden.
             </p>
             <p>
@@ -371,8 +371,8 @@ import { LegalPageBase } from './legal-page-base';
               Your Schuly account is managed by our own sign-in service (Keycloak at
               <strong>auth.schuly.dev</strong>). It stores your username, email address, your password
               (as a hash only) or passkeys, an optional second factor (authenticator app, recovery codes),
-              and an optional profile picture. Verification-code emails are sent via
-              [TODO: email / SMTP provider].
+              and an optional profile picture. Verification-code emails are sent via Resend
+              (Resend, Inc.).
             </p>
             <p>
               In account mode the Schuly server syncs your school data in the background and keeps a copy,
