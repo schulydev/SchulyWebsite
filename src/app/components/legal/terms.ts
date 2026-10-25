@@ -34,7 +34,7 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>1. Leistung</h2>
             <p>
-              Schuly ist eine inoffizielle Open-Source-App für Schulportale. Sie ruft mit deinen
+              Schuly ist eine inoffizielle App mit öffentlich einsehbarem Quellcode für Schulportale. Sie ruft mit deinen
               Zugangsdaten Inhalte deines Schulsystems (z. B. Schulnetz oder OdA Org) ab und stellt sie in
               einer modernen Benutzeroberfläche dar. Im Kontomodus speichert der Schuly-Server deine
               Schuldaten und die nötigen Zugangsdaten verschlüsselt, um sie im Hintergrund zu
@@ -121,7 +121,7 @@ import { LegalPageBase } from './legal-page-base';
             </p>
           } @else {
             <div class="callout">
-              <strong>Use at your own risk.</strong> Schuly is a free, open-source hobby project by a
+              <strong>Use at your own risk.</strong> Schuly is a free, source-available hobby project by a
               single developer. The software is provided without any warranty whatsoever - not for
               availability, not for correctness of the school data shown, not for data loss. For binding
               information about grades, schedule, or absences, consult your school directly.
@@ -134,7 +134,7 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>1. Service</h2>
             <p>
-              Schuly is an unofficial open-source app for school portals. Using your login data, it fetches
+              Schuly is an unofficial, source-available app for school portals. Using your login data, it fetches
               content from your school system (e.g. Schulnetz or OdA Org) and shows it in a modern
               interface. In account mode the Schuly server stores your school data and the required login
               data encrypted so it can sync in the background; in private mode your login data stays on your
