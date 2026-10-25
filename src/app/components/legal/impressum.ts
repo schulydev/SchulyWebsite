@@ -50,14 +50,14 @@ import { LegalPageBase } from './legal-page-base';
             <h2>Trademark notice</h2>
             <p>
               "Schulnetz" is a trademark or product name of Centerboard AG. "Microsoft 365" is a trademark
-              of Microsoft Corporation. Schuly is an unofficial, independent open-source hobby project. It
+              of Microsoft Corporation. Schuly is an unofficial, independent, source-available hobby project. It
               is not affiliated with, endorsed by, sponsored by, or operated by Centerboard AG, Microsoft,
               OdA Org, or any school. Names of school systems are used only to describe compatibility.
             </p>
 
             <h2>Note on the imprint requirement</h2>
             <p>
-              Schuly is a non-commercial open-source project. The Swiss Unfair Competition Act
+              Schuly is a non-commercial, source-available project. The Swiss Unfair Competition Act
               (UWG Art. 3(1)(s)) requires an imprint only for commercial offerings; non-commercial
               services are exempt. This information is provided voluntarily so you always know who
               operates this site.
@@ -112,14 +112,14 @@ import { LegalPageBase } from './legal-page-base';
             <p>
               «Schulnetz» ist eine Marke bzw. Produktbezeichnung der Centerboard AG. «Microsoft 365» ist eine
               Marke der Microsoft Corporation. Schuly ist ein inoffizielles, unabhängiges
-              Open-Source-Hobby-Projekt. Es steht in keiner Verbindung zur Centerboard AG, zu Microsoft, zu
+              Hobby-Projekt mit öffentlich einsehbarem Quellcode. Es steht in keiner Verbindung zur Centerboard AG, zu Microsoft, zu
               OdA Org oder zu einer Schule und wird von diesen weder unterstützt, gesponsert noch betrieben.
               Namen von Schulsystemen werden nur verwendet, um die Kompatibilität zu beschreiben.
             </p>
 
             <h2>Hinweis zur Impressumspflicht</h2>
             <p>
-              Schuly ist ein nicht-kommerzielles Open-Source-Projekt. Eine gesetzliche Impressumspflicht
+              Schuly ist ein nicht-kommerzielles Projekt mit öffentlich einsehbarem Quellcode. Eine gesetzliche Impressumspflicht
               nach UWG Art. 3 Abs. 1 lit. s besteht für rein nicht-kommerzielle Angebote nicht. Diese
               Angaben werden freiwillig zur Verfügung gestellt, damit du jederzeit weisst, mit wem du es
               zu tun hast.
