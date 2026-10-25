@@ -163,9 +163,10 @@ import { LegalPageBase } from './legal-page-base';
               Soweit die DSGVO anwendbar ist, stützen wir uns auf die Erfüllung des Nutzungsverhältnisses
               (Art. 6 Abs. 1 lit. b), für Protokolle und Sicherheit auf unser berechtigtes Interesse
               (Art. 6 Abs. 1 lit. f) und für Absenzgründe mit Gesundheitsangaben auf deine ausdrückliche
-              Einwilligung (Art. 9 Abs. 2 lit. a). [TODO: Die App holt derzeit keine ausdrückliche
-              Einwilligung für Absenzgründe ein. Einwilligungsschritt ergänzen oder Rechtsgrundlage neu
-              beurteilen.]
+              Einwilligung (Art. 9 Abs. 2 lit. a). Diese Einwilligung erteilst du, indem du bei der
+              Einrichtung den Kontomodus wählst - nachdem dich die App darauf hingewiesen hat, dass im
+              Kontomodus deine Schuldaten einschliesslich der Absenzgründe auf den Server synchronisiert
+              werden. Im privaten Modus werden diese Daten nicht auf dem Server gespeichert.
             </p>
 
             <h2>5. Empfänger und Auftragsbearbeiter</h2>
@@ -247,10 +248,8 @@ import { LegalPageBase } from './legal-page-base';
               </li>
               <li>
                 <strong>Dein Konto löschen</strong>: Dabei werden deine Konto- und Schuldaten, deine
-                Dokumente und dein Anmeldekonto bei auth.schuly.dev gelöscht.
-                [TODO: Die Kontolöschung entfernt derzeit noch nicht die im Tresor gespeicherten
-                Zugangsdaten und die Konto-Einträge der Plugins (siehe AccountPurger.cs im SchulyBackend).
-                Vor der Veröffentlichung beheben oder hier beschreiben.]
+                Dokumente, die im Tresor gespeicherten Zugangsdaten, die Konto-Einträge der Plugins und dein
+                Anmeldekonto bei auth.schuly.dev gelöscht.
               </li>
             </ul>
             <p>
@@ -453,8 +452,9 @@ import { LegalPageBase } from './legal-page-base';
             <p>
               Where the GDPR applies, we rely on performance of the user relationship (Art. 6(1)(b)), our
               legitimate interest for logs and security (Art. 6(1)(f)), and your explicit consent for absence
-              reasons containing health information (Art. 9(2)(a)). [TODO: The app does not currently ask for
-              explicit consent for absence reasons. Add a consent step or reassess the legal basis.]
+              reasons containing health information (Art. 9(2)(a)). You give this consent by choosing account
+              mode during setup - after the app has told you that, in account mode, your school data including
+              absence reasons is synced to the server. In private mode this data is not stored on the server.
             </p>
 
             <h2>5. Recipients and processors</h2>
@@ -528,10 +528,8 @@ import { LegalPageBase } from './legal-page-base';
               </li>
               <li>
                 <strong>Delete your account</strong>: this deletes your account and school data, your
-                documents, and your sign-in account at auth.schuly.dev.
-                [TODO: Account deletion does not yet remove the login data stored in the vault or the plugins'
-                account records (see AccountPurger.cs in SchulyBackend). Fix before publishing or describe
-                here.]
+                documents, the access data stored in the vault, the plugins' account records, and your
+                sign-in account at auth.schuly.dev.
               </li>
             </ul>
             <p>
