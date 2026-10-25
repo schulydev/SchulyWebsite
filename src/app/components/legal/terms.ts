@@ -62,8 +62,7 @@ import { LegalPageBase } from './legal-page-base';
             <h2>4. Open-Source-Lizenz</h2>
             <p>
               Der Quellcode der App, des Backends und der Plugins ist öffentlich auf GitHub einsehbar.
-              Für die Software gilt die im jeweiligen Repository angegebene Lizenz [TODO: LICENSE-Datei in
-              jedem Repository ergänzen; die meisten haben noch keine]. Diese hat Vorrang vor Punkt 5
+              Für die Software gilt die im jeweiligen Repository angegebene MIT-Lizenz. Diese hat Vorrang vor Punkt 5
               (Haftungsbeschränkung) dieser Bedingungen, soweit sie weitergehende Rechte gewährt.
             </p>
 
@@ -159,8 +158,7 @@ import { LegalPageBase } from './legal-page-base';
             <h2>4. Open-source licence</h2>
             <p>
               The source code of the app, backend, and plugins is public on GitHub. The software is covered
-              by the licence stated in the relevant repository [TODO: add a LICENSE file to each repository;
-              most have none yet]. That licence takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
+              by the MIT licence stated in each repository. That licence takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
               grants broader rights.
             </p>
 
