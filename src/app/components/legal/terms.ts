@@ -62,10 +62,10 @@ import { LegalPageBase } from './legal-page-base';
             <h2>4. Lizenz des Quellcodes</h2>
             <p>
               Der Quellcode der App, des Backends und der Plugins ist öffentlich auf GitHub einsehbar.
-              Für die App, das Backend und die zugehörigen Dienste gilt die PolyForm Noncommercial License
-              1.0.0; die Plugins und der Plugin-Vertrag bleiben unter der MIT-Lizenz. Die jeweils anwendbare
-              Lizenz hat Vorrang vor Punkt 5 (Haftungsbeschränkung) dieser Bedingungen, soweit sie
-              weitergehende Rechte gewährt.
+              Die eigenen Apps und Dienste von Schuly stehen unter der PolyForm Noncommercial License 1.0.0 -
+              ausgenommen die Plugins und der Plugin-Vertrag (MIT-Lizenz) sowie das Keycloak-Image (Apache
+              License 2.0). Die jeweils anwendbare Lizenz hat Vorrang vor Punkt 5 (Haftungsbeschränkung)
+              dieser Bedingungen, soweit sie weitergehende Rechte gewährt.
             </p>
 
             <h2>5. Haftungsbeschränkung</h2>
@@ -159,9 +159,9 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>4. Source-code licence</h2>
             <p>
-              The source code of the app, backend, and plugins is public on GitHub. The app, backend, and
-              related services are covered by the PolyForm Noncommercial License 1.0.0; the plugins and the
-              plugin contract remain under the MIT License. The applicable licence of each repository takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
+              The source code of the app, backend, and plugins is public on GitHub. Schuly's own apps and
+              services are covered by the PolyForm Noncommercial License 1.0.0, except the plugins and the
+              plugin contract (MIT License) and the Keycloak image (Apache License 2.0). The applicable licence of each repository takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
               grants broader rights.
             </p>
 
