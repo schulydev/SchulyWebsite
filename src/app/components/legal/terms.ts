@@ -59,11 +59,13 @@ import { LegalPageBase } from './legal-page-base';
               zur Verfügbarkeit oder Lauffähigkeit besteht nicht.
             </p>
 
-            <h2>4. Open-Source-Lizenz</h2>
+            <h2>4. Lizenz des Quellcodes</h2>
             <p>
               Der Quellcode der App, des Backends und der Plugins ist öffentlich auf GitHub einsehbar.
-              Für die Software gilt die im jeweiligen Repository angegebene MIT-Lizenz. Diese hat Vorrang vor Punkt 5
-              (Haftungsbeschränkung) dieser Bedingungen, soweit sie weitergehende Rechte gewährt.
+              Für die App, das Backend und die zugehörigen Dienste gilt die PolyForm Noncommercial License
+              1.0.0; die Plugins und der Plugin-Vertrag bleiben unter der MIT-Lizenz. Die jeweils anwendbare
+              Lizenz hat Vorrang vor Punkt 5 (Haftungsbeschränkung) dieser Bedingungen, soweit sie
+              weitergehende Rechte gewährt.
             </p>
 
             <h2>5. Haftungsbeschränkung</h2>
@@ -155,10 +157,11 @@ import { LegalPageBase } from './legal-page-base';
               "as is"; there is no obligation as to availability or operability.
             </p>
 
-            <h2>4. Open-source licence</h2>
+            <h2>4. Source-code licence</h2>
             <p>
-              The source code of the app, backend, and plugins is public on GitHub. The software is covered
-              by the MIT licence stated in each repository. That licence takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
+              The source code of the app, backend, and plugins is public on GitHub. The app, backend, and
+              related services are covered by the PolyForm Noncommercial License 1.0.0; the plugins and the
+              plugin contract remain under the MIT License. The applicable licence of each repository takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
               grants broader rights.
             </p>
 
