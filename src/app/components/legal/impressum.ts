@@ -65,10 +65,9 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>Copyright</h2>
             <p>
-              The source code is public on GitHub at github.com/schulydev. Licence terms are stated in the
-              relevant repository [TODO: add a LICENSE file to each repository; most have none yet]. Text,
-              graphics, and screenshots on this site are, unless otherwise marked, the copyright of the
-              operator.
+              The source code is public on GitHub at github.com/schulydev and is released under the MIT
+              Licence; each repository carries its LICENSE file. Text, graphics, and screenshots on this
+              site are, unless otherwise marked, the copyright of the operator.
             </p>
           } @else {
             @if (showFallbackNotice()) {
@@ -126,10 +125,10 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>Urheberrecht</h2>
             <p>
-              Der Quellcode ist öffentlich auf GitHub unter github.com/schulydev einsehbar. Die
-              Lizenzbedingungen stehen im jeweiligen Repository [TODO: LICENSE-Datei in jedem Repository
-              ergänzen; die meisten haben noch keine]. Texte, Grafiken und Screenshots auf dieser Website
-              sind, sofern nicht anders gekennzeichnet, urheberrechtlich geschützt und gehören dem Anbieter.
+              Der Quellcode ist öffentlich auf GitHub unter github.com/schulydev einsehbar und steht unter
+              der MIT-Lizenz; jedes Repository enthält seine LICENSE-Datei. Texte, Grafiken und Screenshots
+              auf dieser Website sind, sofern nicht anders gekennzeichnet, urheberrechtlich geschützt und
+              gehören dem Anbieter.
             </p>
           }
         </div>
