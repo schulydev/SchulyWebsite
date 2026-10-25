@@ -214,7 +214,7 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>6. Bekanntgabe ins Ausland</h2>
             <p>
-              Cloudflare, Google, Microsoft und GitHub können Daten in den USA oder anderen Ländern
+              Cloudflare, Google, Microsoft, GitHub und Resend können Daten in den USA oder anderen Ländern
               bearbeiten. Für die USA gilt für zertifizierte Unternehmen das Swiss-U.S. Data Privacy
               Framework (vom Bundesrat seit 15.09.2024 als angemessen anerkannt), im Übrigen verwenden diese
               Anbieter die Standardvertragsklauseln. Der Standort des Schuly-Servers: [TODO: Land des
@@ -499,7 +499,7 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>6. Transfers abroad</h2>
             <p>
-              Cloudflare, Google, Microsoft, and GitHub may process data in the USA or other countries. For
+              Cloudflare, Google, Microsoft, GitHub, and Resend may process data in the USA or other countries. For
               certified US companies the Swiss-U.S. Data Privacy Framework applies (recognised as adequate by
               the Swiss Federal Council since 15.09.2024); otherwise these providers use standard contractual
               clauses. Location of the Schuly server: [TODO: country of the server location].
