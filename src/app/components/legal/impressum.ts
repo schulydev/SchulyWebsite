@@ -17,7 +17,7 @@ import { LegalPageBase } from './legal-page-base';
           @if (showEn()) {
             <h2>Operator</h2>
             <p>
-              <strong>Niclas Erismann</strong><br />
+              <strong>PianoNic</strong><br />
               Switzerland
             </p>
 
@@ -26,12 +26,9 @@ import { LegalPageBase } from './legal-page-base';
               Email: <a href="mailto:legal&#64;schuly.dev">legal&#64;schuly.dev</a><br />
               GitHub: <a href="https://github.com/PianoNic" target="_blank" rel="noopener">github.com/PianoNic</a>
             </p>
-            <p>
-              Postal address: [TODO: postal address of the operator]
-            </p>
 
             <h2>Responsible for content</h2>
-            <p>Niclas Erismann.</p>
+            <p>PianoNic.</p>
 
             <h2>Disclaimer</h2>
             <p>
@@ -77,7 +74,7 @@ import { LegalPageBase } from './legal-page-base';
             }
             <h2>Anbieter</h2>
             <p>
-              <strong>Niclas Erismann</strong><br />
+              <strong>PianoNic</strong><br />
               Schweiz
             </p>
 
@@ -86,12 +83,9 @@ import { LegalPageBase } from './legal-page-base';
               E-Mail: <a href="mailto:legal&#64;schuly.dev">legal&#64;schuly.dev</a><br />
               GitHub: <a href="https://github.com/PianoNic" target="_blank" rel="noopener">github.com/PianoNic</a>
             </p>
-            <p>
-              Postanschrift: [TODO: Postanschrift des Anbieters]
-            </p>
 
             <h2>Verantwortlich für den Inhalt</h2>
-            <p>Niclas Erismann.</p>
+            <p>PianoNic.</p>
 
             <h2>Haftungsausschluss</h2>
             <p>
