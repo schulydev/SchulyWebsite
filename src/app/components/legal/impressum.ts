@@ -34,7 +34,7 @@ import { LegalPageBase } from './legal-page-base';
             <p>
               Content on this site is prepared with the greatest possible care, but no warranty is given as to
               its accuracy, completeness, or timeliness. The use of any content on this site and of the
-              software linked from it (Schuly app, SchulyBackend, plugins, SchulwareAPI, SchulyMicrosoft) is at your own risk.
+              software linked from it (Schuly app, SchulyServer, plugins, SchulwareAPI, SchulyMicrosoft) is at your own risk.
             </p>
 
             <h2>External links</h2>
@@ -92,7 +92,7 @@ import { LegalPageBase } from './legal-page-base';
               Die Inhalte dieser Website werden mit grösstmöglicher Sorgfalt erstellt. Für die Richtigkeit,
               Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. Die Nutzung der
               auf dieser Website abrufbaren Inhalte und der über sie verlinkten Software (Schuly-App,
-              SchulyBackend, Plugins, SchulwareAPI, SchulyMicrosoft) erfolgt auf eigene Gefahr.
+              SchulyServer, Plugins, SchulwareAPI, SchulyMicrosoft) erfolgt auf eigene Gefahr.
             </p>
 
             <h2>Links auf Drittseiten</h2>
