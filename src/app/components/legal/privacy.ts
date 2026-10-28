@@ -173,7 +173,7 @@ import { LegalPageBase } from './legal-page-base';
             <ul>
               <li>
                 <strong>Hosting des Schuly-Servers</strong> (Backend, Anmeldedienst, Datenbank,
-                Dokumentenspeicher, SchulwareAPI): [TODO: Hosting-Anbieter und Serverstandort].
+                Dokumentenspeicher, SchulwareAPI): IONOS SE, Montabaur (Deutschland); Serverstandort Deutschland.
               </li>
               <li>
                 <strong>Cloudflare, Inc.</strong> (USA): Auslieferung von schuly.dev und docs.schuly.dev.
@@ -218,8 +218,8 @@ import { LegalPageBase } from './legal-page-base';
               Cloudflare, Google, Microsoft, GitHub und Resend können Daten in den USA oder anderen Ländern
               bearbeiten. Für die USA gilt für zertifizierte Unternehmen das Swiss-U.S. Data Privacy
               Framework (vom Bundesrat seit 15.09.2024 als angemessen anerkannt), im Übrigen verwenden diese
-              Anbieter die Standardvertragsklauseln. Der Standort des Schuly-Servers: [TODO: Land des
-              Serverstandorts].
+              Anbieter die Standardvertragsklauseln. Der Schuly-Server steht in Deutschland;
+              Deutschland bietet als EU-Staat einen angemessenen Datenschutz.
             </p>
 
             <h2>7. Aufbewahrung</h2>
@@ -461,7 +461,7 @@ import { LegalPageBase } from './legal-page-base';
             <ul>
               <li>
                 <strong>Hosting of the Schuly server</strong> (backend, sign-in service, database, document
-                storage, SchulwareAPI): [TODO: hosting provider and server location].
+                storage, SchulwareAPI): IONOS SE, Montabaur (Germany); server location Germany.
               </li>
               <li><strong>Cloudflare, Inc.</strong> (USA): delivery of schuly.dev and docs.schuly.dev.</li>
               <li>
@@ -501,7 +501,7 @@ import { LegalPageBase } from './legal-page-base';
               Cloudflare, Google, Microsoft, GitHub, and Resend may process data in the USA or other countries. For
               certified US companies the Swiss-U.S. Data Privacy Framework applies (recognised as adequate by
               the Swiss Federal Council since 15.09.2024); otherwise these providers use standard contractual
-              clauses. Location of the Schuly server: [TODO: country of the server location].
+              clauses. The Schuly server is located in Germany, which as an EU state provides adequate data protection.
             </p>
 
             <h2>7. Retention</h2>
