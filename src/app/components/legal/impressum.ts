@@ -64,7 +64,7 @@ import { LegalPageBase } from './legal-page-base';
             <p>
               The source code is public on GitHub at github.com/schulydev. Schuly's own apps and services
               are released under the PolyForm Noncommercial License 1.0.0, except the plugins and the plugin
-              contract (MIT License) and the Keycloak image (Apache License 2.0). Each repository carries its
+              contract, which are under the MIT License. Each repository carries its
               LICENSE file. Text, graphics, and screenshots on this site are, unless otherwise marked, the
               copyright of the operator.
             </p>
@@ -123,7 +123,7 @@ import { LegalPageBase } from './legal-page-base';
             <p>
               Der Quellcode ist öffentlich auf GitHub unter github.com/schulydev einsehbar. Die eigenen
               Apps und Dienste von Schuly stehen unter der PolyForm Noncommercial License 1.0.0 - ausgenommen
-              die Plugins und der Plugin-Vertrag (MIT-Lizenz) sowie das Keycloak-Image (Apache License 2.0).
+              die Plugins und der Plugin-Vertrag, die unter der MIT-Lizenz stehen.
               Jedes Repository enthält seine LICENSE-Datei. Texte, Grafiken und Screenshots
               auf dieser Website sind, sofern nicht anders gekennzeichnet, urheberrechtlich geschützt und
               gehören dem Anbieter.

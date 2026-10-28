@@ -4,7 +4,7 @@
 
 Schuly is a free mobile app that gives students a modern interface on top of their school's existing portal. The Flutter app (Android and iOS) handles the UI; a C# / ASP.NET Core backend handles sync. School systems are integrated as backend plugins written against the Schuly plugin SDK. Current plugins cover Schulnetz (via the Schulware plugin and the SchulwareAPI service) and OdA Org. A read-only Microsoft 365 connection (via the SchulyMicrosoft service) can be linked and is still being built out.
 
-The app has two modes. Account mode uses a Schuly account from Schuly's own Keycloak sign-in service at auth.schuly.dev; the backend stores the synced school data and the school login data (encrypted), syncs in the background and can send push notifications. Private mode needs no account; login data stays on the device and requests pass through the Schuly server without being stored.
+The app has two modes. Account mode uses a Schuly account managed by the Schuly server itself; the backend stores the synced school data and the school login data (encrypted), syncs in the background and can send push notifications. Private mode needs no account; login data stays on the device and requests pass through the Schuly server without being stored.
 
 Schuly is an independent, unofficial project. It is not affiliated with, endorsed by, or operated by Centerboard AG (maker of Schulnetz), OdA Org, Microsoft, or any school.
 
@@ -22,7 +22,6 @@ Schuly is an independent, unofficial project. It is not affiliated with, endorse
 - [SchulyServer](https://github.com/schulydev/SchulyServer): C# / ASP.NET Core backend and plugin host
 - [SchulyPlugins](https://github.com/schulydev/SchulyPlugins): Official plugins (Schulware for Schulnetz, OdA Org, Microsoft, Example)
 - [SchulyPluginAbstractions](https://github.com/schulydev/SchulyPluginAbstractions): Plugin SDK contract (NuGet)
-- [SchulyKeycloak](https://github.com/schulydev/SchulyKeycloak): Keycloak image and the schuly realm (auth.schuly.dev)
 - [SchulwareAPI](https://github.com/PianoNic/SchulwareAPI): Schulnetz access service used by the Schulware plugin
 - [SchulyMicrosoft](https://github.com/schulydev/SchulyMicrosoft): Microsoft 365 access service used by the Microsoft plugin
 
@@ -45,5 +44,5 @@ Schuly is an independent, unofficial project. It is not affiliated with, endorse
 
 - App: Flutter (Android, iOS)
 - Backend: ASP.NET Core, PostgreSQL, S3-compatible document storage
-- Auth: Keycloak (auth.schuly.dev) for the Schuly account; per-plugin login for school accounts
+- Auth: built into the Schuly server (password, optional two-factor) for the Schuly account; per-plugin login for school accounts
 - Marketing site: Angular 20, prerendered static HTML on Cloudflare Pages

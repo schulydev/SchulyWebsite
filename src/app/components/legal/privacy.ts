@@ -73,12 +73,14 @@ import { LegalPageBase } from './legal-page-base';
 
             <h3>3.1 Schuly-Konto (Kontomodus)</h3>
             <p>
-              Dein Schuly-Konto wird von unserem eigenen Anmeldedienst (Keycloak unter
-              <strong>auth.schuly.dev</strong>) verwaltet. Gespeichert werden Benutzername, E-Mail-Adresse,
-              dein Passwort (nur als Hash) bzw. deine Passkeys, optional ein zweiter Faktor
-              (Authenticator-App, Wiederherstellungscodes) und optional ein Profilbild. Für
-              Bestätigungscodes erhältst du E-Mails, die über Resend (Resend, Inc.) versendet
-              werden.
+              Dein Schuly-Konto wird direkt vom Schuly-Server verwaltet. Gespeichert werden Benutzername,
+              E-Mail-Adresse, dein Passwort (nur als Hash), optional ein zweiter Faktor
+              (Authenticator-App, Wiederherstellungscodes), Geräte, die du dir für 30 Tage merken lässt,
+              und optional ein Profilbild. E-Mails zur Bestätigung deiner Adresse und zum Zurücksetzen des
+              Passworts werden über Resend (Resend, Inc.) versendet. In der Web-App setzt die Anmeldung
+              zwei technisch notwendige Cookies (zum Verlängern der Sitzung und, falls du es wählst, zum
+              Merken des Geräts) und legt ein kurzlebiges Zugriffstoken im Sitzungsspeicher des
+              Browser-Tabs ab; zum Tracking wird nichts davon verwendet.
             </p>
             <p>
               Im Kontomodus synchronisiert der Schuly-Server deine Schuldaten im Hintergrund und speichert
@@ -172,7 +174,7 @@ import { LegalPageBase } from './legal-page-base';
             <h2>5. Empfänger und Auftragsbearbeiter</h2>
             <ul>
               <li>
-                <strong>Hosting des Schuly-Servers</strong> (Backend, Anmeldedienst, Datenbank,
+                <strong>Hosting des Schuly-Servers</strong> (Backend mit Anmeldung, Datenbank,
                 Dokumentenspeicher, SchulwareAPI): IONOS SE, Montabaur (Deutschland); Serverstandort Deutschland.
               </li>
               <li>
@@ -367,11 +369,13 @@ import { LegalPageBase } from './legal-page-base';
 
             <h3>3.1 Schuly account (account mode)</h3>
             <p>
-              Your Schuly account is managed by our own sign-in service (Keycloak at
-              <strong>auth.schuly.dev</strong>). It stores your username, email address, your password
-              (as a hash only) or passkeys, an optional second factor (authenticator app, recovery codes),
-              and an optional profile picture. Verification-code emails are sent via Resend
-              (Resend, Inc.).
+              Your Schuly account is managed by the Schuly server itself. It stores your username, email
+              address, your password (as a hash only), an optional second factor (authenticator app,
+              recovery codes), devices you choose to remember for 30 days, and an optional profile picture.
+              Emails to confirm your address and to reset your password are sent via Resend (Resend, Inc.).
+              In the web app, signing in sets two strictly necessary cookies (to renew your session and, if
+              you choose, to remember the device) and keeps a short-lived access token in the browser tab's
+              session storage; none of it is used for tracking.
             </p>
             <p>
               In account mode the Schuly server syncs your school data in the background and keeps a copy,
@@ -460,7 +464,7 @@ import { LegalPageBase } from './legal-page-base';
             <h2>5. Recipients and processors</h2>
             <ul>
               <li>
-                <strong>Hosting of the Schuly server</strong> (backend, sign-in service, database, document
+                <strong>Hosting of the Schuly server</strong> (backend including sign-in, database, document
                 storage, SchulwareAPI): IONOS SE, Montabaur (Germany); server location Germany.
               </li>
               <li><strong>Cloudflare, Inc.</strong> (USA): delivery of schuly.dev and docs.schuly.dev.</li>

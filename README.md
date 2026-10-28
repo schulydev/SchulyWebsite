@@ -42,7 +42,6 @@ Full documentation lives at **[docs.schuly.dev/SchulyWebsite](https://docs.schul
 |---|---|
 | [**Schuly**](https://github.com/schulydev/Schuly) | Flutter mobile app |
 | [**SchulyServer**](https://github.com/schulydev/SchulyServer) | ASP.NET Core API and web app |
-| [**SchulyKeycloak**](https://github.com/schulydev/SchulyKeycloak) | Keycloak image + the `schuly` realm |
 | [**SchulyPluginAbstractions**](https://github.com/schulydev/SchulyPluginAbstractions) | Plugin contract (NuGet) |
 | [**SchulyPlugins**](https://github.com/schulydev/SchulyPlugins) | Official plugins monorepo |
 | [**SchulyWebsite**](https://github.com/schulydev/SchulyWebsite) | Landing site ([schuly.dev](https://schuly.dev)) *(this repo)* |
