@@ -88,7 +88,7 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>6. Selbstgehostete Instanzen</h2>
             <p>
-              Wenn du Schuly oder das SchulyBackend selbst betreibst, bist du in Bezug auf die dort
+              Wenn du Schuly oder das SchulyServer selbst betreibst, bist du in Bezug auf die dort
               verarbeiteten personenbezogenen Daten Verantwortlicher im Sinne von Art. 5 lit. j revDSG
               bzw. Art. 4 Nr. 7 DSGVO. Du bist insbesondere verpflichtet, ein Verzeichnis der
               Bearbeitungstätigkeiten zu führen, geeignete technische und organisatorische Massnahmen
@@ -185,7 +185,7 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>6. Self-hosted instances</h2>
             <p>
-              If you operate Schuly or SchulyBackend yourself, you are the controller within the meaning
+              If you operate Schuly or SchulyServer yourself, you are the controller within the meaning
               of Art. 5(j) revDSG / Art. 4(7) GDPR for the personal data processed by that instance.
               You are in particular required to keep a Record of Processing Activities, implement
               appropriate technical and organisational measures, and uphold data-subject rights.

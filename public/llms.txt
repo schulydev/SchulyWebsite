@@ -19,7 +19,7 @@ Schuly is an independent, unofficial project. It is not affiliated with, endorse
 ## Source code
 
 - [Schuly](https://github.com/schulydev/Schuly): Flutter app for Android and iOS
-- [SchulyBackend](https://github.com/schulydev/SchulyBackend): C# / ASP.NET Core backend and plugin host
+- [SchulyServer](https://github.com/schulydev/SchulyServer): C# / ASP.NET Core backend and plugin host
 - [SchulyPlugins](https://github.com/schulydev/SchulyPlugins): Official plugins (Schulware for Schulnetz, OdA Org, Microsoft, Example)
 - [SchulyPluginAbstractions](https://github.com/schulydev/SchulyPluginAbstractions): Plugin SDK contract (NuGet)
 - [SchulyKeycloak](https://github.com/schulydev/SchulyKeycloak): Keycloak image and the schuly realm (auth.schuly.dev)
