@@ -182,13 +182,13 @@ import { LegalPageBase } from './legal-page-base';
                 <strong>SchulwareAPI</strong> (von uns betrieben): stellt die Verbindung zu Schulnetz her.
                 Zugangsdaten werden nur für die Anmeldung verwendet; der Dienst speichert nichts. Für die
                 Fehlerüberwachung kann GlitchTip eingesetzt werden; dabei werden IP-Adresse, User-Agent und
-                aufgerufene Adresse übermittelt, aber keine Passwörter, Tokens oder Cookies.
-                [TODO: Ob GlitchTip im Produktivbetrieb aktiv ist und wo es gehostet wird.]
+                aufgerufene Adresse übermittelt, aber keine Passwörter, Tokens oder Cookies. GlitchTip läuft
+                auf dem Schuly-Server; diese Daten verlassen ihn also nicht.
               </li>
               <li>
                 <strong>SchulyMicrosoft</strong> (von uns betrieben, nur bei verknüpftem Microsoft-Konto):
-                ruft die Microsoft-Daten ab und speichert selbst nichts. [TODO: Hosting-Anbieter und
-                Standort des SchulyMicrosoft-Dienstes].
+                ruft die Microsoft-Daten ab und speichert selbst nichts. Der Dienst läuft auf dem
+                Schuly-Server.
               </li>
               <li>
                 <strong>Dein Schulsystem</strong>: das Schulnetz deiner Schule (Centerboard AG) bzw. das
@@ -468,12 +468,11 @@ import { LegalPageBase } from './legal-page-base';
                 <strong>SchulwareAPI</strong> (operated by us): connects to Schulnetz. Login data is used only
                 to sign in; the service stores nothing. GlitchTip may be used for error monitoring; it
                 receives IP address, user agent, and requested URL, but no passwords, tokens, or cookies.
-                [TODO: whether GlitchTip is enabled in production and where it is hosted.]
+                GlitchTip runs on the Schuly server, so this data does not leave it.
               </li>
               <li>
                 <strong>SchulyMicrosoft</strong> (operated by us, only with a linked Microsoft account):
-                fetches your Microsoft data and stores nothing itself. [TODO: hosting provider and location of
-                the SchulyMicrosoft service].
+                fetches your Microsoft data and stores nothing itself. The service runs on the Schuly server.
               </li>
               <li>
                 <strong>Your school system</strong>: your school's Schulnetz (Centerboard AG) or the OdA Org
