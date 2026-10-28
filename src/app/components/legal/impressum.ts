@@ -11,7 +11,7 @@ import { LegalPageBase } from './legal-page-base';
       <div class="legal-container">
         <div class="legal-eyebrow">Legal</div>
         <h1 class="legal-title">{{ 'legal.impressum' | translate }}</h1>
-        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 25.10.2026</p>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 28.10.2026</p>
 
         <div class="legal-body">
           @if (showEn()) {
