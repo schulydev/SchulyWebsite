@@ -63,8 +63,7 @@ import { LegalPageBase } from './legal-page-base';
             <p>
               Der Quellcode der App, des Backends und der Plugins ist öffentlich auf GitHub einsehbar.
               Die eigenen Apps und Dienste von Schuly stehen unter der PolyForm Noncommercial License 1.0.0 -
-              ausgenommen die Plugins und der Plugin-Vertrag (MIT-Lizenz) sowie das Keycloak-Image (Apache
-              License 2.0). Die jeweils anwendbare Lizenz hat Vorrang vor Punkt 5 (Haftungsbeschränkung)
+              ausgenommen die Plugins und der Plugin-Vertrag, die unter der MIT-Lizenz stehen. Die jeweils anwendbare Lizenz hat Vorrang vor Punkt 5 (Haftungsbeschränkung)
               dieser Bedingungen, soweit sie weitergehende Rechte gewährt.
             </p>
 
@@ -78,7 +77,7 @@ import { LegalPageBase } from './legal-page-base';
             <ul>
               <li>Datenverlust oder fehlerhafte Daten aus dem Schulsystem,</li>
               <li>verspätete oder unzutreffende Notenanzeige, Stundenplaninformationen oder Absenzen,</li>
-              <li>Ausfälle des Schulsystems, des Identitätsanbieters oder unserer Infrastruktur,</li>
+              <li>Ausfälle des Schulsystems oder unserer Infrastruktur,</li>
               <li>von Dritten geschriebene Backend-Plugins.</li>
             </ul>
             <p>
@@ -161,7 +160,7 @@ import { LegalPageBase } from './legal-page-base';
             <p>
               The source code of the app, backend, and plugins is public on GitHub. Schuly's own apps and
               services are covered by the PolyForm Noncommercial License 1.0.0, except the plugins and the
-              plugin contract (MIT License) and the Keycloak image (Apache License 2.0). The applicable licence of each repository takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
+              plugin contract, which are under the MIT License. The applicable licence of each repository takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
               grants broader rights.
             </p>
 
@@ -175,7 +174,7 @@ import { LegalPageBase } from './legal-page-base';
             <ul>
               <li>data loss or incorrect data from the school system,</li>
               <li>late or inaccurate display of grades, schedule, or absences,</li>
-              <li>outages of the school system, the identity provider, or our infrastructure,</li>
+              <li>outages of the school system or our infrastructure,</li>
               <li>third-party backend plugins.</li>
             </ul>
             <p>
