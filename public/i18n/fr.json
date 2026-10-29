@@ -144,7 +144,8 @@
     "googlePlayAria": "Google Play – bientôt disponible",
     "alt": {
       "apk": ".apk sur GitHub",
-      "ipa": ".ipa sur GitHub (sideload)"
+      "ipa": ".ipa sur GitHub (sideload)",
+      "web": "Ouvrir l'app web"
     },
     "note": {
       "prefix": "L'app utilise par défaut le serveur Schuly. Tu veux exploiter le tien ? Consulte le ",

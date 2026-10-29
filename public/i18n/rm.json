@@ -144,7 +144,8 @@
     "googlePlayAria": "Google Play – prest disponibel",
     "alt": {
       "apk": ".apk sin GitHub",
-      "ipa": ".ipa sin GitHub (sideload)"
+      "ipa": ".ipa sin GitHub (sideload)",
+      "web": "Avrir l'app web"
     },
     "note": {
       "prefix": "L'app utilisescha tenor standard il server Schuly. Vuls ti manar tes agen? Guarda las ",
