@@ -11,7 +11,7 @@ import { LegalPageBase } from './legal-page-base';
       <div class="legal-container">
         <div class="legal-eyebrow">Privacy</div>
         <h1 class="legal-title">{{ 'legal.privacy' | translate }}</h1>
-        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 28.10.2026</p>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 03.11.2026</p>
 
         <div class="legal-body">
           @if (showFallbackNotice()) {
@@ -201,13 +201,23 @@ import { LegalPageBase } from './legal-page-base';
               <li>
                 <strong>Microsoft</strong> (Microsoft Corporation, USA, bzw. Microsoft Ireland Operations Ltd.):
                 Bei Schulen mit Microsoft-Anmeldung erfolgt die Schulnetz-Anmeldung über Microsoft. Wenn du
-                ein Microsoft-365-Konto verknüpfst, liest Schuly über Microsoft Graph nur lesend Profil,
-                E-Mails, Kalender, OneDrive-Dateien, Teams-Chats und OneNote-Notizbücher.
+                ein Microsoft-365-Konto verknüpfst, greift Schuly über Microsoft Graph auf Profil, E-Mails,
+                Kalender, OneDrive-Dateien, Teams-Chats und OneNote-Notizbücher zu. Schuly sendet oder ändert
+                dort nur etwas, wenn du es auslöst.
               </li>
               <li>
                 <strong>Google Firebase Cloud Messaging</strong> (Google LLC, USA, bzw. Google Ireland Ltd.):
                 Zustellung von Push-Benachrichtigungen. Übermittelt werden das Geräte-Token und der Inhalt der
                 Benachrichtigung (z. B. Fach und, falls du das aktiviert hast, der Notenwert).
+              </li>
+              <li>
+                <strong>KI-Dienst für Helply</strong> (nur wenn du Helply nutzt): Deine Nachrichten, deine
+                Anhänge und die Daten, die Helply für die Antwort liest, werden an den KI-Dienst übermittelt,
+                den der Schuly-Server verwendet.
+              </li>
+              <li>
+                <strong>Von dir verbundene KI-Apps</strong> (nur wenn du eine App verbindest): Die App erhält
+                die Daten, die du ihr erlaubst. Für die App gelten die Datenschutzbestimmungen ihres Anbieters.
               </li>
               <li>
                 <strong>GitHub, Inc.</strong> (USA): Quellcode und App-Downloads. Daten fallen nur an, wenn du
@@ -230,10 +240,11 @@ import { LegalPageBase } from './legal-page-base';
               <li>
                 Automatische Bereinigung: Zwischengespeicherte Schuldaten werden 6 Monate nach dem
                 Austrittsdatum aus der Schule gelöscht. Konten, mit denen du dich 12 Monate lang nicht
-                angemeldet hast, werden samt Daten gelöscht. Dein Anmeldekonto bei auth.schuly.dev wird von
+                angemeldet hast, werden samt Daten gelöscht. Dein Anmeldekonto wird von
                 dieser automatischen Bereinigung derzeit nicht entfernt; du kannst es jederzeit selbst
                 löschen (Ziffer 8).
               </li>
+              <li>Helply-Unterhaltungen und ihre Anhänge: 30 Tage.</li>
               <li>Privater Modus: Auf dem Server wird nichts gespeichert.</li>
               <li>Server-Protokolle: siehe Ziffer 3.4.</li>
               <li>Website-Verbindungsdaten: nach den Fristen von Cloudflare.</li>
@@ -251,7 +262,7 @@ import { LegalPageBase } from './legal-page-base';
               <li>
                 <strong>Dein Konto löschen</strong>: Dabei werden deine Konto- und Schuldaten, deine
                 Dokumente, die im Tresor gespeicherten Zugangsdaten, die Konto-Einträge der Plugins und dein
-                Anmeldekonto bei auth.schuly.dev gelöscht.
+                Anmeldekonto gelöscht.
               </li>
             </ul>
             <p>
@@ -486,13 +497,22 @@ import { LegalPageBase } from './legal-page-base';
               <li>
                 <strong>Microsoft</strong> (Microsoft Corporation, USA, or Microsoft Ireland Operations Ltd.):
                 at schools that use Microsoft sign-in, the Schulnetz login runs through Microsoft. If you link a
-                Microsoft 365 account, Schuly reads (read-only) your profile, mail, calendar, OneDrive files,
-                Teams chats, and OneNote notebooks via Microsoft Graph.
+                Microsoft 365 account, Schuly accesses your profile, mail, calendar, OneDrive files, Teams chats,
+                and OneNote notebooks via Microsoft Graph. Schuly sends or changes something there only when you
+                trigger it.
               </li>
               <li>
                 <strong>Google Firebase Cloud Messaging</strong> (Google LLC, USA, or Google Ireland Ltd.):
                 delivery of push notifications. It receives the device token and the notification content
                 (e.g. the subject and, if you enabled it, the grade value).
+              </li>
+              <li>
+                <strong>AI service for Helply</strong> (only if you use Helply): your messages, your attachments,
+                and the data Helply reads to answer you are sent to the AI service the Schuly server uses.
+              </li>
+              <li>
+                <strong>AI apps you connect</strong> (only if you connect an app): the app receives the data you
+                allow it to read. The privacy terms of its provider apply to that app.
               </li>
               <li>
                 <strong>GitHub, Inc.</strong> (USA): source code and app downloads. Data is only processed when
@@ -514,9 +534,10 @@ import { LegalPageBase } from './legal-page-base';
               <li>
                 Automatic clean-up: cached school data is deleted 6 months after your leave date at that
                 school. Accounts that have not signed in for 12 months are deleted together with their data.
-                Your sign-in account at auth.schuly.dev is currently not removed by this automatic clean-up;
+                Your sign-in account is currently not removed by this automatic clean-up;
                 you can delete it yourself at any time (section 8).
               </li>
+              <li>Helply conversations and their attachments: 30 days.</li>
               <li>Private mode: nothing is stored on the server.</li>
               <li>Server logs: see section 3.4.</li>
               <li>Website connection data: per Cloudflare's retention periods.</li>
@@ -532,7 +553,7 @@ import { LegalPageBase } from './legal-page-base';
               <li>
                 <strong>Delete your account</strong>: this deletes your account and school data, your
                 documents, the access data stored in the vault, the plugins' account records, and your
-                sign-in account at auth.schuly.dev.
+                sign-in account.
               </li>
             </ul>
             <p>
