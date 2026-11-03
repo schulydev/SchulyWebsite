@@ -70,7 +70,7 @@
       },
       "oidc": {
         "title": "Account or private mode",
-        "description": "Use a Schuly account (passkey or password, optional two-factor) for background sync, or private mode without an account, where your school login stays on your device."
+        "description": "Use a Schuly account (password, optional two-factor) for background sync, or private mode without an account, where your school login stays on your device."
       },
       "fast": {
         "title": "Always up to date",
@@ -101,7 +101,7 @@
       },
       {
         "q": "Which school systems are supported?",
-        "a": "Schulnetz (via the Schulware plugin) and OdA Org. Each system is connected through a backend plugin, so more can be added without an app update. A read-only Microsoft 365 connection can be linked in the settings and is still being built out."
+        "a": "Schulnetz (via the Schulware plugin) and OdA Org. Each system is connected through a backend plugin, so more can be added without an app update. A Microsoft 365 connection can be linked in the settings and is still being built out."
       },
       {
         "q": "Is Schuly an official app of Schulnetz or my school?",
@@ -117,7 +117,7 @@
       },
       {
         "q": "Does Schuly know my school password?",
-        "a": "For Schulnetz, your email and password are only used to sign in and are not stored; Schuly keeps the resulting session encrypted. For OdA Org, username and password are stored encrypted so Schuly can sign in again. In private mode all of this stays on your device. Your Schuly account itself is managed by Schuly's own sign-in service at auth.schuly.dev."
+        "a": "For Schulnetz, your email and password are only used to sign in and are not stored; Schuly keeps the resulting session encrypted. For OdA Org, username and password are stored encrypted so Schuly can sign in again. In private mode all of this stays on your device. Your Schuly account itself is managed by the Schuly server."
       },
       {
         "q": "Can my school system be integrated?",

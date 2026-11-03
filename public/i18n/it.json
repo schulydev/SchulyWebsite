@@ -70,7 +70,7 @@
       },
       "oidc": {
         "title": "Modalità account o privata",
-        "description": "Usa un account Schuly (passkey o password, due fattori facoltativi) per la sincronizzazione in background, oppure la modalità privata senza account, in cui il tuo login scolastico resta sul dispositivo."
+        "description": "Usa un account Schuly (password, due fattori facoltativi) per la sincronizzazione in background, oppure la modalità privata senza account, in cui il tuo login scolastico resta sul dispositivo."
       },
       "fast": {
         "title": "Sempre aggiornata",
@@ -101,7 +101,7 @@
       },
       {
         "q": "Quali sistemi scolastici sono supportati?",
-        "a": "Schulnetz (tramite il plugin Schulware) e OdA Org. Ogni sistema è collegato tramite un plugin backend, quindi se ne possono aggiungere altri senza aggiornare l'app. Una connessione in sola lettura a Microsoft 365 può essere collegata nelle impostazioni ed è ancora in sviluppo."
+        "a": "Schulnetz (tramite il plugin Schulware) e OdA Org. Ogni sistema è collegato tramite un plugin backend, quindi se ne possono aggiungere altri senza aggiornare l'app. Una connessione a Microsoft 365 può essere collegata nelle impostazioni ed è ancora in sviluppo."
       },
       {
         "q": "Schuly è un'app ufficiale di Schulnetz o della mia scuola?",
@@ -117,7 +117,7 @@
       },
       {
         "q": "Schuly conosce la mia password scolastica?",
-        "a": "Per Schulnetz, e-mail e password servono solo per l'accesso e non vengono salvate; Schuly conserva cifrata la sessione ottenuta. Per OdA Org, nome utente e password vengono salvati cifrati affinché Schuly possa accedere di nuovo. In modalità privata tutto questo resta sul tuo dispositivo. Il tuo account Schuly è gestito dal servizio di accesso di Schuly, auth.schuly.dev."
+        "a": "Per Schulnetz, e-mail e password servono solo per l'accesso e non vengono salvate; Schuly conserva cifrata la sessione ottenuta. Per OdA Org, nome utente e password vengono salvati cifrati affinché Schuly possa accedere di nuovo. In modalità privata tutto questo resta sul tuo dispositivo. Il tuo account Schuly è gestito dal server Schuly."
       },
       {
         "q": "Il mio sistema scolastico può essere integrato?",

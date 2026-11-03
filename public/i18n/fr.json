@@ -70,7 +70,7 @@
       },
       "oidc": {
         "title": "Mode compte ou mode privé",
-        "description": "Utilise un compte Schuly (passkey ou mot de passe, double authentification facultative) pour la synchronisation en arrière-plan, ou le mode privé sans compte, où ton identifiant scolaire reste sur ton appareil."
+        "description": "Utilise un compte Schuly (mot de passe, double authentification facultative) pour la synchronisation en arrière-plan, ou le mode privé sans compte, où ton identifiant scolaire reste sur ton appareil."
       },
       "fast": {
         "title": "Toujours à jour",
@@ -101,7 +101,7 @@
       },
       {
         "q": "Quels systèmes scolaires sont pris en charge ?",
-        "a": "Schulnetz (via le plugin Schulware) et OdA Org. Chaque système est connecté par un plugin backend, d'autres peuvent donc être ajoutés sans mise à jour de l'app. Une connexion en lecture seule à Microsoft 365 peut être liée dans les réglages et est encore en développement."
+        "a": "Schulnetz (via le plugin Schulware) et OdA Org. Chaque système est connecté par un plugin backend, d'autres peuvent donc être ajoutés sans mise à jour de l'app. Une connexion à Microsoft 365 peut être liée dans les réglages et est encore en développement."
       },
       {
         "q": "Schuly est-elle une app officielle de Schulnetz ou de mon école ?",
@@ -117,7 +117,7 @@
       },
       {
         "q": "Schuly connaît-elle mon mot de passe scolaire ?",
-        "a": "Pour Schulnetz, ton e-mail et ton mot de passe servent uniquement à la connexion et ne sont pas stockés ; Schuly conserve la session obtenue sous forme chiffrée. Pour OdA Org, le nom d'utilisateur et le mot de passe sont stockés chiffrés afin que Schuly puisse se reconnecter. En mode privé, tout cela reste sur ton appareil. Ton compte Schuly lui-même est géré par le propre service de connexion de Schuly, auth.schuly.dev."
+        "a": "Pour Schulnetz, ton e-mail et ton mot de passe servent uniquement à la connexion et ne sont pas stockés ; Schuly conserve la session obtenue sous forme chiffrée. Pour OdA Org, le nom d'utilisateur et le mot de passe sont stockés chiffrés afin que Schuly puisse se reconnecter. En mode privé, tout cela reste sur ton appareil. Ton compte Schuly lui-même est géré par le serveur Schuly."
       },
       {
         "q": "Mon système scolaire peut-il être intégré ?",
