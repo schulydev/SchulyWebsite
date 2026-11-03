@@ -94,7 +94,7 @@ import { LegalPageBase } from './legal-page-base';
                   <tr><td>Google (Firebase)</td><td>Zustellung von Benachrichtigungen; Standard ist ein allgemeiner Text, Details nur wenn du sie einschaltest</td><td>USA</td><td>Swiss-U.S. Data Privacy Framework</td></tr>
                   <tr><td>Apple</td><td>Zustellung von Benachrichtigungen auf iOS</td><td>USA</td><td>Laut Apple</td></tr>
                   <tr><td>Microsoft</td><td>Microsoft 365, wenn du es verknüpfst; Anmeldung bei manchen Schulen</td><td>USA / EU</td><td>Laut Microsoft</td></tr>
-                  <tr><td>Google, Microsoft, Gaggao ID</td><td>Anmeldung bei Schuly, wenn du sie wählst</td><td>USA / Schweiz</td><td>Laut Anbieter</td></tr>
+                  <tr><td>Google, Microsoft</td><td>Anmeldung bei Schuly, wenn du sie wählst</td><td>USA</td><td>Laut Anbieter</td></tr>
                   <tr><td>Centerboard AG, OdA Org</td><td>Abruf deiner Schuldaten</td><td>Schweiz</td><td>In deinem Auftrag</td></tr>
                   <tr><td>GitHub, Inc.</td><td>Prüfung auf App-Updates (überträgt deine IP-Adresse, lässt sich abschalten), Downloads</td><td>USA</td><td>Laut GitHub</td></tr>
                 </tbody>
@@ -212,7 +212,7 @@ import { LegalPageBase } from './legal-page-base';
                   <tr><td>Google (Firebase)</td><td>Delivering notifications; generic text by default, details only if you turn them on</td><td>USA</td><td>Swiss-U.S. Data Privacy Framework</td></tr>
                   <tr><td>Apple</td><td>Delivering notifications on iOS</td><td>USA</td><td>Per Apple</td></tr>
                   <tr><td>Microsoft</td><td>Microsoft 365 if you link it; sign-in at some schools</td><td>USA / EU</td><td>Per Microsoft</td></tr>
-                  <tr><td>Google, Microsoft, Gaggao ID</td><td>Signing in to Schuly, if you choose them</td><td>USA / Switzerland</td><td>Per provider</td></tr>
+                  <tr><td>Google, Microsoft</td><td>Signing in to Schuly, if you choose them</td><td>USA</td><td>Per provider</td></tr>
                   <tr><td>Centerboard AG, OdA Org</td><td>Fetching your school data</td><td>Switzerland</td><td>On your behalf</td></tr>
                   <tr><td>GitHub, Inc.</td><td>Checking for app updates (sends your IP address, can be turned off) and downloads</td><td>USA</td><td>Per GitHub</td></tr>
                 </tbody>
