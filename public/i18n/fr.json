@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · App open source non officielle pour les portails scolaires suisses",
-      "description": "App gratuite, open source et non officielle pour les portails scolaires suisses, sur Android et iOS. Fonctionne avec Schulnetz et OdA Org. Aucun lien avec Centerboard AG ni avec ton école."
+      "title": "Schuly · App open source indépendante pour les portails scolaires suisses",
+      "description": "App gratuite, open source et indépendante pour les portails scolaires suisses, sur Android et iOS. Fonctionne avec Schulnetz et OdA Org. Aucun lien avec Centerboard AG ni avec ton école."
     },
     "privacy": {
       "title": "Confidentialité · Schuly",
@@ -34,7 +34,7 @@
   "hero": {
     "title1": "Toutes tes écoles,",
     "title2": "dans une seule app.",
-    "sub": "Notes, examens, horaire, absences et documents de ton portail scolaire au même endroit. Pour Android et iOS, avec Schulnetz et OdA Org déjà pris en charge. Non officielle et sans lien avec Centerboard AG ni avec ton école.",
+    "sub": "Notes, examens, horaire, absences et documents de ton portail scolaire au même endroit. Pour Android et iOS, avec Schulnetz et OdA Org déjà pris en charge. Indépendante et sans lien avec Centerboard AG ni avec ton école.",
     "ctaDownload": "Télécharger Schuly",
     "ctaGithub": "Voir sur GitHub"
   },
@@ -97,7 +97,7 @@
     "items": [
       {
         "q": "Qu'est-ce que Schuly ?",
-        "a": "Schuly est une app gratuite, open source et non officielle pour les élèves en Suisse. Elle affiche les notes, examens, horaire, absences et documents de ton portail scolaire dans une interface moderne et réunit plusieurs comptes scolaires dans une seule app. Disponible pour Android et iOS."
+        "a": "Schuly est une app gratuite, open source et indépendante pour les élèves en Suisse. Elle affiche les notes, examens, horaire, absences et documents de ton portail scolaire dans une interface moderne et réunit plusieurs comptes scolaires dans une seule app. Disponible pour Android et iOS."
       },
       {
         "q": "Quels systèmes scolaires sont pris en charge ?",
@@ -105,7 +105,7 @@
       },
       {
         "q": "Schuly est-elle une app officielle de Schulnetz ou de mon école ?",
-        "a": "Non. Schuly est un projet non officiel et indépendant. Il n'a aucun lien avec Centerboard AG (l'éditeur de Schulnetz), ton école, OdA Org ou Microsoft, et n'est ni soutenu ni exploité par eux."
+        "a": "Non. Schuly est un projet indépendant. Il n'a aucun lien avec Centerboard AG (l'éditeur de Schulnetz), ton école, OdA Org ou Microsoft, et n'est ni soutenu ni exploité par eux."
       },
       {
         "q": "Combien coûte Schuly ?",
@@ -175,7 +175,7 @@
       "terms": "Conditions",
       "coffee": "Offre-moi un café"
     },
-    "disclaimer": "Projet open source non officiel et indépendant. Aucun lien avec Centerboard AG (Schulnetz), OdA Org, Microsoft ou une école.",
+    "disclaimer": "Projet open source indépendant. Aucun lien avec Centerboard AG (Schulnetz), OdA Org, Microsoft ou une école.",
     "copyright": "© {{ year }} Schuly · Construit avec"
   },
   "notFound": {
