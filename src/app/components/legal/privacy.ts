@@ -211,9 +211,10 @@ import { LegalPageBase } from './legal-page-base';
                 Benachrichtigung (z. B. Fach und, falls du das aktiviert hast, der Notenwert).
               </li>
               <li>
-                <strong>KI-Dienst für Helply</strong> (nur wenn du Helply nutzt): Deine Nachrichten, deine
-                Anhänge und die Daten, die Helply für die Antwort liest, werden an den KI-Dienst übermittelt,
-                den der Schuly-Server verwendet.
+                <strong>KI-Dienst für Helply</strong> (von uns betrieben, nur wenn du Helply nutzt): Deine
+                Nachrichten, deine Anhänge und die Daten, die Helply für die Antwort liest, gehen an das KI-Modell
+                DeepSeek V4 Flash Vision, das wir selbst betreiben. Der KI-Dienst speichert diese Daten nicht
+                (Zero Data Retention). Für die Unterhaltungen in Schuly gilt Ziffer 7.
               </li>
               <li>
                 <strong>Von dir verbundene KI-Apps</strong> (nur wenn du eine App verbindest): Die App erhält
@@ -507,8 +508,10 @@ import { LegalPageBase } from './legal-page-base';
                 (e.g. the subject and, if you enabled it, the grade value).
               </li>
               <li>
-                <strong>AI service for Helply</strong> (only if you use Helply): your messages, your attachments,
-                and the data Helply reads to answer you are sent to the AI service the Schuly server uses.
+                <strong>AI service for Helply</strong> (operated by us, only if you use Helply): your messages, your
+                attachments, and the data Helply reads to answer you go to the DeepSeek V4 Flash Vision AI model,
+                which we host ourselves. The AI service does not store this data (zero data retention). Section 7
+                applies to your conversations in Schuly.
               </li>
               <li>
                 <strong>AI apps you connect</strong> (only if you connect an app): the app receives the data you
