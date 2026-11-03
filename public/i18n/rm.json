@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · App open source independenta per portals da scola svizzers",
-      "description": "App gratuita, open source e independenta per portals da scola svizzers, sin Android ed iOS. Funcziuna cun Schulnetz ed OdA Org. Nagina relaziun cun la Centerboard AG u cun tia scola."
+      "title": "Schuly · App independenta per portals da scola svizzers",
+      "description": "App gratuita ed independenta per portals da scola svizzers, sin Android ed iOS. Funcziuna cun Schulnetz ed OdA Org. Nagina relaziun cun la Centerboard AG u cun tia scola."
     },
     "privacy": {
       "title": "Protecziun da datas · Schuly",
@@ -26,7 +26,7 @@
     "screenshots": "Maletgs",
     "download": "Telechargiar",
     "docs": "Docs",
-    "openSource": "Open Source",
+    "openSource": "Code da funtauna",
     "githubAria": "GitHub",
     "getSchuly": "Telechargiar Schuly",
     "language": "Lingua"
@@ -97,7 +97,7 @@
     "items": [
       {
         "q": "Tge è Schuly?",
-        "a": "Schuly è in'app gratuita, open source e independenta per scolaras e scolars en Svizra. Ella mussa notas, examens, urari, absenzas e documents da tes portal da scola en in'interfatscha moderna e unescha plirs contos da scola en in'app. Disponibla per Android ed iOS."
+        "a": "Schuly è in'app gratuita ed independenta per scolaras e scolars en Svizra. Ella mussa notas, examens, urari, absenzas e documents da tes portal da scola en in'interfatscha moderna e unescha plirs contos da scola en in'app. Disponibla per Android ed iOS."
       },
       {
         "q": "Tge sistems da scola vegnan sustegnids?",
@@ -136,7 +136,7 @@
   "download": {
     "eyebrow": "Telechargiar Schuly",
     "title": "Pront da cumenzar?",
-    "description": "Schuly è gratuit ed open source. Las versiuns las pli novas per Android ed iOS chattas ti sin GitHub; App Store e Google Play suondan prest.",
+    "description": "Schuly è gratuit, e ses code da funtauna è public. Las versiuns las pli novas per Android ed iOS chattas ti sin GitHub; App Store e Google Play suondan prest.",
     "comingSoon": "Prest disponibel",
     "appStore": "App Store",
     "googlePlay": "Google Play",
@@ -175,7 +175,7 @@
       "terms": "Cundiziuns d'utilisaziun",
       "coffee": "Cumprai a mai in café"
     },
-    "disclaimer": "Project open source independent. Nagina relaziun cun la Centerboard AG (Schulnetz), OdA Org, Microsoft u ina scola.",
+    "disclaimer": "Project independent. Nagina relaziun cun la Centerboard AG (Schulnetz), OdA Org, Microsoft u ina scola.",
     "copyright": "© {{ year }} Schuly · Construì cun"
   },
   "notFound": {

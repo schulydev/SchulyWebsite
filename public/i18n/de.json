@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · Unabhängige Open-Source-App für Schweizer Schulportale",
-      "description": "Kostenlose, unabhängige Open-Source-App für Schweizer Schulportale auf Android und iOS. Funktioniert mit Schulnetz und OdA Org. Keine Verbindung zur Centerboard AG oder zu deiner Schule."
+      "title": "Schuly · Unabhängige App für Schweizer Schulportale",
+      "description": "Kostenlose, unabhängige App für Schweizer Schulportale auf Android und iOS. Funktioniert mit Schulnetz und OdA Org. Keine Verbindung zur Centerboard AG oder zu deiner Schule."
     },
     "privacy": {
       "title": "Datenschutz · Schuly",
@@ -26,7 +26,7 @@
     "screenshots": "Screenshots",
     "download": "Download",
     "docs": "Doku",
-    "openSource": "Open Source",
+    "openSource": "Quellcode",
     "githubAria": "GitHub",
     "getSchuly": "Schuly herunterladen",
     "language": "Sprache"
@@ -97,7 +97,7 @@
     "items": [
       {
         "q": "Was ist Schuly?",
-        "a": "Schuly ist eine kostenlose, unabhängige Open-Source-App für Lernende in der Schweiz. Sie zeigt Noten, Prüfungen, Stundenplan, Absenzen und Dokumente aus deinem Schulportal in einer modernen Oberfläche und vereint mehrere Schulkonten in einer App. Verfügbar für Android und iOS."
+        "a": "Schuly ist eine kostenlose, unabhängige App für Lernende in der Schweiz. Sie zeigt Noten, Prüfungen, Stundenplan, Absenzen und Dokumente aus deinem Schulportal in einer modernen Oberfläche und vereint mehrere Schulkonten in einer App. Verfügbar für Android und iOS."
       },
       {
         "q": "Welche Schulsysteme werden unterstützt?",
@@ -136,7 +136,7 @@
   "download": {
     "eyebrow": "Schuly herunterladen",
     "title": "Bereit loszulegen?",
-    "description": "Schuly ist kostenlos und Open Source. Die neusten Builds für Android und iOS gibt es auf GitHub; App Store und Google Play folgen.",
+    "description": "Schuly ist kostenlos, und der Quellcode ist öffentlich. Die neusten Builds für Android und iOS gibt es auf GitHub; App Store und Google Play folgen.",
     "comingSoon": "Bald verfügbar",
     "appStore": "App Store",
     "googlePlay": "Google Play",
@@ -175,7 +175,7 @@
       "terms": "Nutzungsbedingungen",
       "coffee": "Buy me a coffee"
     },
-    "disclaimer": "Unabhängiges Open-Source-Projekt. Keine Verbindung zur Centerboard AG (Schulnetz), zu OdA Org, zu Microsoft oder zu einer Schule.",
+    "disclaimer": "Unabhängiges Projekt. Keine Verbindung zur Centerboard AG (Schulnetz), zu OdA Org, zu Microsoft oder zu einer Schule.",
     "copyright": "© {{ year }} Schuly · Gebaut mit"
   },
   "notFound": {

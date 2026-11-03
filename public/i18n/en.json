@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · Independent open-source app for Swiss school portals",
-      "description": "Free, independent open-source app for Swiss school portals on Android and iOS. Works with Schulnetz and OdA Org. Not affiliated with Centerboard AG or your school."
+      "title": "Schuly · Independent app for Swiss school portals",
+      "description": "Free, independent app for Swiss school portals on Android and iOS. Works with Schulnetz and OdA Org. Not affiliated with Centerboard AG or your school."
     },
     "privacy": {
       "title": "Privacy Policy · Schuly",
@@ -26,7 +26,7 @@
     "screenshots": "Screenshots",
     "download": "Download",
     "docs": "Docs",
-    "openSource": "Open Source",
+    "openSource": "Source code",
     "githubAria": "GitHub",
     "getSchuly": "Get Schuly",
     "language": "Language"
@@ -97,7 +97,7 @@
     "items": [
       {
         "q": "What is Schuly?",
-        "a": "Schuly is a free, open-source and independent app for students in Switzerland. It shows grades, exams, timetable, absences and documents from your school portal in a modern interface and lets you keep several school accounts in one app. Available for Android and iOS."
+        "a": "Schuly is a free, independent app for students in Switzerland. It shows grades, exams, timetable, absences and documents from your school portal in a modern interface and lets you keep several school accounts in one app. Available for Android and iOS."
       },
       {
         "q": "Which school systems are supported?",
@@ -136,7 +136,7 @@
   "download": {
     "eyebrow": "Get Schuly",
     "title": "Ready to get started?",
-    "description": "Schuly is free and open source. Get the latest Android and iOS builds on GitHub; App Store and Google Play listings are coming soon.",
+    "description": "Schuly is free, and its source code is public. Get the latest Android and iOS builds on GitHub; App Store and Google Play listings are coming soon.",
     "comingSoon": "Coming soon",
     "appStore": "App Store",
     "googlePlay": "Google Play",
@@ -175,7 +175,7 @@
       "terms": "Terms of Use",
       "coffee": "Buy me a coffee"
     },
-    "disclaimer": "Independent open-source project. Not affiliated with Centerboard AG (Schulnetz), OdA Org, Microsoft or any school.",
+    "disclaimer": "Independent project. Not affiliated with Centerboard AG (Schulnetz), OdA Org, Microsoft or any school.",
     "copyright": "© {{ year }} Schuly · Built with"
   },
   "notFound": {

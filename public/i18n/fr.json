@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · App open source indépendante pour les portails scolaires suisses",
-      "description": "App gratuite, open source et indépendante pour les portails scolaires suisses, sur Android et iOS. Fonctionne avec Schulnetz et OdA Org. Aucun lien avec Centerboard AG ni avec ton école."
+      "title": "Schuly · App indépendante pour les portails scolaires suisses",
+      "description": "App gratuite et indépendante pour les portails scolaires suisses, sur Android et iOS. Fonctionne avec Schulnetz et OdA Org. Aucun lien avec Centerboard AG ni avec ton école."
     },
     "privacy": {
       "title": "Confidentialité · Schuly",
@@ -26,7 +26,7 @@
     "screenshots": "Captures",
     "download": "Télécharger",
     "docs": "Docs",
-    "openSource": "Open Source",
+    "openSource": "Code source",
     "githubAria": "GitHub",
     "getSchuly": "Obtenir Schuly",
     "language": "Langue"
@@ -97,7 +97,7 @@
     "items": [
       {
         "q": "Qu'est-ce que Schuly ?",
-        "a": "Schuly est une app gratuite, open source et indépendante pour les élèves en Suisse. Elle affiche les notes, examens, horaire, absences et documents de ton portail scolaire dans une interface moderne et réunit plusieurs comptes scolaires dans une seule app. Disponible pour Android et iOS."
+        "a": "Schuly est une app gratuite et indépendante pour les élèves en Suisse. Elle affiche les notes, examens, horaire, absences et documents de ton portail scolaire dans une interface moderne et réunit plusieurs comptes scolaires dans une seule app. Disponible pour Android et iOS."
       },
       {
         "q": "Quels systèmes scolaires sont pris en charge ?",
@@ -136,7 +136,7 @@
   "download": {
     "eyebrow": "Obtenir Schuly",
     "title": "Prêt à commencer ?",
-    "description": "Schuly est gratuite et open source. Les dernières versions pour Android et iOS sont sur GitHub ; App Store et Google Play arrivent bientôt.",
+    "description": "Schuly est gratuite, et son code source est public. Les dernières versions pour Android et iOS sont sur GitHub ; App Store et Google Play arrivent bientôt.",
     "comingSoon": "Bientôt disponible",
     "appStore": "App Store",
     "googlePlay": "Google Play",
@@ -175,7 +175,7 @@
       "terms": "Conditions",
       "coffee": "Offre-moi un café"
     },
-    "disclaimer": "Projet open source indépendant. Aucun lien avec Centerboard AG (Schulnetz), OdA Org, Microsoft ou une école.",
+    "disclaimer": "Projet indépendant. Aucun lien avec Centerboard AG (Schulnetz), OdA Org, Microsoft ou une école.",
     "copyright": "© {{ year }} Schuly · Construit avec"
   },
   "notFound": {
