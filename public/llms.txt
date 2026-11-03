@@ -12,7 +12,7 @@ Schuly is an independent, unofficial project. It is not affiliated with, endorse
 
 - [Website](https://schuly.dev/en): Marketing site (also in de, fr, it, rm)
 - [Documentation](https://docs.schuly.dev): Getting-started guide and per-repository docs
-- [Privacy policy](https://schuly.dev/en/privacy): Data protection under the Swiss FADP and, where applicable, the GDPR
+- [Privacy policy](https://schuly.dev/en/privacy): Data protection under the Swiss FADP
 - [Imprint](https://schuly.dev/en/impressum): Operator information
 - [Terms of use](https://schuly.dev/en/terms): Use at your own risk
 
