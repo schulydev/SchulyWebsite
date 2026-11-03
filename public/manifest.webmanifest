@@ -1,7 +1,7 @@
 {
   "name": "Schuly",
   "short_name": "Schuly",
-  "description": "Independent open-source app for Swiss school portals such as Schulnetz and OdA Org. Not affiliated with Centerboard AG or any school.",
+  "description": "Independent app for Swiss school portals such as Schulnetz and OdA Org. Not affiliated with Centerboard AG or any school.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

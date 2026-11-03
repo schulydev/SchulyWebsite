@@ -1,6 +1,6 @@
 # Schuly
 
-> Free, independent open-source app for Swiss school portals on Android and iOS. Schulnetz and OdA Org are supported through backend plugins. Not affiliated with Centerboard AG or any school.
+> Free, independent app for Swiss school portals on Android and iOS. Schulnetz and OdA Org are supported through backend plugins. Not affiliated with Centerboard AG or any school.
 
 Schuly is a free mobile app that gives students a modern interface on top of their school's existing portal. The Flutter app (Android and iOS) handles the UI; a C# / ASP.NET Core backend handles sync. School systems are integrated as backend plugins written against the Schuly plugin SDK. Current plugins cover Schulnetz (via the Schulware plugin and the SchulwareAPI service) and OdA Org. A read-only Microsoft 365 connection (via the SchulyMicrosoft service) can be linked and is still being built out.
 
