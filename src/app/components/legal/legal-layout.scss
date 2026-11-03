@@ -75,6 +75,29 @@
 
   p { margin-bottom: 1rem; }
 
+  .legal-table-wrap {
+    margin: 0 0 1rem;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+
+  th, td {
+    padding: 0.5rem 0.75rem 0.5rem 0;
+    border-bottom: 1px solid var(--border-strong);
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    color: #fff;
+    font-weight: 600;
+  }
+
   ul, ol {
     margin: 0 0 1rem 1.25rem;
     padding-left: 0;
