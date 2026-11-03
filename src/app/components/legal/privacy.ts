@@ -318,8 +318,6 @@ import { LegalPageBase } from './legal-page-base';
               Du kannst dich beim <strong>Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten
               (EDÖB)</strong>, Feldeggweg 1, 3003 Bern, beschweren
               (<a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">edoeb.admin.ch</a>).
-              Wenn du in der EU bzw. im EWR wohnst, kannst du dich auch an die Datenschutzbehörde in deinem
-              Land wenden.
             </p>
 
             <h2>14. Änderungen</h2>
@@ -607,8 +605,7 @@ import { LegalPageBase } from './legal-page-base';
             <p>
               You may complain to the <strong>Federal Data Protection and Information Commissioner
               (FDPIC / EDÖB)</strong>, Feldeggweg 1, 3003 Bern
-              (<a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">edoeb.admin.ch</a>). If you
-              live in the EU/EEA, you may also contact the data protection authority in your country.
+              (<a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">edoeb.admin.ch</a>).
             </p>
 
             <h2>14. Changes</h2>
