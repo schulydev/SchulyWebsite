@@ -11,7 +11,7 @@ import { LegalPageBase } from './legal-page-base';
       <div class="legal-container">
         <div class="legal-eyebrow">Terms</div>
         <h1 class="legal-title">{{ 'legal.terms' | translate }}</h1>
-        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 28.10.2026</p>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 03.11.2026</p>
 
         <div class="legal-body">
           @if (showFallbackNotice()) {
@@ -19,199 +19,143 @@ import { LegalPageBase } from './legal-page-base';
           }
           @if (showDe()) {
             <div class="callout">
-              <strong>Nutzung auf eigene Gefahr.</strong> Schuly ist ein kostenloses, offenes
-              Hobby-Projekt eines einzelnen Entwicklers. Die Software wird ohne jegliche Gewährleistung
-              bereitgestellt - weder für Verfügbarkeit, Richtigkeit der angezeigten Schul-Daten noch für
-              Datenverlust. Verbindliche Auskünfte zu Noten, Stundenplan und Absenzen erhältst du
-              ausschliesslich von deiner Schule.
+              <strong>Nutzung auf eigene Gefahr.</strong> Schuly ist ein kostenloses Hobby-Projekt eines
+              einzelnen Entwicklers, ohne Garantie für Verfügbarkeit, richtige Daten oder gegen Datenverlust.
+              Verbindlich sind nur die Angaben deiner Schule.
             </div>
 
             <p>
-              Diese Nutzungsbedingungen regeln die Nutzung der Website schuly.dev, der Schuly-App für
-              Android und iOS und des von uns betriebenen Schuly-Servers. Mit dem Zugriff auf die Website oder dem Download und der Nutzung der
-              App erklärst du dich mit diesen Bedingungen einverstanden.
+              Diese Bedingungen gelten für die Website schuly.dev, die Schuly-Apps und den von uns betriebenen
+              Schuly-Server. Mit der Nutzung stimmst du ihnen zu. Bist du unsicher, was sie für dich bedeuten,
+              frag deine Eltern. Wie wir mit Daten umgehen, steht in der
+              <a href="/de/privacy">Datenschutzerklärung</a>.
             </p>
 
-            <h2>1. Leistung</h2>
+            <h2>1. Für wen Schuly ist</h2>
             <p>
-              Schuly ist eine inoffizielle App mit öffentlich einsehbarem Quellcode für Schulportale. Sie ruft mit deinen
-              Zugangsdaten Inhalte deines Schulsystems (z. B. Schulnetz oder OdA Org) ab und stellt sie in
-              einer modernen Benutzeroberfläche dar. Im Kontomodus speichert der Schuly-Server deine
-              Schuldaten und die nötigen Zugangsdaten verschlüsselt, um sie im Hintergrund zu
-              synchronisieren; im privaten Modus bleiben die Zugangsdaten auf deinem Gerät. Details stehen
-              in der Datenschutzerklärung. Es besteht kein Anspruch auf bestimmte Funktionen oder auf die
-              Unterstützung eines bestimmten Schulsystems.
+              Schuly ist eine kostenlose, inoffizielle App für Schülerinnen und Schüler, die eine Schule in der
+              Schweiz besuchen. Unseren Dienst auf schuly.dev bieten wir nur ihnen an, und er unterstützt nur
+              Schulsysteme, die in der Schweiz verwendet werden.
             </p>
 
-            <h2>2. Inoffizielles Projekt, keine Verbindung zu Dritten</h2>
+            <h2>2. Was Schuly macht</h2>
             <p>
-              Schuly ist ein inoffizielles, unabhängiges Projekt. «Schulnetz» ist eine Marke bzw.
-              Produktbezeichnung der Centerboard AG. Es besteht keine vertragliche, gesellschaftsrechtliche
-              oder geschäftliche Verbindung zur Centerboard AG, zu Microsoft, zu OdA Org oder zu deiner
-              Schule. Keine dieser Stellen betreibt, empfiehlt oder sponsert Schuly.
+              Mit deinen Anmeldedaten holt Schuly Inhalte aus deinem Schulsystem und zeigt sie an. Es besteht kein
+              Anspruch auf bestimmte Funktionen, auf einen dauerhaften Betrieb oder auf die Unterstützung eines
+              bestimmten Schulsystems. KI-Funktionen wie Helply können falsche Antworten geben, prüfe Wichtiges also selbst.
             </p>
 
-            <h2>3. Eigenverantwortung</h2>
+            <h2>3. Inoffizielles Projekt</h2>
             <p>
-              Du bist selbst dafür verantwortlich, dass deine Nutzung von Schuly mit den
-              Nutzungsbedingungen, Hausregeln und IT-Richtlinien deiner Schule sowie mit dem Vertrag deiner
-              Schule mit der Centerboard AG vereinbar ist. Schuly wird «as is» bereitgestellt; eine Pflicht
-              zur Verfügbarkeit oder Lauffähigkeit besteht nicht.
+              Schuly gehört nicht zur Centerboard AG, zu Microsoft, zu OdA Org oder zu deiner Schule, und diese
+              betreiben oder unterstützen es nicht. «Schulnetz» ist eine Marke oder ein Produktname der Centerboard AG.
             </p>
 
-            <h2>4. Lizenz des Quellcodes</h2>
+            <h2>4. Deine Verantwortung</h2>
             <p>
-              Der Quellcode der App, des Backends und der Plugins ist öffentlich auf GitHub einsehbar.
-              Die eigenen Apps und Dienste von Schuly stehen unter der PolyForm Noncommercial License 1.0.0 -
-              ausgenommen die Plugins und der Plugin-Vertrag, die unter der MIT-Lizenz stehen. Die jeweils anwendbare Lizenz hat Vorrang vor Punkt 5 (Haftungsbeschränkung)
-              dieser Bedingungen, soweit sie weitergehende Rechte gewährt.
-            </p>
-
-            <h2>5. Haftungsbeschränkung</h2>
-            <p>
-              Die Nutzung von Schuly erfolgt auf eigenes Risiko. Soweit gesetzlich zulässig, schliessen
-              wir jede Haftung für direkte, indirekte, mittelbare oder Folgeschäden aus, die aus oder im
-              Zusammenhang mit der Nutzung oder Nichtverfügbarkeit der App, der Website oder des Backends
-              entstehen. Insbesondere übernehmen wir keine Haftung für:
+              Du bist dafür verantwortlich, dass deine Nutzung die Regeln deiner Schule und die Bedingungen der
+              verbundenen Dienste einhält. Nicht erlaubt ist insbesondere:
             </p>
             <ul>
-              <li>Datenverlust oder fehlerhafte Daten aus dem Schulsystem,</li>
-              <li>verspätete oder unzutreffende Notenanzeige, Stundenplaninformationen oder Absenzen,</li>
-              <li>Ausfälle des Schulsystems oder unserer Infrastruktur,</li>
-              <li>von Dritten geschriebene Backend-Plugins.</li>
+              <li>auf Konten oder Daten zuzugreifen, die nicht deine sind,</li>
+              <li>Zugriffskontrollen oder Anmeldungen zu umgehen,</li>
+              <li>Schulsysteme durch automatisierte Abfragen übermässig zu belasten,</li>
+              <li>Schuly für rechtswidrige Zwecke zu nutzen.</li>
             </ul>
+            <p>Wir können Konten sperren oder löschen, die gegen diese Regeln verstossen.</p>
+
+            <h2>5. Haftung</h2>
             <p>
-              Verbindliche Auskünfte über Noten, Stundenpläne, Absenzen, Termine usw. erhältst du
-              ausschliesslich von deiner Schule.
+              Schuly wird bereitgestellt, wie es ist. Soweit gesetzlich zulässig, schliessen wir jede Haftung aus,
+              insbesondere für Datenverlust, falsche oder verspätete Angaben zu Noten, Stundenplan oder Absenzen,
+              Ausfälle von Schulsystemen oder unserer Infrastruktur sowie Plugins Dritter.
             </p>
 
-            <h2>6. Selbstgehostete Instanzen</h2>
+            <h2>6. Eigener Server</h2>
             <p>
-              Wenn du Schuly oder das SchulyServer selbst betreibst, bist du in Bezug auf die dort
-              verarbeiteten personenbezogenen Daten Verantwortlicher im Sinne von Art. 5 lit. j revDSG
-              bzw. Art. 4 Nr. 7 DSGVO. Du bist insbesondere verpflichtet, ein Verzeichnis der
-              Bearbeitungstätigkeiten zu führen, geeignete technische und organisatorische Massnahmen
-              umzusetzen und die Rechte der betroffenen Personen zu wahren.
+              Wer Schuly selbst betreibt, ist für diesen Server und die dort bearbeiteten Personendaten verantwortlich
+              und muss die dafür geltenden Datenschutzpflichten selbst einhalten.
             </p>
 
-            <h2>7. Missbrauchsverbot</h2>
+            <h2>7. Quellcode</h2>
             <p>
-              Du verpflichtest dich, Schuly nicht zu missbrauchen, insbesondere nicht:
-            </p>
-            <ul>
-              <li>für automatisiertes Auslesen oder Scraping, das die schulischen Systeme über Gebühr belastet,</li>
-              <li>zur Umgehung von Zugriffskontrollen oder Authentifizierungsmechanismen,</li>
-              <li>zum Zugriff auf Konten oder Daten, die nicht dir gehören,</li>
-              <li>für rechtswidrige Zwecke.</li>
-            </ul>
-
-            <h2>8. Änderungen</h2>
-            <p>
-              Wir können diese Nutzungsbedingungen anpassen, wenn sich die Funktionen oder die rechtlichen
-              Rahmenbedingungen ändern. Massgeblich ist jeweils die auf dieser Seite veröffentlichte
-              Fassung mit aktualisiertem Datum.
+              Der Quellcode ist auf <a href="https://github.com/schulydev" target="_blank" rel="noopener">GitHub</a>
+              öffentlich. Für die Apps und Dienste gilt die PolyForm Noncommercial License 1.0.0, für die Plugins und den
+              Plugin-Vertrag die MIT-Lizenz. Geht eine Lizenz weiter als diese Bedingungen, gilt für den Code die Lizenz.
             </p>
 
-            <h2>9. Anwendbares Recht und Gerichtsstand</h2>
+            <h2>8. Änderungen und anwendbares Recht</h2>
             <p>
-              Diese Bedingungen unterstehen schweizerischem Recht unter Ausschluss kollisionsrechtlicher
-              Verweisungsnormen. Gerichtsstand ist - soweit gesetzlich zulässig - der Sitz des Anbieters.
-              Zwingende Konsumentenschutzbestimmungen am Wohnsitz des Nutzers bleiben vorbehalten.
+              Wir passen diese Bedingungen an, wenn sich Funktionen oder rechtliche Anforderungen ändern. Es gilt die hier
+              veröffentlichte Fassung mit dem oben genannten Datum. Es gilt Schweizer Recht. Gerichtsstand ist, soweit
+              zulässig, der Sitz des Betreibers. Zwingende Bestimmungen zum Schutz von Konsumentinnen und Konsumenten bleiben vorbehalten.
             </p>
           } @else {
             <div class="callout">
-              <strong>Use at your own risk.</strong> Schuly is a free, source-available hobby project by a
-              single developer. The software is provided without any warranty whatsoever - not for
-              availability, not for correctness of the school data shown, not for data loss. For binding
-              information about grades, schedule, or absences, consult your school directly.
+              <strong>Use at your own risk.</strong> Schuly is a free hobby project by one developer, with no guarantee of
+              availability, correct data, or protection against data loss. Only your school's information is binding.
             </div>
 
             <p>
-              These Terms govern your use of the schuly.dev website, the Schuly app for Android and iOS,
-              and the Schuly server we operate. By accessing the site or downloading and using the app you agree to these Terms.
+              These terms cover the schuly.dev website, the Schuly apps, and the Schuly server we operate. By using them, you
+              agree to these terms. If you're unsure what they mean for you, ask a parent. How we handle data is explained in
+              the <a href="/en/privacy">Privacy Policy</a>.
             </p>
 
-            <h2>1. Service</h2>
+            <h2>1. Who Schuly is for</h2>
             <p>
-              Schuly is an unofficial, source-available app for school portals. Using your login data, it fetches
-              content from your school system (e.g. Schulnetz or OdA Org) and shows it in a modern
-              interface. In account mode the Schuly server stores your school data and the required login
-              data encrypted so it can sync in the background; in private mode your login data stays on your
-              device. Details are in the Privacy Policy. There is no entitlement to specific features or to
-              support for a particular school system.
+              Schuly is a free, unofficial app for students who attend a school in Switzerland. We offer our service at
+              schuly.dev only to these students, and it supports only school systems used in Switzerland.
             </p>
 
-            <h2>2. Unofficial project, no affiliation</h2>
+            <h2>2. What Schuly does</h2>
             <p>
-              Schuly is an unofficial, independent project. "Schulnetz" is a trademark or product name of
-              Centerboard AG. There is no contractual, corporate, or commercial relationship with
-              Centerboard AG, Microsoft, OdA Org, or your school, and none of them operates, endorses, or
-              sponsors Schuly.
+              Using your login, Schuly fetches content from your school system and shows it. You have no right to specific
+              features, to continued operation, or to support for a particular school system. AI features such as Helply can give
+              wrong answers, so check anything important yourself.
             </p>
 
-            <h2>3. Your responsibility</h2>
+            <h2>3. Unofficial project</h2>
             <p>
-              You are responsible for ensuring that your use of Schuly complies with your school's terms,
-              IT rules, and the contract between your school and Centerboard AG. Schuly is provided
-              "as is"; there is no obligation as to availability or operability.
+              Schuly isn't part of Centerboard AG, Microsoft, OdA Org, or your school, and they don't operate or endorse it.
+              "Schulnetz" is a trademark or product name of Centerboard AG.
             </p>
 
-            <h2>4. Source-code licence</h2>
-            <p>
-              The source code of the app, backend, and plugins is public on GitHub. Schuly's own apps and
-              services are covered by the PolyForm Noncommercial License 1.0.0, except the plugins and the
-              plugin contract, which are under the MIT License. The applicable licence of each repository takes precedence over Clause 5 (limitation of liability) of these Terms to the extent it
-              grants broader rights.
-            </p>
-
-            <h2>5. Limitation of liability</h2>
-            <p>
-              Use of Schuly is at your own risk. To the extent permitted by law we exclude all liability
-              for direct, indirect, consequential or incidental damages arising from or in connection
-              with the use of, or inability to use, the app, the website, or the backend. In particular,
-              we accept no liability for:
-            </p>
+            <h2>4. Your responsibility</h2>
+            <p>You're responsible for making sure your use follows your school's rules and the terms of the services you connect. In particular, you may not:</p>
             <ul>
-              <li>data loss or incorrect data from the school system,</li>
-              <li>late or inaccurate display of grades, schedule, or absences,</li>
-              <li>outages of the school system or our infrastructure,</li>
-              <li>third-party backend plugins.</li>
+              <li>access accounts or data that aren't yours,</li>
+              <li>bypass access controls or sign-in,</li>
+              <li>overload school systems with automated requests,</li>
+              <li>use Schuly for unlawful purposes.</li>
             </ul>
+            <p>We may suspend or delete accounts that break these rules.</p>
+
+            <h2>5. Liability</h2>
             <p>
-              For binding information about grades, schedules, absences, and dates please consult your
-              school directly.
+              Schuly is provided as is. As far as the law allows, we exclude all liability, in particular for data loss, wrong or
+              late information about grades, timetables, or absences, outages of school systems or our infrastructure, and
+              third-party plugins.
             </p>
 
-            <h2>6. Self-hosted instances</h2>
+            <h2>6. Your own server</h2>
             <p>
-              If you operate Schuly or SchulyServer yourself, you are the controller within the meaning
-              of Art. 5(j) revDSG / Art. 4(7) GDPR for the personal data processed by that instance.
-              You are in particular required to keep a Record of Processing Activities, implement
-              appropriate technical and organisational measures, and uphold data-subject rights.
+              If you run Schuly yourself, you're responsible for that server and the personal data processed on it, and you must
+              meet the data protection duties that apply to you.
             </p>
 
-            <h2>7. No misuse</h2>
+            <h2>7. Source code</h2>
             <p>
-              You agree not to misuse Schuly, in particular not:
-            </p>
-            <ul>
-              <li>for automated scraping that disproportionately loads school systems,</li>
-              <li>to bypass access control or authentication,</li>
-              <li>to access accounts or data not your own,</li>
-              <li>for unlawful purposes.</li>
-            </ul>
-
-            <h2>8. Changes</h2>
-            <p>
-              We may update these Terms when features or legal requirements change. The version
-              published on this page with the current "last updated" date applies.
+              The source code is public on <a href="https://github.com/schulydev" target="_blank" rel="noopener">GitHub</a>. The
+              apps and services use the PolyForm Noncommercial License 1.0.0, and the plugins and plugin contract use the MIT
+              License. Where a license grants more than these terms, the license applies to the code.
             </p>
 
-            <h2>9. Governing law and venue</h2>
+            <h2>8. Changes and governing law</h2>
             <p>
-              These Terms are governed by Swiss law, excluding its conflict-of-laws rules. Venue,
-              to the extent permitted, is the operator's seat. Mandatory consumer-protection
-              provisions of your place of residence remain reserved.
+              We update these terms when features or legal requirements change. The version published here with the date above
+              applies. Swiss law applies. Venue, as far as permitted, is the operator's seat. Mandatory consumer protection rules
+              remain unaffected.
             </p>
           }
         </div>
