@@ -70,7 +70,7 @@
       },
       "oidc": {
         "title": "Kontomodus oder privater Modus",
-        "description": "Nutze ein Schuly-Konto (Passkey oder Passwort, Zwei-Faktor optional) für die Hintergrund-Synchronisation, oder den privaten Modus ohne Konto, bei dem dein Schul-Login auf deinem Gerät bleibt."
+        "description": "Nutze ein Schuly-Konto (Passwort, Zwei-Faktor optional) für die Hintergrund-Synchronisation, oder den privaten Modus ohne Konto, bei dem dein Schul-Login auf deinem Gerät bleibt."
       },
       "fast": {
         "title": "Immer aktuell",
@@ -101,7 +101,7 @@
       },
       {
         "q": "Welche Schulsysteme werden unterstützt?",
-        "a": "Schulnetz (über das Schulware-Plugin) und OdA Org. Jedes System wird über ein Backend-Plugin angebunden, so können weitere ohne App-Update dazukommen. Eine lesende Verbindung zu Microsoft 365 lässt sich in den Einstellungen verknüpfen und wird noch ausgebaut."
+        "a": "Schulnetz (über das Schulware-Plugin) und OdA Org. Jedes System wird über ein Backend-Plugin angebunden, so können weitere ohne App-Update dazukommen. Eine Verbindung zu Microsoft 365 lässt sich in den Einstellungen verknüpfen und wird noch ausgebaut."
       },
       {
         "q": "Ist Schuly eine offizielle App von Schulnetz oder meiner Schule?",
@@ -117,7 +117,7 @@
       },
       {
         "q": "Kennt Schuly mein Schulpasswort?",
-        "a": "Bei Schulnetz werden E-Mail und Passwort nur für die Anmeldung verwendet und nicht gespeichert; Schuly behält die daraus entstehende Sitzung verschlüsselt. Bei OdA Org werden Benutzername und Passwort verschlüsselt gespeichert, damit Schuly sich erneut anmelden kann. Im privaten Modus bleibt all das auf deinem Gerät. Dein Schuly-Konto selbst wird von Schulys eigenem Anmeldedienst unter auth.schuly.dev verwaltet."
+        "a": "Bei Schulnetz werden E-Mail und Passwort nur für die Anmeldung verwendet und nicht gespeichert; Schuly behält die daraus entstehende Sitzung verschlüsselt. Bei OdA Org werden Benutzername und Passwort verschlüsselt gespeichert, damit Schuly sich erneut anmelden kann. Im privaten Modus bleibt all das auf deinem Gerät. Dein Schuly-Konto selbst wird vom Schuly-Server verwaltet."
       },
       {
         "q": "Kann mein Schulsystem integriert werden?",

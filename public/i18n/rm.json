@@ -70,7 +70,7 @@
       },
       "oidc": {
         "title": "Modus da conto u modus privat",
-        "description": "Utilisescha in conto Schuly (passkey u pled-clav, dus facturs facultativ) per la sincronisaziun en il fund, u il modus privat senza conto, nua che tes login da scola resta sin tes apparat."
+        "description": "Utilisescha in conto Schuly (pled-clav, dus facturs facultativ) per la sincronisaziun en il fund, u il modus privat senza conto, nua che tes login da scola resta sin tes apparat."
       },
       "fast": {
         "title": "Adina actual",
@@ -101,7 +101,7 @@
       },
       {
         "q": "Tge sistems da scola vegnan sustegnids?",
-        "a": "Schulnetz (cun il plugin Schulware) ed OdA Org. Mintga sistem vegn collià cun in plugin per il backend, uschia pon vegnir agiuntads ulteriurs senza actualisar l'app. Ina colliaziun mo per leger cun Microsoft 365 po vegnir colliada en ils parameters ed è anc en svilup."
+        "a": "Schulnetz (cun il plugin Schulware) ed OdA Org. Mintga sistem vegn collià cun in plugin per il backend, uschia pon vegnir agiuntads ulteriurs senza actualisar l'app. Ina colliaziun cun Microsoft 365 po vegnir colliada en ils parameters ed è anc en svilup."
       },
       {
         "q": "È Schuly in'app uffiziala da Schulnetz u da mia scola?",
@@ -117,7 +117,7 @@
       },
       {
         "q": "Sa Schuly mes pled-clav da scola?",
-        "a": "Tar Schulnetz vegnan e-mail e pled-clav duvrads mo per l'annunzia e na vegnan betg memorisads; Schuly tegna la sessiun che resulta criptada. Tar OdA Org vegnan num d'utilisader e pled-clav memorisads criptads, uschia che Schuly po s'annunziar danovamain. En il modus privat resta tut quai sin tes apparat. Tes conto Schuly sez vegn administrà dal servetsch d'annunzia agen da Schuly sut auth.schuly.dev."
+        "a": "Tar Schulnetz vegnan e-mail e pled-clav duvrads mo per l'annunzia e na vegnan betg memorisads; Schuly tegna la sessiun che resulta criptada. Tar OdA Org vegnan num d'utilisader e pled-clav memorisads criptads, uschia che Schuly po s'annunziar danovamain. En il modus privat resta tut quai sin tes apparat. Tes conto Schuly sez vegn administrà dal server da Schuly."
       },
       {
         "q": "Po mes sistem da scola vegnir integrà?",
