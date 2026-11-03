@@ -20,7 +20,7 @@ import { LegalPageBase } from './legal-page-base';
           @if (showDe()) {
             <h2>1. Wer wir sind und für wen Schuly ist</h2>
             <p>
-              Schuly ist eine kostenlose, inoffizielle App für Schülerinnen und Schüler, die eine Schule in der
+              Schuly ist eine kostenlose, unabhängige App für Schülerinnen und Schüler, die eine Schule in der
               Schweiz besuchen. Unseren Dienst auf schuly.dev bieten wir nur ihnen an, und er unterstützt nur
               Schulsysteme, die in der Schweiz verwendet werden. Schuly gehört nicht zu deiner Schule, zur
               Centerboard AG (Schulnetz), zu OdA Org oder zu Microsoft.
@@ -141,7 +141,7 @@ import { LegalPageBase } from './legal-page-base';
           } @else {
             <h2>1. Who we are and who Schuly is for</h2>
             <p>
-              Schuly is a free, unofficial app for students who attend a school in Switzerland. We offer our service at
+              Schuly is a free, independent app for students who attend a school in Switzerland. We offer our service at
               schuly.dev only to these students, and it supports only school systems used in Switzerland. Schuly isn't
               part of your school, Centerboard AG (Schulnetz), OdA Org, or Microsoft.
             </p>

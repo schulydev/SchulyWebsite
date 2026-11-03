@@ -47,7 +47,7 @@ import { LegalPageBase } from './legal-page-base';
             <h2>Trademark notice</h2>
             <p>
               "Schulnetz" is a trademark or product name of Centerboard AG. "Microsoft 365" is a trademark
-              of Microsoft Corporation. Schuly is an unofficial, independent, source-available hobby project. It
+              of Microsoft Corporation. Schuly is an independent, source-available hobby project. It
               is not affiliated with, endorsed by, sponsored by, or operated by Centerboard AG, Microsoft,
               OdA Org, or any school. Names of school systems are used only to describe compatibility.
             </p>
@@ -105,7 +105,7 @@ import { LegalPageBase } from './legal-page-base';
             <h2>Markenhinweis</h2>
             <p>
               «Schulnetz» ist eine Marke bzw. Produktbezeichnung der Centerboard AG. «Microsoft 365» ist eine
-              Marke der Microsoft Corporation. Schuly ist ein inoffizielles, unabhängiges
+              Marke der Microsoft Corporation. Schuly ist ein unabhängiges
               Hobby-Projekt mit öffentlich einsehbarem Quellcode. Es steht in keiner Verbindung zur Centerboard AG, zu Microsoft, zu
               OdA Org oder zu einer Schule und wird von diesen weder unterstützt, gesponsert noch betrieben.
               Namen von Schulsystemen werden nur verwendet, um die Kompatibilität zu beschreiben.

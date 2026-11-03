@@ -33,7 +33,7 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>1. Für wen Schuly ist</h2>
             <p>
-              Schuly ist eine kostenlose, inoffizielle App für Schülerinnen und Schüler, die eine Schule in der
+              Schuly ist eine kostenlose, unabhängige App für Schülerinnen und Schüler, die eine Schule in der
               Schweiz besuchen. Unseren Dienst auf schuly.dev bieten wir nur ihnen an, und er unterstützt nur
               Schulsysteme, die in der Schweiz verwendet werden.
             </p>
@@ -45,7 +45,7 @@ import { LegalPageBase } from './legal-page-base';
               bestimmten Schulsystems. KI-Funktionen wie Helply können falsche Antworten geben, prüfe Wichtiges also selbst.
             </p>
 
-            <h2>3. Inoffizielles Projekt</h2>
+            <h2>3. Unabhängiges Projekt</h2>
             <p>
               Schuly gehört nicht zur Centerboard AG, zu Microsoft, zu OdA Org oder zu deiner Schule, und diese
               betreiben oder unterstützen es nicht. «Schulnetz» ist eine Marke oder ein Produktname der Centerboard AG.
@@ -104,7 +104,7 @@ import { LegalPageBase } from './legal-page-base';
 
             <h2>1. Who Schuly is for</h2>
             <p>
-              Schuly is a free, unofficial app for students who attend a school in Switzerland. We offer our service at
+              Schuly is a free, independent app for students who attend a school in Switzerland. We offer our service at
               schuly.dev only to these students, and it supports only school systems used in Switzerland.
             </p>
 
@@ -115,7 +115,7 @@ import { LegalPageBase } from './legal-page-base';
               wrong answers, so check anything important yourself.
             </p>
 
-            <h2>3. Unofficial project</h2>
+            <h2>3. Independent project</h2>
             <p>
               Schuly isn't part of Centerboard AG, Microsoft, OdA Org, or your school, and they don't operate or endorse it.
               "Schulnetz" is a trademark or product name of Centerboard AG.

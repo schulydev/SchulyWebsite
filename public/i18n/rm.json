@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · App open source betg uffiziala per portals da scola svizzers",
-      "description": "App gratuita, open source e betg uffiziala per portals da scola svizzers, sin Android ed iOS. Funcziuna cun Schulnetz ed OdA Org. Nagina relaziun cun la Centerboard AG u cun tia scola."
+      "title": "Schuly · App open source independenta per portals da scola svizzers",
+      "description": "App gratuita, open source e independenta per portals da scola svizzers, sin Android ed iOS. Funcziuna cun Schulnetz ed OdA Org. Nagina relaziun cun la Centerboard AG u cun tia scola."
     },
     "privacy": {
       "title": "Protecziun da datas · Schuly",
@@ -34,7 +34,7 @@
   "hero": {
     "title1": "Tut tias scolas,",
     "title2": "en in'app.",
-    "sub": "Notas, examens, urari, absenzas e documents da tes portal da scola en in sulet lieu. Per Android ed iOS, cun Schulnetz ed OdA Org gia sustegnids. Betg uffizial e senza relaziun cun la Centerboard AG u cun tia scola.",
+    "sub": "Notas, examens, urari, absenzas e documents da tes portal da scola en in sulet lieu. Per Android ed iOS, cun Schulnetz ed OdA Org gia sustegnids. Independent e senza relaziun cun la Centerboard AG u cun tia scola.",
     "ctaDownload": "Telechargiar Schuly",
     "ctaGithub": "Guardar sin GitHub"
   },
@@ -97,7 +97,7 @@
     "items": [
       {
         "q": "Tge è Schuly?",
-        "a": "Schuly è in'app gratuita, open source e betg uffiziala per scolaras e scolars en Svizra. Ella mussa notas, examens, urari, absenzas e documents da tes portal da scola en in'interfatscha moderna e unescha plirs contos da scola en in'app. Disponibla per Android ed iOS."
+        "a": "Schuly è in'app gratuita, open source e independenta per scolaras e scolars en Svizra. Ella mussa notas, examens, urari, absenzas e documents da tes portal da scola en in'interfatscha moderna e unescha plirs contos da scola en in'app. Disponibla per Android ed iOS."
       },
       {
         "q": "Tge sistems da scola vegnan sustegnids?",
@@ -105,7 +105,7 @@
       },
       {
         "q": "È Schuly in'app uffiziala da Schulnetz u da mia scola?",
-        "a": "Na. Schuly è in project betg uffizial ed independent. El n'ha nagina relaziun cun la Centerboard AG (la producenta da Schulnetz), cun tia scola, cun OdA Org u cun Microsoft e na vegn ni sustegnì ni manà dad els."
+        "a": "Na. Schuly è in project independent. El n'ha nagina relaziun cun la Centerboard AG (la producenta da Schulnetz), cun tia scola, cun OdA Org u cun Microsoft e na vegn ni sustegnì ni manà dad els."
       },
       {
         "q": "Tge custa Schuly?",
@@ -175,7 +175,7 @@
       "terms": "Cundiziuns d'utilisaziun",
       "coffee": "Cumprai a mai in café"
     },
-    "disclaimer": "Project open source betg uffizial ed independent. Nagina relaziun cun la Centerboard AG (Schulnetz), OdA Org, Microsoft u ina scola.",
+    "disclaimer": "Project open source independent. Nagina relaziun cun la Centerboard AG (Schulnetz), OdA Org, Microsoft u ina scola.",
     "copyright": "© {{ year }} Schuly · Construì cun"
   },
   "notFound": {
