@@ -11,7 +11,7 @@ import { LegalPageBase } from './legal-page-base';
       <div class="legal-container">
         <div class="legal-eyebrow">Privacy</div>
         <h1 class="legal-title">{{ 'legal.privacy' | translate }}</h1>
-        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 03.11.2026</p>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 04.11.2026</p>
 
         <div class="legal-body">
           @if (showFallbackNotice()) {
@@ -97,6 +97,7 @@ import { LegalPageBase } from './legal-page-base';
                   <tr><td>Google, Microsoft</td><td>Anmeldung bei Schuly, wenn du sie wählst</td><td>USA</td><td>Laut Anbieter</td></tr>
                   <tr><td>Centerboard AG, OdA Org</td><td>Abruf deiner Schuldaten</td><td>Schweiz</td><td>In deinem Auftrag</td></tr>
                   <tr><td>GitHub, Inc.</td><td>Prüfung auf App-Updates (überträgt deine IP-Adresse, lässt sich abschalten), Downloads</td><td>USA</td><td>Laut GitHub</td></tr>
+                  <tr><td>Giphy</td><td>GIFs in Chats: dein Browser lädt die Bilder direkt von Giphy (überträgt deine IP-Adresse)</td><td>USA</td><td>Laut Giphy</td></tr>
                 </tbody>
               </table>
             </div>
@@ -215,6 +216,7 @@ import { LegalPageBase } from './legal-page-base';
                   <tr><td>Google, Microsoft</td><td>Signing in to Schuly, if you choose them</td><td>USA</td><td>Per provider</td></tr>
                   <tr><td>Centerboard AG, OdA Org</td><td>Fetching your school data</td><td>Switzerland</td><td>On your behalf</td></tr>
                   <tr><td>GitHub, Inc.</td><td>Checking for app updates (sends your IP address, can be turned off) and downloads</td><td>USA</td><td>Per GitHub</td></tr>
+                  <tr><td>Giphy</td><td>GIFs in chats: your browser loads the images directly from Giphy (sends your IP address)</td><td>USA</td><td>Per Giphy</td></tr>
                 </tbody>
               </table>
             </div>
