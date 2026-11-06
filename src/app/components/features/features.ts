@@ -1,61 +1,82 @@
-import { afterNextRender, Component, ElementRef, viewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslatePipe } from '@ngx-translate/core';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faAndroid, faApple } from '@fortawesome/free-brands-svg-icons';
 import {
-  faChartLine,
-  faUsers,
-  faPalette,
-  faCalendarDays,
-  faMobileScreen,
-  faPuzzlePiece,
-  faShieldHalved,
   faBolt,
+  faBook,
+  faBriefcase,
+  faCalendarDays,
+  faChartLine,
+  faCheck,
+  faCloud,
   faEnvelope,
+  faGlobe,
+  faGraduationCap,
+  faLock,
+  faMobileScreen,
+  faMoon,
+  faPalette,
+  faPlus,
+  faPuzzlePiece,
+  faSchool,
+  faShieldHalved,
+  faSun,
+  faUsers,
+  faWandMagicSparkles,
 } from '@fortawesome/free-solid-svg-icons';
-
-interface Feature {
-  key: string;
-  icon: IconDefinition;
-}
 
 @Component({
   selector: 'app-features',
   imports: [FontAwesomeModule, TranslatePipe],
   templateUrl: './features.html',
-  styleUrl: './features.scss'
+  styleUrls: ['./features.scss', './features-visuals.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Features {
-  private grid = viewChild<ElementRef<HTMLElement>>('grid');
+  protected readonly faAndroid = faAndroid;
+  protected readonly faApple = faApple;
+  protected readonly faBolt = faBolt;
+  protected readonly faBriefcase = faBriefcase;
+  protected readonly faCalendarDays = faCalendarDays;
+  protected readonly faChartLine = faChartLine;
+  protected readonly faCheck = faCheck;
+  protected readonly faEnvelope = faEnvelope;
+  protected readonly faGlobe = faGlobe;
+  protected readonly faGraduationCap = faGraduationCap;
+  protected readonly faLock = faLock;
+  protected readonly faMobileScreen = faMobileScreen;
+  protected readonly faMoon = faMoon;
+  protected readonly faPalette = faPalette;
+  protected readonly faPlus = faPlus;
+  protected readonly faPuzzlePiece = faPuzzlePiece;
+  protected readonly faSchool = faSchool;
+  protected readonly faShieldHalved = faShieldHalved;
+  protected readonly faSun = faSun;
+  protected readonly faUsers = faUsers;
+  protected readonly faWandMagicSparkles = faWandMagicSparkles;
 
-  features: Feature[] = [
-    { key: 'grades',     icon: faChartLine },
-    { key: 'agenda',     icon: faCalendarDays },
-    { key: 'schulnetz',  icon: faPuzzlePiece },
-    { key: 'multi',      icon: faUsers },
-    { key: 'design',     icon: faPalette },
-    { key: 'platforms',  icon: faMobileScreen },
-    { key: 'oidc',       icon: faShieldHalved },
-    { key: 'fast',       icon: faBolt },
-    { key: 'microsoft',  icon: faEnvelope },
+  // Sample data for the grades tile. Swiss grades run from 1 to 6.
+  protected readonly grades = [
+    { subject: 'math', grade: 5.5, tone: 'good' },
+    { subject: 'german', grade: 5.0, tone: 'good' },
+    { subject: 'english', grade: 4.5, tone: 'ok' },
+    { subject: 'history', grade: 3.5, tone: 'bad' },
   ];
 
-  constructor() {
-    afterNextRender(() => {
-      const el = this.grid()?.nativeElement;
-      if (!el) return;
-      const cards = Array.from(el.querySelectorAll<HTMLElement>('.feature-card'));
-      cards.forEach(c => c.classList.add('animatable'));
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const idx = cards.indexOf(entry.target as HTMLElement);
-            setTimeout(() => entry.target.classList.add('in-view'), Math.max(0, idx % 3) * 80);
-            io.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      cards.forEach(c => io.observe(c));
-    });
+  protected readonly msApps = [
+    { name: 'Mail', icon: faEnvelope, hue: 205 },
+    { name: 'Teams', icon: faUsers, hue: 245 },
+    { name: 'OneDrive', icon: faCloud, hue: 195 },
+    { name: 'OneNote', icon: faBook, hue: 280 },
+  ];
+
+  /** Moves the radial highlight of the tile under the pointer. */
+  protected spotlight(event: PointerEvent): void {
+    const tile = (event.target as HTMLElement | null)?.closest<HTMLElement>('.tile');
+    if (!tile) return;
+    const rect = tile.getBoundingClientRect();
+    tile.style.setProperty('--mx', `${event.clientX - rect.left}px`);
+    tile.style.setProperty('--my', `${event.clientY - rect.top}px`);
   }
 }

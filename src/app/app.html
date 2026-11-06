@@ -1,3 +1,7 @@
+<a class="skip-link" href="#main" (click)="skipToMain($event)">{{ 'nav.skip' | translate }}</a>
 <app-navigation />
-<router-outlet />
+<main id="main" tabindex="-1">
+  <router-outlet />
+</main>
 <app-footer />
+

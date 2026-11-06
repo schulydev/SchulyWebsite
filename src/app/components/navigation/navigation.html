@@ -1,26 +1,35 @@
-<nav class="nav">
+<nav class="nav" [attr.aria-label]="'nav.label' | translate">
   <div class="nav-inner">
     <a [href]="base()" class="nav-logo">
-      <img src="/assets/app_icon.png" alt="Schuly" width="28" height="28" />
+      <img src="/assets/app_icon_64.png" alt="" width="28" height="28" />
       <span>Schuly</span>
     </a>
 
-    <div class="nav-links" [class.open]="mobileMenuOpen()">
+    <div class="nav-links" id="nav-links" [class.open]="mobileMenuOpen()">
       <a [href]="base() + '#features'" class="nav-link" (click)="closeMobileMenu()">{{ 'nav.features' | translate }}</a>
+      <a [href]="base() + '#privacy'" class="nav-link" (click)="closeMobileMenu()">{{ 'nav.privacy' | translate }}</a>
       <a [href]="base() + '#screenshots'" class="nav-link" (click)="closeMobileMenu()">{{ 'nav.screenshots' | translate }}</a>
-      <a [href]="base() + '#download'" class="nav-link" (click)="closeMobileMenu()">{{ 'nav.download' | translate }}</a>
+      <a [href]="base() + '#faq'" class="nav-link" (click)="closeMobileMenu()">{{ 'nav.faq' | translate }}</a>
       <a href="https://docs.schuly.dev" target="_blank" rel="noopener" class="nav-link" (click)="closeMobileMenu()">{{ 'nav.docs' | translate }}</a>
-      <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener" class="nav-link" (click)="closeMobileMenu()">{{ 'nav.openSource' | translate }}</a>
+      <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener" class="nav-link nav-link--mobile" (click)="closeMobileMenu()">{{ 'nav.openSource' | translate }}</a>
+      <a [href]="base() + '#download'" class="nav-link nav-link--mobile" (click)="closeMobileMenu()">{{ 'nav.download' | translate }}</a>
     </div>
 
     <div class="nav-actions">
       <app-language-switcher />
       <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener" class="nav-github" [attr.aria-label]="'nav.githubAria' | translate">
-        <fa-icon [icon]="faGithub"></fa-icon>
+        <fa-icon [icon]="faGithub" aria-hidden="true"></fa-icon>
       </a>
       <a [href]="base() + '#download'" class="nav-cta">{{ 'nav.getSchuly' | translate }}</a>
-      <button class="nav-hamburger" (click)="toggleMobileMenu()" [attr.aria-label]="mobileMenuOpen() ? 'Close menu' : 'Open menu'">
-        <fa-icon [icon]="mobileMenuOpen() ? faTimes : faBars"></fa-icon>
+      <button
+        type="button"
+        class="nav-hamburger"
+        aria-controls="nav-links"
+        [attr.aria-expanded]="mobileMenuOpen()"
+        [attr.aria-label]="(mobileMenuOpen() ? 'nav.menuClose' : 'nav.menuOpen') | translate"
+        (click)="toggleMobileMenu()"
+      >
+        <fa-icon [icon]="mobileMenuOpen() ? faTimes : faBars" aria-hidden="true"></fa-icon>
       </button>
     </div>
   </div>

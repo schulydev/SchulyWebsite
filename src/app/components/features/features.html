@@ -1,24 +1,175 @@
 <section id="features" class="features">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <div class="eyebrow">{{ 'features.eyebrow' | translate }}</div>
-      <h2 class="section-title">{{ 'features.title1' | translate }}<br />{{ 'features.title2' | translate }}</h2>
-      <p class="section-description">
-        {{ 'features.description' | translate }}
-      </p>
+      <h2 class="section-title">{{ 'features.title1' | translate }} <span class="dim">{{ 'features.title2' | translate }}</span></h2>
+      <p class="section-description">{{ 'features.description' | translate }}</p>
     </div>
 
-    <div class="features-grid" #grid>
-      @for (f of features; track f.key) {
-        <div class="feature-card">
-          <div class="feature-icon">
-            <fa-icon [icon]="f.icon"></fa-icon>
+    <div class="bento" (pointermove)="spotlight($event)">
+      <!-- Grades -->
+      <article class="tile tile--grades reveal">
+        <div class="tile-visual grades" aria-hidden="true">
+          <div class="grades-head">
+            <span class="grades-label">{{ 'features.demo.average' | translate }}</span>
+            <span class="grades-avg">4.9</span>
+            <svg class="grades-spark" viewBox="0 0 120 36" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="spark-fill" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#4ea8ff" stop-opacity="0.35" />
+                  <stop offset="1" stop-color="#4ea8ff" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path d="M0 26 L20 22 L40 24 L60 15 L80 17 L100 9 L120 6 L120 36 L0 36 Z" fill="url(#spark-fill)" />
+              <path d="M0 26 L20 22 L40 24 L60 15 L80 17 L100 9 L120 6" fill="none" stroke="#4ea8ff" stroke-width="1.6" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+            </svg>
           </div>
-          <h3 class="feature-title">{{ 'features.items.' + f.key + '.title' | translate }}</h3>
-          <p class="feature-description">{{ 'features.items.' + f.key + '.description' | translate }}</p>
-          <div class="feature-glow"></div>
+          <ul class="grades-list">
+            @for (g of grades; track g.subject) {
+              <li>
+                <span class="grades-subject">{{ 'features.demo.subjects.' + g.subject | translate }}</span>
+                <span class="grades-bar"><i [style.width.%]="(g.grade - 1) * 20"></i></span>
+                <span [class]="'grade-pill grade-pill--' + g.tone">{{ g.grade.toFixed(1) }}</span>
+              </li>
+            }
+          </ul>
         </div>
-      }
+        <div class="tile-copy">
+          <h3 class="tile-title"><fa-icon [icon]="faChartLine" aria-hidden="true"></fa-icon>{{ 'features.items.grades.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.grades.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Timetable and absences -->
+      <article class="tile tile--agenda reveal">
+        <div class="tile-visual agenda" aria-hidden="true">
+          <div class="agenda-day">{{ 'features.demo.today' | translate }}</div>
+          <ol class="agenda-list">
+            <li><time>07:30</time><span>{{ 'features.demo.subjects.german' | translate }}</span></li>
+            <li class="is-exam"><time>09:20</time><span>{{ 'features.demo.subjects.math' | translate }}</span><em>{{ 'features.demo.exam' | translate }}</em></li>
+            <li class="is-now"><time>12:30</time><span>{{ 'features.demo.subjects.economics' | translate }}</span></li>
+            <li><time>13:20</time><span>{{ 'features.demo.subjects.history' | translate }}</span></li>
+          </ol>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title"><fa-icon [icon]="faCalendarDays" aria-hidden="true"></fa-icon>{{ 'features.items.agenda.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.agenda.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Helply -->
+      <article class="tile tile--helply reveal">
+        <div class="tile-visual chat" aria-hidden="true">
+          <p class="chat-bubble chat-bubble--me">{{ 'features.demo.helplyQ' | translate }}</p>
+          <p class="chat-bubble chat-bubble--ai">
+            <span class="chat-avatar"><fa-icon [icon]="faWandMagicSparkles"></fa-icon></span>
+            <span>{{ 'features.demo.helplyA' | translate }}</span>
+          </p>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title"><fa-icon [icon]="faWandMagicSparkles" aria-hidden="true"></fa-icon>{{ 'features.items.helply.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.helply.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Microsoft 365 -->
+      <article class="tile tile--microsoft reveal">
+        <div class="tile-visual apps" aria-hidden="true">
+          @for (a of msApps; track a.name) {
+            <span class="app-chip">
+              <span class="app-chip-icon" [style.--hue]="a.hue"><fa-icon [icon]="a.icon"></fa-icon></span>
+              {{ a.name }}
+            </span>
+          }
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title"><fa-icon [icon]="faEnvelope" aria-hidden="true"></fa-icon>{{ 'features.items.microsoft.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.microsoft.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- School systems -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual plugins" aria-hidden="true">
+          <span class="plugin"><fa-icon [icon]="faCheck"></fa-icon>Schulnetz</span>
+          <span class="plugin"><fa-icon [icon]="faCheck"></fa-icon>OdA Org</span>
+          <span class="plugin plugin--next"><fa-icon [icon]="faPlus"></fa-icon>Plugin</span>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title"><fa-icon [icon]="faPuzzlePiece" aria-hidden="true"></fa-icon>{{ 'features.items.schulnetz.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.schulnetz.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Several schools -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual schools" aria-hidden="true">
+          <span class="school" style="--hue: 210"><fa-icon [icon]="faSchool"></fa-icon></span>
+          <span class="school" style="--hue: 150"><fa-icon [icon]="faBriefcase"></fa-icon></span>
+          <span class="school" style="--hue: 275"><fa-icon [icon]="faGraduationCap"></fa-icon></span>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title"><fa-icon [icon]="faUsers" aria-hidden="true"></fa-icon>{{ 'features.items.multi.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.multi.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Push -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual push" aria-hidden="true">
+          <div class="toast">
+            <img src="/assets/app_icon_64.png" width="28" height="28" alt="" />
+            <div>
+              <strong>{{ 'features.demo.pushTitle' | translate }}</strong>
+              <span>{{ 'features.demo.subjects.math' | translate }} · 5.5</span>
+            </div>
+          </div>
+          <div class="toast toast--behind"></div>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title"><fa-icon [icon]="faBolt" aria-hidden="true"></fa-icon>{{ 'features.items.fast.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.fast.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Design -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual theme" aria-hidden="true">
+          <span class="theme-half theme-half--light"><fa-icon [icon]="faSun"></fa-icon></span>
+          <span class="theme-half theme-half--dark"><fa-icon [icon]="faMoon"></fa-icon></span>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title"><fa-icon [icon]="faPalette" aria-hidden="true"></fa-icon>{{ 'features.items.design.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.design.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Platforms -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual platforms" aria-hidden="true">
+          <span><fa-icon [icon]="faAndroid"></fa-icon></span>
+          <span><fa-icon [icon]="faApple"></fa-icon></span>
+          <span><fa-icon [icon]="faGlobe"></fa-icon></span>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title"><fa-icon [icon]="faMobileScreen" aria-hidden="true"></fa-icon>{{ 'features.items.platforms.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.platforms.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Account or private -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual modes" aria-hidden="true">
+          <span class="modes-track">
+            <span class="modes-opt">{{ 'features.demo.account' | translate }}</span>
+            <span class="modes-opt is-on"><fa-icon [icon]="faLock"></fa-icon>{{ 'features.demo.private' | translate }}</span>
+          </span>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title"><fa-icon [icon]="faShieldHalved" aria-hidden="true"></fa-icon>{{ 'features.items.oidc.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.oidc.description' | translate }}</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>

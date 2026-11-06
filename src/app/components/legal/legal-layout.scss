@@ -1,7 +1,7 @@
 .legal {
   min-height: 100vh;
   padding: 9rem 1.5rem 6rem;
-  background: #000;
+  background: var(--bg);
   position: relative;
 
   &::before {

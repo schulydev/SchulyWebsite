@@ -2,20 +2,34 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="/assets/app_icon.png" alt="Schuly" width="32" height="32" />
-        <span>Schuly</span>
+        <a [href]="base()" class="footer-logo">
+          <img src="/assets/app_icon_64.png" alt="" width="32" height="32" />
+          <span>Schuly</span>
+        </a>
+        <p class="footer-tagline">{{ 'hero.title1' | translate }} {{ 'hero.title2' | translate }}</p>
+        <div class="footer-social">
+          <a href="https://github.com/schulydev" target="_blank" rel="noopener" [attr.aria-label]="'nav.githubAria' | translate">
+            <fa-icon [icon]="faGithub" aria-hidden="true"></fa-icon>
+          </a>
+          <a href="mailto:hello@schuly.dev" aria-label="hello@schuly.dev">
+            <fa-icon [icon]="faEnvelope" aria-hidden="true"></fa-icon>
+          </a>
+          <a href="https://buymeacoffee.com/pianonic" target="_blank" rel="noopener" [attr.aria-label]="'footer.links.coffee' | translate">
+            <fa-icon [icon]="faMugHot" aria-hidden="true"></fa-icon>
+          </a>
+        </div>
       </div>
 
-      <div class="footer-cols">
+      <nav class="footer-cols" [attr.aria-label]="'footer.navLabel' | translate">
         <div class="footer-col">
-          <div class="footer-col-title">{{ 'footer.cols.project' | translate }}</div>
+          <h2 class="footer-col-title">{{ 'footer.cols.project' | translate }}</h2>
           <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener">{{ 'footer.links.app' | translate }}</a>
           <a href="https://github.com/schulydev/SchulyServer" target="_blank" rel="noopener">{{ 'footer.links.backend' | translate }}</a>
           <a href="https://github.com/schulydev/SchulyPlugins" target="_blank" rel="noopener">{{ 'footer.links.plugins' | translate }}</a>
           <a href="https://github.com/schulydev/SchulyPluginAbstractions" target="_blank" rel="noopener">{{ 'footer.links.sdk' | translate }}</a>
         </div>
         <div class="footer-col">
-          <div class="footer-col-title">{{ 'footer.cols.resources' | translate }}</div>
+          <h2 class="footer-col-title">{{ 'footer.cols.resources' | translate }}</h2>
           <a href="https://github.com/schulydev/Schuly/releases" target="_blank" rel="noopener">{{ 'footer.links.releases' | translate }}</a>
           <a href="https://docs.schuly.dev" target="_blank" rel="noopener">{{ 'footer.links.docs' | translate }}</a>
           <a href="https://github.com/schulydev/Schuly/issues" target="_blank" rel="noopener">{{ 'footer.links.issues' | translate }}</a>
@@ -24,18 +38,20 @@
           <a [href]="base() + '#download'">{{ 'footer.links.download' | translate }}</a>
         </div>
         <div class="footer-col">
-          <div class="footer-col-title">{{ 'footer.cols.legal' | translate }}</div>
+          <h2 class="footer-col-title">{{ 'footer.cols.legal' | translate }}</h2>
           <a [routerLink]="['/', lang(), 'impressum']">{{ 'footer.links.impressum' | translate }}</a>
           <a [routerLink]="['/', lang(), 'privacy']">{{ 'footer.links.privacy' | translate }}</a>
           <a [routerLink]="['/', lang(), 'terms']">{{ 'footer.links.terms' | translate }}</a>
           <a href="https://buymeacoffee.com/pianonic" target="_blank" rel="noopener">{{ 'footer.links.coffee' | translate }}</a>
         </div>
-      </div>
+      </nav>
     </div>
 
     <div class="footer-bottom">
-      <p>{{ 'footer.disclaimer' | translate }}</p>
-      <p>{{ 'footer.copyright' | translate: { year: year } }} <fa-icon [icon]="faHeart" class="heart"></fa-icon></p>
+      <p class="footer-disclaimer">{{ 'footer.disclaimer' | translate }}</p>
+      <p class="footer-copy">{{ 'footer.copyright' | translate: { year: year } }} <fa-icon [icon]="faHeart" class="heart" aria-hidden="true"></fa-icon></p>
     </div>
   </div>
+
+  <div class="footer-wordmark" aria-hidden="true">Schuly</div>
 </footer>

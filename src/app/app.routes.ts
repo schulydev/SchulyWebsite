@@ -1,17 +1,14 @@
 import { Routes } from '@angular/router';
 import { Home } from './pages/home/home';
-import { Impressum } from './components/legal/impressum';
-import { Privacy } from './components/legal/privacy';
-import { Terms } from './components/legal/terms';
 import { NotFound } from './pages/not-found/not-found';
 import { DEFAULT_LANG, LANG_CODES } from './services/language';
 import { langResolver } from './services/lang.resolver';
 
 const pageRoutes: Routes = [
   { path: '', component: Home, data: { seo: 'home', path: '' } },
-  { path: 'impressum', component: Impressum, data: { seo: 'impressum', path: '/impressum' } },
-  { path: 'privacy', component: Privacy, data: { seo: 'privacy', path: '/privacy' } },
-  { path: 'terms', component: Terms, data: { seo: 'terms', path: '/terms' } },
+  { path: 'impressum', loadComponent: () => import('./components/legal/impressum').then(m => m.Impressum), data: { seo: 'impressum', path: '/impressum' } },
+  { path: 'privacy', loadComponent: () => import('./components/legal/privacy').then(m => m.Privacy), data: { seo: 'privacy', path: '/privacy' } },
+  { path: 'terms', loadComponent: () => import('./components/legal/terms').then(m => m.Terms), data: { seo: 'terms', path: '/terms' } },
 ];
 
 export const routes: Routes = [

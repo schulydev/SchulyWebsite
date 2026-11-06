@@ -29,7 +29,13 @@
     "openSource": "Code da funtauna",
     "githubAria": "GitHub",
     "getSchuly": "Telechargiar Schuly",
-    "language": "Lingua"
+    "language": "Lingua",
+    "privacy": "Protecziun da datas",
+    "faq": "FAQ",
+    "label": "Navigaziun principala",
+    "menuOpen": "Avrir il menu",
+    "menuClose": "Serrar il menu",
+    "skip": "Siglir al cuntegn"
   },
   "hero": {
     "title1": "Tut tias scolas,",
@@ -37,7 +43,10 @@
     "sub": "Notas, examens, urari, absenzas e documents da tes portal da scola en in sulet lieu. Per Android ed iOS, cun Schulnetz ed OdA Org gia sustegnids. Independent e senza relaziun cun la Centerboard AG u cun tia scola.",
     "ctaDownload": "Telechargiar Schuly",
     "ctaWeb": "Avrir l'app web",
-    "ctaGithub": "Guardar sin GitHub"
+    "ctaGithub": "Guardar sin GitHub",
+    "badge": "Nov: Schuly funcziuna ussa er en il navigatur",
+    "platformsLabel": "Plattafurmas",
+    "webAlt": "L'app web da Schuly sin app.schuly.dev cun l'urari dad oz, absenzas avertas, termins proxims e novas notas"
   },
   "features": {
     "eyebrow": "Funcziuns",
@@ -80,6 +89,27 @@
       "microsoft": {
         "title": "Microsoft 365",
         "description": "Mail, Teams, OneDrive ed OneNote directamain en Schuly."
+      },
+      "helply": {
+        "title": "Helply, tes assistent IA",
+        "description": "Dumonda davart examens, notas u tes urari."
+      }
+    },
+    "demo": {
+      "average": "Media",
+      "today": "Oz",
+      "exam": "Examen",
+      "helplyQ": "Cura è mes proxim examen?",
+      "helplyA": "Mardi a las 09:20: matematica en la stanza A 1.03.",
+      "pushTitle": "Nova nota",
+      "account": "Conto",
+      "private": "Privat",
+      "subjects": {
+        "math": "Matematica",
+        "german": "Tudestg",
+        "english": "Englais",
+        "history": "Istorgia",
+        "economics": "Economia e dretg"
       }
     }
   },
@@ -93,6 +123,13 @@
       "grades": "Pagina da notas da Schuly cun medias per rom",
       "absences": "Pagina d'absenzas Schuly – scusadas e nunscusadas",
       "account": "Pagina dal conto Schuly cun profil e midada da scola"
+    },
+    "labels": {
+      "start": "Partenza",
+      "agenda": "Agenda",
+      "grades": "Notas",
+      "absences": "Absenzas",
+      "account": "Conto"
     }
   },
   "faq": {
@@ -182,7 +219,8 @@
       "coffee": "Cumprai a mai in café"
     },
     "disclaimer": "Project independent. Nagina relaziun cun la Centerboard AG (Schulnetz), OdA Org, Microsoft u ina scola.",
-    "copyright": "© {{ year }} Schuly · Construì cun"
+    "copyright": "© {{ year }} Schuly · Construì cun",
+    "navLabel": "Pe da pagina"
   },
   "notFound": {
     "code": "404",
@@ -201,5 +239,49 @@
       "en": "English"
     },
     "fallbackNotice": "Questa pagina legala è disponibla mo per tudestg e englais. La lingua tschernida ({{ lang }}) mussa per standard la versiun tudestga."
+  },
+  "independence": {
+    "eyebrow": "Protecziun da datas & independenza",
+    "title1": "Tias datas.",
+    "title2": "Tia decisiun.",
+    "description": "Schuly na tutga a nagina scola ed a nagin producent da software. Ti decidas, sche Schuly sincronisescha per tai u sche tut resta sin tes apparat.",
+    "modes": {
+      "account": {
+        "title": "Modus da conto",
+        "tag": "Sincronisescha en il fund",
+        "points": [
+          "Il server Schuly va per novas notas ed absenzas e ta trametta in avis.",
+          "Tias datas d'access da scola èn criptadas en in tresor.",
+          "Las medemas datas sin il telefonin ed en il web."
+        ]
+      },
+      "private": {
+        "title": "Modus privat",
+        "tag": "Mo sin tes apparat",
+        "points": [
+          "Ti na dovras nagin conto da Schuly.",
+          "Tes login resta sin tes telefonin.",
+          "Las dumondas passan tras il server Schuly senza vegnir memorisadas."
+        ]
+      }
+    },
+    "facts": {
+      "independent": {
+        "title": "Independent",
+        "text": "Nagina relaziun cun la Centerboard AG, OdA Org, Microsoft u tia scola."
+      },
+      "source": {
+        "title": "Code da funtauna public",
+        "text": "L'app, il backend, ils plugins e questa pagina d'internet èn sin GitHub. Ti pos controllar tez tge che capita cun tias datas."
+      },
+      "selfhost": {
+        "title": "Manar sez",
+        "text": "Mana tes agen backend e drizza l'app sut «Self-hosted» sin el."
+      }
+    },
+    "terminal": {
+      "title": "Agen backend"
+    },
+    "policyLink": "Leger la decleraziun da protecziun da datas"
   }
 }

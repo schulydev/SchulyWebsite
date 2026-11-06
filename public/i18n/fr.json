@@ -29,7 +29,13 @@
     "openSource": "Code source",
     "githubAria": "GitHub",
     "getSchuly": "Obtenir Schuly",
-    "language": "Langue"
+    "language": "Langue",
+    "privacy": "Confidentialité",
+    "faq": "FAQ",
+    "label": "Navigation principale",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "skip": "Aller au contenu"
   },
   "hero": {
     "title1": "Toutes tes écoles,",
@@ -37,7 +43,10 @@
     "sub": "Notes, examens, horaire, absences et documents de ton portail scolaire au même endroit. Pour Android et iOS, avec Schulnetz et OdA Org déjà pris en charge. Indépendante et sans lien avec Centerboard AG ni avec ton école.",
     "ctaDownload": "Télécharger Schuly",
     "ctaWeb": "Ouvrir l'app web",
-    "ctaGithub": "Voir sur GitHub"
+    "ctaGithub": "Voir sur GitHub",
+    "badge": "Nouveau : Schuly fonctionne aussi dans le navigateur",
+    "platformsLabel": "Plateformes",
+    "webAlt": "L'app web Schuly sur app.schuly.dev avec l'horaire du jour, les absences à excuser, les prochains rendez-vous et les nouvelles notes"
   },
   "features": {
     "eyebrow": "Fonctionnalités",
@@ -80,6 +89,27 @@
       "microsoft": {
         "title": "Microsoft 365",
         "description": "Mail, Teams, OneDrive et OneNote directement dans Schuly."
+      },
+      "helply": {
+        "title": "Helply, ton assistant IA",
+        "description": "Pose tes questions sur tes examens, tes notes ou ton horaire."
+      }
+    },
+    "demo": {
+      "average": "Moyenne",
+      "today": "Aujourd'hui",
+      "exam": "Examen",
+      "helplyQ": "Quand est mon prochain examen ?",
+      "helplyA": "Mardi à 09:20 : mathématiques en salle A 1.03.",
+      "pushTitle": "Nouvelle note",
+      "account": "Compte",
+      "private": "Privé",
+      "subjects": {
+        "math": "Mathématiques",
+        "german": "Allemand",
+        "english": "Anglais",
+        "history": "Histoire",
+        "economics": "Économie et droit"
       }
     }
   },
@@ -93,6 +123,13 @@
       "grades": "Page des notes de Schuly avec les moyennes par branche",
       "absences": "Page absences Schuly – justifiées et non justifiées",
       "account": "Page du compte Schuly avec profil et sélecteur d'école"
+    },
+    "labels": {
+      "start": "Accueil",
+      "agenda": "Agenda",
+      "grades": "Notes",
+      "absences": "Absences",
+      "account": "Compte"
     }
   },
   "faq": {
@@ -182,7 +219,8 @@
       "coffee": "Offre-moi un café"
     },
     "disclaimer": "Projet indépendant. Aucun lien avec Centerboard AG (Schulnetz), OdA Org, Microsoft ou une école.",
-    "copyright": "© {{ year }} Schuly · Construit avec"
+    "copyright": "© {{ year }} Schuly · Construit avec",
+    "navLabel": "Pied de page"
   },
   "notFound": {
     "code": "404",
@@ -201,5 +239,49 @@
       "en": "English"
     },
     "fallbackNotice": "Cette page légale n'est disponible qu'en allemand et en anglais. Ta langue sélectionnée ({{ lang }}) affiche par défaut la version allemande."
+  },
+  "independence": {
+    "eyebrow": "Confidentialité & indépendance",
+    "title1": "Tes données.",
+    "title2": "Ton choix.",
+    "description": "Schuly n'appartient à aucune école ni à aucun éditeur de logiciels. Tu choisis si Schuly synchronise pour toi ou si tout reste sur ton appareil.",
+    "modes": {
+      "account": {
+        "title": "Mode compte",
+        "tag": "Synchronise en arrière-plan",
+        "points": [
+          "Le serveur Schuly récupère les nouvelles notes et absences et t'envoie une notification.",
+          "Tes identifiants scolaires sont gardés chiffrés dans un coffre.",
+          "Les mêmes données sur ton téléphone et sur le web."
+        ]
+      },
+      "private": {
+        "title": "Mode privé",
+        "tag": "Uniquement sur ton appareil",
+        "points": [
+          "Pas besoin de compte Schuly.",
+          "Ton identifiant reste sur ton téléphone.",
+          "Les requêtes passent par le serveur Schuly sans y être stockées."
+        ]
+      }
+    },
+    "facts": {
+      "independent": {
+        "title": "Indépendante",
+        "text": "Aucun lien avec Centerboard AG, OdA Org, Microsoft ou ton école."
+      },
+      "source": {
+        "title": "Code source public",
+        "text": "L'app, le backend, les plugins et ce site sont sur GitHub : tu peux vérifier ce qui arrive à tes données."
+      },
+      "selfhost": {
+        "title": "Héberge-le toi-même",
+        "text": "Exploite ton propre backend et configure l'app sous « Self-hosted »."
+      }
+    },
+    "terminal": {
+      "title": "Ton propre backend"
+    },
+    "policyLink": "Lire la politique de confidentialité"
   }
 }

@@ -29,7 +29,13 @@
     "openSource": "Codice sorgente",
     "githubAria": "GitHub",
     "getSchuly": "Scarica Schuly",
-    "language": "Lingua"
+    "language": "Lingua",
+    "privacy": "Privacy",
+    "faq": "FAQ",
+    "label": "Navigazione principale",
+    "menuOpen": "Apri il menu",
+    "menuClose": "Chiudi il menu",
+    "skip": "Vai al contenuto"
   },
   "hero": {
     "title1": "Tutte le tue scuole,",
@@ -37,7 +43,10 @@
     "sub": "Voti, esami, orario, assenze e documenti dal tuo portale scolastico in un unico posto. Per Android e iOS, con Schulnetz e OdA Org già supportati. Indipendente e senza legami con Centerboard AG o con la tua scuola.",
     "ctaDownload": "Scarica Schuly",
     "ctaWeb": "Apri l'app web",
-    "ctaGithub": "Vedi su GitHub"
+    "ctaGithub": "Vedi su GitHub",
+    "badge": "Novità: Schuly funziona anche nel browser",
+    "platformsLabel": "Piattaforme",
+    "webAlt": "L'app web Schuly su app.schuly.dev con l'orario di oggi, le assenze da giustificare, i prossimi appuntamenti e i nuovi voti"
   },
   "features": {
     "eyebrow": "Funzionalità",
@@ -80,6 +89,27 @@
       "microsoft": {
         "title": "Microsoft 365",
         "description": "Mail, Teams, OneDrive e OneNote direttamente in Schuly."
+      },
+      "helply": {
+        "title": "Helply, il tuo assistente IA",
+        "description": "Chiedi di esami, voti o del tuo orario."
+      }
+    },
+    "demo": {
+      "average": "Media",
+      "today": "Oggi",
+      "exam": "Esame",
+      "helplyQ": "Quando è il mio prossimo esame?",
+      "helplyA": "Martedì alle 09:20: matematica in aula A 1.03.",
+      "pushTitle": "Nuovo voto",
+      "account": "Account",
+      "private": "Privato",
+      "subjects": {
+        "math": "Matematica",
+        "german": "Tedesco",
+        "english": "Inglese",
+        "history": "Storia",
+        "economics": "Economia e diritto"
       }
     }
   },
@@ -93,6 +123,13 @@
       "grades": "Pagina dei voti di Schuly con le medie per materia",
       "absences": "Pagina assenze Schuly – giustificate e non giustificate",
       "account": "Pagina dell'account Schuly con profilo e selettore di scuola"
+    },
+    "labels": {
+      "start": "Home",
+      "agenda": "Agenda",
+      "grades": "Voti",
+      "absences": "Assenze",
+      "account": "Account"
     }
   },
   "faq": {
@@ -182,7 +219,8 @@
       "coffee": "Offrimi un caffè"
     },
     "disclaimer": "Progetto indipendente. Nessun legame con Centerboard AG (Schulnetz), OdA Org, Microsoft o alcuna scuola.",
-    "copyright": "© {{ year }} Schuly · Costruito con"
+    "copyright": "© {{ year }} Schuly · Costruito con",
+    "navLabel": "Piè di pagina"
   },
   "notFound": {
     "code": "404",
@@ -201,5 +239,49 @@
       "en": "English"
     },
     "fallbackNotice": "Questa pagina legale è disponibile solo in tedesco e inglese. La lingua selezionata ({{ lang }}) mostra di default la versione tedesca."
+  },
+  "independence": {
+    "eyebrow": "Privacy & indipendenza",
+    "title1": "I tuoi dati.",
+    "title2": "La tua scelta.",
+    "description": "Schuly non appartiene a nessuna scuola e a nessun produttore di software. Scegli tu se Schuly sincronizza per te o se tutto resta sul tuo dispositivo.",
+    "modes": {
+      "account": {
+        "title": "Modalità account",
+        "tag": "Sincronizza in background",
+        "points": [
+          "Il server Schuly recupera nuovi voti e assenze e ti invia una notifica.",
+          "Le tue credenziali scolastiche sono conservate cifrate in una cassaforte.",
+          "Gli stessi dati sul telefono e sul web."
+        ]
+      },
+      "private": {
+        "title": "Modalità privata",
+        "tag": "Solo sul tuo dispositivo",
+        "points": [
+          "Non serve un account Schuly.",
+          "Il tuo login resta sul telefono.",
+          "Le richieste passano dal server Schuly senza esservi salvate."
+        ]
+      }
+    },
+    "facts": {
+      "independent": {
+        "title": "Indipendente",
+        "text": "Nessun legame con Centerboard AG, OdA Org, Microsoft o la tua scuola."
+      },
+      "source": {
+        "title": "Codice sorgente pubblico",
+        "text": "App, backend, plugin e questo sito sono su GitHub: puoi verificare cosa succede ai tuoi dati."
+      },
+      "selfhost": {
+        "title": "Gestiscilo tu",
+        "text": "Gestisci il tuo backend e collega l'app sotto «Self-hosted»."
+      }
+    },
+    "terminal": {
+      "title": "Il tuo backend"
+    },
+    "policyLink": "Leggi l'informativa sulla privacy"
   }
 }
