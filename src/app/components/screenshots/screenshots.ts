@@ -9,10 +9,10 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class Screenshots {
   shots = [
-    { src: '/assets/schuly-start-page.png',    webp: '/assets/schuly-start-page.webp',    altKey: 'start' },
-    { src: '/assets/schuly-agenda-page.png',   webp: '/assets/schuly-agenda-page.webp',   altKey: 'agenda' },
-    { src: '/assets/schuly-grades-page.png',   webp: '/assets/schuly-grades-page.webp',   altKey: 'grades' },
-    { src: '/assets/schuly-absences-page.png', webp: '/assets/schuly-absences-page.webp', altKey: 'absences' },
-    { src: '/assets/schuly-account-page.png',  webp: '/assets/schuly-account-page.webp',  altKey: 'account' },
+    { src: '/assets/schuly-start-page-v2.png',    webp: '/assets/schuly-start-page-v2.webp',    altKey: 'start' },
+    { src: '/assets/schuly-agenda-page-v2.png',   webp: '/assets/schuly-agenda-page-v2.webp',   altKey: 'agenda' },
+    { src: '/assets/schuly-grades-page-v2.png',   webp: '/assets/schuly-grades-page-v2.webp',   altKey: 'grades' },
+    { src: '/assets/schuly-absences-page-v2.png', webp: '/assets/schuly-absences-page-v2.webp', altKey: 'absences' },
+    { src: '/assets/schuly-account-page-v2.png',  webp: '/assets/schuly-account-page-v2.webp',  altKey: 'account' },
   ];
 }
