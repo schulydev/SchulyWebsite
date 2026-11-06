@@ -23,7 +23,6 @@ bun tools/icons/icons.ts
 
 The options are `--src <png>` for another source image, `--out <dir>` for the PNGs and `--favicon <path>` for the `.ico`. After you change the icon, also run [`../social-image`](../social-image), because the social image shows `app_icon_512.png`.
 
-Note: the `favicon.ico` in the repo is still Angular's default logo from the first commit. Running this script replaces it with the Schuly icon.
 
 ## Licences
 
