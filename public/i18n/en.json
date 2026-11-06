@@ -149,7 +149,8 @@
       "web": "Open the web app"
     },
     "note": {
-      "prefix": "The app uses the Schuly server by default. Want to run your own? See the ",
+      "prefix": "The app uses the Schuly server by default. Want to run your own?",
+      "see": "See the ",
       "linkText": "self-hosting guide",
       "suffix": "."
     }
