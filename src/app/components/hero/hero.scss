@@ -4,7 +4,7 @@
 
 .hero {
   position: relative;
-  padding: 9rem 1.5rem 3rem;
+  padding: 9rem 1.5rem 7rem;
   overflow: hidden;
 }
 
@@ -124,70 +124,45 @@
   perspective: 2400px;
 }
 
-// Laptop frame: "MacBook Pro 16-inch - Space Gray" from Pomme Plate (CC0),
-// darkened a little for the dark page. The screenshot sits on the frame's
-// display at a 16:10 box measured on the 3910 x 2236 original.
-.laptop {
+// The product shown without device chrome: a glass frame with a hairline
+// border, an inner highlight and layered shadows, like the cards on the page.
+.window,
+.phone-card {
+  margin: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.025));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    0 0 0 1px rgba(0, 0, 0, 0.55),
+    0 50px 120px -40px rgba(0, 0, 0, 0.95),
+    0 40px 160px -50px rgba(8, 136, 248, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.window {
   position: relative;
-  width: 92%;
-  margin: 0 auto 0 0;
-  transform-origin: 50% 100%;
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 4%;
-    right: 4%;
-    bottom: -2.5%;
-    height: 4%;
-    z-index: -1;
-    background: radial-gradient(closest-side, rgba(0, 0, 0, 0.9), transparent);
-    filter: blur(6px);
-  }
+  width: 90%;
+  padding: 8px;
+  border-radius: 22px;
+  transform-origin: 50% 0;
 }
 
-.laptop-frame {
-  display: block;
-  width: 100%;
-  height: auto;
-  filter: drop-shadow(0 40px 80px rgba(8, 136, 248, 0.18));
-}
-
-.laptop-screen {
-  position: absolute;
-  left: 10.716%;
-  top: 6.217%;
-  width: 78.62%;
-  aspect-ratio: 16 / 10;
+.window-screen,
+.phone-card-screen {
+  position: relative;
   overflow: hidden;
   background: #000;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
 
-  // A faint reflection on the glass.
+  // A whisper of light across the top edge of the screen.
   &::after {
     content: '';
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: linear-gradient(118deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.015) 40%, transparent 40.2%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 18%);
   }
-}
-
-.laptop-shot {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top left;
-}
-
-.phone {
-  position: absolute;
-  z-index: 2;
-  right: 0;
-  bottom: 0;
-  width: 17%;
-  margin: 0;
-  filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.75));
 
   img {
     display: block;
@@ -196,16 +171,34 @@
   }
 }
 
-// The laptop leans back slightly and settles flat as it scrolls into view.
+.window-screen {
+  border-radius: 15px;
+}
+
+.phone-card {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: -9%;
+  width: 21%;
+  padding: 6px;
+  border-radius: 34px;
+}
+
+.phone-card-screen {
+  border-radius: 28px;
+}
+
+// The window leans back slightly and settles flat as it scrolls into view.
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
-    .laptop {
+    .window {
       animation: settle linear both;
       animation-timeline: view();
       animation-range: entry 0% cover 45%;
     }
 
-    .phone {
+    .phone-card {
       animation: rise linear both;
       animation-timeline: view();
       animation-range: entry 0% cover 50%;
@@ -215,7 +208,7 @@
 
 @keyframes settle {
   from {
-    transform: rotateX(12deg) scale(0.96);
+    transform: rotateX(14deg) scale(0.95);
   }
   to {
     transform: none;
@@ -273,14 +266,25 @@
     margin-top: 3rem;
   }
 
-  .laptop {
-    width: 100%;
-    margin: 0;
+  .window {
+    width: 94%;
+    padding: 4px;
+    border-radius: 13px;
   }
 
-  .phone {
-    width: 27%;
+  .window-screen {
+    border-radius: 9px;
+  }
+
+  .phone-card {
+    width: 28%;
     right: -1%;
-    bottom: -4%;
+    bottom: -10%;
+    padding: 3px;
+    border-radius: 20px;
+  }
+
+  .phone-card-screen {
+    border-radius: 17px;
   }
 }

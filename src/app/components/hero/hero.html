@@ -31,41 +31,16 @@
   </div>
 
   <div class="hero-stage">
-    <!-- Laptop frame: "MacBook Pro 16-inch - Space Gray" from Pomme Plate (CC0); see CREDITS.txt. -->
-    <figure class="laptop">
-      <img
-        class="laptop-frame"
-        src="/assets/laptop-frame-1100.webp"
-        srcset="/assets/laptop-frame-1100.webp 1100w, /assets/laptop-frame-2200.webp 2200w"
-        sizes="(max-width: 1200px) 92vw, 1030px"
-        width="1100"
-        height="629"
-        alt=""
-        fetchpriority="high"
-      />
-      <div class="laptop-screen">
-        <img
-          class="laptop-shot"
-          ngSrc="/assets/webapp-overview-dark.webp"
-          width="1424"
-          height="890"
-          priority
-          [alt]="'hero.webAlt' | translate"
-        />
+    <figure class="window">
+      <div class="window-screen">
+        <img class="window-shot" ngSrc="/assets/webapp-overview-dark.webp" width="1424" height="890" priority [alt]="'hero.webAlt' | translate" />
       </div>
     </figure>
 
-    <figure class="phone">
-      <picture>
-        <source type="image/webp" srcset="/assets/schuly-start-page.webp" />
-        <img
-          src="/assets/schuly-start-page.png"
-          width="660"
-          height="1394"
-          decoding="async"
-          [alt]="'screenshots.alts.start' | translate"
-        />
-      </picture>
+    <figure class="phone-card">
+      <div class="phone-card-screen">
+        <img src="/assets/hero-phone-home.webp" width="600" height="1333" decoding="async" [alt]="'screenshots.alts.start' | translate" />
+      </div>
     </figure>
   </div>
 </section>
