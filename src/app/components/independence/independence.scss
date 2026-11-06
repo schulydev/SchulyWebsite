@@ -86,7 +86,7 @@
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   grid-template-rows: repeat(3, auto);
   align-items: stretch;
-  column-gap: 14px;
+  column-gap: 3rem;
   border-radius: var(--radius-lg);
 }
 
