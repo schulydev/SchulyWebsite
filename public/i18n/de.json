@@ -48,8 +48,8 @@
   },
   "features": {
     "title1": "Alles, was du brauchst.",
-    "title2": "Genau dort, wo du es suchst.",
-    "description": "Schuly ist für dein Handy gebaut: schnell, übersichtlich und aufs Wesentliche fokussiert.",
+    "title2": "Genau dort, wo du es suchst.",
+    "description": "Schnell, übersichtlich und aufs Wesentliche fokussiert, am Handy und im Browser.",
     "items": {
       "grades": {
         "title": "Noten & Durchschnitte",
@@ -85,7 +85,7 @@
       },
       "microsoft": {
         "title": "Microsoft 365",
-        "description": "Mail, Teams, OneDrive und OneNote direkt in Schuly."
+        "description": "Microsoft Outlook, Teams, OneDrive und OneNote direkt in Schuly."
       },
       "helply": {
         "title": "Helply, dein KI-Assistent",
@@ -108,7 +108,13 @@
       },
       "rowLabel": "{{ subject }}, Schnitt {{ average }}, {{ count }} Noten",
       "overall": "Gesamtschnitt",
-      "lunch": "Mittagspause"
+      "lunch": "Mittagspause",
+      "apps": {
+        "mail": "Mail",
+        "chat": "Chat",
+        "files": "Dateien",
+        "notes": "Notizen"
+      }
     }
   },
   "screenshots": {
@@ -214,6 +220,7 @@
       "coffee": "Buy me a coffee"
     },
     "disclaimer": "Unabhängiges Projekt. Keine Verbindung zur Centerboard AG (Schulnetz), zu OdA Org, zu Microsoft oder zu einer Schule.",
+    "trademarks": "Microsoft 365, Microsoft Outlook, Microsoft Teams, Microsoft OneDrive und Microsoft OneNote sind Marken der Microsoft Corporation. Schulnetz ist eine Marke der Centerboard AG. Schuly ist ein unabhängiges Projekt und steht in keiner Verbindung zu Microsoft oder Centerboard.",
     "copyright": "© {{ year }} Schuly · Gebaut mit",
     "navLabel": "Fusszeile"
   },
@@ -246,10 +253,9 @@
           "Noten und Absenzen synchronisieren sich im Hintergrund, mit Push.",
           "Dieselben Daten am Handy und im Browser auf app.schuly.dev.",
           "Helply, dein KI-Assistent für Prüfungen, Noten und Stundenplan.",
-          "Microsoft 365: Mail, Teams, OneDrive und OneNote in Schuly.",
+          "Microsoft 365 mit Microsoft Outlook, Teams, OneDrive und OneNote in Schuly.",
           "Deine Schul-Anmeldung liegt verschlüsselt im Tresor."
-        ],
-        "cta": "Konto erstellen"
+        ]
       },
       "private": {
         "title": "Privater Modus",

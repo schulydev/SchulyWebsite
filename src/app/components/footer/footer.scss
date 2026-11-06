@@ -99,8 +99,15 @@
   color: var(--text-mute);
 }
 
-.footer-disclaimer {
+.footer-notes {
   max-width: 620px;
+}
+
+// Trademark notice: one step quieter than the disclaimer above it.
+.footer-trademarks {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  opacity: 0.8;
 }
 
 .footer-copy {

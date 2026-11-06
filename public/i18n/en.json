@@ -49,7 +49,7 @@
   "features": {
     "title1": "Everything you need.",
     "title2": "Right where you'd look for it.",
-    "description": "Schuly is built for your phone: fast, clear and focused on what matters.",
+    "description": "Fast, clear and focused on what matters, on your phone and in the browser.",
     "items": {
       "grades": {
         "title": "Grades & averages",
@@ -85,7 +85,7 @@
       },
       "microsoft": {
         "title": "Microsoft 365",
-        "description": "Mail, Teams, OneDrive and OneNote right in Schuly."
+        "description": "Microsoft Outlook, Teams, OneDrive and OneNote right in Schuly."
       },
       "helply": {
         "title": "Helply, your AI assistant",
@@ -108,7 +108,13 @@
       },
       "rowLabel": "{{ subject }}, average {{ average }}, {{ count }} grades",
       "overall": "Overall average",
-      "lunch": "Lunch break"
+      "lunch": "Lunch break",
+      "apps": {
+        "mail": "Mail",
+        "chat": "Chat",
+        "files": "Files",
+        "notes": "Notes"
+      }
     }
   },
   "screenshots": {
@@ -214,6 +220,7 @@
       "coffee": "Buy me a coffee"
     },
     "disclaimer": "Independent project. Not affiliated with Centerboard AG (Schulnetz), OdA Org, Microsoft or any school.",
+    "trademarks": "Microsoft 365, Microsoft Outlook, Microsoft Teams, Microsoft OneDrive and Microsoft OneNote are trademarks of Microsoft Corporation. Schulnetz is a trademark of Centerboard AG. Schuly is an independent project and is not affiliated with Microsoft or Centerboard.",
     "copyright": "© {{ year }} Schuly · Built with",
     "navLabel": "Footer"
   },
@@ -246,10 +253,9 @@
           "Grades and absences sync in the background, with push.",
           "The same data on your phone and in the browser at app.schuly.dev.",
           "Helply, your AI assistant for exams, grades and timetable.",
-          "Microsoft 365: Mail, Teams, OneDrive and OneNote in Schuly.",
+          "Microsoft 365 with Microsoft Outlook, Teams, OneDrive and OneNote in Schuly.",
           "Your school sign-in is kept encrypted in a vault."
-        ],
-        "cta": "Create account"
+        ]
       },
       "private": {
         "title": "Private mode",

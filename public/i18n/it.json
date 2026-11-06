@@ -49,7 +49,7 @@
   "features": {
     "title1": "Tutto ciò che ti serve.",
     "title2": "Proprio dove lo cerchi.",
-    "description": "Schuly è pensata per il tuo telefono: veloce, chiara e concentrata sull'essenziale.",
+    "description": "Veloce, chiaro e concentrato sull'essenziale, sul telefono e nel browser.",
     "items": {
       "grades": {
         "title": "Note & medie",
@@ -85,7 +85,7 @@
       },
       "microsoft": {
         "title": "Microsoft 365",
-        "description": "Mail, Teams, OneDrive e OneNote direttamente in Schuly."
+        "description": "Microsoft Outlook, Teams, OneDrive e OneNote direttamente in Schuly."
       },
       "helply": {
         "title": "Helply, il tuo assistente IA",
@@ -108,7 +108,13 @@
       },
       "rowLabel": "{{ subject }}, media {{ average }}, {{ count }} voti",
       "overall": "Media generale",
-      "lunch": "Pausa pranzo"
+      "lunch": "Pausa pranzo",
+      "apps": {
+        "mail": "Mail",
+        "chat": "Chat",
+        "files": "File",
+        "notes": "Note"
+      }
     }
   },
   "screenshots": {
@@ -214,6 +220,7 @@
       "coffee": "Offrimi un caffè"
     },
     "disclaimer": "Progetto indipendente. Nessun legame con Centerboard AG (Schulnetz), OdA Org, Microsoft o alcuna scuola.",
+    "trademarks": "Microsoft 365, Microsoft Outlook, Microsoft Teams, Microsoft OneDrive e Microsoft OneNote sono marchi di Microsoft Corporation. Schulnetz è un marchio di Centerboard AG. Schuly è un progetto indipendente e non ha alcun legame con Microsoft o Centerboard.",
     "copyright": "© {{ year }} Schuly · Costruito con",
     "navLabel": "Piè di pagina"
   },
@@ -246,10 +253,9 @@
           "Voti e assenze si sincronizzano in background, con notifiche push.",
           "Gli stessi dati sul telefono e nel browser su app.schuly.dev.",
           "Helply, il tuo assistente IA per esami, voti e orario.",
-          "Microsoft 365: Mail, Teams, OneDrive e OneNote in Schuly.",
+          "Microsoft 365 con Microsoft Outlook, Teams, OneDrive e OneNote in Schuly.",
           "Il tuo accesso scolastico è conservato cifrato in una cassaforte."
-        ],
-        "cta": "Crea un account"
+        ]
       },
       "private": {
         "title": "Modalità privata",

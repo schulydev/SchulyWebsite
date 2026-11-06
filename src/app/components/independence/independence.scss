@@ -92,16 +92,11 @@
   }
 }
 
-// The one call to action, in the account card.
-.mode-cta {
-  align-self: flex-start;
-  margin-top: 1.75rem;
-}
-
 .facts {
   display: grid;
   grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   grid-template-rows: repeat(3, auto);
+  align-items: stretch;
   column-gap: 14px;
   border-radius: var(--radius-lg);
 }
@@ -142,7 +137,9 @@
 .terminal {
   grid-column: 2;
   grid-row: 1 / span 3;
-  align-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   border-radius: var(--radius-lg);
   background: #0a0b0e;
   border: 1px solid var(--border-strong);
@@ -180,6 +177,7 @@
 
 .terminal-body {
   margin: 0;
+  flex: 1;
   padding: 1.25rem 1.25rem 1rem;
   font-family: var(--font-mono);
   font-size: 0.8125rem;
@@ -193,6 +191,61 @@
   &:focus-visible {
     outline-offset: -2px;
   }
+}
+
+// The full transcript (static) sets the size. While the session plays, the typed copy (live) is laid over
+// it and the static text turns transparent but stays readable for screen readers, so nothing moves.
+.terminal-body {
+  position: relative;
+}
+
+.t-line {
+  display: block;
+}
+
+.t-live {
+  display: none;
+  position: absolute;
+  inset: 0;
+  padding: inherit;
+}
+
+.terminal-body.is-live {
+  .t-live {
+    display: block;
+  }
+
+  .t-static,
+  .t-static * {
+    color: transparent;
+  }
+
+  .t-static .t-cursor {
+    visibility: hidden;
+  }
+
+  .t-live .t-cursor {
+    animation: t-blink 1.06s steps(1) infinite;
+  }
+}
+
+.t-cursor {
+  display: inline-block;
+  width: 0.6em;
+  height: 1.15em;
+  margin-left: 0.1em;
+  vertical-align: text-bottom;
+  background: var(--text-dim);
+}
+
+@keyframes t-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.t-spin {
+  color: var(--accent);
 }
 
 .t-prompt {
@@ -277,6 +330,7 @@
   }
 
   .terminal {
+    height: auto;
     margin-top: 1.5rem;
   }
 }

@@ -31,7 +31,8 @@ Outside `src/app/`:
 
 ## Routes and languages
 
-Every page has a language prefix: `en`, `de`, `fr`, `it`, or `rm`. English is the default.
+Every page has a language prefix: `de`, `gsw`, `fr`, `it`, `rm`, or `en`. German is the default; Swiss German
+is only used when chosen in the menu.
 
 | Route | Page |
 | --- | --- |

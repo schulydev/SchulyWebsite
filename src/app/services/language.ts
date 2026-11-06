@@ -18,7 +18,7 @@ export const LANGS: { code: Lang; label: string; flag: string; ogLocale: string;
 export const LANG_CODES = LANGS.map(l => l.code);
 
 const STORAGE_KEY = 'schuly-lang';
-export const DEFAULT_LANG: Lang = 'en';
+export const DEFAULT_LANG: Lang = 'de';
 
 export function isLang(value: string | null | undefined): value is Lang {
   return !!value && LANG_CODES.includes(value as Lang);

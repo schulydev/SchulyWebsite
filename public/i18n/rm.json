@@ -49,7 +49,7 @@
   "features": {
     "title1": "Tut quai che ti dovras.",
     "title2": "Precis là, nua che ti al tschertgas.",
-    "description": "Schuly è fatg per tes telefonin: svelt, cler e concentrà sin l'essenzial.",
+    "description": "Svelt, cler e concentrà sin l'essenzial, sin il telefonin ed en il navigatur.",
     "items": {
       "grades": {
         "title": "Notas & medias",
@@ -85,7 +85,7 @@
       },
       "microsoft": {
         "title": "Microsoft 365",
-        "description": "E-mail, Teams, OneDrive ed OneNote directamain en Schuly."
+        "description": "Microsoft Outlook, Teams, OneDrive ed OneNote directamain en Schuly."
       },
       "helply": {
         "title": "Helply, tes assistent IA",
@@ -108,7 +108,13 @@
       },
       "rowLabel": "{{ subject }}, media {{ average }}, {{ count }} notas",
       "overall": "Media generala",
-      "lunch": "Pausa da mezdi"
+      "lunch": "Pausa da mezdi",
+      "apps": {
+        "mail": "E-mail",
+        "chat": "Chat",
+        "files": "Datotecas",
+        "notes": "Notizias"
+      }
     }
   },
   "screenshots": {
@@ -214,6 +220,7 @@
       "coffee": "Ma cumpra in café"
     },
     "disclaimer": "Project independent. Nagina relaziun cun la Centerboard AG (Schulnetz), OdA Org, Microsoft u ina scola.",
+    "trademarks": "Microsoft 365, Microsoft Outlook, Microsoft Teams, Microsoft OneDrive e Microsoft OneNote èn marcas da la Microsoft Corporation. Schulnetz è ina marca da la Centerboard AG. Schuly è in project independent e n'ha nagina relaziun cun Microsoft u Centerboard.",
     "copyright": "© {{ year }} Schuly · Construì cun",
     "navLabel": "Pe da pagina"
   },
@@ -246,10 +253,9 @@
           "Notas ed absenzas vegnan sincronisadas en il fund, cun push.",
           "Las medemas datas sin il telefonin ed en il navigatur sin app.schuly.dev.",
           "Helply, tes assistent d'IA per examens, notas ed urari.",
-          "Microsoft 365: E-mail, Teams, OneDrive ed OneNote en Schuly.",
+          "Microsoft 365 cun Microsoft Outlook, Teams, OneDrive ed OneNote en Schuly.",
           "Tia annunzia da scola è criptada en in tresor."
-        ],
-        "cta": "Crear in conto"
+        ]
       },
       "private": {
         "title": "Modus privat",

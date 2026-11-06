@@ -7,7 +7,7 @@ const ORIGIN = 'https://schuly.dev';
 const LANGS = ['en', 'de', 'gsw', 'fr', 'it', 'rm'] as const;
 // hreflang per route prefix; keep in sync with LANGS in src/app/services/language.ts.
 const HREFLANG: Record<(typeof LANGS)[number], string> = { en: 'en', de: 'de-CH', gsw: 'gsw-CH', fr: 'fr', it: 'it', rm: 'rm' };
-const DEFAULT_LANG = 'en';
+const DEFAULT_LANG = 'de';
 
 const PAGES: { path: string; changefreq: string; priority: string; images?: string[] }[] = [
   {

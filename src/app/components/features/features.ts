@@ -4,10 +4,11 @@ import { TranslatePipe } from '@ngx-translate/core';
 import { faAndroid, faApple } from '@fortawesome/free-brands-svg-icons';
 import {
   faBell,
-  faBook,
+  faBookOpen,
   faBriefcase,
   faCheck,
   faCloud,
+  faComments,
   faEnvelope,
   faGlobe,
   faGraduationCap,
@@ -15,7 +16,6 @@ import {
   faPlus,
   faSchool,
   faSun,
-  faUsers,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -71,21 +71,23 @@ export class Features {
   ];
   protected readonly overall = (this.subjects.reduce((sum, s) => sum + s.average, 0) / this.subjects.length).toFixed(1);
 
+  // Generic glyphs in one neutral tint: no Microsoft app colours or icon shapes.
   protected readonly msApps = [
-    { name: 'Mail', icon: faEnvelope, hue: 205 },
-    { name: 'Teams', icon: faUsers, hue: 245 },
-    { name: 'OneDrive', icon: faCloud, hue: 195 },
-    { name: 'OneNote', icon: faBook, hue: 280 },
+    { key: 'mail', icon: faEnvelope },
+    { key: 'chat', icon: faComments },
+    { key: 'files', icon: faCloud },
+    { key: 'notes', icon: faBookOpen },
   ];
 
-  // What an account unlocks: web app, push, Helply and Microsoft 365. Helply uses its avatar.
+  // What an account unlocks: web app, push, Helply and Microsoft 365. Helply uses its avatar;
+  // the rest share one accent tint.
   protected readonly suiteApps = [
-    { key: 'web', icon: faGlobe, hue: 210 },
-    { key: 'push', icon: faBell, hue: 40 },
-    { key: 'helply', icon: null, hue: 265 },
-    { key: 'mail', icon: faEnvelope, hue: 205 },
-    { key: 'teams', icon: faUsers, hue: 245 },
-    { key: 'onedrive', icon: faCloud, hue: 195 },
+    { key: 'web', icon: faGlobe },
+    { key: 'push', icon: faBell },
+    { key: 'helply', icon: null },
+    { key: 'mail', icon: faEnvelope },
+    { key: 'chat', icon: faComments },
+    { key: 'files', icon: faCloud },
   ];
 
   /** Moves the radial highlight of the tile under the pointer. */

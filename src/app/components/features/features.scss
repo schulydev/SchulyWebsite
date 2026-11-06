@@ -2,6 +2,11 @@
   padding-top: 7rem;
 }
 
+// Wide enough that each heading line stays on one line on desktop.
+.section-header {
+  max-width: none;
+}
+
 .bento {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -484,8 +489,8 @@
   place-items: center;
   border-radius: 8px;
   font-size: 0.75rem;
-  color: hsl(var(--hue) 90% 72%);
-  background: hsl(var(--hue) 80% 60% / 0.14);
+  color: var(--accent);
+  background: var(--accent-soft);
 }
 
 @media (max-width: 1040px) {

@@ -95,10 +95,10 @@
       <!-- Microsoft 365 -->
       <article class="tile tile--microsoft reveal">
         <div class="tile-visual apps" aria-hidden="true">
-          @for (a of msApps; track a.name) {
+          @for (a of msApps; track a.key) {
             <span class="app-chip">
-              <span class="app-chip-icon" [style.--hue]="a.hue"><fa-icon [icon]="a.icon"></fa-icon></span>
-              {{ a.name }}
+              <span class="app-chip-icon"><fa-icon [icon]="a.icon"></fa-icon></span>
+              {{ 'features.demo.apps.' + a.key | translate }}
             </span>
           }
         </div>
@@ -181,7 +181,7 @@
       <article class="tile tile--small reveal">
         <div class="tile-visual suite" aria-hidden="true">
           @for (s of suiteApps; track s.key) {
-            <span class="suite-app" [style.--hue]="s.hue">
+            <span class="suite-app">
               @if (s.icon) {
                 <fa-icon [icon]="s.icon"></fa-icon>
               } @else {

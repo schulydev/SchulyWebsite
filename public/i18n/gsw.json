@@ -48,8 +48,8 @@
   },
   "features": {
     "title1": "Alles, wo du bruuchsch.",
-    "title2": "Genau det, wo du's suechsch.",
-    "description": "Schuly isch für dis Handy baut: schnäll, übersichtlich und uf s Wichtigschte fokussiert.",
+    "title2": "Genau det, wo du's suechsch.",
+    "description": "Schnäll, übersichtlich und uf s Wichtigschte fokussiert, am Handy und im Browser.",
     "items": {
       "grades": {
         "title": "Note und Durchschnitt",
@@ -85,7 +85,7 @@
       },
       "microsoft": {
         "title": "Microsoft 365",
-        "description": "Mail, Teams, OneDrive und OneNote diräkt i Schuly."
+        "description": "Microsoft Outlook, Teams, OneDrive und OneNote diräkt i Schuly."
       },
       "helply": {
         "title": "Helply, din KI-Assistänt",
@@ -108,7 +108,13 @@
       },
       "rowLabel": "{{ subject }}, Schnitt {{ average }}, {{ count }} Note",
       "overall": "Gsamtschnitt",
-      "lunch": "Zmittagspause"
+      "lunch": "Zmittagspause",
+      "apps": {
+        "mail": "Mail",
+        "chat": "Chat",
+        "files": "Dateie",
+        "notes": "Notize"
+      }
     }
   },
   "screenshots": {
@@ -214,6 +220,7 @@
       "coffee": "Buy me a coffee"
     },
     "disclaimer": "Unabhängigs Projekt. Kei Verbindig zur Centerboard AG (Schulnetz), zu OdA Org, zu Microsoft oder zu irgendere Schuel.",
+    "trademarks": "Microsoft 365, Microsoft Outlook, Microsoft Teams, Microsoft OneDrive und Microsoft OneNote sind Marke vo de Microsoft Corporation. Schulnetz isch e Marke vo de Centerboard AG. Schuly isch es unabhängigs Projekt und hät nüt mit Microsoft oder Centerboard z tue.",
     "copyright": "© {{ year }} Schuly · Gmacht mit",
     "navLabel": "Fuesszeile"
   },
@@ -246,10 +253,9 @@
           "Note und Absänze synchronisiered sich im Hintergrund, mit Push.",
           "Di gliiche Date ufem Handy und im Browser uf app.schuly.dev.",
           "Helply, din KI-Assistent für Prüefige, Note und Stundeplan.",
-          "Microsoft 365: Mail, Teams, OneDrive und OneNote i Schuly.",
+          "Microsoft 365 mit Microsoft Outlook, Teams, OneDrive und OneNote i Schuly.",
           "Dini Schuel-Aamäldig isch verschlüsslet im Tresor."
-        ],
-        "cta": "Konto erstelle"
+        ]
       },
       "private": {
         "title": "Privat Modus",
