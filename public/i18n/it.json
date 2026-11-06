@@ -149,7 +149,8 @@
       "web": "Apri la web app"
     },
     "note": {
-      "prefix": "L'app usa per impostazione predefinita il server Schuly. Vuoi gestire il tuo? Consulta la ",
+      "prefix": "L'app usa per impostazione predefinita il server Schuly. Vuoi gestire il tuo?",
+      "see": "Consulta la ",
       "linkText": "guida al self-hosting",
       "suffix": "."
     }

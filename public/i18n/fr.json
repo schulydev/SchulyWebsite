@@ -149,7 +149,8 @@
       "web": "Ouvrir l'app web"
     },
     "note": {
-      "prefix": "L'app utilise par défaut le serveur Schuly. Tu veux exploiter le tien ? Consulte le ",
+      "prefix": "L'app utilise par défaut le serveur Schuly. Tu veux exploiter le tien ?",
+      "see": "Consulte le ",
       "linkText": "guide d'auto-hébergement",
       "suffix": "."
     }

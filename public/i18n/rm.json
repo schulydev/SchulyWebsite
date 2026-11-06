@@ -149,7 +149,8 @@
       "web": "Avrir l'app web"
     },
     "note": {
-      "prefix": "L'app utilisescha tenor standard il server Schuly. Vuls ti manar tes agen? Guarda las ",
+      "prefix": "L'app utilisescha tenor standard il server Schuly. Vuls ti manar tes agen?",
+      "see": "Guarda las ",
       "linkText": "instrucziuns per il self-hosting",
       "suffix": "."
     }
