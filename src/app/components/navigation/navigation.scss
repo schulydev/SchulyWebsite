@@ -83,6 +83,7 @@
   }
 
   &-cta {
+    white-space: nowrap;
     display: inline-flex;
     align-items: center;
     height: 34px;
@@ -176,7 +177,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 640px) {
   .nav-cta {
     display: none;
   }
