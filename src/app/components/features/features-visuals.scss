@@ -1,0 +1,177 @@
+// Small illustrations inside the bento tiles.
+
+.plugins {
+  flex-wrap: wrap;
+  // Keep wrapped rows together instead of spreading them over the tile.
+  align-content: center;
+  gap: 0.5rem;
+}
+
+.plugin {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  height: 30px;
+  padding: 0 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: inset 0 0 0 1px var(--border-strong);
+
+  fa-icon {
+    font-size: 0.65rem;
+    color: var(--good);
+  }
+
+  &--next {
+    color: var(--text-dim);
+    background: transparent;
+    box-shadow: none;
+    border: 1px dashed var(--border-strong);
+
+    fa-icon {
+      color: var(--text-dim);
+    }
+  }
+}
+
+.schools {
+  gap: 0;
+}
+
+.school {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  margin: 0 -6px;
+  border-radius: 15px;
+  font-size: 1.05rem;
+  color: hsl(var(--hue) 90% 75%);
+  background: linear-gradient(180deg, hsl(var(--hue) 60% 22%), hsl(var(--hue) 50% 13%));
+  box-shadow: 0 0 0 4px var(--bg-elev), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  &:nth-child(2) {
+    transform: translateY(-8px);
+    z-index: 1;
+  }
+}
+
+.push {
+  display: grid;
+  place-items: center;
+
+  > * {
+    grid-area: 1 / 1;
+  }
+}
+
+.toast {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  width: min(250px, 100%);
+  padding: 0.65rem 0.8rem;
+  border-radius: 14px;
+  background: rgba(30, 32, 38, 0.9);
+  box-shadow: inset 0 0 0 1px var(--border-strong), 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+  font-size: 0.8125rem;
+
+  img {
+    border-radius: 7px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  strong {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  span {
+    color: var(--text-dim);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &--behind {
+    z-index: 0;
+    height: 56px;
+    transform: translateY(14px) scale(0.9);
+    opacity: 0.45;
+  }
+}
+
+.theme {
+  gap: 0;
+}
+
+.theme-half {
+  width: 76px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+
+  &--light {
+    border-radius: 14px 0 0 14px;
+    background: #f4f5f7;
+    color: #f59e0b;
+  }
+
+  &--dark {
+    border-radius: 0 14px 14px 0;
+    background: #15161b;
+    color: #c4c9d4;
+    box-shadow: inset 0 0 0 1px var(--border-strong);
+  }
+}
+
+.platforms {
+  gap: 0.6rem;
+
+  span {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: inset 0 0 0 1px var(--border-strong);
+  }
+}
+
+// The Schuly Suite: a row of small app icons, tinted like the Microsoft 365 chips.
+.suite {
+  gap: 0.5rem;
+}
+
+.suite-app {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  // One accent tint for every icon, so none mimics a product colour.
+  color: var(--accent);
+  background: linear-gradient(180deg, rgba(78, 168, 255, 0.16), rgba(78, 168, 255, 0.06));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+
+  img {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+}
+

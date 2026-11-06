@@ -1,0 +1,57 @@
+<section id="privacy" class="independence" aria-labelledby="independence-title">
+  <div class="independence-lines" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header reveal">
+      <h2 class="section-title" id="independence-title">{{ 'independence.title1' | translate }} <span class="dim">{{ 'independence.title2' | translate }}</span></h2>
+      <p class="section-description">{{ 'independence.description' | translate }}</p>
+    </div>
+
+    <div class="modes">
+      @for (m of modes; track m.key) {
+        <article class="mode reveal" [class.mode--main]="m.key === 'account'">
+          <header class="mode-head">
+            <span class="mode-icon"><fa-icon [icon]="m.icon" aria-hidden="true"></fa-icon></span>
+            <div>
+              <h3 class="mode-title">{{ 'independence.modes.' + m.key + '.title' | translate }}</h3>
+            </div>
+          </header>
+          <ul class="mode-points">
+            @for (point of ('independence.modes.' + m.key + '.points' | translate); track $index) {
+              <li>
+                <fa-icon [icon]="faCheck" aria-hidden="true"></fa-icon>
+                <span>{{ point }}</span>
+              </li>
+            }
+          </ul>
+        </article>
+      }
+    </div>
+
+    <div class="facts">
+      @for (f of facts; track f.key) {
+        <div class="fact reveal">
+          <fa-icon [icon]="f.icon" class="fact-icon" aria-hidden="true"></fa-icon>
+          <h3 class="fact-title">{{ 'independence.facts.' + f.key + '.title' | translate }}</h3>
+          <p class="fact-text">{{ 'independence.facts.' + f.key + '.text' | translate }}</p>
+        </div>
+      }
+
+      <div class="terminal reveal">
+        <div class="terminal-bar">
+          <span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="terminal-name">{{ 'independence.terminal.title' | translate }}</span>
+        </div>
+        <!-- Inside <pre> whitespace is kept, so the rows stay on one line each. -->
+        <pre #terminal class="terminal-body" [class.is-live]="playing()" tabindex="0" [attr.aria-label]="'independence.terminal.title' | translate"><code class="t-static">@for (l of session; track $index) {<ng-container *ngTemplateOutlet="row; context: { $implicit: l, last: $last }" />}</code><code class="t-live" aria-hidden="true">@for (l of live(); track $index) {<ng-container *ngTemplateOutlet="row; context: { $implicit: l, last: $last }" />}</code><ng-template #row let-l let-last="last"><span class="t-line">@if (l.kind === 'cmd') {<span class="t-prompt">$</span> {{ l.text }}}@else if (l.kind === 'ok') {<span [class]="l.mark === '✓' ? 't-ok' : 't-spin'">{{ l.mark }}</span> <span class="t-dim">{{ l.name }}</span>{{ l.text }}}@else {<span class="t-dim">{{ l.text }}</span>}@if (last) {<span class="t-cursor" aria-hidden="true"></span>}</span></ng-template></pre>
+        <a class="terminal-link" href="https://docs.schuly.dev/SchulyServer/setup/self-hosting" target="_blank" rel="noopener">
+          {{ 'download.note.linkText' | translate }}
+          <fa-icon [icon]="faArrowRight" aria-hidden="true"></fa-icon>
+        </a>
+      </div>
+    </div>
+
+    <p class="independence-foot reveal">
+      <a [routerLink]="['/', lang(), 'privacy']">{{ 'independence.policyLink' | translate }} <fa-icon [icon]="faArrowRight" aria-hidden="true"></fa-icon></a>
+    </p>
+  </div>
+</section>

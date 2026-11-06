@@ -1,61 +1,112 @@
-import { afterNextRender, Component, ElementRef, viewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslatePipe } from '@ngx-translate/core';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faAndroid, faApple } from '@fortawesome/free-brands-svg-icons';
 import {
-  faChartLine,
-  faUsers,
-  faPalette,
-  faCalendarDays,
-  faMobileScreen,
-  faPuzzlePiece,
-  faShieldHalved,
-  faBolt,
+  faBell,
+  faBookOpen,
+  faBriefcase,
+  faCheck,
+  faCloud,
+  faComments,
   faEnvelope,
+  faGlobe,
+  faGraduationCap,
+  faMoon,
+  faPlus,
+  faSchool,
+  faSun,
 } from '@fortawesome/free-solid-svg-icons';
-
-interface Feature {
-  key: string;
-  icon: IconDefinition;
-}
 
 @Component({
   selector: 'app-features',
   imports: [FontAwesomeModule, TranslatePipe],
   templateUrl: './features.html',
-  styleUrl: './features.scss'
+  styleUrls: ['./features.scss', './features-visuals.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Features {
-  private grid = viewChild<ElementRef<HTMLElement>>('grid');
+  protected readonly faAndroid = faAndroid;
+  protected readonly faApple = faApple;
+  protected readonly faBriefcase = faBriefcase;
+  protected readonly faCheck = faCheck;
+  protected readonly faGlobe = faGlobe;
+  protected readonly faGraduationCap = faGraduationCap;
+  protected readonly faMoon = faMoon;
+  protected readonly faPlus = faPlus;
+  protected readonly faSchool = faSchool;
+  protected readonly faSun = faSun;
 
-  features: Feature[] = [
-    { key: 'grades',     icon: faChartLine },
-    { key: 'agenda',     icon: faCalendarDays },
-    { key: 'schulnetz',  icon: faPuzzlePiece },
-    { key: 'multi',      icon: faUsers },
-    { key: 'design',     icon: faPalette },
-    { key: 'platforms',  icon: faMobileScreen },
-    { key: 'oidc',       icon: faShieldHalved },
-    { key: 'fast',       icon: faBolt },
-    { key: 'microsoft',  icon: faEnvelope },
+  // Sample grades for the grades tile, on the Swiss 1 to 6 scale.
+  protected readonly subjects = [
+    { key: 'math', grades: [4.5, 5, 6] },
+    { key: 'german', grades: [5.5, 5, 5.5, 5] },
+    { key: 'english', grades: [4.5, 5, 4.5, 5, 4] },
+    { key: 'history', grades: [4, 4.5, 3.5] },
+  ].map(({ key, grades }) => {
+    const average = grades.reduce((sum, g) => sum + g, 0) / grades.length;
+    return {
+      key,
+      grades,
+      average,
+      label: average.toFixed(1),
+      tone: gradeTone(average),
+      avgLeft: scalePosition(average),
+      dots: grades.map((g) => ({ tone: gradeTone(g), left: scalePosition(g) })),
+    };
+  });
+  protected readonly axis = [1, 2, 3, 4, 5, 6];
+
+  // Sample school day for the timetable tile.
+  protected readonly lessons = [
+    { time: '07:30', subject: 'german' },
+    { time: '08:20', subject: 'german' },
+    { time: '09:20', subject: 'math', exam: true },
+    { time: '10:15', subject: 'english' },
+    { time: '11:05', subject: 'informatics' },
+    { time: '11:50', break: true },
+    { time: '12:30', subject: 'economics', now: true },
+    { time: '13:20', subject: 'history' },
+    { time: '14:10', subject: 'sport' },
+  ];
+  protected readonly overall = (this.subjects.reduce((sum, s) => sum + s.average, 0) / this.subjects.length).toFixed(1);
+
+  // Generic glyphs in one neutral tint: no Microsoft app colours or icon shapes.
+  protected readonly msApps = [
+    { key: 'mail', icon: faEnvelope },
+    { key: 'chat', icon: faComments },
+    { key: 'files', icon: faCloud },
+    { key: 'notes', icon: faBookOpen },
   ];
 
-  constructor() {
-    afterNextRender(() => {
-      const el = this.grid()?.nativeElement;
-      if (!el) return;
-      const cards = Array.from(el.querySelectorAll<HTMLElement>('.feature-card'));
-      cards.forEach(c => c.classList.add('animatable'));
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const idx = cards.indexOf(entry.target as HTMLElement);
-            setTimeout(() => entry.target.classList.add('in-view'), Math.max(0, idx % 3) * 80);
-            io.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      cards.forEach(c => io.observe(c));
-    });
+  // What an account unlocks: web app, push, Helply and Microsoft 365. Helply uses its avatar;
+  // the rest share one accent tint.
+  protected readonly suiteApps = [
+    { key: 'web', icon: faGlobe },
+    { key: 'push', icon: faBell },
+    { key: 'helply', icon: null },
+    { key: 'mail', icon: faEnvelope },
+    { key: 'chat', icon: faComments },
+    { key: 'files', icon: faCloud },
+  ];
+
+  /** Moves the radial highlight of the tile under the pointer. */
+  protected spotlight(event: PointerEvent): void {
+    const tile = (event.target as HTMLElement | null)?.closest<HTMLElement>('.tile');
+    if (!tile) return;
+    const rect = tile.getBoundingClientRect();
+    tile.style.setProperty('--mx', `${event.clientX - rect.left}px`);
+    tile.style.setProperty('--my', `${event.clientY - rect.top}px`);
   }
+}
+
+/** Green from 5, amber from the 4.0 pass mark, red below it. */
+function gradeTone(grade: number): 'good' | 'ok' | 'bad' {
+  if (grade >= 5) return 'good';
+  return grade >= 4 ? 'ok' : 'bad';
+}
+
+/** Where a grade sits on the 1 to 6 scale, in percent. */
+function scalePosition(grade: number): number {
+  return Math.min(100, Math.max(0, ((grade - 1) / 5) * 100));
 }

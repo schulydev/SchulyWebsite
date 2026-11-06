@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · App indipendente per i portali scolastici svizzeri",
-      "description": "App gratuita e indipendente per i portali scolastici svizzeri, su Android e iOS. Funziona con Schulnetz e OdA Org. Nessun legame con Centerboard AG o con la tua scuola."
+      "title": "Schuly – voti, assenze e orario in un'app",
+      "description": "L'app indipendente per studenti, da studenti, in Svizzera: voti, assenze, orario ed esami da Schulnetz e OdA Org. Android, iOS, web."
     },
     "privacy": {
       "title": "Privacy · Schuly",
@@ -29,21 +29,27 @@
     "openSource": "Codice sorgente",
     "githubAria": "GitHub",
     "getSchuly": "Scarica Schuly",
-    "language": "Lingua"
+    "language": "Lingua",
+    "privacy": "Privacy",
+    "faq": "FAQ",
+    "label": "Navigazione principale",
+    "menuOpen": "Apri il menu",
+    "menuClose": "Chiudi il menu",
+    "skip": "Vai al contenuto"
   },
   "hero": {
     "title1": "Tutte le tue scuole,",
     "title2": "in un'unica app.",
-    "sub": "Voti, esami, orario, assenze e documenti dal tuo portale scolastico in un unico posto. Per Android e iOS, con Schulnetz e OdA Org già supportati. Indipendente e senza legami con Centerboard AG o con la tua scuola.",
+    "sub": "L'app indipendente per studenti, da studenti, in Svizzera. Voti con media, assenze, orario ed esami da Schulnetz e OdA Org in un unico posto.",
     "ctaDownload": "Scarica Schuly",
     "ctaWeb": "Apri l'app web",
-    "ctaGithub": "Vedi su GitHub"
+    "ctaGithub": "Vedi su GitHub",
+    "webAlt": "L'app web Schuly su app.schuly.dev con l'orario di oggi, le assenze da giustificare, i prossimi appuntamenti e i nuovi voti"
   },
   "features": {
-    "eyebrow": "Funzionalità",
     "title1": "Tutto ciò che ti serve.",
-    "title2": "Niente che ti rallenti.",
-    "description": "Schuly è pensata per il tuo telefono: veloce, chiara e concentrata sull'essenziale.",
+    "title2": "Proprio dove lo cerchi.",
+    "description": "Veloce, chiaro e concentrato sull'essenziale, sul telefono e nel browser.",
     "items": {
       "grades": {
         "title": "Note & medie",
@@ -69,9 +75,9 @@
         "title": "Android · iOS · Web",
         "description": "Sul telefono o nel browser."
       },
-      "oidc": {
-        "title": "Con account o in privato",
-        "description": "Sincronizza in background, o tieni tutto sul tuo dispositivo."
+      "suite": {
+        "title": "La Schuly Suite",
+        "description": "Con un account hai tutto: web app, push, Helply e Microsoft 365."
       },
       "fast": {
         "title": "Sempre aggiornato",
@@ -79,12 +85,39 @@
       },
       "microsoft": {
         "title": "Microsoft 365",
-        "description": "Mail, Teams, OneDrive e OneNote direttamente in Schuly."
+        "description": "Microsoft Outlook, Teams, OneDrive e OneNote direttamente in Schuly."
+      },
+      "helply": {
+        "title": "Helply, il tuo assistente IA",
+        "description": "Chiedi di esami, voti o del tuo orario."
+      }
+    },
+    "demo": {
+      "exam": "Esame",
+      "helplyQ": "Quando è il mio prossimo esame?",
+      "helplyA": "Martedì alle 09:20: matematica in aula A 1.03.",
+      "pushTitle": "Nuovo voto",
+      "subjects": {
+        "math": "Matematica",
+        "german": "Tedesco",
+        "english": "Inglese",
+        "history": "Storia",
+        "economics": "Economia e diritto",
+        "informatics": "Informatica",
+        "sport": "Sport"
+      },
+      "rowLabel": "{{ subject }}, media {{ average }}, {{ count }} voti",
+      "overall": "Media generale",
+      "lunch": "Pausa pranzo",
+      "apps": {
+        "mail": "Mail",
+        "chat": "Chat",
+        "files": "File",
+        "notes": "Note"
       }
     }
   },
   "screenshots": {
-    "eyebrow": "Nell'app",
     "title": "Uno sguardo all'app.",
     "description": "Schuly è pensata per l'uso quotidiano. Le informazioni che contano sono dove te le aspetti – senza giri inutili.",
     "alts": {
@@ -93,10 +126,16 @@
       "grades": "Pagina dei voti di Schuly con le medie per materia",
       "absences": "Pagina assenze Schuly – giustificate e non giustificate",
       "account": "Pagina dell'account Schuly con profilo e selettore di scuola"
+    },
+    "labels": {
+      "start": "Home",
+      "agenda": "Agenda",
+      "grades": "Voti",
+      "absences": "Assenze",
+      "account": "Account"
     }
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Domande frequenti.",
     "description": "Cos'è Schuly, cosa non è e come si affianca al sistema scolastico che usi già.",
     "items": [
@@ -139,7 +178,6 @@
     ]
   },
   "download": {
-    "eyebrow": "Scarica Schuly",
     "title": "Pronto a iniziare?",
     "description": "Schuly è gratuita, e il suo codice sorgente è pubblico. Le ultime versioni per Android e iOS sono su GitHub; App Store e Google Play arriveranno presto.",
     "comingSoon": "Presto disponibile",
@@ -182,7 +220,9 @@
       "coffee": "Offrimi un caffè"
     },
     "disclaimer": "Progetto indipendente. Nessun legame con Centerboard AG (Schulnetz), OdA Org, Microsoft o alcuna scuola.",
-    "copyright": "© {{ year }} Schuly · Costruito con"
+    "trademarks": "Microsoft 365, Microsoft Outlook, Microsoft Teams, Microsoft OneDrive e Microsoft OneNote sono marchi di Microsoft Corporation. Schulnetz è un marchio di Centerboard AG. Schuly è un progetto indipendente e non ha alcun legame con Microsoft o Centerboard.",
+    "copyright": "© {{ year }} Schuly · Costruito con",
+    "navLabel": "Piè di pagina"
   },
   "notFound": {
     "code": "404",
@@ -201,5 +241,48 @@
       "en": "English"
     },
     "fallbackNotice": "Questa pagina legale è disponibile solo in tedesco e inglese. La lingua selezionata ({{ lang }}) mostra di default la versione tedesca."
+  },
+  "independence": {
+    "title1": "I tuoi dati.",
+    "title2": "La tua scelta.",
+    "description": "Schuly non appartiene a nessuna scuola e a nessun produttore di software. Scegli tu se Schuly sincronizza per te o se tutto resta sul tuo dispositivo.",
+    "modes": {
+      "account": {
+        "title": "Account Schuly",
+        "points": [
+          "Voti e assenze si sincronizzano in background, con notifiche push.",
+          "Gli stessi dati sul telefono e nel browser su app.schuly.dev.",
+          "Helply, il tuo assistente IA per esami, voti e orario.",
+          "Microsoft 365 con Microsoft Outlook, Teams, OneDrive e OneNote in Schuly.",
+          "Il tuo accesso scolastico è conservato cifrato in una cassaforte."
+        ]
+      },
+      "private": {
+        "title": "Modalità privata",
+        "points": [
+          "Senza account, il tuo login resta sul telefono.",
+          "Solo Schulnetz e OdA Org, senza web app, push, Helply e Microsoft 365.",
+          "Le richieste passano dal server Schuly senza esservi salvate."
+        ]
+      }
+    },
+    "facts": {
+      "independent": {
+        "title": "Indipendente",
+        "text": "Nessun legame con Centerboard AG, OdA Org, Microsoft o la tua scuola."
+      },
+      "source": {
+        "title": "Codice sorgente pubblico",
+        "text": "App, backend, plugin e questo sito sono su GitHub: puoi verificare cosa succede ai tuoi dati."
+      },
+      "selfhost": {
+        "title": "Gestiscilo tu",
+        "text": "Gestisci il tuo backend e collega l'app sotto «Self-hosted»."
+      }
+    },
+    "terminal": {
+      "title": "Il tuo backend"
+    },
+    "policyLink": "Leggi l'informativa sulla privacy"
   }
 }

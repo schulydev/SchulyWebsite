@@ -1,31 +1,46 @@
 <section id="top" class="hero">
-  <div class="hero-grid" aria-hidden="true"></div>
-  <div class="hero-glow" aria-hidden="true"></div>
-  <div class="hero-noise" aria-hidden="true"></div>
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-dots"></div>
+    <canvas #field class="hero-field"></canvas>
+    <div class="hero-glow"></div>
+  </div>
 
   <div class="hero-content">
     <h1 class="hero-title">
-      {{ 'hero.title1' | translate }}<br />
-      <span class="hero-title-dim">{{ 'hero.title2' | translate }}</span>
+      <span class="hero-title-line">{{ 'hero.title1' | translate }}</span>
+      <span class="hero-title-line hero-title-dim">{{ 'hero.title2' | translate }}</span>
     </h1>
 
-    <p class="hero-sub">
-      {{ 'hero.sub' | translate }}
-    </p>
+    <p class="hero-sub">{{ 'hero.sub' | translate }}</p>
 
     <div class="hero-actions">
-      <a href="#download" class="btn btn-primary">
+      <a [href]="base() + '#download'" class="btn btn-primary">
         {{ 'hero.ctaDownload' | translate }}
-        <fa-icon [icon]="faArrowRight"></fa-icon>
+        <fa-icon [icon]="faArrowRight" class="btn-arrow" aria-hidden="true"></fa-icon>
       </a>
       <a href="https://app.schuly.dev" class="btn btn-secondary">
-        <fa-icon [icon]="faGlobe"></fa-icon>
+        <fa-icon [icon]="faGlobe" aria-hidden="true"></fa-icon>
         {{ 'hero.ctaWeb' | translate }}
       </a>
-      <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener" class="btn btn-secondary">
-        <fa-icon [icon]="faGithub"></fa-icon>
+      <a href="https://github.com/schulydev/Schuly" target="_blank" rel="noopener" class="btn btn-ghost">
+        <fa-icon [icon]="faGithub" aria-hidden="true"></fa-icon>
         {{ 'hero.ctaGithub' | translate }}
       </a>
     </div>
+
+  </div>
+
+  <div class="hero-stage">
+    <figure class="window">
+      <div class="window-screen">
+        <img class="window-shot" ngSrc="/assets/webapp-overview-dark.webp" width="1424" height="890" priority [alt]="'hero.webAlt' | translate" />
+      </div>
+    </figure>
+
+    <figure class="phone-card">
+      <div class="phone-card-screen">
+        <img src="/assets/hero-phone-home.webp" width="600" height="1333" decoding="async" [alt]="'screenshots.alts.start' | translate" />
+      </div>
+    </figure>
   </div>
 </section>

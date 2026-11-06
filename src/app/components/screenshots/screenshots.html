@@ -1,22 +1,25 @@
 <section id="screenshots" class="screenshots">
+  <div class="screenshots-glow" aria-hidden="true"></div>
   <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">{{ 'screenshots.eyebrow' | translate }}</div>
+    <div class="section-header reveal">
       <h2 class="section-title">{{ 'screenshots.title' | translate }}</h2>
-      <p class="section-description">
-        {{ 'screenshots.description' | translate }}
-      </p>
-    </div>
-
-    <div class="screens" #stage>
-      @for (s of shots; track s.src; let i = $index) {
-        <div class="screen" [style.--i]="i" [style.--total]="shots.length">
-          <picture>
-            <source type="image/webp" [srcset]="s.webp" />
-            <img [src]="s.src" [alt]="'screenshots.alts.' + s.altKey | translate" loading="lazy" decoding="async" width="800" height="1733" />
-          </picture>
-        </div>
-      }
+      <p class="section-description">{{ 'screenshots.description' | translate }}</p>
     </div>
   </div>
+
+  <ul class="screens" tabindex="0" [attr.aria-label]="'screenshots.title' | translate">
+    @for (s of shots; track s.src; let i = $index) {
+      <li class="screen" [style.--i]="i">
+        <figure>
+          <picture>
+            <source type="image/webp" [srcset]="s.webp" />
+            <img [src]="s.src" [alt]="'screenshots.alts.' + s.altKey | translate" loading="lazy" decoding="async" width="660" height="1394" />
+          </picture>
+          <figcaption>
+            {{ 'screenshots.labels.' + s.altKey | translate }}
+          </figcaption>
+        </figure>
+      </li>
+    }
+  </ul>
 </section>

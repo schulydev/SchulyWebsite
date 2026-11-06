@@ -4,9 +4,9 @@ http://www.schuly.dev/* https://schuly.dev/:splat 301!
 http://schuly.dev/* https://schuly.dev/:splat 301!
 
 # Old unprefixed paths -> default-language equivalents (preserve indexing)
-/impressum /en/impressum 301
-/privacy /en/privacy 301
-/terms /en/terms 301
+/impressum /de/impressum 301
+/privacy /de/privacy 301
+/terms /de/terms 301
 
 # Root -> default language. Browser-preferred language is handled client-side after load.
-/ /en 302
+/ /de 302

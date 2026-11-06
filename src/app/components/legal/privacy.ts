@@ -9,7 +9,6 @@ import { LegalPageBase } from './legal-page-base';
   template: `
     <section class="legal">
       <div class="legal-container">
-        <div class="legal-eyebrow">Privacy</div>
         <h1 class="legal-title">{{ 'legal.privacy' | translate }}</h1>
         <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 04.11.2026</p>
 
@@ -50,7 +49,7 @@ import { LegalPageBase } from './legal-page-base';
               <li><strong>Konto:</strong> Benutzername, E-Mail, Passwort als Hash, Zweitfaktor, Profilbild, angemeldete Geräte mit IP-Adresse und Browser, Zeitpunkt der letzten Nutzung, deine Bestätigung des Datenschutzhinweises.</li>
               <li><strong>Schuldaten:</strong> Name, Schule, Klassen, Lehrpersonen, Noten, Prüfungen, Stundenplan, Semesterzeugnisse und Dokumente.</li>
               <li><strong>Absenzen:</strong> Zeitraum, Status und Grund. <strong>Der Grund kann Gesundheitsdaten enthalten</strong>, also besonders schützenswerte Daten.</li>
-              <li><strong>Microsoft 365</strong> (nur wenn du ein Konto verknüpfst): E-Mails, Kalender, Dateien, Teams-Chats und Notizen. Diese Inhalte können auch Daten anderer Personen enthalten, etwa von Lehrpersonen und Mitschülern.</li>
+              <li><strong>Microsoft 365</strong> (nur wenn du ein Konto verknüpfst): E-Mails, Kalender, Dateien, Microsoft-Teams-Chats und Notizen. Diese Inhalte können auch Daten anderer Personen enthalten, etwa von Lehrpersonen und Mitschülern.</li>
               <li><strong>Benachrichtigungen:</strong> Geräte-Token und deine Einstellungen.</li>
               <li><strong>Technische Daten:</strong> Server-Protokolle und ein Sicherheitsprotokoll über Anmeldungen und Löschungen.</li>
             </ul>
@@ -170,7 +169,7 @@ import { LegalPageBase } from './legal-page-base';
               <li><strong>Account:</strong> username, email, password as a hash, second factor, profile picture, signed-in devices with IP address and browser, time of last use, and your confirmation of the privacy notice.</li>
               <li><strong>School data:</strong> name, school, classes, teachers, grades, exams, timetable, semester reports, and documents.</li>
               <li><strong>Absences:</strong> period, status, and reason. <strong>The reason can include health information</strong>, which is sensitive personal data.</li>
-              <li><strong>Microsoft 365</strong> (only if you link an account): mail, calendar, files, Teams chats, and notes. This content can include data about other people, such as teachers and classmates.</li>
+              <li><strong>Microsoft 365</strong> (only if you link an account): mail, calendar, files, Microsoft Teams chats, and notes. This content can include data about other people, such as teachers and classmates.</li>
               <li><strong>Notifications:</strong> device token and your settings.</li>
               <li><strong>Technical data:</strong> server logs and a security log of sign-ins and deletions.</li>
             </ul>

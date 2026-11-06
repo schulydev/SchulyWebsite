@@ -1,24 +1,200 @@
 <section id="features" class="features">
   <div class="container">
-    <div class="section-header">
-      <div class="eyebrow">{{ 'features.eyebrow' | translate }}</div>
-      <h2 class="section-title">{{ 'features.title1' | translate }}<br />{{ 'features.title2' | translate }}</h2>
-      <p class="section-description">
-        {{ 'features.description' | translate }}
-      </p>
+    <div class="section-header reveal">
+      <h2 class="section-title">{{ 'features.title1' | translate }} <span class="dim">{{ 'features.title2' | translate }}</span></h2>
+      <p class="section-description">{{ 'features.description' | translate }}</p>
     </div>
 
-    <div class="features-grid" #grid>
-      @for (f of features; track f.key) {
-        <div class="feature-card">
-          <div class="feature-icon">
-            <fa-icon [icon]="f.icon"></fa-icon>
+    <div class="bento" (pointermove)="spotlight($event)">
+      <!-- Grades -->
+      <article class="tile tile--grades reveal">
+        <div class="tile-visual grades">
+          <div class="grades-head">
+            <p class="grades-overall">
+              <span class="grades-avg">{{ overall }}</span>
+              <span class="grades-caption">{{ 'features.demo.overall' | translate }}</span>
+            </p>
+            <svg class="grades-spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="spark-fill" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="#4ea8ff" stop-opacity="0.28" />
+                  <stop offset="1" stop-color="#4ea8ff" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+              <path d="M0 27 L20 23 L40 25 L60 17 L80 19 L100 12 L120 9 L120 36 L0 36 Z" fill="url(#spark-fill)" />
+              <path d="M0 27 L20 23 L40 25 L60 17 L80 19 L100 12 L120 9" fill="none" stroke="#4ea8ff" stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+            </svg>
           </div>
-          <h3 class="feature-title">{{ 'features.items.' + f.key + '.title' | translate }}</h3>
-          <p class="feature-description">{{ 'features.items.' + f.key + '.description' | translate }}</p>
-          <div class="feature-glow"></div>
+
+          <div class="plot">
+            <span class="plot-pass" aria-hidden="true"></span>
+            <ul class="plot-rows">
+              @for (s of subjects; track s.key) {
+                <li class="plot-row">
+                  <span class="visually-hidden">{{ 'features.demo.rowLabel' | translate: { subject: ('features.demo.subjects.' + s.key | translate), average: s.label, count: s.grades.length } }}</span>
+                  <span class="plot-subject" aria-hidden="true">{{ 'features.demo.subjects.' + s.key | translate }}</span>
+                  <span class="plot-track" aria-hidden="true">
+                    <span class="plot-avg" [style.left.%]="s.avgLeft"></span>
+                    @for (d of s.dots; track $index) {
+                      <span [class]="'plot-dot plot-dot--' + d.tone" [style.left.%]="d.left"></span>
+                    }
+                  </span>
+                  <span [class]="'grade-pill grade-pill--' + s.tone" aria-hidden="true">{{ s.label }}</span>
+                </li>
+              }
+            </ul>
+            <div class="plot-axis" aria-hidden="true">
+              @for (n of axis; track n) {
+                <span [class.is-pass]="n === 4" [style.left.%]="(n - 1) * 20">{{ n }}</span>
+              }
+            </div>
+          </div>
         </div>
-      }
+        <div class="tile-copy">
+          <h3 class="tile-title">{{ 'features.items.grades.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.grades.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Timetable and absences -->
+      <article class="tile tile--agenda reveal">
+        <div class="tile-visual agenda" aria-hidden="true">
+          <ol class="agenda-list">
+            @for (l of lessons; track l.time) {
+              <li [class.is-exam]="l.exam" [class.is-now]="l.now" [class.is-break]="l.break">
+                <time>{{ l.time }}</time>
+                <span>{{ (l.break ? 'features.demo.lunch' : 'features.demo.subjects.' + l.subject) | translate }}</span>
+                @if (l.exam) {
+                  <em>{{ 'features.demo.exam' | translate }}</em>
+                }
+              </li>
+            }
+          </ol>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title">{{ 'features.items.agenda.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.agenda.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Helply -->
+      <article class="tile tile--helply reveal">
+        <div class="tile-visual chat" aria-hidden="true">
+          <p class="chat-bubble chat-bubble--me">{{ 'features.demo.helplyQ' | translate }}</p>
+          <div class="chat-ai">
+            <img class="chat-avatar" src="/assets/helply-avatar.svg" alt="" width="32" height="32" loading="lazy" />
+            <p class="chat-bubble chat-bubble--ai">{{ 'features.demo.helplyA' | translate }}</p>
+          </div>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title">{{ 'features.items.helply.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.helply.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Microsoft 365 -->
+      <article class="tile tile--microsoft reveal">
+        <div class="tile-visual apps" aria-hidden="true">
+          @for (a of msApps; track a.key) {
+            <span class="app-chip">
+              <span class="app-chip-icon"><fa-icon [icon]="a.icon"></fa-icon></span>
+              {{ 'features.demo.apps.' + a.key | translate }}
+            </span>
+          }
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title">{{ 'features.items.microsoft.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.microsoft.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- School systems -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual plugins" aria-hidden="true">
+          <span class="plugin"><fa-icon [icon]="faCheck"></fa-icon>Schulnetz</span>
+          <span class="plugin"><fa-icon [icon]="faCheck"></fa-icon>OdA Org</span>
+          <span class="plugin plugin--next"><fa-icon [icon]="faPlus"></fa-icon>Plugin</span>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title">{{ 'features.items.schulnetz.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.schulnetz.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Several schools -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual schools" aria-hidden="true">
+          <span class="school" style="--hue: 210"><fa-icon [icon]="faSchool"></fa-icon></span>
+          <span class="school" style="--hue: 150"><fa-icon [icon]="faBriefcase"></fa-icon></span>
+          <span class="school" style="--hue: 275"><fa-icon [icon]="faGraduationCap"></fa-icon></span>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title">{{ 'features.items.multi.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.multi.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Push -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual push" aria-hidden="true">
+          <div class="toast">
+            <img src="/assets/app_icon_64.png" width="28" height="28" alt="" loading="lazy" />
+            <div>
+              <strong>{{ 'features.demo.pushTitle' | translate }}</strong>
+              <span>{{ 'features.demo.subjects.math' | translate }} · 5.5</span>
+            </div>
+          </div>
+          <div class="toast toast--behind"></div>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title">{{ 'features.items.fast.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.fast.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Design -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual theme" aria-hidden="true">
+          <span class="theme-half theme-half--light"><fa-icon [icon]="faSun"></fa-icon></span>
+          <span class="theme-half theme-half--dark"><fa-icon [icon]="faMoon"></fa-icon></span>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title">{{ 'features.items.design.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.design.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- Platforms -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual platforms" aria-hidden="true">
+          <span><fa-icon [icon]="faAndroid"></fa-icon></span>
+          <span><fa-icon [icon]="faApple"></fa-icon></span>
+          <span><fa-icon [icon]="faGlobe"></fa-icon></span>
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title">{{ 'features.items.platforms.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.platforms.description' | translate }}</p>
+        </div>
+      </article>
+
+      <!-- The Schuly Suite: what an account unlocks -->
+      <article class="tile tile--small reveal">
+        <div class="tile-visual suite" aria-hidden="true">
+          @for (s of suiteApps; track s.key) {
+            <span class="suite-app">
+              @if (s.icon) {
+                <fa-icon [icon]="s.icon"></fa-icon>
+              } @else {
+                <img src="/assets/helply-avatar.svg" width="24" height="24" alt="" loading="lazy" />
+              }
+            </span>
+          }
+        </div>
+        <div class="tile-copy">
+          <h3 class="tile-title">{{ 'features.items.suite.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.suite.description' | translate }}</p>
+        </div>
+      </article>
     </div>
   </div>
 </section>

@@ -5,3 +5,8 @@
   font-family: 'Inter Variable', 'Inter',sans-serif;
   min-height: 100vh;
 }
+
+main:focus {
+  outline: none;
+}
+

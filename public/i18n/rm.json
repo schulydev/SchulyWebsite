@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · App independenta per portals da scola svizzers",
-      "description": "App gratuita ed independenta per portals da scola svizzers, sin Android ed iOS. Funcziuna cun Schulnetz ed OdA Org. Nagina relaziun cun la Centerboard AG u cun tia scola."
+      "title": "Schuly – notas, absenzas ed urari en in'app",
+      "description": "L'app independenta per scolaras e scolars, da scolaras e scolars, en Svizra: notas, absenzas, urari ed examens da Schulnetz ed OdA Org. Android, iOS, web."
     },
     "privacy": {
       "title": "Protecziun da datas · Schuly",
@@ -29,29 +29,35 @@
     "openSource": "Code da funtauna",
     "githubAria": "GitHub",
     "getSchuly": "Telechargiar Schuly",
-    "language": "Lingua"
+    "language": "Lingua",
+    "privacy": "Protecziun da datas",
+    "faq": "FAQ",
+    "label": "Navigaziun principala",
+    "menuOpen": "Avrir il menu",
+    "menuClose": "Serrar il menu",
+    "skip": "Siglir al cuntegn"
   },
   "hero": {
     "title1": "Tut tias scolas,",
     "title2": "en in'app.",
-    "sub": "Notas, examens, urari, absenzas e documents da tes portal da scola en in sulet lieu. Per Android ed iOS, cun Schulnetz ed OdA Org gia sustegnids. Independent e senza relaziun cun la Centerboard AG u cun tia scola.",
+    "sub": "L'app independenta per scolaras e scolars, da scolaras e scolars, en Svizra. Notas cun media, absenzas, urari ed examens da Schulnetz ed OdA Org en in sulet lieu.",
     "ctaDownload": "Telechargiar Schuly",
     "ctaWeb": "Avrir l'app web",
-    "ctaGithub": "Guardar sin GitHub"
+    "ctaGithub": "Guardar sin GitHub",
+    "webAlt": "L'app web da Schuly sin app.schuly.dev cun l'urari dad oz, absenzas avertas, termins proxims e novas notas"
   },
   "features": {
-    "eyebrow": "Funcziuns",
     "title1": "Tut quai che ti dovras.",
-    "title2": "Nagut che ta retegna.",
-    "description": "Schuly è fatg per tes telefonin: svelt, cler e concentrà sin l'essenzial.",
+    "title2": "Precis là, nua che ti al tschertgas.",
+    "description": "Svelt, cler e concentrà sin l'essenzial, sin il telefonin ed en il navigatur.",
     "items": {
       "grades": {
         "title": "Notas & medias",
         "description": "Mintga nota cun sia ponderaziun, media dal rom e da la classa."
       },
       "agenda": {
-        "title": "Plan d'uras & absenzas",
-        "description": "Lecziuns, examens, absenzas e attestats en in lieu."
+        "title": "Urari & absenzas",
+        "description": "Lecziuns, examens, absenzas ed attestats en in lieu."
       },
       "schulnetz": {
         "title": "Schulnetz, OdA Org e dapli",
@@ -69,9 +75,9 @@
         "title": "Android · iOS · Web",
         "description": "Sin il telefonin u en il navigatur."
       },
-      "oidc": {
-        "title": "Cun conto u privat",
-        "description": "Sincronisar en il fund u tegnair tut sin tes apparat."
+      "suite": {
+        "title": "La Schuly Suite",
+        "description": "Cun in conto survegns ti tut: app web, push, Helply e Microsoft 365."
       },
       "fast": {
         "title": "Adina actual",
@@ -79,30 +85,63 @@
       },
       "microsoft": {
         "title": "Microsoft 365",
-        "description": "Mail, Teams, OneDrive ed OneNote directamain en Schuly."
+        "description": "Microsoft Outlook, Teams, OneDrive ed OneNote directamain en Schuly."
+      },
+      "helply": {
+        "title": "Helply, tes assistent IA",
+        "description": "Dumonda davart examens, notas u tes urari."
+      }
+    },
+    "demo": {
+      "exam": "Examen",
+      "helplyQ": "Cura è mes proxim examen?",
+      "helplyA": "Mardi a las 09:20: matematica en la stanza A 1.03.",
+      "pushTitle": "Nova nota",
+      "subjects": {
+        "math": "Matematica",
+        "german": "Tudestg",
+        "english": "Englais",
+        "history": "Istorgia",
+        "economics": "Economia e dretg",
+        "informatics": "Informatica",
+        "sport": "Sport"
+      },
+      "rowLabel": "{{ subject }}, media {{ average }}, {{ count }} notas",
+      "overall": "Media generala",
+      "lunch": "Pausa da mezdi",
+      "apps": {
+        "mail": "E-mail",
+        "chat": "Chat",
+        "files": "Datotecas",
+        "notes": "Notizias"
       }
     }
   },
   "screenshots": {
-    "eyebrow": "En l'app",
     "title": "In sguard en l'app.",
     "description": "Schuly è concepì per il mintgadi. Las infurmaziuns impurtantas èn là nua che ti las spetgas – senza deturs.",
     "alts": {
       "start": "Pagina da partenza Schuly – notas ed agenda",
       "agenda": "Pagina agenda Schuly – urari ed examens",
       "grades": "Pagina da notas da Schuly cun medias per rom",
-      "absences": "Pagina d'absenzas Schuly – scusadas e nunscusadas",
+      "absences": "Pagina d'absenzas Schuly – perstgisadas e betg perstgisadas",
       "account": "Pagina dal conto Schuly cun profil e midada da scola"
+    },
+    "labels": {
+      "start": "Partenza",
+      "agenda": "Agenda",
+      "grades": "Notas",
+      "absences": "Absenzas",
+      "account": "Conto"
     }
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Dumondas frequentas.",
     "description": "Tge è Schuly, tge n'è el betg e co s'adatta al sistem da scola che ti utiliseschas gia.",
     "items": [
       {
         "q": "Tge è Schuly?",
-        "a": "Schuly è in'app gratuita ed independenta per scolaras e scolars en Svizra. Ella mussa notas, examens, urari, absenzas e documents da tes portal da scola en in'interfatscha moderna e unescha plirs contos da scola en in'app. Disponibla per Android ed iOS."
+        "a": "Schuly è in'app gratuita ed independenta per scolaras e scolars en Svizra. Ella mussa notas, examens, urari, absenzas e documents da tes portal da scola en in'interfatscha moderna ed unescha plirs contos da scola en in'app. Disponibla per Android ed iOS."
       },
       {
         "q": "Tge sistems da scola vegnan sustegnids?",
@@ -114,7 +153,7 @@
       },
       {
         "q": "Tge custa Schuly?",
-        "a": "Nagut. Schuly è gratuit, ed il code da funtauna da l'app, dal backend, dals plugins e da questa website è public sin GitHub sut github.com/schulydev."
+        "a": "Nagut. Schuly è gratuit, ed il code da funtauna da l'app, dal backend, dals plugins e da questa pagina d'internet è public sin GitHub sut github.com/schulydev."
       },
       {
         "q": "Nua vegnan memorisadas mias datas?",
@@ -134,12 +173,11 @@
       },
       {
         "q": "Poss jau gidar?",
-        "a": "Gea. Tut ils components èn sin GitHub sut github.com/schulydev. Issues cun la etichetta «bug» u «feature» èn il cumenzament il pli simpel, e contribuziuns èn bainvegnidas."
+        "a": "Gea. Tut ils components èn sin GitHub sut github.com/schulydev. Issues cun l'etichetta «bug» u «feature» èn il cumenzament il pli simpel, e contribuziuns èn bainvegnidas."
       }
     ]
   },
   "download": {
-    "eyebrow": "Telechargiar Schuly",
     "title": "Pront da cumenzar?",
     "description": "Schuly è gratuit, e ses code da funtauna è public. Las versiuns las pli novas per Android ed iOS chattas ti sin GitHub; App Store e Google Play suondan prest.",
     "comingSoon": "Prest disponibel",
@@ -179,17 +217,19 @@
       "impressum": "Impressum",
       "privacy": "Protecziun da datas",
       "terms": "Cundiziuns d'utilisaziun",
-      "coffee": "Cumprai a mai in café"
+      "coffee": "Ma cumpra in café"
     },
     "disclaimer": "Project independent. Nagina relaziun cun la Centerboard AG (Schulnetz), OdA Org, Microsoft u ina scola.",
-    "copyright": "© {{ year }} Schuly · Construì cun"
+    "trademarks": "Microsoft 365, Microsoft Outlook, Microsoft Teams, Microsoft OneDrive e Microsoft OneNote èn marcas da la Microsoft Corporation. Schulnetz è ina marca da la Centerboard AG. Schuly è in project independent e n'ha nagina relaziun cun Microsoft u Centerboard.",
+    "copyright": "© {{ year }} Schuly · Construì cun",
+    "navLabel": "Pe da pagina"
   },
   "notFound": {
     "code": "404",
     "title": "Pagina betg chattada.",
     "sub": "L'adressa che ti has suandà n'exista betg sin schuly.dev. Probablamain è ella vegnida spustada, renumnada u n'è mai existida.",
     "back": "Enavos a la pagina principala",
-    "report": "Annunziar in link rut"
+    "report": "Annunziar ina colliaziun rutta"
   },
   "legal": {
     "lastUpdated": "Status:",
@@ -200,6 +240,49 @@
       "de": "Deutsch",
       "en": "English"
     },
-    "fallbackNotice": "Questa pagina legala è disponibla mo per tudestg e englais. La lingua tschernida ({{ lang }}) mussa per standard la versiun tudestga."
+    "fallbackNotice": "Questa pagina legala è disponibla mo en tudestg ed englais. La lingua tschernida ({{ lang }}) mussa per standard la versiun tudestga."
+  },
+  "independence": {
+    "title1": "Tias datas.",
+    "title2": "Tia decisiun.",
+    "description": "Schuly na tutga a nagina scola ed a nagin producent da software. Ti decidas, sche Schuly sincronisescha per tai u sche tut resta sin tes apparat.",
+    "modes": {
+      "account": {
+        "title": "Conto da Schuly",
+        "points": [
+          "Notas ed absenzas vegnan sincronisadas en il fund, cun push.",
+          "Las medemas datas sin il telefonin ed en il navigatur sin app.schuly.dev.",
+          "Helply, tes assistent d'IA per examens, notas ed urari.",
+          "Microsoft 365 cun Microsoft Outlook, Teams, OneDrive ed OneNote en Schuly.",
+          "Tia annunzia da scola è criptada en in tresor."
+        ]
+      },
+      "private": {
+        "title": "Modus privat",
+        "points": [
+          "Senza conto, tes login resta sin tes telefonin.",
+          "Mo Schulnetz ed OdA Org, senza app web, push, Helply e Microsoft 365.",
+          "Las dumondas passan tras il server Schuly senza vegnir memorisadas."
+        ]
+      }
+    },
+    "facts": {
+      "independent": {
+        "title": "Independent",
+        "text": "Nagina relaziun cun la Centerboard AG, OdA Org, Microsoft u tia scola."
+      },
+      "source": {
+        "title": "Code da funtauna public",
+        "text": "L'app, il backend, ils plugins e questa pagina d'internet èn sin GitHub. Ti pos controllar tez tge che capita cun tias datas."
+      },
+      "selfhost": {
+        "title": "Manar sez",
+        "text": "Mana tes agen backend e drizza l'app sut «Self-hosted» sin el."
+      }
+    },
+    "terminal": {
+      "title": "Agen backend"
+    },
+    "policyLink": "Leger la decleraziun da protecziun da datas"
   }
 }

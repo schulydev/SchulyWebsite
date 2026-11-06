@@ -1,0 +1,19 @@
+Credits
+
+Phone frame in the app screenshots (public/assets/schuly-*-page.png and .webp):
+Pixel 9 Pro XL device art from the Android Open Source Project / Android Studio,
+licensed under the Apache License 2.0. See licenses/Apache-2.0.txt.
+The screenshots were placed inside the frame, and the frame was shortened to the screen's aspect ratio.
+
+Buy Me a Coffee mark in the footer (src/app/components/footer/footer.html):
+from Simple Icons, https://simpleicons.org/?q=buymeacoffee, CC0 1.0 Universal. See licenses/CC0-1.0.txt.
+The mark is a trademark of Buy Me a Coffee and is used only to link to the project's page there.
+
+Flags in the language menu (public/assets/flags/de.svg, ch.svg, fr.svg, it.svg, gb.svg):
+from flag-icons by Panayiotis Lipiridis (lipis), https://github.com/lipis/flag-icons,
+licensed under the MIT License. See licenses/MIT-flag-icons.txt.
+
+Flag of Graubünden for Rumantsch (public/assets/flags/rm-graubuenden.svg):
+"Flag of Canton of Graubünden.svg" from Wikimedia Commons,
+https://commons.wikimedia.org/wiki/File:Flag_of_Canton_of_Graub%C3%BCnden.svg, public domain.
+Editor metadata was removed from the file.
