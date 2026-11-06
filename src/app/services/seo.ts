@@ -63,9 +63,9 @@ export class SeoService {
   }
 
   private setAlternates(subPath: string, _active: Lang) {
-    for (const { code } of LANGS) {
+    for (const { code, hreflang } of LANGS) {
       this.upsertLink(`alt-${code}`, 'alternate', {
-        hreflang: code,
+        hreflang,
         href: `${ORIGIN}/${code}${subPath}`,
       });
     }

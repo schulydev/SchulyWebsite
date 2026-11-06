@@ -60,10 +60,15 @@
       <article class="tile tile--agenda reveal">
         <div class="tile-visual agenda" aria-hidden="true">
           <ol class="agenda-list">
-            <li><time>07:30</time><span>{{ 'features.demo.subjects.german' | translate }}</span></li>
-            <li class="is-exam"><time>09:20</time><span>{{ 'features.demo.subjects.math' | translate }}</span><em>{{ 'features.demo.exam' | translate }}</em></li>
-            <li class="is-now"><time>12:30</time><span>{{ 'features.demo.subjects.economics' | translate }}</span></li>
-            <li><time>13:20</time><span>{{ 'features.demo.subjects.history' | translate }}</span></li>
+            @for (l of lessons; track l.time) {
+              <li [class.is-exam]="l.exam" [class.is-now]="l.now" [class.is-break]="l.break">
+                <time>{{ l.time }}</time>
+                <span>{{ (l.break ? 'features.demo.lunch' : 'features.demo.subjects.' + l.subject) | translate }}</span>
+                @if (l.exam) {
+                  <em>{{ 'features.demo.exam' | translate }}</em>
+                }
+              </li>
+            }
           </ol>
         </div>
         <div class="tile-copy">

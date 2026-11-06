@@ -104,10 +104,13 @@
         "german": "Deutsch",
         "english": "Englisch",
         "history": "Geschichte",
-        "economics": "Wirtschaft und Recht"
+        "economics": "Wirtschaft und Recht",
+        "informatics": "Informatik",
+        "sport": "Sport"
       },
       "rowLabel": "{{ subject }}, Schnitt {{ average }}, {{ count }} Noten",
-      "overall": "Gesamtschnitt"
+      "overall": "Gesamtschnitt",
+      "lunch": "Mittagspause"
     }
   },
   "screenshots": {

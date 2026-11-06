@@ -57,6 +57,19 @@ export class Features {
     };
   });
   protected readonly axis = [1, 2, 3, 4, 5, 6];
+
+  // Sample school day for the timetable tile.
+  protected readonly lessons = [
+    { time: '07:30', subject: 'german' },
+    { time: '08:20', subject: 'german' },
+    { time: '09:20', subject: 'math', exam: true },
+    { time: '10:15', subject: 'english' },
+    { time: '11:05', subject: 'informatics' },
+    { time: '11:50', break: true },
+    { time: '12:30', subject: 'economics', now: true },
+    { time: '13:20', subject: 'history' },
+    { time: '14:10', subject: 'sport' },
+  ];
   protected readonly overall = (this.subjects.reduce((sum, s) => sum + s.average, 0) / this.subjects.length).toFixed(1);
 
   protected readonly msApps = [

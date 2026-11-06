@@ -1,10 +1,12 @@
-import { existsSync, mkdirSync, copyFileSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, copyFileSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const browser = 'dist/SchulyWebsite/browser';
 
 const ORIGIN = 'https://schuly.dev';
-const LANGS = ['en', 'de', 'fr', 'it', 'rm'] as const;
+const LANGS = ['en', 'de', 'gsw', 'fr', 'it', 'rm'] as const;
+// hreflang per route prefix; keep in sync with LANGS in src/app/services/language.ts.
+const HREFLANG: Record<(typeof LANGS)[number], string> = { en: 'en', de: 'de-CH', gsw: 'gsw-CH', fr: 'fr', it: 'it', rm: 'rm' };
 const DEFAULT_LANG = 'en';
 
 const PAGES: { path: string; changefreq: string; priority: string; images?: string[] }[] = [
@@ -56,7 +58,7 @@ function writeSitemap() {
     PAGES.map(page => {
       const loc = `${ORIGIN}/${lang}${page.path}`;
       const alternates = [
-        ...LANGS.map(l => `    <xhtml:link rel="alternate" hreflang="${l}" href="${ORIGIN}/${l}${page.path}"/>`),
+        ...LANGS.map(l => `    <xhtml:link rel="alternate" hreflang="${HREFLANG[l]}" href="${ORIGIN}/${l}${page.path}"/>`),
         `    <xhtml:link rel="alternate" hreflang="x-default" href="${ORIGIN}/${DEFAULT_LANG}${page.path}"/>`,
       ].join('\n');
       const images = (page.images ?? [])
@@ -94,6 +96,27 @@ if (!existsSync(browser)) {
   process.exit(0);
 }
 
+// Every language file must have exactly the same keys as de.json.
+function checkKeyParity() {
+  const flatten = (o: Record<string, unknown>, p = ''): string[] =>
+    Object.entries(o).flatMap(([k, v]) => (v && typeof v === 'object' && !Array.isArray(v) ? flatten(v as Record<string, unknown>, `${p}${k}.`) : [`${p}${k}`]));
+  const keys = (lang: string) => new Set(flatten(JSON.parse(readFileSync(`public/i18n/${lang}.json`, 'utf8'))));
+  const ref = keys('de');
+  let ok = true;
+  for (const lang of LANGS) {
+    const own = keys(lang);
+    const missing = [...ref].filter(k => !own.has(k));
+    const extra = [...own].filter(k => !ref.has(k));
+    if (missing.length || extra.length) {
+      ok = false;
+      console.error(`[postbuild] ${lang}.json: missing ${missing.join(', ') || '-'}; extra ${extra.join(', ') || '-'}`);
+    }
+  }
+  if (!ok) process.exit(1);
+  console.log(`[postbuild] i18n keys match in ${LANGS.length} languages (${ref.size} keys)`);
+}
+
+checkKeyParity();
 writeNotFound();
 dropRootIndex();
 writeSitemap();

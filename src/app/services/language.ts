@@ -3,14 +3,16 @@ import { isPlatformBrowser } from '@angular/common';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
-export type Lang = 'de' | 'fr' | 'it' | 'rm' | 'en';
+export type Lang = 'de' | 'gsw' | 'fr' | 'it' | 'rm' | 'en';
 
-export const LANGS: { code: Lang; label: string; flag: string; ogLocale: string }[] = [
-  { code: 'de', label: 'Deutsch',   flag: 'DE', ogLocale: 'de_CH' },
-  { code: 'fr', label: 'Français',  flag: 'FR', ogLocale: 'fr_CH' },
-  { code: 'it', label: 'Italiano',  flag: 'IT', ogLocale: 'it_CH' },
-  { code: 'rm', label: 'Rumantsch', flag: 'RM', ogLocale: 'rm_CH' },
-  { code: 'en', label: 'English',   flag: 'EN', ogLocale: 'en_US' },
+// German targets Switzerland (de-CH). Swiss German (gsw) is only used when chosen.
+export const LANGS: { code: Lang; label: string; flag: string; ogLocale: string; hreflang: string }[] = [
+  { code: 'de',  label: 'Deutsch',         flag: 'DE', ogLocale: 'de_CH', hreflang: 'de-CH' },
+  { code: 'gsw', label: 'Schwiizerdütsch', flag: 'CH', ogLocale: 'de_CH', hreflang: 'gsw-CH' },
+  { code: 'fr',  label: 'Français',        flag: 'FR', ogLocale: 'fr_CH', hreflang: 'fr' },
+  { code: 'it',  label: 'Italiano',        flag: 'IT', ogLocale: 'it_CH', hreflang: 'it' },
+  { code: 'rm',  label: 'Rumantsch',       flag: 'RM', ogLocale: 'rm_CH', hreflang: 'rm' },
+  { code: 'en',  label: 'English',         flag: 'EN', ogLocale: 'en_US', hreflang: 'en' },
 ];
 
 export const LANG_CODES = LANGS.map(l => l.code);
@@ -57,7 +59,7 @@ export class LanguageService {
   private pathWithoutLang(): string {
     if (!this.isBrowser) return '';
     const { pathname, search, hash } = window.location;
-    const stripped = pathname.replace(/^\/[a-z]{2}(?=\/|$)/, '');
+    const stripped = pathname.replace(/^\/[a-z]{2,3}(?=\/|$)/, '');
     return `${stripped || ''}${search}${hash}`;
   }
 }

@@ -104,10 +104,13 @@
         "german": "Tudestg",
         "english": "Englais",
         "history": "Istorgia",
-        "economics": "Economia e dretg"
+        "economics": "Economia e dretg",
+        "informatics": "Informatica",
+        "sport": "Sport"
       },
       "rowLabel": "{{ subject }}, media {{ average }}, {{ count }} notas",
-      "overall": "Media generala"
+      "overall": "Media generala",
+      "lunch": "Pausa da mezdi"
     }
   },
   "screenshots": {

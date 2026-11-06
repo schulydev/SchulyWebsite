@@ -7,6 +7,7 @@ import { LanguageService, LANGS, Lang } from '../../services/language';
 // Flags from flag-icons (MIT); Rumantsch uses the flag of Graubünden (public domain). See CREDITS.txt.
 const FLAGS: Record<Lang, string> = {
   de: '/assets/flags/de.svg',
+  gsw: '/assets/flags/ch.svg',
   fr: '/assets/flags/fr.svg',
   it: '/assets/flags/it.svg',
   rm: '/assets/flags/rm-graubuenden.svg',

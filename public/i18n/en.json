@@ -104,10 +104,13 @@
         "german": "German",
         "english": "English",
         "history": "History",
-        "economics": "Economics and law"
+        "economics": "Economics and law",
+        "informatics": "Computer science",
+        "sport": "PE"
       },
       "rowLabel": "{{ subject }}, average {{ average }}, {{ count }} grades",
-      "overall": "Overall average"
+      "overall": "Overall average",
+      "lunch": "Lunch break"
     }
   },
   "screenshots": {

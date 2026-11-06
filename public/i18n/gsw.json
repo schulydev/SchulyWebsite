@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "home": {
+      "title": "Schuly · Unabhängigi App für Schwiizer Schuelportal",
+      "description": "Gratis und unabhängigi App für Schwiizer Schuelportal uf Android und iOS. Lauft mit Schulnetz und OdA Org. Kei Verbindig zur Centerboard AG oder zu dinere Schuel."
+    },
+    "privacy": {
+      "title": "Dateschutz · Schuly",
+      "description": "Wie Schuly dini Persone-Date nach em Schwiizer Dateschutzgsetz bearbeitet."
+    },
+    "impressum": {
+      "title": "Impressum · Schuly",
+      "description": "Rächtlichi Aagabe und Kontakt zu Schuly."
+    },
+    "terms": {
+      "title": "Nutzigsbedingige · Schuly",
+      "description": "D Bedingige für d Nutzig vo Schuly."
+    },
+    "notFound": {
+      "title": "Site nöd gfunde · Schuly",
+      "description": "Die Site gits uf schuly.dev nöd."
+    }
+  },
+  "nav": {
+    "features": "Features",
+    "screenshots": "Screenshots",
+    "download": "Download",
+    "docs": "Doku",
+    "openSource": "Quellcode",
+    "githubAria": "GitHub",
+    "getSchuly": "Lad Schuly abe",
+    "language": "Sprach",
+    "privacy": "Dateschutz",
+    "faq": "FAQ",
+    "label": "Hauptnavigation",
+    "menuOpen": "Menü uftue",
+    "menuClose": "Menü zuetue",
+    "skip": "Diräkt zum Inhalt"
+  },
+  "hero": {
+    "title1": "Alli dini Schuele,",
+    "title2": "i einere App.",
+    "sub": "Note, Prüefige, Stundeplan, Absänze und Dokumänt us dim Schuelportal amne Ort. Für Android und iOS, mit Schulnetz und OdA Org. Unabhängig und ohni Verbindig zur Centerboard AG oder zu dinere Schuel.",
+    "ctaDownload": "Lad Schuly abe",
+    "ctaWeb": "Web-App uftue",
+    "ctaGithub": "Lueg uf GitHub",
+    "webAlt": "D Schuly-Web-App uf app.schuly.dev mit em Stundeplan vo hüt, offene Absänze, nächste Termin und neue Note"
+  },
+  "features": {
+    "title1": "Alles, was du bruchsch.",
+    "title2": "Nüt, wo di uufhaltet.",
+    "description": "Schuly isch für dis Handy baut: schnäll, übersichtlich und uf s Wichtigschte fokussiert.",
+    "items": {
+      "grades": {
+        "title": "Note und Durchschnitt",
+        "description": "Jedi Note mit Gwichtig, Fach- und Klasseschnitt."
+      },
+      "agenda": {
+        "title": "Stundeplan und Absänze",
+        "description": "Lektione, Prüefige, Absänze und Zügnis amne Ort."
+      },
+      "schulnetz": {
+        "title": "Schulnetz, OdA Org und meh",
+        "description": "Neui Schuelsystem chömed per Plugin dezue, ohni App-Update."
+      },
+      "multi": {
+        "title": "Mehreri Schuele, ei App",
+        "description": "Mehreri Schuelkonte, suuber trännt."
+      },
+      "design": {
+        "title": "Modärns Design",
+        "description": "Klar und schnäll, hell oder dunkel."
+      },
+      "platforms": {
+        "title": "Android · iOS · Web",
+        "description": "Uf em Handy oder im Browser."
+      },
+      "oidc": {
+        "title": "Mit Konto oder privat",
+        "description": "Im Hintergrund synchronisiere oder alles nur uf dim Grät."
+      },
+      "fast": {
+        "title": "Immer aktuell",
+        "description": "Push bi neue Note und Absänze."
+      },
+      "microsoft": {
+        "title": "Microsoft 365",
+        "description": "Mail, Teams, OneDrive und OneNote diräkt i Schuly."
+      },
+      "helply": {
+        "title": "Helply, din KI-Assistänt",
+        "description": "Frag nach Prüefige, Note oder dim Stundeplan."
+      }
+    },
+    "demo": {
+      "exam": "Prüefig",
+      "helplyQ": "Wänn isch mini nächschti Prüefig?",
+      "helplyA": "Am Ziischtig am 09:20: Mathe im Zimmer A 1.03.",
+      "pushTitle": "Neui Note",
+      "account": "Konto",
+      "private": "Privat",
+      "subjects": {
+        "math": "Mathematik",
+        "german": "Dütsch",
+        "english": "Änglisch",
+        "history": "Gschicht",
+        "economics": "Wirtschaft und Rächt",
+        "informatics": "Informatik",
+        "sport": "Turne"
+      },
+      "rowLabel": "{{ subject }}, Schnitt {{ average }}, {{ count }} Note",
+      "overall": "Gsamtschnitt",
+      "lunch": "Zmittagspause"
+    }
+  },
+  "screenshots": {
+    "title": "En Blick i d App.",
+    "description": "Schuly isch für de Alltag gmacht. S Wichtigschte isch det, wo du s erwartisch – ohni Umwäg.",
+    "alts": {
+      "start": "Schuly-Startsite – Note und Agenda uf ein Blick",
+      "agenda": "Schuly-Agenda – Stundeplan und nächschti Prüefige",
+      "grades": "Schuly-Note mit Fachdurchschnitt",
+      "absences": "Schuly-Absänze – entschuldigt und unentschuldigt",
+      "account": "Schuly-Konto mit Profil und Schuelwächsler"
+    },
+    "labels": {
+      "start": "Start",
+      "agenda": "Agenda",
+      "grades": "Note",
+      "absences": "Absänze",
+      "account": "Konto"
+    }
+  },
+  "faq": {
+    "title": "Hüüfigi Frage.",
+    "description": "Was Schuly isch, was es nöd isch und wie s zu dem Schuelsystem passt, wo du scho bruchsch.",
+    "items": [
+      {
+        "q": "Was isch Schuly?",
+        "a": "Schuly isch e gratis, unabhängigi App für Lernendi i de Schwiiz. Si zeigt Note, Prüefige, Stundeplan, Absänze und Dokumänt us dim Schuelportal i some modärne Look und bringt mehreri Schuelkonte i ei App. Gits für Android und iOS."
+      },
+      {
+        "q": "Weli Schuelsystem wärded unterstützt?",
+        "a": "Schulnetz (über s Schulware-Plugin) und OdA Org. Jedes System chunnt über es Backend-Plugin dezue, drum chönd anderi ohni App-Update dazuecho. E Verbindig zu Microsoft 365 chasch i de Iistellige verknüpfe, und die wird no usbaut."
+      },
+      {
+        "q": "Isch Schuly e offizielli App vo Schulnetz oder vo minere Schuel?",
+        "a": "Nei. Schuly isch es unabhängigs Projekt. Es hät nüt mit de Centerboard AG (wo Schulnetz macht), mit dinere Schuel, mit OdA Org oder mit Microsoft z tue und wird vo dene weder unterstützt no betribe."
+      },
+      {
+        "q": "Was choschtet Schuly?",
+        "a": "Nüt. Schuly isch gratis, und de Quellcode vo App, Backend, Plugins und dere Website isch öffentlich uf GitHub under github.com/schulydev."
+      },
+      {
+        "q": "Wo wärded mini Date gspeicheret?",
+        "a": "Das chunnt uf de Modus aa. Im Kontomodus speicheret de Schuly-Server dini synchronisierte Schueldate und dini Schuel-Zuegangsdate verschlüsselt imne Tresor, damit er im Hintergrund cha synchronisiere. Im private Modus bliibt din Login uf em Handy, und d Aafroge laufed über de Schuly-Server, ohni dass öppis gspeicheret wird. D Details staht i de Dateschutzerklärig."
+      },
+      {
+        "q": "Kennt Schuly mis Schuelpasswort?",
+        "a": "Bi Schulnetz wärded E-Mail und Passwort nur fürs Iilogge bruucht und nöd gspeicheret; Schuly bhaltet nur d Sitzig, wo drus entstaht, verschlüsselt. Bi OdA Org wärded Benutzername und Passwort verschlüsselt gspeicheret, damit sich Schuly wieder cha aamälde. Im private Modus bliibt das alles uf dim Grät. Dis Schuly-Konto sälber wird vom Schuly-Server verwaltet."
+      },
+      {
+        "q": "Cha mis Schuelsystem integriert wärde?",
+        "a": "Vilicht. S Backend ladt Plugins, wo je es Schuelsystem aabinded, über dä Schnittstell, wänns eini hät, susch über s Webportal. Wänn es Plugin installiert isch, tauchts System i de Schuelliste vo de App uf. Plugins wärded gäge s Schuly-Plugin-SDK uf GitHub entwicklet."
+      },
+      {
+        "q": "Ich wott Schuly mini Date nöd aavertraue. Was chan ich mache?",
+        "a": "Nimm de privat Modus: Es git kei Schuly-Konto, und uf em Schuly-Server wird nüt über dini Schueldate gspeicheret. Du chasch au dis eigete Backend betriibe und d App under «Self-hosted» druf richte. De ganz Quellcode isch öffentlich uf GitHub under github.com/schulydev, damit du sälber chasch prüefe, was mit dine Date passiert."
+      },
+      {
+        "q": "Chan ich mithälfe?",
+        "a": "Klar. Alli Komponänte sind uf GitHub under github.com/schulydev. Issues mit em Label «bug» oder «feature» sind de eifachscht Iistieg, und Biiträg sind willkomme."
+      }
+    ]
+  },
+  "download": {
+    "title": "Bisch parat?",
+    "description": "Schuly isch gratis, und de Quellcode isch öffentlich. Di neuschte Builds für Android und iOS findsch uf GitHub; App Store und Google Play chömed no.",
+    "comingSoon": "Chunnt bald",
+    "appStore": "App Store",
+    "googlePlay": "Google Play",
+    "appStoreAria": "App Store – chunnt bald",
+    "googlePlayAria": "Google Play – chunnt bald",
+    "alt": {
+      "apk": ".apk uf GitHub",
+      "ipa": ".ipa uf GitHub (Sideload)",
+      "web": "Web-App uftue"
+    },
+    "note": {
+      "prefix": "D App bruucht standardmässig de Schuly-Server. Wotsch din eigete betriibe?",
+      "see": "Lueg d ",
+      "linkText": "Aaleitig zum Sälber-Hoschte",
+      "suffix": " aa."
+    }
+  },
+  "footer": {
+    "cols": {
+      "project": "Projekt",
+      "resources": "Ressource",
+      "legal": "Rächtlichs"
+    },
+    "links": {
+      "app": "Schuly-App",
+      "backend": "Backend",
+      "plugins": "Plugins",
+      "sdk": "Plugin-SDK",
+      "releases": "Releases",
+      "docs": "Doku",
+      "issues": "Issues",
+      "features": "Features",
+      "faq": "FAQ",
+      "download": "Download",
+      "impressum": "Impressum",
+      "privacy": "Dateschutz",
+      "terms": "Nutzigsbedingige",
+      "coffee": "Buy me a coffee"
+    },
+    "disclaimer": "Unabhängigs Projekt. Kei Verbindig zur Centerboard AG (Schulnetz), zu OdA Org, zu Microsoft oder zu irgendere Schuel.",
+    "copyright": "© {{ year }} Schuly · Gmacht mit",
+    "navLabel": "Fuesszeile"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Site nöd gfunde.",
+    "sub": "Die Adrässe gits uf schuly.dev nöd. Vilicht isch si verschobe oder umbenennt worde, oder si hät s nie geh.",
+    "back": "Zrugg zur Startsite",
+    "report": "Kaputte Link mälde"
+  },
+  "legal": {
+    "lastUpdated": "Stand:",
+    "impressum": "Impressum",
+    "privacy": "Dateschutzerklärig",
+    "terms": "Nutzigsbedingige",
+    "tabFor": {
+      "de": "Deutsch",
+      "en": "English"
+    },
+    "fallbackNotice": "Rächtlichs gits nur uf Hochdütsch und Änglisch, drum zeiged mir dir da d hochdütschi Fassig."
+  },
+  "independence": {
+    "title1": "Dini Date.",
+    "title2": "Dini Entscheidig.",
+    "description": "Schuly ghört keinere Schuel und keim Softwarehersteller. Du entscheidsch, ob Schuly für dich synchronisiert oder ob alles uf dim Grät bliibt.",
+    "modes": {
+      "account": {
+        "title": "Kontomodus",
+        "points": [
+          "De Schuly-Server holt neui Note und Absänze und schickt dir e Push-Mitteilig.",
+          "Dini Schuel-Zuegangsdate sind verschlüsselt imne Tresor.",
+          "Di gliiche Date uf em Handy und im Web."
+        ]
+      },
+      "private": {
+        "title": "Privat Modus",
+        "points": [
+          "Du bruchsch kei Schuly-Konto.",
+          "Din Login bliibt uf dim Handy.",
+          "Aafroge laufed über de Schuly-Server, ohni dass öppis gspeicheret wird."
+        ]
+      }
+    },
+    "facts": {
+      "independent": {
+        "title": "Unabhängig",
+        "text": "Kei Verbindig zur Centerboard AG, zu OdA Org, zu Microsoft oder zu dinere Schuel."
+      },
+      "source": {
+        "title": "Quellcode öffentlich",
+        "text": "App, Backend, Plugins und die Website sind uf GitHub. Du chasch sälber luege, was mit dine Date passiert."
+      },
+      "selfhost": {
+        "title": "Sälber betriibe",
+        "text": "Betriib dis eigete Backend und richt d App under «Self-hosted» druf."
+      }
+    },
+    "terminal": {
+      "title": "Eigets Backend"
+    },
+    "policyLink": "Dateschutzerklärig läse"
+  }
+}

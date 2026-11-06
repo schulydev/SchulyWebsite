@@ -3,6 +3,8 @@
 // /<lang> URLs never hit this function; the static "/ -> /en" rule in
 // _redirects is the fallback if this function doesn't run.
 
+// Swiss German (/gsw) is never picked automatically: "gsw" and "de-CH" both
+// land on /de, and the dialect is only used when chosen in the menu.
 const LANGS = ['en', 'de', 'fr', 'it', 'rm'];
 const DEFAULT_LANG = 'en';
 

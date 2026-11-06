@@ -104,10 +104,13 @@
         "german": "Tedesco",
         "english": "Inglese",
         "history": "Storia",
-        "economics": "Economia e diritto"
+        "economics": "Economia e diritto",
+        "informatics": "Informatica",
+        "sport": "Sport"
       },
       "rowLabel": "{{ subject }}, media {{ average }}, {{ count }} voti",
-      "overall": "Media generale"
+      "overall": "Media generale",
+      "lunch": "Pausa pranzo"
     }
   },
   "screenshots": {
