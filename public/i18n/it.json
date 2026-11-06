@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · App indipendente per i portali scolastici svizzeri",
-      "description": "App gratuita e indipendente per i portali scolastici svizzeri, su Android e iOS. Funziona con Schulnetz e OdA Org. Nessun legame con Centerboard AG o con la tua scuola."
+      "title": "Schuly – voti, assenze e orario in un'app",
+      "description": "L'app indipendente per studenti, da studenti, in Svizzera: voti, assenze, orario ed esami da Schulnetz e OdA Org. Android, iOS, web."
     },
     "privacy": {
       "title": "Privacy · Schuly",
@@ -40,7 +40,7 @@
   "hero": {
     "title1": "Tutte le tue scuole,",
     "title2": "in un'unica app.",
-    "sub": "Voti, esami, orario, assenze e documenti dal tuo portale scolastico in un unico posto. Per Android e iOS, con Schulnetz e OdA Org già supportati. Indipendente e senza legami con Centerboard AG o con la tua scuola.",
+    "sub": "L'app indipendente per studenti, da studenti, in Svizzera. Voti con media, assenze, orario ed esami da Schulnetz e OdA Org in un unico posto.",
     "ctaDownload": "Scarica Schuly",
     "ctaWeb": "Apri l'app web",
     "ctaGithub": "Vedi su GitHub",
@@ -75,9 +75,9 @@
         "title": "Android · iOS · Web",
         "description": "Sul telefono o nel browser."
       },
-      "oidc": {
-        "title": "Con account o in privato",
-        "description": "Sincronizza in background, o tieni tutto sul tuo dispositivo."
+      "suite": {
+        "title": "La Schuly Suite",
+        "description": "Con un account hai tutto: web app, push, Helply e Microsoft 365."
       },
       "fast": {
         "title": "Sempre aggiornato",
@@ -97,8 +97,6 @@
       "helplyQ": "Quando è il mio prossimo esame?",
       "helplyA": "Martedì alle 09:20: matematica in aula A 1.03.",
       "pushTitle": "Nuovo voto",
-      "account": "Account",
-      "private": "Privato",
       "subjects": {
         "math": "Matematica",
         "german": "Tedesco",
@@ -243,18 +241,21 @@
     "description": "Schuly non appartiene a nessuna scuola e a nessun produttore di software. Scegli tu se Schuly sincronizza per te o se tutto resta sul tuo dispositivo.",
     "modes": {
       "account": {
-        "title": "Modalità account",
+        "title": "Account Schuly",
         "points": [
-          "Il server Schuly recupera nuovi voti e assenze e ti invia una notifica.",
-          "Le tue credenziali scolastiche sono conservate cifrate in una cassaforte.",
-          "Gli stessi dati sul telefono e sul web."
-        ]
+          "Voti e assenze si sincronizzano in background, con notifiche push.",
+          "Gli stessi dati sul telefono e nel browser su app.schuly.dev.",
+          "Helply, il tuo assistente IA per esami, voti e orario.",
+          "Microsoft 365: Mail, Teams, OneDrive e OneNote in Schuly.",
+          "Il tuo accesso scolastico è conservato cifrato in una cassaforte."
+        ],
+        "cta": "Crea un account"
       },
       "private": {
         "title": "Modalità privata",
         "points": [
-          "Non serve un account Schuly.",
-          "Il tuo login resta sul telefono.",
+          "Senza account, il tuo login resta sul telefono.",
+          "Solo Schulnetz e OdA Org, senza web app, push, Helply e Microsoft 365.",
           "Le richieste passano dal server Schuly senza esservi salvate."
         ]
       }

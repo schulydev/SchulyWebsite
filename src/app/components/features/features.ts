@@ -3,6 +3,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslatePipe } from '@ngx-translate/core';
 import { faAndroid, faApple } from '@fortawesome/free-brands-svg-icons';
 import {
+  faBell,
   faBook,
   faBriefcase,
   faCheck,
@@ -10,7 +11,6 @@ import {
   faEnvelope,
   faGlobe,
   faGraduationCap,
-  faLock,
   faMoon,
   faPlus,
   faSchool,
@@ -32,7 +32,6 @@ export class Features {
   protected readonly faCheck = faCheck;
   protected readonly faGlobe = faGlobe;
   protected readonly faGraduationCap = faGraduationCap;
-  protected readonly faLock = faLock;
   protected readonly faMoon = faMoon;
   protected readonly faPlus = faPlus;
   protected readonly faSchool = faSchool;
@@ -77,6 +76,16 @@ export class Features {
     { name: 'Teams', icon: faUsers, hue: 245 },
     { name: 'OneDrive', icon: faCloud, hue: 195 },
     { name: 'OneNote', icon: faBook, hue: 280 },
+  ];
+
+  // What an account unlocks: web app, push, Helply and Microsoft 365. Helply uses its avatar.
+  protected readonly suiteApps = [
+    { key: 'web', icon: faGlobe, hue: 210 },
+    { key: 'push', icon: faBell, hue: 40 },
+    { key: 'helply', icon: null, hue: 265 },
+    { key: 'mail', icon: faEnvelope, hue: 205 },
+    { key: 'teams', icon: faUsers, hue: 245 },
+    { key: 'onedrive', icon: faCloud, hue: 195 },
   ];
 
   /** Moves the radial highlight of the tile under the pointer. */

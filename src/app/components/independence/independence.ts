@@ -23,7 +23,6 @@ export class Independence {
     { key: 'account', icon: faCloud },
     { key: 'private', icon: faLock },
   ];
-  protected readonly points = [0, 1, 2];
 
   protected readonly facts = [
     { key: 'independent', icon: faUserShield },

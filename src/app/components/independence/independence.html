@@ -16,13 +16,19 @@
             </div>
           </header>
           <ul class="mode-points">
-            @for (i of points; track i) {
+            @for (point of ('independence.modes.' + m.key + '.points' | translate); track $index) {
               <li>
                 <fa-icon [icon]="faCheck" aria-hidden="true"></fa-icon>
-                <span>{{ 'independence.modes.' + m.key + '.points.' + i | translate }}</span>
+                <span>{{ point }}</span>
               </li>
             }
           </ul>
+          @if (m.key === 'account') {
+            <a class="btn btn-primary mode-cta" href="https://app.schuly.dev/register">
+              {{ 'independence.modes.account.cta' | translate }}
+              <fa-icon [icon]="faArrowRight" class="btn-arrow" aria-hidden="true"></fa-icon>
+            </a>
+          }
         </article>
       }
     </div>

@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · Unabhängigi App für Schwiizer Schuelportal",
-      "description": "Gratis und unabhängigi App für Schwiizer Schuelportal uf Android und iOS. Lauft mit Schulnetz und OdA Org. Kei Verbindig zur Centerboard AG oder zu dinere Schuel."
+      "title": "Schuly – Note, Absänze & Stundeplan i einere App",
+      "description": "D unabhängigi App für Lernendi vo Lernende i de Schwiiz: Note, Absänze, Stundeplan und Prüefige us Schulnetz und OdA Org. Android, iOS, Web."
     },
     "privacy": {
       "title": "Dateschutz · Schuly",
@@ -40,7 +40,7 @@
   "hero": {
     "title1": "Alli dini Schuele,",
     "title2": "i einere App.",
-    "sub": "Note, Prüefige, Stundeplan, Absänze und Dokumänt us dim Schuelportal amne Ort. Für Android und iOS, mit Schulnetz und OdA Org. Unabhängig und ohni Verbindig zur Centerboard AG oder zu dinere Schuel.",
+    "sub": "D unabhängigi App für Lernendi vo Lernende i de Schwiiz. Note mit Schnitt, Absänze, Stundeplan und Prüefige us Schulnetz und OdA Org amne Ort.",
     "ctaDownload": "Lad Schuly abe",
     "ctaWeb": "Web-App uftue",
     "ctaGithub": "Lueg uf GitHub",
@@ -75,9 +75,9 @@
         "title": "Android · iOS · Web",
         "description": "Uf em Handy oder im Browser."
       },
-      "oidc": {
-        "title": "Mit Konto oder privat",
-        "description": "Im Hintergrund synchronisiere oder alles nur uf dim Grät."
+      "suite": {
+        "title": "D Schuly Suite",
+        "description": "Mit emene Konto häsch alles: Web-App, Push, Helply und Microsoft 365."
       },
       "fast": {
         "title": "Immer aktuell",
@@ -97,8 +97,6 @@
       "helplyQ": "Wänn isch mini nächschti Prüefig?",
       "helplyA": "Am Ziischtig am 09:20: Mathe im Zimmer A 1.03.",
       "pushTitle": "Neui Note",
-      "account": "Konto",
-      "private": "Privat",
       "subjects": {
         "math": "Mathematik",
         "german": "Dütsch",
@@ -243,18 +241,21 @@
     "description": "Schuly ghört keinere Schuel und keim Softwarehersteller. Du entscheidsch, ob Schuly für dich synchronisiert oder ob alles uf dim Grät bliibt.",
     "modes": {
       "account": {
-        "title": "Kontomodus",
+        "title": "Schuly-Konto",
         "points": [
-          "De Schuly-Server holt neui Note und Absänze und schickt dir e Push-Mitteilig.",
-          "Dini Schuel-Zuegangsdate sind verschlüsselt imne Tresor.",
-          "Di gliiche Date uf em Handy und im Web."
-        ]
+          "Note und Absänze synchronisiered sich im Hintergrund, mit Push.",
+          "Di gliiche Date ufem Handy und im Browser uf app.schuly.dev.",
+          "Helply, din KI-Assistent für Prüefige, Note und Stundeplan.",
+          "Microsoft 365: Mail, Teams, OneDrive und OneNote i Schuly.",
+          "Dini Schuel-Aamäldig isch verschlüsslet im Tresor."
+        ],
+        "cta": "Konto erstelle"
       },
       "private": {
         "title": "Privat Modus",
         "points": [
-          "Du bruchsch kei Schuly-Konto.",
-          "Din Login bliibt uf dim Handy.",
+          "Ohni Konto, din Login bliibt uf dim Handy.",
+          "Nur Schulnetz und OdA Org, ohni Web-App, Push, Helply und Microsoft 365.",
           "Aafroge laufed über de Schuly-Server, ohni dass öppis gspeicheret wird."
         ]
       }

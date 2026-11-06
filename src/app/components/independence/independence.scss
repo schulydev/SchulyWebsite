@@ -24,6 +24,8 @@
 
 .mode {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 1.75rem;
   border-radius: var(--radius-lg);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.01));
@@ -88,6 +90,12 @@
     font-size: 0.75rem;
     color: var(--accent);
   }
+}
+
+// The one call to action, in the account card.
+.mode-cta {
+  align-self: flex-start;
+  margin-top: 1.75rem;
 }
 
 .facts {

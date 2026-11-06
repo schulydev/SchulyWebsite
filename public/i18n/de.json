@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · Unabhängige App für Schweizer Schulportale",
-      "description": "Kostenlose, unabhängige App für Schweizer Schulportale auf Android und iOS. Funktioniert mit Schulnetz und OdA Org. Keine Verbindung zur Centerboard AG oder zu deiner Schule."
+      "title": "Schuly – Noten, Absenzen & Stundenplan in einer App",
+      "description": "Die unabhängige App für Lernende, von Lernenden, in der Schweiz: Noten, Absenzen, Stundenplan und Prüfungen aus Schulnetz und OdA Org. Android, iOS, Web."
     },
     "privacy": {
       "title": "Datenschutz · Schuly",
@@ -40,7 +40,7 @@
   "hero": {
     "title1": "Alle deine Schulen,",
     "title2": "in einer App.",
-    "sub": "Noten, Prüfungen, Stundenplan, Absenzen und Dokumente aus deinem Schulportal an einem Ort. Für Android und iOS, mit Unterstützung für Schulnetz und OdA Org. Unabhängig und ohne Verbindung zur Centerboard AG oder zu deiner Schule.",
+    "sub": "Die unabhängige App für Lernende, von Lernenden, in der Schweiz. Noten mit Durchschnitt, Absenzen, Stundenplan und Prüfungen aus Schulnetz und OdA Org an einem Ort.",
     "ctaDownload": "Schuly herunterladen",
     "ctaWeb": "Web-App öffnen",
     "ctaGithub": "Auf GitHub ansehen",
@@ -75,9 +75,9 @@
         "title": "Android · iOS · Web",
         "description": "Auf dem Handy oder im Browser."
       },
-      "oidc": {
-        "title": "Mit Konto oder privat",
-        "description": "Im Hintergrund synchronisieren oder alles nur auf deinem Gerät."
+      "suite": {
+        "title": "Die Schuly Suite",
+        "description": "Mit einem Konto bekommst du alles: Web-App, Push, Helply und Microsoft 365."
       },
       "fast": {
         "title": "Immer aktuell",
@@ -97,8 +97,6 @@
       "helplyQ": "Wann ist meine nächste Prüfung?",
       "helplyA": "Am Dienstag um 09:20: Mathematik in Zimmer A 1.03.",
       "pushTitle": "Neue Note",
-      "account": "Konto",
-      "private": "Privat",
       "subjects": {
         "math": "Mathematik",
         "german": "Deutsch",
@@ -243,18 +241,21 @@
     "description": "Schuly gehört keiner Schule und keinem Softwarehersteller. Du wählst, ob Schuly für dich synchronisiert oder ob alles auf deinem Gerät bleibt.",
     "modes": {
       "account": {
-        "title": "Kontomodus",
+        "title": "Schuly-Konto",
         "points": [
-          "Der Schuly-Server holt neue Noten und Absenzen und schickt dir eine Push-Mitteilung.",
-          "Deine Schul-Zugangsdaten liegen verschlüsselt in einem Tresor.",
-          "Dieselben Daten auf dem Handy und im Web."
-        ]
+          "Noten und Absenzen synchronisieren sich im Hintergrund, mit Push.",
+          "Dieselben Daten am Handy und im Browser auf app.schuly.dev.",
+          "Helply, dein KI-Assistent für Prüfungen, Noten und Stundenplan.",
+          "Microsoft 365: Mail, Teams, OneDrive und OneNote in Schuly.",
+          "Deine Schul-Anmeldung liegt verschlüsselt im Tresor."
+        ],
+        "cta": "Konto erstellen"
       },
       "private": {
         "title": "Privater Modus",
         "points": [
-          "Du brauchst kein Schuly-Konto.",
-          "Dein Login bleibt auf deinem Handy.",
+          "Ohne Konto, dein Login bleibt auf deinem Handy.",
+          "Nur Schulnetz und OdA Org, ohne Web-App, Push, Helply und Microsoft 365.",
           "Anfragen laufen über den Schuly-Server, ohne gespeichert zu werden."
         ]
       }

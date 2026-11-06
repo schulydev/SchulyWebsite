@@ -82,7 +82,7 @@
         <div class="tile-visual chat" aria-hidden="true">
           <p class="chat-bubble chat-bubble--me">{{ 'features.demo.helplyQ' | translate }}</p>
           <div class="chat-ai">
-            <img class="chat-avatar" src="/assets/helply-avatar.svg" alt="" width="32" height="32" />
+            <img class="chat-avatar" src="/assets/helply-avatar.svg" alt="" width="32" height="32" loading="lazy" />
             <p class="chat-bubble chat-bubble--ai">{{ 'features.demo.helplyA' | translate }}</p>
           </div>
         </div>
@@ -138,7 +138,7 @@
       <article class="tile tile--small reveal">
         <div class="tile-visual push" aria-hidden="true">
           <div class="toast">
-            <img src="/assets/app_icon_64.png" width="28" height="28" alt="" />
+            <img src="/assets/app_icon_64.png" width="28" height="28" alt="" loading="lazy" />
             <div>
               <strong>{{ 'features.demo.pushTitle' | translate }}</strong>
               <span>{{ 'features.demo.subjects.math' | translate }} · 5.5</span>
@@ -177,17 +177,22 @@
         </div>
       </article>
 
-      <!-- Account or private -->
+      <!-- The Schuly Suite: what an account unlocks -->
       <article class="tile tile--small reveal">
-        <div class="tile-visual modes" aria-hidden="true">
-          <span class="modes-track">
-            <span class="modes-opt">{{ 'features.demo.account' | translate }}</span>
-            <span class="modes-opt is-on"><fa-icon [icon]="faLock"></fa-icon>{{ 'features.demo.private' | translate }}</span>
-          </span>
+        <div class="tile-visual suite" aria-hidden="true">
+          @for (s of suiteApps; track s.key) {
+            <span class="suite-app" [style.--hue]="s.hue">
+              @if (s.icon) {
+                <fa-icon [icon]="s.icon"></fa-icon>
+              } @else {
+                <img src="/assets/helply-avatar.svg" width="24" height="24" alt="" loading="lazy" />
+              }
+            </span>
+          }
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title">{{ 'features.items.oidc.title' | translate }}</h3>
-          <p class="tile-text">{{ 'features.items.oidc.description' | translate }}</p>
+          <h3 class="tile-title">{{ 'features.items.suite.title' | translate }}</h3>
+          <p class="tile-text">{{ 'features.items.suite.description' | translate }}</p>
         </div>
       </article>
     </div>

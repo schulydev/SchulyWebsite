@@ -51,7 +51,12 @@
   gap: 0.1rem;
 }
 
+.lang-menu[hidden] {
+  display: none;
+}
+
 .lang-item {
+  text-decoration: none;
   background: transparent;
   border: 0;
   color: var(--text);

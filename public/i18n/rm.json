@@ -1,8 +1,8 @@
 {
   "meta": {
     "home": {
-      "title": "Schuly · App independenta per portals da scola svizzers",
-      "description": "App gratuita ed independenta per portals da scola svizzers, sin Android ed iOS. Funcziuna cun Schulnetz ed OdA Org. Nagina relaziun cun la Centerboard AG u cun tia scola."
+      "title": "Schuly – notas, absenzas ed urari en in'app",
+      "description": "L'app independenta per scolaras e scolars, da scolaras e scolars, en Svizra: notas, absenzas, urari ed examens da Schulnetz ed OdA Org. Android, iOS, web."
     },
     "privacy": {
       "title": "Protecziun da datas · Schuly",
@@ -40,7 +40,7 @@
   "hero": {
     "title1": "Tut tias scolas,",
     "title2": "en in'app.",
-    "sub": "Notas, examens, urari, absenzas e documents da tes portal da scola en in sulet lieu. Per Android ed iOS, cun Schulnetz ed OdA Org gia sustegnids. Independent e senza relaziun cun la Centerboard AG u cun tia scola.",
+    "sub": "L'app independenta per scolaras e scolars, da scolaras e scolars, en Svizra. Notas cun media, absenzas, urari ed examens da Schulnetz ed OdA Org en in sulet lieu.",
     "ctaDownload": "Telechargiar Schuly",
     "ctaWeb": "Avrir l'app web",
     "ctaGithub": "Guardar sin GitHub",
@@ -75,9 +75,9 @@
         "title": "Android · iOS · Web",
         "description": "Sin il telefonin u en il navigatur."
       },
-      "oidc": {
-        "title": "Cun conto u privat",
-        "description": "Sincronisar en il fund u tegnair tut sin tes apparat."
+      "suite": {
+        "title": "La Schuly Suite",
+        "description": "Cun in conto survegns ti tut: app web, push, Helply e Microsoft 365."
       },
       "fast": {
         "title": "Adina actual",
@@ -97,8 +97,6 @@
       "helplyQ": "Cura è mes proxim examen?",
       "helplyA": "Mardi a las 09:20: matematica en la stanza A 1.03.",
       "pushTitle": "Nova nota",
-      "account": "Conto",
-      "private": "Privat",
       "subjects": {
         "math": "Matematica",
         "german": "Tudestg",
@@ -243,18 +241,21 @@
     "description": "Schuly na tutga a nagina scola ed a nagin producent da software. Ti decidas, sche Schuly sincronisescha per tai u sche tut resta sin tes apparat.",
     "modes": {
       "account": {
-        "title": "Modus da conto",
+        "title": "Conto da Schuly",
         "points": [
-          "Il server Schuly va per novas notas ed absenzas e ta trametta in avis.",
-          "Tias datas d'access da scola èn criptadas en in tresor.",
-          "Las medemas datas sin il telefonin ed en il web."
-        ]
+          "Notas ed absenzas vegnan sincronisadas en il fund, cun push.",
+          "Las medemas datas sin il telefonin ed en il navigatur sin app.schuly.dev.",
+          "Helply, tes assistent d'IA per examens, notas ed urari.",
+          "Microsoft 365: Mail, Teams, OneDrive ed OneNote en Schuly.",
+          "Tia annunzia da scola è criptada en in tresor."
+        ],
+        "cta": "Crear in conto"
       },
       "private": {
         "title": "Modus privat",
         "points": [
-          "Ti na dovras nagin conto da Schuly.",
-          "Tes login resta sin tes telefonin.",
+          "Senza conto, tes login resta sin tes telefonin.",
+          "Mo Schulnetz ed OdA Org, senza app web, push, Helply e Microsoft 365.",
           "Las dumondas passan tras il server Schuly senza vegnir memorisadas."
         ]
       }
