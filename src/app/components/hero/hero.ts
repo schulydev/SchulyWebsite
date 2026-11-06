@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslatePipe } from '@ngx-translate/core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -14,4 +14,5 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 export class Hero {
   protected readonly faArrowRight = faArrowRight;
   protected readonly faGithub = faGithub;
+  protected readonly faGlobe = faGlobe;
 }
