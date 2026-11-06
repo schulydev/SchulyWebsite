@@ -40,7 +40,7 @@ is only used when chosen in the menu.
 | `/<lang>/impressum` | Impressum |
 | `/<lang>/privacy` | Privacy |
 | `/<lang>/terms` | Terms |
-| `/404` and any other path | Not found |
+| Any other path | Not found (404, `noindex`) |
 
 - `app.routes.ts` generates the routes for each language. `langResolver` sets the active language and
   waits for its translations, so each route prerenders in its own language.
@@ -49,8 +49,11 @@ is only used when chosen in the menu.
 - `services/seo.ts` sets each route's title, description, canonical URL, social tags, and `hreflang`
   alternates when it prerenders.
 - `functions/index.js` redirects `/` to a language based on `Accept-Language`. `public/_redirects`
-  sends `/` to `/en` as a fallback and sends the old unprefixed paths to their `/en` versions.
-- `scripts/postbuild.ts` writes `404.html` and `sitemap.xml`, and removes the root `index.html`. When
+  sends `/` to `/de` as a fallback and sends the old unprefixed paths to their `/de` versions. On
+  `*.pages.dev` hosts, `public/_headers` and the function add `X-Robots-Tag: noindex`.
+- `scripts/postbuild.ts` writes `404.html` (and removes the `/404` route), writes `sitemap.xml`, removes
+  the root `index.html`, and turns `<lang><path>/index.html` into `<lang><path>.html`. Cloudflare Pages
+  serves `de.html` at `/de` with 200, so the slash-less canonical URLs need no redirect. When
   you add a language or a page, update `LANGS` or `PAGES` in that script.
 
 ## Angular 20 coding conventions

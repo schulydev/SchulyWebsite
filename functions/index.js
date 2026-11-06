@@ -21,5 +21,8 @@ export function onRequest(context) {
   const lang = pickLang(context.request.headers.get('accept-language'));
   const url = new URL(context.request.url);
   url.pathname = `/${lang}`;
-  return Response.redirect(url.toString(), 302);
+  const headers = { Location: url.toString() };
+  // _headers rules don't reach Function responses, so keep pages.dev out of the index here too.
+  if (url.hostname.endsWith('.pages.dev')) headers['X-Robots-Tag'] = 'noindex';
+  return new Response(null, { status: 302, headers });
 }

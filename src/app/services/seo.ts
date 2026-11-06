@@ -6,6 +6,8 @@ import { filter } from 'rxjs';
 import { DEFAULT_LANG, Lang, LANGS, LanguageService } from './language';
 
 const ORIGIN = 'https://schuly.dev';
+// Mirrors the robots tag in src/index.html; the not-found page swaps it for noindex.
+const ROBOTS_INDEX = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 
 export type SeoPage = 'home' | 'privacy' | 'impressum' | 'terms' | 'notFound';
 
@@ -43,15 +45,24 @@ export class SeoService {
     this.meta.updateTag({ name: 'description', content: description });
 
     const url = `${ORIGIN}/${lang}${subPath}`;
+    const indexable = page !== 'notFound';
+    this.meta.updateTag({ name: 'robots', content: indexable ? ROBOTS_INDEX : 'noindex' });
+    this.meta.updateTag({ name: 'googlebot', content: indexable ? 'index, follow' : 'noindex' });
     this.meta.updateTag({ property: 'og:title', content: title });
     this.meta.updateTag({ property: 'og:description', content: description });
-    this.meta.updateTag({ property: 'og:url', content: url });
+    if (indexable) this.meta.updateTag({ property: 'og:url', content: url });
+    else this.meta.removeTag('property="og:url"');
     this.meta.updateTag({ property: 'og:locale', content: this.ogLocale(lang) });
     this.meta.updateTag({ name: 'twitter:title', content: title });
     this.meta.updateTag({ name: 'twitter:description', content: description });
 
-    this.setCanonical(url);
-    this.setAlternates(subPath, lang);
+    // A 404 must not claim a canonical or alternates (it used to point at the home page).
+    if (indexable) {
+      this.setCanonical(url);
+      this.setAlternates(subPath, lang);
+    } else {
+      this.doc.head.querySelectorAll('link[data-seo="canonical"], link[data-seo^="alt-"]').forEach(el => el.remove());
+    }
     this.setJsonLd(page, lang, url, title);
   }
 
@@ -67,7 +78,7 @@ export class SeoService {
         '@type': 'Organization',
         '@id': `${ORIGIN}/#org`,
         name: 'Schuly',
-        url: `${ORIGIN}/`,
+        url: `${ORIGIN}/${DEFAULT_LANG}`,
         logo: { '@type': 'ImageObject', url: `${ORIGIN}/assets/app_icon_512.png`, width: 512, height: 512 },
         email: 'hello@schuly.dev',
         areaServed: { '@type': 'Country', name: 'Switzerland' },
@@ -77,7 +88,7 @@ export class SeoService {
         '@type': 'WebSite',
         '@id': `${ORIGIN}/#website`,
         name: 'Schuly',
-        url: `${ORIGIN}/`,
+        url: `${ORIGIN}/${DEFAULT_LANG}`,
         inLanguage: LANGS.map(l => l.hreflang),
         publisher: org,
       },

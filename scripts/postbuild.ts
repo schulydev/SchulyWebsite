@@ -1,4 +1,4 @@
-import { existsSync, mkdirSync, copyFileSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, copyFileSync, readFileSync, readdirSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const browser = 'dist/SchulyWebsite/browser';
@@ -15,7 +15,7 @@ const PAGES: { path: string; changefreq: string; priority: string; images?: stri
     changefreq: 'weekly',
     priority: '1.0',
     images: [
-      'assets/app_icon.png',
+      'assets/app_icon_512.png',
       'assets/schuly-start-page.png',
       'assets/schuly-agenda-page.png',
       'assets/schuly-grades-page.png',
@@ -38,7 +38,30 @@ function writeNotFound() {
   }
   mkdirSync(browser, { recursive: true });
   copyFileSync(src, dest);
-  console.log(`[postbuild] wrote ${dest}`);
+  // Without this, /404 itself would answer 200.
+  rmSync(join(browser, '404'), { recursive: true, force: true });
+  console.log(`[postbuild] wrote ${dest} and removed the /404 route`);
+}
+
+// Cloudflare Pages serves <dir>/index.html only at "<dir>/" and 308s "/de" to "/de/", but serves
+// "de.html" at "/de" with 200. Our canonical, hreflang and links have no trailing slash, so turn
+// every prerendered "<lang><path>/index.html" into "<lang><path>.html".
+function flattenPages() {
+  let moved = 0;
+  for (const lang of LANGS) {
+    for (const page of PAGES) {
+      const dir = join(browser, `${lang}${page.path}`);
+      const src = join(dir, 'index.html');
+      if (!existsSync(src)) {
+        console.error(`[postbuild] missing prerendered page ${src}`);
+        process.exit(1);
+      }
+      renameSync(src, `${dir}.html`);
+      if (readdirSync(dir).length === 0) rmSync(dir, { recursive: true });
+      moved++;
+    }
+  }
+  console.log(`[postbuild] flattened ${moved} pages to <lang><path>.html`);
 }
 
 // The root '' route only redirects to /<default-lang>; drop the prerendered
@@ -119,4 +142,5 @@ function checkKeyParity() {
 checkKeyParity();
 writeNotFound();
 dropRootIndex();
+flattenPages();
 writeSitemap();
