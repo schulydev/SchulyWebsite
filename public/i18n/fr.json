@@ -2,7 +2,7 @@
   "meta": {
     "home": {
       "title": "Schuly – notes, absences et horaire en une app",
-      "description": "L'app indépendante pour les élèves, par des élèves, en Suisse : notes, absences, horaire et examens de Schulnetz et OdA Org. Android, iOS, web."
+      "description": "L'app indépendante pour les élèves, par des élèves, en Suisse : notes, absences, horaire et examens de Schulnetz et OdA Org. Android, iOS, web."
     },
     "privacy": {
       "title": "Confidentialité · Schuly",
@@ -47,9 +47,9 @@
     "webAlt": "L'app web Schuly sur app.schuly.dev avec l'horaire du jour, les absences à excuser, les prochains rendez-vous et les nouvelles notes"
   },
   "features": {
-    "title1": "Tout ce dont tu as besoin.",
-    "title2": "Rien qui te ralentit.",
-    "description": "Schuly est conçue pour ton téléphone : rapide, claire et centrée sur l'essentiel.",
+    "title1": "Tout ce qu'il te faut.",
+    "title2": "Exactement là où tu le cherches.",
+    "description": "Schuly est conçue pour ton téléphone : rapide, claire et centrée sur l'essentiel.",
     "items": {
       "grades": {
         "title": "Notes & moyennes",
@@ -77,7 +77,7 @@
       },
       "suite": {
         "title": "La Schuly Suite",
-        "description": "Avec un compte, tu as tout : app web, push, Helply et Microsoft 365."
+        "description": "Avec un compte, tu as tout : app web, push, Helply et Microsoft 365."
       },
       "fast": {
         "title": "Toujours à jour",
@@ -94,8 +94,8 @@
     },
     "demo": {
       "exam": "Examen",
-      "helplyQ": "Quand est mon prochain examen ?",
-      "helplyA": "Mardi à 09:20 : mathématiques en salle A 1.03.",
+      "helplyQ": "Quand est mon prochain examen ?",
+      "helplyA": "Mardi à 09:20 : mathématiques en salle A 1.03.",
       "pushTitle": "Nouvelle note",
       "subjects": {
         "math": "Mathématiques",
@@ -134,46 +134,46 @@
     "description": "Ce que Schuly est, ce qu'il n'est pas, et comment il s'intègre au système scolaire que tu utilises déjà.",
     "items": [
       {
-        "q": "Qu'est-ce que Schuly ?",
+        "q": "Qu'est-ce que Schuly ?",
         "a": "Schuly est une app gratuite et indépendante pour les élèves en Suisse. Elle affiche les notes, examens, horaire, absences et documents de ton portail scolaire dans une interface moderne et réunit plusieurs comptes scolaires dans une seule app. Disponible pour Android et iOS."
       },
       {
-        "q": "Quels systèmes scolaires sont pris en charge ?",
+        "q": "Quels systèmes scolaires sont pris en charge ?",
         "a": "Schulnetz (via le plugin Schulware) et OdA Org. Chaque système est connecté par un plugin backend, d'autres peuvent donc être ajoutés sans mise à jour de l'app. Une connexion à Microsoft 365 peut être liée dans les réglages et est encore en développement."
       },
       {
-        "q": "Schuly est-elle une app officielle de Schulnetz ou de mon école ?",
+        "q": "Schuly est-elle une app officielle de Schulnetz ou de mon école ?",
         "a": "Non. Schuly est un projet indépendant. Il n'a aucun lien avec Centerboard AG (l'éditeur de Schulnetz), ton école, OdA Org ou Microsoft, et n'est ni soutenu ni exploité par eux."
       },
       {
-        "q": "Combien coûte Schuly ?",
+        "q": "Combien coûte Schuly ?",
         "a": "Rien. Schuly est gratuite, et le code source de l'app, du backend, des plugins et de ce site est public sur GitHub sous github.com/schulydev."
       },
       {
-        "q": "Où mes données sont-elles stockées ?",
+        "q": "Où mes données sont-elles stockées ?",
         "a": "Cela dépend du mode. En mode compte, le serveur Schuly stocke tes données scolaires synchronisées, et tes identifiants scolaires chiffrés dans un coffre, pour pouvoir synchroniser en arrière-plan. En mode privé, ton identifiant reste sur ton téléphone et les requêtes passent par le serveur Schuly sans y être stockées. Les détails figurent dans la politique de confidentialité."
       },
       {
-        "q": "Schuly connaît-elle mon mot de passe scolaire ?",
-        "a": "Pour Schulnetz, ton e-mail et ton mot de passe servent uniquement à la connexion et ne sont pas stockés ; Schuly conserve la session obtenue sous forme chiffrée. Pour OdA Org, le nom d'utilisateur et le mot de passe sont stockés chiffrés afin que Schuly puisse se reconnecter. En mode privé, tout cela reste sur ton appareil. Ton compte Schuly lui-même est géré par le serveur Schuly."
+        "q": "Schuly connaît-elle mon mot de passe scolaire ?",
+        "a": "Pour Schulnetz, ton e-mail et ton mot de passe servent uniquement à la connexion et ne sont pas stockés ; Schuly conserve la session obtenue sous forme chiffrée. Pour OdA Org, le nom d'utilisateur et le mot de passe sont stockés chiffrés afin que Schuly puisse se reconnecter. En mode privé, tout cela reste sur ton appareil. Ton compte Schuly lui-même est géré par le serveur Schuly."
       },
       {
-        "q": "Mon système scolaire peut-il être intégré ?",
+        "q": "Mon système scolaire peut-il être intégré ?",
         "a": "Peut-être. Le backend charge des plugins qui connectent chacun un système scolaire, via son API s'il en a une, sinon via son portail web. Une fois le plugin installé, le système apparaît dans la liste des écoles de l'app. Les plugins sont développés avec le SDK de plugins Schuly sur GitHub."
       },
       {
-        "q": "Je ne veux pas confier mes données à Schuly. Que faire ?",
-        "a": "Utilise le mode privé : il n'y a pas de compte Schuly et rien de tes données scolaires n'est stocké sur le serveur Schuly. Tu peux aussi exploiter ton propre backend et y connecter l'app via « Self-hosted ». Tout le code source est public sur GitHub sous github.com/schulydev, tu peux donc vérifier comment tes données sont traitées."
+        "q": "Je ne veux pas confier mes données à Schuly. Que faire ?",
+        "a": "Utilise le mode privé : il n'y a pas de compte Schuly et rien de tes données scolaires n'est stocké sur le serveur Schuly. Tu peux aussi exploiter ton propre backend et y connecter l'app via « Self-hosted ». Tout le code source est public sur GitHub sous github.com/schulydev, tu peux donc vérifier comment tes données sont traitées."
       },
       {
-        "q": "Puis-je contribuer ?",
-        "a": "Oui. Tous les composants sont sur GitHub sous github.com/schulydev. Les issues avec le label « bug » ou « feature » sont le point de départ le plus simple, et les contributions sont les bienvenues."
+        "q": "Puis-je contribuer ?",
+        "a": "Oui. Tous les composants sont sur GitHub sous github.com/schulydev. Les issues avec le label « bug » ou « feature » sont le point de départ le plus simple, et les contributions sont les bienvenues."
       }
     ]
   },
   "download": {
-    "title": "Prêt à commencer ?",
-    "description": "Schuly est gratuite, et son code source est public. Les dernières versions pour Android et iOS sont sur GitHub ; App Store et Google Play arrivent bientôt.",
+    "title": "Prêt à commencer ?",
+    "description": "Schuly est gratuite, et son code source est public. Les dernières versions pour Android et iOS sont sur GitHub ; App Store et Google Play arrivent bientôt.",
     "comingSoon": "Bientôt disponible",
     "appStore": "App Store",
     "googlePlay": "Google Play",
@@ -185,7 +185,7 @@
       "web": "Ouvrir l'app web"
     },
     "note": {
-      "prefix": "L'app utilise par défaut le serveur Schuly. Tu veux exploiter le tien ?",
+      "prefix": "L'app utilise par défaut le serveur Schuly. Tu veux exploiter le tien ?",
       "see": "Consulte le ",
       "linkText": "guide d'auto-hébergement",
       "suffix": "."
@@ -225,7 +225,7 @@
     "report": "Signaler un lien cassé"
   },
   "legal": {
-    "lastUpdated": "Dernière mise à jour :",
+    "lastUpdated": "Dernière mise à jour :",
     "impressum": "Mentions légales",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
@@ -246,7 +246,7 @@
           "Notes et absences se synchronisent en arrière-plan, avec push.",
           "Les mêmes données sur ton téléphone et dans le navigateur sur app.schuly.dev.",
           "Helply, ton assistant IA pour les examens, les notes et l'horaire.",
-          "Microsoft 365 : Mail, Teams, OneDrive et OneNote dans Schuly.",
+          "Microsoft 365 : Mail, Teams, OneDrive et OneNote dans Schuly.",
           "Ta connexion scolaire est gardée chiffrée dans un coffre."
         ],
         "cta": "Créer un compte"
@@ -267,11 +267,11 @@
       },
       "source": {
         "title": "Code source public",
-        "text": "L'app, le backend, les plugins et ce site sont sur GitHub : tu peux vérifier ce qui arrive à tes données."
+        "text": "L'app, le backend, les plugins et ce site sont sur GitHub : tu peux vérifier ce qui arrive à tes données."
       },
       "selfhost": {
         "title": "Héberge-le toi-même",
-        "text": "Exploite ton propre backend et configure l'app sous « Self-hosted »."
+        "text": "Exploite ton propre backend et configure l'app sous « Self-hosted »."
       }
     },
     "terminal": {

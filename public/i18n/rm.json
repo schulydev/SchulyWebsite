@@ -48,7 +48,7 @@
   },
   "features": {
     "title1": "Tut quai che ti dovras.",
-    "title2": "Nagut che ta retegna.",
+    "title2": "Precis là, nua che ti al tschertgas.",
     "description": "Schuly è fatg per tes telefonin: svelt, cler e concentrà sin l'essenzial.",
     "items": {
       "grades": {
@@ -56,8 +56,8 @@
         "description": "Mintga nota cun sia ponderaziun, media dal rom e da la classa."
       },
       "agenda": {
-        "title": "Plan d'uras & absenzas",
-        "description": "Lecziuns, examens, absenzas e attestats en in lieu."
+        "title": "Urari & absenzas",
+        "description": "Lecziuns, examens, absenzas ed attestats en in lieu."
       },
       "schulnetz": {
         "title": "Schulnetz, OdA Org e dapli",
@@ -85,7 +85,7 @@
       },
       "microsoft": {
         "title": "Microsoft 365",
-        "description": "Mail, Teams, OneDrive ed OneNote directamain en Schuly."
+        "description": "E-mail, Teams, OneDrive ed OneNote directamain en Schuly."
       },
       "helply": {
         "title": "Helply, tes assistent IA",
@@ -118,7 +118,7 @@
       "start": "Pagina da partenza Schuly – notas ed agenda",
       "agenda": "Pagina agenda Schuly – urari ed examens",
       "grades": "Pagina da notas da Schuly cun medias per rom",
-      "absences": "Pagina d'absenzas Schuly – scusadas e nunscusadas",
+      "absences": "Pagina d'absenzas Schuly – perstgisadas e betg perstgisadas",
       "account": "Pagina dal conto Schuly cun profil e midada da scola"
     },
     "labels": {
@@ -135,7 +135,7 @@
     "items": [
       {
         "q": "Tge è Schuly?",
-        "a": "Schuly è in'app gratuita ed independenta per scolaras e scolars en Svizra. Ella mussa notas, examens, urari, absenzas e documents da tes portal da scola en in'interfatscha moderna e unescha plirs contos da scola en in'app. Disponibla per Android ed iOS."
+        "a": "Schuly è in'app gratuita ed independenta per scolaras e scolars en Svizra. Ella mussa notas, examens, urari, absenzas e documents da tes portal da scola en in'interfatscha moderna ed unescha plirs contos da scola en in'app. Disponibla per Android ed iOS."
       },
       {
         "q": "Tge sistems da scola vegnan sustegnids?",
@@ -147,7 +147,7 @@
       },
       {
         "q": "Tge custa Schuly?",
-        "a": "Nagut. Schuly è gratuit, ed il code da funtauna da l'app, dal backend, dals plugins e da questa website è public sin GitHub sut github.com/schulydev."
+        "a": "Nagut. Schuly è gratuit, ed il code da funtauna da l'app, dal backend, dals plugins e da questa pagina d'internet è public sin GitHub sut github.com/schulydev."
       },
       {
         "q": "Nua vegnan memorisadas mias datas?",
@@ -167,7 +167,7 @@
       },
       {
         "q": "Poss jau gidar?",
-        "a": "Gea. Tut ils components èn sin GitHub sut github.com/schulydev. Issues cun la etichetta «bug» u «feature» èn il cumenzament il pli simpel, e contribuziuns èn bainvegnidas."
+        "a": "Gea. Tut ils components èn sin GitHub sut github.com/schulydev. Issues cun l'etichetta «bug» u «feature» èn il cumenzament il pli simpel, e contribuziuns èn bainvegnidas."
       }
     ]
   },
@@ -211,7 +211,7 @@
       "impressum": "Impressum",
       "privacy": "Protecziun da datas",
       "terms": "Cundiziuns d'utilisaziun",
-      "coffee": "Cumprai a mai in café"
+      "coffee": "Ma cumpra in café"
     },
     "disclaimer": "Project independent. Nagina relaziun cun la Centerboard AG (Schulnetz), OdA Org, Microsoft u ina scola.",
     "copyright": "© {{ year }} Schuly · Construì cun",
@@ -222,7 +222,7 @@
     "title": "Pagina betg chattada.",
     "sub": "L'adressa che ti has suandà n'exista betg sin schuly.dev. Probablamain è ella vegnida spustada, renumnada u n'è mai existida.",
     "back": "Enavos a la pagina principala",
-    "report": "Annunziar in link rut"
+    "report": "Annunziar ina colliaziun rutta"
   },
   "legal": {
     "lastUpdated": "Status:",
@@ -233,7 +233,7 @@
       "de": "Deutsch",
       "en": "English"
     },
-    "fallbackNotice": "Questa pagina legala è disponibla mo per tudestg e englais. La lingua tschernida ({{ lang }}) mussa per standard la versiun tudestga."
+    "fallbackNotice": "Questa pagina legala è disponibla mo en tudestg ed englais. La lingua tschernida ({{ lang }}) mussa per standard la versiun tudestga."
   },
   "independence": {
     "title1": "Tias datas.",
@@ -246,7 +246,7 @@
           "Notas ed absenzas vegnan sincronisadas en il fund, cun push.",
           "Las medemas datas sin il telefonin ed en il navigatur sin app.schuly.dev.",
           "Helply, tes assistent d'IA per examens, notas ed urari.",
-          "Microsoft 365: Mail, Teams, OneDrive ed OneNote en Schuly.",
+          "Microsoft 365: E-mail, Teams, OneDrive ed OneNote en Schuly.",
           "Tia annunzia da scola è criptada en in tresor."
         ],
         "cta": "Crear in conto"

@@ -81,6 +81,8 @@
     align-items: stretch;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    // Swiping past the last phone must not trigger the browser's back gesture.
+    overscroll-behavior-x: contain;
     scroll-padding: 0 1.25rem;
     padding: 0.5rem 1.25rem 1.5rem;
     scrollbar-width: none;
@@ -91,7 +93,8 @@
   }
 
   .screen {
-    flex: 0 0 min(62vw, 240px);
+    // Wide enough on tablets that the next phone always peeks in.
+    flex: 0 0 min(62vw, 264px);
     scroll-snap-align: start;
 
     &:nth-child(n) {

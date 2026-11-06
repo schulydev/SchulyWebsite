@@ -73,6 +73,9 @@
 }
 
 .hero-title {
+  // A column so the lines' negative margins add up instead of collapsing.
+  display: flex;
+  flex-direction: column;
   font-size: clamp(2.75rem, 7vw, 5.25rem);
   font-weight: 640;
   letter-spacing: -0.048em;
@@ -87,7 +90,10 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding-bottom: 0.06em;
+  // background-clip: text only paints inside the box, and the tight line-height
+  // would cut accents and descenders (É, p, g). Pad the box, keep the layout.
+  padding: 0.06em 0 0.14em;
+  margin: -0.06em 0 -0.08em;
 }
 
 .hero-title-dim {
@@ -252,7 +258,12 @@
 
 @media (max-width: 760px) {
   .hero {
-    padding: 7.5rem 1.25rem 3rem;
+    padding: 7.5rem 1.25rem 2rem;
+  }
+
+  // Each line of the title stays on one line, like on desktop.
+  .hero-title {
+    font-size: clamp(2rem, 10.6vw - 0.25rem, 2.75rem);
   }
 
   .hero-actions {
@@ -286,5 +297,20 @@
 
   .phone-card-screen {
     border-radius: 17px;
+  }
+}
+
+// Phones held sideways: less space above the title so the buttons stay in view.
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    padding-top: 6rem;
+  }
+
+  .hero-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-sub {
+    margin-bottom: 1.5rem;
   }
 }

@@ -145,4 +145,22 @@
   .footer-cols {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .footer-tagline {
+    text-wrap: balance;
+  }
+
+  // Taller links and icons, easier to hit with a thumb.
+  .footer-col {
+    gap: 0.15rem;
+
+    a {
+      padding: 0.45rem 0;
+    }
+  }
+
+  .footer-social a {
+    width: 44px;
+    height: 44px;
+  }
 }

@@ -36,11 +36,16 @@
 }
 
 .legal-title {
-  font-size: clamp(2rem, 4.5vw, 3rem);
+  // The smaller floor keeps long words like "Nutzungsbedingungen" on 320 px phones.
+  font-size: clamp(1.625rem, 4.5vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  margin-bottom: 1rem;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  // Room for descenders and accents under background-clip: text, layout unchanged.
+  padding: 0.06em 0 0.14em;
+  margin: -0.06em 0 calc(1rem - 0.14em);
   background: linear-gradient(180deg, #fff 0%, #888 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

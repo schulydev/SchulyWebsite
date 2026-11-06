@@ -99,3 +99,14 @@
   font-size: 0.75rem;
   margin-left: 0.25rem;
 }
+
+// Comfortable tap targets on touch screens.
+@media (pointer: coarse) {
+  .lang-btn {
+    min-height: 44px;
+  }
+
+  .lang-item {
+    min-height: 44px;
+  }
+}

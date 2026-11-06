@@ -64,7 +64,9 @@
   font-weight: 640;
   letter-spacing: -0.045em;
   line-height: 1.02;
-  margin-bottom: 1.1rem;
+  // Room for descenders and accents under background-clip: text, layout unchanged.
+  padding: 0.06em 0 0.14em;
+  margin: -0.06em 0 calc(1.1rem - 0.14em);
   background: linear-gradient(180deg, #fff 30%, rgba(255, 255, 255, 0.65));
   -webkit-background-clip: text;
   background-clip: text;
@@ -153,9 +155,24 @@
     border-radius: 22px;
   }
 
+  .download-title {
+    text-wrap: balance;
+  }
+
   .download-primary {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
+  }
+
+  // Side by side at equal width when they fit, otherwise full width like the buttons.
+  .store-buttons {
+    width: 100%;
+  }
+
+  .store-badge {
+    flex: 1 1 0;
+    min-width: max-content;
+    justify-content: center;
   }
 }

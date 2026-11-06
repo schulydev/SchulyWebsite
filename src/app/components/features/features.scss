@@ -513,14 +513,21 @@
 }
 
 @media (max-width: 640px) {
+  // Tall enough to reach the lesson that is on now.
   .agenda {
     flex: none;
     height: auto;
-    max-height: 17rem;
+    max-height: 22rem;
+    padding-top: 1.25rem;
   }
 
   .features {
-    padding-top: 6rem;
+    padding-top: 3.5rem;
+  }
+
+  .tile--small .tile-visual {
+    height: 116px;
+    padding-top: 1.25rem;
   }
 
   .bento {
