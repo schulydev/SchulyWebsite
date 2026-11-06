@@ -44,12 +44,9 @@
     "ctaDownload": "Télécharger Schuly",
     "ctaWeb": "Ouvrir l'app web",
     "ctaGithub": "Voir sur GitHub",
-    "badge": "Nouveau : Schuly fonctionne aussi dans le navigateur",
-    "platformsLabel": "Plateformes",
     "webAlt": "L'app web Schuly sur app.schuly.dev avec l'horaire du jour, les absences à excuser, les prochains rendez-vous et les nouvelles notes"
   },
   "features": {
-    "eyebrow": "Fonctionnalités",
     "title1": "Tout ce dont tu as besoin.",
     "title2": "Rien qui te ralentit.",
     "description": "Schuly est conçue pour ton téléphone : rapide, claire et centrée sur l'essentiel.",
@@ -96,8 +93,6 @@
       }
     },
     "demo": {
-      "average": "Moyenne",
-      "today": "Aujourd'hui",
       "exam": "Examen",
       "helplyQ": "Quand est mon prochain examen ?",
       "helplyA": "Mardi à 09:20 : mathématiques en salle A 1.03.",
@@ -110,11 +105,12 @@
         "english": "Anglais",
         "history": "Histoire",
         "economics": "Économie et droit"
-      }
+      },
+      "rowLabel": "{{ subject }}, moyenne {{ average }}, {{ count }} notes",
+      "overall": "Moyenne générale"
     }
   },
   "screenshots": {
-    "eyebrow": "Dans l'app",
     "title": "Un aperçu de l'app.",
     "description": "Schuly est conçu pour le quotidien. Les informations qui comptent sont là où tu les attends – sans détour.",
     "alts": {
@@ -133,7 +129,6 @@
     }
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Questions fréquentes.",
     "description": "Ce que Schuly est, ce qu'il n'est pas, et comment il s'intègre au système scolaire que tu utilises déjà.",
     "items": [
@@ -176,7 +171,6 @@
     ]
   },
   "download": {
-    "eyebrow": "Obtenir Schuly",
     "title": "Prêt à commencer ?",
     "description": "Schuly est gratuite, et son code source est public. Les dernières versions pour Android et iOS sont sur GitHub ; App Store et Google Play arrivent bientôt.",
     "comingSoon": "Bientôt disponible",
@@ -241,14 +235,12 @@
     "fallbackNotice": "Cette page légale n'est disponible qu'en allemand et en anglais. Ta langue sélectionnée ({{ lang }}) affiche par défaut la version allemande."
   },
   "independence": {
-    "eyebrow": "Confidentialité & indépendance",
     "title1": "Tes données.",
     "title2": "Ton choix.",
     "description": "Schuly n'appartient à aucune école ni à aucun éditeur de logiciels. Tu choisis si Schuly synchronise pour toi ou si tout reste sur ton appareil.",
     "modes": {
       "account": {
         "title": "Mode compte",
-        "tag": "Synchronise en arrière-plan",
         "points": [
           "Le serveur Schuly récupère les nouvelles notes et absences et t'envoie une notification.",
           "Tes identifiants scolaires sont gardés chiffrés dans un coffre.",
@@ -257,7 +249,6 @@
       },
       "private": {
         "title": "Mode privé",
-        "tag": "Uniquement sur ton appareil",
         "points": [
           "Pas besoin de compte Schuly.",
           "Ton identifiant reste sur ton téléphone.",

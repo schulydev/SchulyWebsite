@@ -3,27 +3,19 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslatePipe } from '@ngx-translate/core';
 import { faAndroid, faApple } from '@fortawesome/free-brands-svg-icons';
 import {
-  faBolt,
   faBook,
   faBriefcase,
-  faCalendarDays,
-  faChartLine,
   faCheck,
   faCloud,
   faEnvelope,
   faGlobe,
   faGraduationCap,
   faLock,
-  faMobileScreen,
   faMoon,
-  faPalette,
   faPlus,
-  faPuzzlePiece,
   faSchool,
-  faShieldHalved,
   faSun,
   faUsers,
-  faWandMagicSparkles,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -36,33 +28,36 @@ import {
 export class Features {
   protected readonly faAndroid = faAndroid;
   protected readonly faApple = faApple;
-  protected readonly faBolt = faBolt;
   protected readonly faBriefcase = faBriefcase;
-  protected readonly faCalendarDays = faCalendarDays;
-  protected readonly faChartLine = faChartLine;
   protected readonly faCheck = faCheck;
-  protected readonly faEnvelope = faEnvelope;
   protected readonly faGlobe = faGlobe;
   protected readonly faGraduationCap = faGraduationCap;
   protected readonly faLock = faLock;
-  protected readonly faMobileScreen = faMobileScreen;
   protected readonly faMoon = faMoon;
-  protected readonly faPalette = faPalette;
   protected readonly faPlus = faPlus;
-  protected readonly faPuzzlePiece = faPuzzlePiece;
   protected readonly faSchool = faSchool;
-  protected readonly faShieldHalved = faShieldHalved;
   protected readonly faSun = faSun;
-  protected readonly faUsers = faUsers;
-  protected readonly faWandMagicSparkles = faWandMagicSparkles;
 
-  // Sample data for the grades tile. Swiss grades run from 1 to 6.
-  protected readonly grades = [
-    { subject: 'math', grade: 5.5, tone: 'good' },
-    { subject: 'german', grade: 5.0, tone: 'good' },
-    { subject: 'english', grade: 4.5, tone: 'ok' },
-    { subject: 'history', grade: 3.5, tone: 'bad' },
-  ];
+  // Sample grades for the grades tile, on the Swiss 1 to 6 scale.
+  protected readonly subjects = [
+    { key: 'math', grades: [4.5, 5, 6] },
+    { key: 'german', grades: [5.5, 5, 5.5, 5] },
+    { key: 'english', grades: [4.5, 5, 4.5, 5, 4] },
+    { key: 'history', grades: [4, 4.5, 3.5] },
+  ].map(({ key, grades }) => {
+    const average = grades.reduce((sum, g) => sum + g, 0) / grades.length;
+    return {
+      key,
+      grades,
+      average,
+      label: average.toFixed(1),
+      tone: gradeTone(average),
+      avgLeft: scalePosition(average),
+      dots: grades.map((g) => ({ tone: gradeTone(g), left: scalePosition(g) })),
+    };
+  });
+  protected readonly axis = [1, 2, 3, 4, 5, 6];
+  protected readonly overall = (this.subjects.reduce((sum, s) => sum + s.average, 0) / this.subjects.length).toFixed(1);
 
   protected readonly msApps = [
     { name: 'Mail', icon: faEnvelope, hue: 205 },
@@ -79,4 +74,15 @@ export class Features {
     tile.style.setProperty('--mx', `${event.clientX - rect.left}px`);
     tile.style.setProperty('--my', `${event.clientY - rect.top}px`);
   }
+}
+
+/** Green from 5, amber from the 4.0 pass mark, red below it. */
+function gradeTone(grade: number): 'good' | 'ok' | 'bad' {
+  if (grade >= 5) return 'good';
+  return grade >= 4 ? 'ok' : 'bad';
+}
+
+/** Where a grade sits on the 1 to 6 scale, in percent. */
+function scalePosition(grade: number): number {
+  return Math.min(100, Math.max(0, ((grade - 1) / 5) * 100));
 }

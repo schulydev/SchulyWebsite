@@ -44,12 +44,9 @@
     "ctaDownload": "Telechargiar Schuly",
     "ctaWeb": "Avrir l'app web",
     "ctaGithub": "Guardar sin GitHub",
-    "badge": "Nov: Schuly funcziuna ussa er en il navigatur",
-    "platformsLabel": "Plattafurmas",
     "webAlt": "L'app web da Schuly sin app.schuly.dev cun l'urari dad oz, absenzas avertas, termins proxims e novas notas"
   },
   "features": {
-    "eyebrow": "Funcziuns",
     "title1": "Tut quai che ti dovras.",
     "title2": "Nagut che ta retegna.",
     "description": "Schuly è fatg per tes telefonin: svelt, cler e concentrà sin l'essenzial.",
@@ -96,8 +93,6 @@
       }
     },
     "demo": {
-      "average": "Media",
-      "today": "Oz",
       "exam": "Examen",
       "helplyQ": "Cura è mes proxim examen?",
       "helplyA": "Mardi a las 09:20: matematica en la stanza A 1.03.",
@@ -110,11 +105,12 @@
         "english": "Englais",
         "history": "Istorgia",
         "economics": "Economia e dretg"
-      }
+      },
+      "rowLabel": "{{ subject }}, media {{ average }}, {{ count }} notas",
+      "overall": "Media generala"
     }
   },
   "screenshots": {
-    "eyebrow": "En l'app",
     "title": "In sguard en l'app.",
     "description": "Schuly è concepì per il mintgadi. Las infurmaziuns impurtantas èn là nua che ti las spetgas – senza deturs.",
     "alts": {
@@ -133,7 +129,6 @@
     }
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Dumondas frequentas.",
     "description": "Tge è Schuly, tge n'è el betg e co s'adatta al sistem da scola che ti utiliseschas gia.",
     "items": [
@@ -176,7 +171,6 @@
     ]
   },
   "download": {
-    "eyebrow": "Telechargiar Schuly",
     "title": "Pront da cumenzar?",
     "description": "Schuly è gratuit, e ses code da funtauna è public. Las versiuns las pli novas per Android ed iOS chattas ti sin GitHub; App Store e Google Play suondan prest.",
     "comingSoon": "Prest disponibel",
@@ -241,14 +235,12 @@
     "fallbackNotice": "Questa pagina legala è disponibla mo per tudestg e englais. La lingua tschernida ({{ lang }}) mussa per standard la versiun tudestga."
   },
   "independence": {
-    "eyebrow": "Protecziun da datas & independenza",
     "title1": "Tias datas.",
     "title2": "Tia decisiun.",
     "description": "Schuly na tutga a nagina scola ed a nagin producent da software. Ti decidas, sche Schuly sincronisescha per tai u sche tut resta sin tes apparat.",
     "modes": {
       "account": {
         "title": "Modus da conto",
-        "tag": "Sincronisescha en il fund",
         "points": [
           "Il server Schuly va per novas notas ed absenzas e ta trametta in avis.",
           "Tias datas d'access da scola èn criptadas en in tresor.",
@@ -257,7 +249,6 @@
       },
       "private": {
         "title": "Modus privat",
-        "tag": "Mo sin tes apparat",
         "points": [
           "Ti na dovras nagin conto da Schuly.",
           "Tes login resta sin tes telefonin.",

@@ -2,8 +2,8 @@ import { afterNextRender, ChangeDetectionStrategy, Component, computed, DestroyR
 import { NgOptimizedImage } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslatePipe } from '@ngx-translate/core';
-import { faArrowRight, faGlobe, faLock } from '@fortawesome/free-solid-svg-icons';
-import { faAndroid, faApple, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faArrowRight, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { LanguageService } from '../../services/language';
 
 @Component({
@@ -18,9 +18,6 @@ export class Hero {
   protected readonly faArrowRight = faArrowRight;
   protected readonly faGithub = faGithub;
   protected readonly faGlobe = faGlobe;
-  protected readonly faLock = faLock;
-  protected readonly faAndroid = faAndroid;
-  protected readonly faApple = faApple;
 
   private readonly language = inject(LanguageService);
   protected readonly base = computed(() => `/${this.language.current()}`);

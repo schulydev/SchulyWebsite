@@ -44,12 +44,9 @@
     "ctaDownload": "Download Schuly",
     "ctaWeb": "Open the web app",
     "ctaGithub": "View on GitHub",
-    "badge": "New: Schuly now runs in your browser",
-    "platformsLabel": "Platforms",
     "webAlt": "The Schuly web app on app.schuly.dev with today's timetable, open absences, upcoming events and new grades"
   },
   "features": {
-    "eyebrow": "Features",
     "title1": "Everything you need.",
     "title2": "Nothing that slows you down.",
     "description": "Schuly is built for your phone: fast, clear and focused on what matters.",
@@ -96,8 +93,6 @@
       }
     },
     "demo": {
-      "average": "Average",
-      "today": "Today",
       "exam": "Exam",
       "helplyQ": "When is my next exam?",
       "helplyA": "On Tuesday at 09:20: maths in room A 1.03.",
@@ -110,11 +105,12 @@
         "english": "English",
         "history": "History",
         "economics": "Economics and law"
-      }
+      },
+      "rowLabel": "{{ subject }}, average {{ average }}, {{ count }} grades",
+      "overall": "Overall average"
     }
   },
   "screenshots": {
-    "eyebrow": "In the app",
     "title": "A look inside the app.",
     "description": "Schuly is built for everyday use. The information that matters is right where you expect it — no detours.",
     "alts": {
@@ -133,7 +129,6 @@
     }
   },
   "faq": {
-    "eyebrow": "FAQ",
     "title": "Frequently asked questions.",
     "description": "What Schuly is, what it isn't, and how it fits alongside the school system you already use.",
     "items": [
@@ -176,7 +171,6 @@
     ]
   },
   "download": {
-    "eyebrow": "Get Schuly",
     "title": "Ready to get started?",
     "description": "Schuly is free, and its source code is public. Get the latest Android and iOS builds on GitHub; App Store and Google Play listings are coming soon.",
     "comingSoon": "Coming soon",
@@ -241,14 +235,12 @@
     "fallbackNotice": "This legal page is available in German and English only. Your selected language ({{ lang }}) defaults to German for precision."
   },
   "independence": {
-    "eyebrow": "Privacy & independence",
     "title1": "Your data.",
     "title2": "Your call.",
     "description": "Schuly belongs to no school and no software vendor. You choose whether Schuly syncs for you or everything stays on your device.",
     "modes": {
       "account": {
         "title": "Account mode",
-        "tag": "Syncs in the background",
         "points": [
           "The Schuly server fetches new grades and absences and sends you a push notification.",
           "Your school login data is kept encrypted in a vault.",
@@ -257,7 +249,6 @@
       },
       "private": {
         "title": "Private mode",
-        "tag": "Only on your device",
         "points": [
           "You don't need a Schuly account.",
           "Your login stays on your phone.",

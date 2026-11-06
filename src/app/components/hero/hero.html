@@ -6,12 +6,6 @@
   </div>
 
   <div class="hero-content">
-    <a href="https://app.schuly.dev" class="hero-badge">
-      <span class="hero-badge-dot" aria-hidden="true"></span>
-      <span>{{ 'hero.badge' | translate }}</span>
-      <fa-icon [icon]="faArrowRight" class="hero-badge-arrow" aria-hidden="true"></fa-icon>
-    </a>
-
     <h1 class="hero-title">
       <span class="hero-title-line">{{ 'hero.title1' | translate }}</span>
       <span class="hero-title-line hero-title-dim">{{ 'hero.title2' | translate }}</span>
@@ -34,31 +28,31 @@
       </a>
     </div>
 
-    <ul class="hero-platforms" [attr.aria-label]="'hero.platformsLabel' | translate">
-      <li><fa-icon [icon]="faAndroid" aria-hidden="true"></fa-icon> Android</li>
-      <li><fa-icon [icon]="faApple" aria-hidden="true"></fa-icon> iOS</li>
-      <li><fa-icon [icon]="faGlobe" aria-hidden="true"></fa-icon> Web</li>
-    </ul>
   </div>
 
   <div class="hero-stage">
-    <figure class="browser">
-      <div class="browser-bar" aria-hidden="true">
-        <span class="browser-dots"><i></i><i></i><i></i></span>
-        <span class="browser-url">
-          <fa-icon [icon]="faLock"></fa-icon>
-          app.schuly.dev
-        </span>
-        <span class="browser-spacer"></span>
-      </div>
+    <!-- Laptop frame: "MacBook Pro 16-inch - Space Gray" from Pomme Plate (CC0); see CREDITS.txt. -->
+    <figure class="laptop">
       <img
-        class="browser-shot"
-        ngSrc="/assets/webapp-overview-dark.webp"
-        width="1424"
-        height="900"
-        priority
-        [alt]="'hero.webAlt' | translate"
+        class="laptop-frame"
+        src="/assets/laptop-frame-1100.webp"
+        srcset="/assets/laptop-frame-1100.webp 1100w, /assets/laptop-frame-2200.webp 2200w"
+        sizes="(max-width: 1200px) 92vw, 1030px"
+        width="1100"
+        height="629"
+        alt=""
+        fetchpriority="high"
       />
+      <div class="laptop-screen">
+        <img
+          class="laptop-shot"
+          ngSrc="/assets/webapp-overview-dark.webp"
+          width="1424"
+          height="890"
+          priority
+          [alt]="'hero.webAlt' | translate"
+        />
+      </div>
     </figure>
 
     <figure class="phone">
@@ -66,8 +60,8 @@
         <source type="image/webp" srcset="/assets/schuly-start-page.webp" />
         <img
           src="/assets/schuly-start-page.png"
-          width="800"
-          height="1733"
+          width="660"
+          height="1394"
           decoding="async"
           [alt]="'screenshots.alts.start' | translate"
         />

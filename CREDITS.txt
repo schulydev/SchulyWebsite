@@ -1,0 +1,16 @@
+Credits
+
+Phone frame in the app screenshots (public/assets/schuly-*-page.png and .webp):
+Pixel 9 Pro XL device art from the Android Open Source Project / Android Studio,
+licensed under the Apache License 2.0. See licenses/Apache-2.0.txt.
+The screenshots were placed inside the frame, and the frame was shortened to the screen's aspect ratio.
+
+Laptop frame in the hero (public/assets/laptop-frame-1100.webp and -2200.webp):
+"MacBook Pro 16-inch - Space Gray" from Pomme Plate by ephread,
+https://github.com/ephread/PommePlate (MacBook/PNG), dedicated to the public domain
+under CC0 1.0 Universal. See licenses/CC0-1.0.txt. No attribution is required; it is given here anyway.
+The image was darkened slightly, resized and converted to WebP.
+
+Buy Me a Coffee mark in the footer (src/app/components/footer/footer.html):
+from Simple Icons, https://simpleicons.org/?q=buymeacoffee, CC0 1.0 Universal.
+The mark is a trademark of Buy Me a Coffee and is used only to link to the project's page there.

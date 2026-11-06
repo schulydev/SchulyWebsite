@@ -75,12 +75,6 @@
   }
 }
 
-.screen-num {
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  color: var(--text-mute);
-}
-
 @media (max-width: 900px) {
   .screens {
     justify-content: flex-start;

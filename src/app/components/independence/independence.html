@@ -2,19 +2,17 @@
   <div class="independence-lines" aria-hidden="true"></div>
   <div class="container">
     <div class="section-header reveal">
-      <div class="eyebrow">{{ 'independence.eyebrow' | translate }}</div>
       <h2 class="section-title" id="independence-title">{{ 'independence.title1' | translate }} <span class="dim">{{ 'independence.title2' | translate }}</span></h2>
       <p class="section-description">{{ 'independence.description' | translate }}</p>
     </div>
 
     <div class="modes">
       @for (m of modes; track m.key) {
-        <article class="mode reveal" [class.mode--private]="m.key === 'private'">
+        <article class="mode reveal" [class.mode--main]="m.key === 'account'">
           <header class="mode-head">
             <span class="mode-icon"><fa-icon [icon]="m.icon" aria-hidden="true"></fa-icon></span>
             <div>
               <h3 class="mode-title">{{ 'independence.modes.' + m.key + '.title' | translate }}</h3>
-              <p class="mode-tag">{{ 'independence.modes.' + m.key + '.tag' | translate }}</p>
             </div>
           </header>
           <ul class="mode-points">

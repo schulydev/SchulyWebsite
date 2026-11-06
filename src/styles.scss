@@ -124,29 +124,6 @@ section {
   }
 }
 
-// Small monospace label above a heading.
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--text-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 1.25rem;
-
-  &::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border-radius: 2px;
-    background: var(--accent);
-    box-shadow: 0 0 12px var(--accent);
-  }
-}
-
 .section-title {
   font-size: clamp(1.875rem, 4.6vw, 3.5rem);
   font-weight: 620;

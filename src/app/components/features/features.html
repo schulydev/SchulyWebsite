@@ -1,7 +1,6 @@
 <section id="features" class="features">
   <div class="container">
     <div class="section-header reveal">
-      <div class="eyebrow">{{ 'features.eyebrow' | translate }}</div>
       <h2 class="section-title">{{ 'features.title1' | translate }} <span class="dim">{{ 'features.title2' | translate }}</span></h2>
       <p class="section-description">{{ 'features.description' | translate }}</p>
     </div>
@@ -9,33 +8,50 @@
     <div class="bento" (pointermove)="spotlight($event)">
       <!-- Grades -->
       <article class="tile tile--grades reveal">
-        <div class="tile-visual grades" aria-hidden="true">
+        <div class="tile-visual grades">
           <div class="grades-head">
-            <span class="grades-label">{{ 'features.demo.average' | translate }}</span>
-            <span class="grades-avg">4.9</span>
-            <svg class="grades-spark" viewBox="0 0 120 36" preserveAspectRatio="none">
+            <p class="grades-overall">
+              <span class="grades-avg">{{ overall }}</span>
+              <span class="grades-caption">{{ 'features.demo.overall' | translate }}</span>
+            </p>
+            <svg class="grades-spark" viewBox="0 0 120 36" preserveAspectRatio="none" aria-hidden="true">
               <defs>
                 <linearGradient id="spark-fill" x1="0" x2="0" y1="0" y2="1">
-                  <stop offset="0" stop-color="#4ea8ff" stop-opacity="0.35" />
+                  <stop offset="0" stop-color="#4ea8ff" stop-opacity="0.28" />
                   <stop offset="1" stop-color="#4ea8ff" stop-opacity="0" />
                 </linearGradient>
               </defs>
-              <path d="M0 26 L20 22 L40 24 L60 15 L80 17 L100 9 L120 6 L120 36 L0 36 Z" fill="url(#spark-fill)" />
-              <path d="M0 26 L20 22 L40 24 L60 15 L80 17 L100 9 L120 6" fill="none" stroke="#4ea8ff" stroke-width="1.6" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
+              <path d="M0 27 L20 23 L40 25 L60 17 L80 19 L100 12 L120 9 L120 36 L0 36 Z" fill="url(#spark-fill)" />
+              <path d="M0 27 L20 23 L40 25 L60 17 L80 19 L100 12 L120 9" fill="none" stroke="#4ea8ff" stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke" />
             </svg>
           </div>
-          <ul class="grades-list">
-            @for (g of grades; track g.subject) {
-              <li>
-                <span class="grades-subject">{{ 'features.demo.subjects.' + g.subject | translate }}</span>
-                <span class="grades-bar"><i [style.width.%]="(g.grade - 1) * 20"></i></span>
-                <span [class]="'grade-pill grade-pill--' + g.tone">{{ g.grade.toFixed(1) }}</span>
-              </li>
-            }
-          </ul>
+
+          <div class="plot">
+            <span class="plot-pass" aria-hidden="true"></span>
+            <ul class="plot-rows">
+              @for (s of subjects; track s.key) {
+                <li class="plot-row">
+                  <span class="visually-hidden">{{ 'features.demo.rowLabel' | translate: { subject: ('features.demo.subjects.' + s.key | translate), average: s.label, count: s.grades.length } }}</span>
+                  <span class="plot-subject" aria-hidden="true">{{ 'features.demo.subjects.' + s.key | translate }}</span>
+                  <span class="plot-track" aria-hidden="true">
+                    <span class="plot-avg" [style.left.%]="s.avgLeft"></span>
+                    @for (d of s.dots; track $index) {
+                      <span [class]="'plot-dot plot-dot--' + d.tone" [style.left.%]="d.left"></span>
+                    }
+                  </span>
+                  <span [class]="'grade-pill grade-pill--' + s.tone" aria-hidden="true">{{ s.label }}</span>
+                </li>
+              }
+            </ul>
+            <div class="plot-axis" aria-hidden="true">
+              @for (n of axis; track n) {
+                <span [class.is-pass]="n === 4" [style.left.%]="(n - 1) * 20">{{ n }}</span>
+              }
+            </div>
+          </div>
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title"><fa-icon [icon]="faChartLine" aria-hidden="true"></fa-icon>{{ 'features.items.grades.title' | translate }}</h3>
+          <h3 class="tile-title">{{ 'features.items.grades.title' | translate }}</h3>
           <p class="tile-text">{{ 'features.items.grades.description' | translate }}</p>
         </div>
       </article>
@@ -43,7 +59,6 @@
       <!-- Timetable and absences -->
       <article class="tile tile--agenda reveal">
         <div class="tile-visual agenda" aria-hidden="true">
-          <div class="agenda-day">{{ 'features.demo.today' | translate }}</div>
           <ol class="agenda-list">
             <li><time>07:30</time><span>{{ 'features.demo.subjects.german' | translate }}</span></li>
             <li class="is-exam"><time>09:20</time><span>{{ 'features.demo.subjects.math' | translate }}</span><em>{{ 'features.demo.exam' | translate }}</em></li>
@@ -52,7 +67,7 @@
           </ol>
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title"><fa-icon [icon]="faCalendarDays" aria-hidden="true"></fa-icon>{{ 'features.items.agenda.title' | translate }}</h3>
+          <h3 class="tile-title">{{ 'features.items.agenda.title' | translate }}</h3>
           <p class="tile-text">{{ 'features.items.agenda.description' | translate }}</p>
         </div>
       </article>
@@ -61,13 +76,13 @@
       <article class="tile tile--helply reveal">
         <div class="tile-visual chat" aria-hidden="true">
           <p class="chat-bubble chat-bubble--me">{{ 'features.demo.helplyQ' | translate }}</p>
-          <p class="chat-bubble chat-bubble--ai">
-            <span class="chat-avatar"><fa-icon [icon]="faWandMagicSparkles"></fa-icon></span>
-            <span>{{ 'features.demo.helplyA' | translate }}</span>
-          </p>
+          <div class="chat-ai">
+            <img class="chat-avatar" src="/assets/helply-avatar.svg" alt="" width="32" height="32" />
+            <p class="chat-bubble chat-bubble--ai">{{ 'features.demo.helplyA' | translate }}</p>
+          </div>
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title"><fa-icon [icon]="faWandMagicSparkles" aria-hidden="true"></fa-icon>{{ 'features.items.helply.title' | translate }}</h3>
+          <h3 class="tile-title">{{ 'features.items.helply.title' | translate }}</h3>
           <p class="tile-text">{{ 'features.items.helply.description' | translate }}</p>
         </div>
       </article>
@@ -83,7 +98,7 @@
           }
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title"><fa-icon [icon]="faEnvelope" aria-hidden="true"></fa-icon>{{ 'features.items.microsoft.title' | translate }}</h3>
+          <h3 class="tile-title">{{ 'features.items.microsoft.title' | translate }}</h3>
           <p class="tile-text">{{ 'features.items.microsoft.description' | translate }}</p>
         </div>
       </article>
@@ -96,7 +111,7 @@
           <span class="plugin plugin--next"><fa-icon [icon]="faPlus"></fa-icon>Plugin</span>
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title"><fa-icon [icon]="faPuzzlePiece" aria-hidden="true"></fa-icon>{{ 'features.items.schulnetz.title' | translate }}</h3>
+          <h3 class="tile-title">{{ 'features.items.schulnetz.title' | translate }}</h3>
           <p class="tile-text">{{ 'features.items.schulnetz.description' | translate }}</p>
         </div>
       </article>
@@ -109,7 +124,7 @@
           <span class="school" style="--hue: 275"><fa-icon [icon]="faGraduationCap"></fa-icon></span>
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title"><fa-icon [icon]="faUsers" aria-hidden="true"></fa-icon>{{ 'features.items.multi.title' | translate }}</h3>
+          <h3 class="tile-title">{{ 'features.items.multi.title' | translate }}</h3>
           <p class="tile-text">{{ 'features.items.multi.description' | translate }}</p>
         </div>
       </article>
@@ -127,7 +142,7 @@
           <div class="toast toast--behind"></div>
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title"><fa-icon [icon]="faBolt" aria-hidden="true"></fa-icon>{{ 'features.items.fast.title' | translate }}</h3>
+          <h3 class="tile-title">{{ 'features.items.fast.title' | translate }}</h3>
           <p class="tile-text">{{ 'features.items.fast.description' | translate }}</p>
         </div>
       </article>
@@ -139,7 +154,7 @@
           <span class="theme-half theme-half--dark"><fa-icon [icon]="faMoon"></fa-icon></span>
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title"><fa-icon [icon]="faPalette" aria-hidden="true"></fa-icon>{{ 'features.items.design.title' | translate }}</h3>
+          <h3 class="tile-title">{{ 'features.items.design.title' | translate }}</h3>
           <p class="tile-text">{{ 'features.items.design.description' | translate }}</p>
         </div>
       </article>
@@ -152,7 +167,7 @@
           <span><fa-icon [icon]="faGlobe"></fa-icon></span>
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title"><fa-icon [icon]="faMobileScreen" aria-hidden="true"></fa-icon>{{ 'features.items.platforms.title' | translate }}</h3>
+          <h3 class="tile-title">{{ 'features.items.platforms.title' | translate }}</h3>
           <p class="tile-text">{{ 'features.items.platforms.description' | translate }}</p>
         </div>
       </article>
@@ -166,7 +181,7 @@
           </span>
         </div>
         <div class="tile-copy">
-          <h3 class="tile-title"><fa-icon [icon]="faShieldHalved" aria-hidden="true"></fa-icon>{{ 'features.items.oidc.title' | translate }}</h3>
+          <h3 class="tile-title">{{ 'features.items.oidc.title' | translate }}</h3>
           <p class="tile-text">{{ 'features.items.oidc.description' | translate }}</p>
         </div>
       </article>

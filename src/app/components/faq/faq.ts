@@ -12,7 +12,6 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
     <section id="faq" class="faq">
       <div class="container faq-layout">
         <div class="section-header section-header--left faq-head">
-          <div class="eyebrow">{{ 'faq.eyebrow' | translate }}</div>
           <h2 class="section-title">{{ 'faq.title' | translate }}</h2>
           <p class="section-description">
             {{ 'faq.description' | translate }}

@@ -9,7 +9,6 @@ import { LegalPageBase } from './legal-page-base';
   template: `
     <section class="legal">
       <div class="legal-container">
-        <div class="legal-eyebrow">Legal</div>
         <h1 class="legal-title">{{ 'legal.impressum' | translate }}</h1>
         <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 28.10.2026</p>
 

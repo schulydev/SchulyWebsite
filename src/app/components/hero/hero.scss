@@ -4,7 +4,7 @@
 
 .hero {
   position: relative;
-  padding: 8.25rem 1.5rem 2rem;
+  padding: 9rem 1.5rem 3rem;
   overflow: hidden;
 }
 
@@ -24,7 +24,6 @@
   inset: 0;
   background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.13) 1px, transparent 1.6px);
   background-size: 22px 22px;
-  background-position: 0 0;
   mask-image: radial-gradient(ellipse 55% 60% at 50% 28%, #000 10%, transparent 80%);
   -webkit-mask-image: radial-gradient(ellipse 55% 60% at 50% 28%, #000 10%, transparent 80%);
   transition: opacity 1.2s ease;
@@ -52,11 +51,11 @@
 .hero-glow {
   position: absolute;
   left: 50%;
-  top: 420px;
+  top: 460px;
   width: min(1100px, 120vw);
   height: 520px;
   transform: translateX(-50%);
-  background: radial-gradient(closest-side, rgba(8, 136, 248, 0.28), rgba(8, 136, 248, 0.08) 55%, transparent);
+  background: radial-gradient(closest-side, rgba(8, 136, 248, 0.24), rgba(8, 136, 248, 0.07) 55%, transparent);
   filter: blur(30px);
 }
 
@@ -71,47 +70,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  height: 32px;
-  padding: 0 0.85rem 0 0.75rem;
-  margin-bottom: 1.75rem;
-  border-radius: 999px;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  color: var(--text-dim);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-strong);
-  box-shadow: var(--highlight);
-  backdrop-filter: blur(10px);
-  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-
-  &:hover {
-    color: var(--text);
-    border-color: rgba(255, 255, 255, 0.22);
-    background: rgba(255, 255, 255, 0.07);
-  }
-
-  &-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: var(--good);
-    box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.18);
-  }
-
-  &-arrow {
-    font-size: 0.7rem;
-    transition: transform 0.2s var(--ease);
-  }
-
-  &:hover &-arrow {
-    transform: translateX(2px);
-  }
 }
 
 .hero-title {
@@ -155,114 +113,81 @@
   gap: 0.75rem;
 }
 
-.hero-platforms {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 1.75rem;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--text-mute);
-
-  li {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-  }
-}
-
 // ---------- product visual ----------
 
 .hero-stage {
   position: relative;
   z-index: 1;
   max-width: 1120px;
-  margin: 3.5rem auto 0;
-  perspective: 2200px;
+  margin: 4.5rem auto 0;
+  padding-bottom: 2%;
+  perspective: 2400px;
 }
 
-.browser {
+// Laptop frame: "MacBook Pro 16-inch - Space Gray" from Pomme Plate (CC0),
+// darkened a little for the dark page. The screenshot sits on the frame's
+// display at a 16:10 box measured on the 3910 x 2236 original.
+.laptop {
   position: relative;
-  margin: 0 auto;
   width: 92%;
-  border-radius: 14px;
-  background: #0b0c0f;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 0 0 1px rgba(0, 0, 0, 0.6),
-    0 40px 120px -30px rgba(8, 136, 248, 0.35),
-    0 30px 80px -20px rgba(0, 0, 0, 0.8);
-  overflow: hidden;
-  transform-origin: 50% 0;
-  // Fade the bottom of the app into the page.
-  mask-image: linear-gradient(180deg, #000 72%, transparent 100%);
-  -webkit-mask-image: linear-gradient(180deg, #000 72%, transparent 100%);
-}
+  margin: 0 auto 0 0;
+  transform-origin: 50% 100%;
 
-.browser-bar {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  height: 40px;
-  padding: 0 0.9rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015));
-}
-
-.browser-dots {
-  display: inline-flex;
-  gap: 6px;
-  width: 64px;
-
-  i {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.14);
+  &::after {
+    content: '';
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    bottom: -2.5%;
+    height: 4%;
+    z-index: -1;
+    background: radial-gradient(closest-side, rgba(0, 0, 0, 0.9), transparent);
+    filter: blur(6px);
   }
 }
 
-.browser-url {
-  flex: 0 1 340px;
-  margin: 0 auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.45rem;
-  height: 24px;
-  border-radius: 7px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  color: var(--text-dim);
-
-  fa-icon {
-    font-size: 0.6rem;
-    color: var(--text-mute);
-  }
-}
-
-.browser-spacer {
-  width: 64px;
-}
-
-.browser-shot {
+.laptop-frame {
   display: block;
   width: 100%;
   height: auto;
+  filter: drop-shadow(0 40px 80px rgba(8, 136, 248, 0.18));
+}
+
+.laptop-screen {
+  position: absolute;
+  left: 10.716%;
+  top: 6.217%;
+  width: 78.62%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #000;
+
+  // A faint reflection on the glass.
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(118deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.015) 40%, transparent 40.2%);
+  }
+}
+
+.laptop-shot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
 }
 
 .phone {
   position: absolute;
   z-index: 2;
   right: 0;
-  bottom: -6%;
-  width: 21%;
-  filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 1px rgba(255, 255, 255, 0.2));
+  bottom: 0;
+  width: 17%;
+  margin: 0;
+  filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.75));
 
   img {
     display: block;
@@ -271,11 +196,11 @@
   }
 }
 
-// The browser unfolds from a slight tilt as it scrolls into view.
+// The laptop leans back slightly and settles flat as it scrolls into view.
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
-    .browser {
-      animation: unfold linear both;
+    .laptop {
+      animation: settle linear both;
       animation-timeline: view();
       animation-range: entry 0% cover 45%;
     }
@@ -288,9 +213,9 @@
   }
 }
 
-@keyframes unfold {
+@keyframes settle {
   from {
-    transform: rotateX(16deg) scale(0.94);
+    transform: rotateX(12deg) scale(0.96);
   }
   to {
     transform: none;
@@ -299,7 +224,7 @@
 
 @keyframes rise {
   from {
-    transform: translateY(60px);
+    transform: translateY(50px);
   }
   to {
     transform: none;
@@ -313,19 +238,11 @@
   }
 
   .hero-content > :nth-child(2) {
-    animation-delay: 0.06s;
+    animation-delay: 0.08s;
   }
 
   .hero-content > :nth-child(3) {
-    animation-delay: 0.12s;
-  }
-
-  .hero-content > :nth-child(4) {
-    animation-delay: 0.18s;
-  }
-
-  .hero-content > :nth-child(5) {
-    animation-delay: 0.24s;
+    animation-delay: 0.16s;
   }
 }
 
@@ -333,22 +250,16 @@
   from {
     opacity: 0;
     transform: translateY(14px);
-    filter: blur(6px);
   }
   to {
     opacity: 1;
     transform: none;
-    filter: none;
   }
 }
 
 @media (max-width: 760px) {
   .hero {
-    padding: 7.5rem 1.25rem 3.5rem;
-  }
-
-  .hero-badge {
-    margin-bottom: 1.5rem;
+    padding: 7.5rem 1.25rem 3rem;
   }
 
   .hero-actions {
@@ -362,33 +273,14 @@
     margin-top: 3rem;
   }
 
-  .browser {
+  .laptop {
     width: 100%;
-    border-radius: 10px;
-  }
-
-  .browser-bar {
-    height: 30px;
-  }
-
-  .browser-dots,
-  .browser-spacer {
-    width: 36px;
-
-    i {
-      width: 7px;
-      height: 7px;
-    }
-  }
-
-  .browser-url {
-    height: 18px;
-    font-size: 0.625rem;
+    margin: 0;
   }
 
   .phone {
-    width: 34%;
-    right: -2%;
-    bottom: -10%;
+    width: 27%;
+    right: -1%;
+    bottom: -4%;
   }
 }

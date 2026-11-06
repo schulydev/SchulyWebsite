@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 4rem;
 }
 
 .mode {
@@ -30,7 +30,7 @@
   border: 1px solid var(--border);
   box-shadow: var(--highlight);
 
-  &--private {
+  &--main {
     border-color: rgba(78, 168, 255, 0.3);
     background:
       radial-gradient(120% 80% at 100% 0%, rgba(78, 168, 255, 0.12), transparent 60%),
@@ -66,15 +66,6 @@
   font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-}
-
-.mode-tag {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-mute);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-top: 0.15rem;
 }
 
 .mode-points {
@@ -265,6 +256,10 @@
   .modes,
   .facts {
     grid-template-columns: 1fr;
+  }
+
+  .modes {
+    margin-bottom: 2.5rem;
   }
 
   .fact,

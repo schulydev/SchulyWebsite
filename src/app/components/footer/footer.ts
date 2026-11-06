@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/c
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faEnvelope, faHeart, faMugHot } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { LanguageService } from '../../services/language';
 
@@ -19,7 +19,6 @@ export class Footer {
   protected readonly faHeart = faHeart;
   protected readonly faGithub = faGithub;
   protected readonly faEnvelope = faEnvelope;
-  protected readonly faMugHot = faMugHot;
   protected readonly year = new Date().getFullYear();
 
   protected readonly base = computed(() => `/${this.language.current()}`);
