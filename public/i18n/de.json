@@ -47,35 +47,39 @@
     "items": {
       "grades": {
         "title": "Noten & Durchschnitte",
-        "description": "Sieh jede Note mit Gewichtung, deine Fachdurchschnitte und den Klassendurchschnitt, für ein Semester oder das ganze Jahr."
+        "description": "Jede Note mit Gewichtung, Fach- und Klassenschnitt."
       },
       "agenda": {
-        "title": "Stundenplan, Prüfungen & Absenzen",
-        "description": "Stundenplan, anstehende Prüfungen, Absenzen, Dokumente und Zeugnisse an einem Ort, übersichtlich fürs Handy."
+        "title": "Stundenplan & Absenzen",
+        "description": "Lektionen, Prüfungen, Absenzen und Zeugnisse an einem Ort."
       },
       "schulnetz": {
         "title": "Schulnetz, OdA Org und mehr",
-        "description": "Schulnetz und OdA Org funktionieren bereits. Jedes Schulsystem wird über ein Backend-Plugin angebunden, so kommen neue Systeme ohne App-Update dazu."
+        "description": "Neue Schulsysteme kommen per Plugin dazu, ohne App-Update."
       },
       "multi": {
         "title": "Mehrere Schulen, eine App",
-        "description": "Füge mehrere Schulkonten hinzu und wechsle in der Seitenleiste zwischen ihnen. Die Daten jeder Schule bleiben getrennt."
+        "description": "Mehrere Schulkonten, sauber getrennt."
       },
       "design": {
         "title": "Modernes Design",
-        "description": "Eine klare, moderne Oberfläche mit hellem und dunklem Modus, dazu ein eingebauter Authenticator für deine Zwei-Faktor-Codes."
+        "description": "Klar und schnell, hell oder dunkel."
       },
       "platforms": {
-        "title": "Android · iOS",
-        "description": "Eine Flutter-Codebasis für Android und iOS. Die neusten Builds gibt es auf GitHub; Einträge in den App-Stores folgen."
+        "title": "Android · iOS · Web",
+        "description": "Auf dem Handy oder im Browser."
       },
       "oidc": {
-        "title": "Kontomodus oder privater Modus",
-        "description": "Nutze ein Schuly-Konto (Passwort, Zwei-Faktor optional) für die Hintergrund-Synchronisation, oder den privaten Modus ohne Konto, bei dem dein Schul-Login auf deinem Gerät bleibt."
+        "title": "Mit Konto oder privat",
+        "description": "Im Hintergrund synchronisieren oder alles nur auf deinem Gerät."
       },
       "fast": {
         "title": "Immer aktuell",
-        "description": "Im Kontomodus synchronisiert Schuly im Hintergrund und kann dich über neue Noten, Absenzen und Agenda-Änderungen benachrichtigen. Die letzten Daten bleiben auf dem Handy, damit die App sofort startet."
+        "description": "Push bei neuen Noten und Absenzen."
+      },
+      "microsoft": {
+        "title": "Microsoft 365",
+        "description": "Mail, Teams, OneDrive und OneNote direkt in Schuly."
       }
     }
   },

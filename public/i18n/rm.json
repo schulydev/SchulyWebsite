@@ -46,36 +46,40 @@
     "description": "Schuly è fatg per tes telefonin: svelt, cler e concentrà sin l'essenzial.",
     "items": {
       "grades": {
-        "title": "Notas e medias",
-        "description": "Vesa mintga nota cun sia ponderaziun, tias medias per rom e la media da la classa, per in semester u per l'entir onn."
+        "title": "Notas & medias",
+        "description": "Mintga nota cun sia ponderaziun, media dal rom e da la classa."
       },
       "agenda": {
-        "title": "Urari, examens ed absenzas",
-        "description": "Tes urari, ils proxims examens, absenzas, documents e certificats en in sulet lieu, adattads per il telefonin."
+        "title": "Plan d'uras & absenzas",
+        "description": "Lecziuns, examens, absenzas e attestats en in lieu."
       },
       "schulnetz": {
-        "title": "Schulnetz, OdA Org ed auter",
-        "description": "Schulnetz ed OdA Org funcziunan gia. Mintga sistem da scola vegn collià cun in plugin per il backend, uschia pon vegnir agiuntads ulteriurs sistems senza actualisar l'app."
+        "title": "Schulnetz, OdA Org e dapli",
+        "description": "Novs sistems da scola vegnan cun in plugin, senza actualisaziun da l'app."
       },
       "multi": {
-        "title": "Pliras scolas, in'app",
-        "description": "Agiunta plirs contos da scola e mida tranter els en la trav laterala. Las datas da mintga scola restan separadas."
+        "title": "Pliras scolas, ina app",
+        "description": "Plirs contos da scola, bain separads."
       },
       "design": {
         "title": "Design modern",
-        "description": "In'interfatscha clera e moderna cun modus cler e stgir, ed in autentificatur integrà per tes codes cun dus facturs."
+        "description": "Cler e svelt, cler u stgir."
       },
       "platforms": {
-        "title": "Android · iOS",
-        "description": "Ina basa da code Flutter per Android ed iOS. Las versiuns las pli novas chattas ti sin GitHub; las inscripziuns en ils app stores suondan prest."
+        "title": "Android · iOS · Web",
+        "description": "Sin il telefonin u en il navigatur."
       },
       "oidc": {
-        "title": "Modus da conto u modus privat",
-        "description": "Utilisescha in conto Schuly (pled-clav, dus facturs facultativ) per la sincronisaziun en il fund, u il modus privat senza conto, nua che tes login da scola resta sin tes apparat."
+        "title": "Cun conto u privat",
+        "description": "Sincronisar en il fund u tegnair tut sin tes apparat."
       },
       "fast": {
         "title": "Adina actual",
-        "description": "En il modus da conto sincronisescha Schuly en il fund e po ta infurmar davart novas notas, absenzas e midadas da l'agenda. Las ultimas datas restan sin il telefonin, uschia che l'app sa avra immediatamain."
+        "description": "Avis per novas notas ed absenzas."
+      },
+      "microsoft": {
+        "title": "Microsoft 365",
+        "description": "Mail, Teams, OneDrive ed OneNote directamain en Schuly."
       }
     }
   },

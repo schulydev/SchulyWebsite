@@ -47,35 +47,39 @@
     "items": {
       "grades": {
         "title": "Grades & averages",
-        "description": "See every grade with its weighting, your subject averages and the class average, for one semester or the whole year."
+        "description": "Every grade with its weight, subject and class average."
       },
       "agenda": {
-        "title": "Timetable, exams & absences",
-        "description": "Your timetable, upcoming exams, absences, documents and report cards in one place, laid out for your phone."
+        "title": "Timetable & absences",
+        "description": "Lessons, tests, absences and reports in one place."
       },
       "schulnetz": {
         "title": "Schulnetz, OdA Org and more",
-        "description": "Schulnetz and OdA Org work today. Each school system is connected through a backend plugin, so new systems can be added without an app update."
+        "description": "New school systems arrive as plugins, no app update needed."
       },
       "multi": {
-        "title": "Multiple schools, one app",
-        "description": "Add several school accounts and switch between them from the sidebar. Each school's data stays separate."
+        "title": "Several schools, one app",
+        "description": "Several school accounts, kept apart."
       },
       "design": {
         "title": "Modern design",
-        "description": "A clean, modern interface with light and dark mode, plus a built-in authenticator for your two-factor codes."
+        "description": "Clear and fast, light or dark."
       },
       "platforms": {
-        "title": "Android · iOS",
-        "description": "One Flutter codebase for Android and iOS. Get the latest builds on GitHub; store listings are coming soon."
+        "title": "Android · iOS · Web",
+        "description": "On your phone or in the browser."
       },
       "oidc": {
-        "title": "Account or private mode",
-        "description": "Use a Schuly account (password, optional two-factor) for background sync, or private mode without an account, where your school login stays on your device."
+        "title": "With an account or private",
+        "description": "Sync in the background, or keep everything on your device."
       },
       "fast": {
         "title": "Always up to date",
-        "description": "In account mode Schuly syncs in the background and can notify you about new grades, absences and agenda changes. Your last data is kept on the phone, so the app opens instantly."
+        "description": "Push for new grades and absences."
+      },
+      "microsoft": {
+        "title": "Microsoft 365",
+        "description": "Mail, Teams, OneDrive and OneNote right in Schuly."
       }
     }
   },

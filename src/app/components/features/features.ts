@@ -11,6 +11,7 @@ import {
   faPuzzlePiece,
   faShieldHalved,
   faBolt,
+  faEnvelope,
 } from '@fortawesome/free-solid-svg-icons';
 
 interface Feature {
@@ -36,6 +37,7 @@ export class Features {
     { key: 'platforms',  icon: faMobileScreen },
     { key: 'oidc',       icon: faShieldHalved },
     { key: 'fast',       icon: faBolt },
+    { key: 'microsoft',  icon: faEnvelope },
   ];
 
   constructor() {

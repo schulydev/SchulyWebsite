@@ -46,36 +46,40 @@
     "description": "Schuly è pensata per il tuo telefono: veloce, chiara e concentrata sull'essenziale.",
     "items": {
       "grades": {
-        "title": "Voti e medie",
-        "description": "Vedi ogni voto con la sua ponderazione, le medie per materia e la media della classe, per un semestre o per tutto l'anno."
+        "title": "Note & medie",
+        "description": "Ogni nota con la sua ponderazione, media della materia e della classe."
       },
       "agenda": {
-        "title": "Orario, esami e assenze",
-        "description": "Il tuo orario, gli esami in arrivo, le assenze, i documenti e le pagelle in un unico posto, pensati per il telefono."
+        "title": "Orario & assenze",
+        "description": "Lezioni, verifiche, assenze e pagelle in un unico posto."
       },
       "schulnetz": {
         "title": "Schulnetz, OdA Org e altro",
-        "description": "Schulnetz e OdA Org funzionano già. Ogni sistema scolastico è collegato tramite un plugin backend, così se ne possono aggiungere altri senza aggiornare l'app."
+        "description": "Nuovi sistemi scolastici arrivano come plugin, senza aggiornare l'app."
       },
       "multi": {
-        "title": "Più scuole, una app",
-        "description": "Aggiungi più account scolastici e passa dall'uno all'altro dalla barra laterale. I dati di ogni scuola restano separati."
+        "title": "Più scuole, un'app",
+        "description": "Più account scolastici, ben separati."
       },
       "design": {
         "title": "Design moderno",
-        "description": "Un'interfaccia chiara e moderna con tema chiaro e scuro, più un autenticatore integrato per i tuoi codici a due fattori."
+        "description": "Chiaro e veloce, tema chiaro o scuro."
       },
       "platforms": {
-        "title": "Android · iOS",
-        "description": "Un'unica base di codice Flutter per Android e iOS. Le ultime versioni sono su GitHub; le schede negli store arriveranno presto."
+        "title": "Android · iOS · Web",
+        "description": "Sul telefono o nel browser."
       },
       "oidc": {
-        "title": "Modalità account o privata",
-        "description": "Usa un account Schuly (password, due fattori facoltativi) per la sincronizzazione in background, oppure la modalità privata senza account, in cui il tuo login scolastico resta sul dispositivo."
+        "title": "Con account o in privato",
+        "description": "Sincronizza in background, o tieni tutto sul tuo dispositivo."
       },
       "fast": {
-        "title": "Sempre aggiornata",
-        "description": "In modalità account Schuly sincronizza in background e può avvisarti di nuovi voti, assenze e modifiche all'agenda. Gli ultimi dati restano sul telefono, così l'app si apre subito."
+        "title": "Sempre aggiornato",
+        "description": "Notifiche per nuove note e assenze."
+      },
+      "microsoft": {
+        "title": "Microsoft 365",
+        "description": "Mail, Teams, OneDrive e OneNote direttamente in Schuly."
       }
     }
   },
