@@ -3,6 +3,21 @@
   padding-bottom: 6rem;
 }
 
+// A jump to #download stops with the card centred: the section fills the screen below the
+// fixed header and centres the card in the space left below it.
+@media (min-height: 600px) {
+  .download {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    padding-block: calc(65px + 1rem) 1rem; // the router scrolls the section to the very top, under the 65 px header
+
+    > .container {
+      width: 100%;
+    }
+  }
+}
+
 .download-card {
   position: relative;
   padding: 5rem 2rem 4rem;
