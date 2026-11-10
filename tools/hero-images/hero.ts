@@ -14,5 +14,5 @@ if (!web && !phone) throw new Error('Pass --web <png>, --phone <png> or both.');
 
 // Crop 16 px off the right edge (the page scrollbar) and 10 px off the bottom for a 16:10 laptop screen.
 if (web) await sharp(web).extract({ left: 0, top: 0, width: 1424, height: 890 }).webp({ quality: 84 }).toFile(join(out, 'webapp-overview-dark.webp'));
-if (phone) await sharp(phone).resize(600).webp({ quality: 84 }).toFile(join(out, 'hero-phone-home.webp'));
-console.log(`Wrote ${[web && 'webapp-overview-dark.webp', phone && 'hero-phone-home.webp'].filter(Boolean).join(' and ')} to ${out}`);
+if (phone) await sharp(phone).resize(600).webp({ quality: 84 }).toFile(join(out, 'hero-phone-home-v2.webp'));
+console.log(`Wrote ${[web && 'webapp-overview-dark.webp', phone && 'hero-phone-home-v2.webp'].filter(Boolean).join(' and ')} to ${out}`);
