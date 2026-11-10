@@ -107,7 +107,7 @@ export class SeoService {
           applicationCategory: 'EducationalApplication',
           operatingSystem: 'Android, iOS',
           image: `${ORIGIN}/assets/app_icon_512.png`,
-          screenshot: ['start', 'grades', 'absences', 'agenda'].map(s => `${ORIGIN}/assets/schuly-${s}-page-v2.webp`),
+          screenshot: ['start', 'grades', 'absences', 'agenda'].map(s => `${ORIGIN}/assets/schuly-${s}-page-v3.webp`),
           downloadUrl: 'https://github.com/schulydev/Schuly/releases',
           isAccessibleForFree: true,
           offers: free,

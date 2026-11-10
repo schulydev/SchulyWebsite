@@ -2,7 +2,7 @@
 
 Makes the two screenshots in the hero section:
 - `public/assets/webapp-overview-dark.webp` (1424×890) shows the web app inside the laptop frame. It is also the screenshot in the [social image](../social-image).
-- `public/assets/hero-phone-home.webp` (600×1333) shows the app's home screen on the phone beside it.
+- `public/assets/hero-phone-home-v2.webp` (600×1333) shows the app's home screen on the phone beside it.
 
 This script only crops and converts them. The screenshots themselves come from the other repos:
 - **Web app:** `src/Schuly.Frontend/public/screens/overview-dark.png` in SchulyServer, made with its `tools/screenshots`.
