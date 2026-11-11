@@ -10,7 +10,7 @@ import { LegalPageBase } from './legal-page-base';
     <section class="legal">
       <div class="legal-container">
         <h1 class="legal-title">{{ 'legal.terms' | translate }}</h1>
-        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 03.11.2026</p>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 11.11.2026</p>
 
         <div class="legal-body">
           @if (showFallbackNotice()) {
@@ -83,7 +83,15 @@ import { LegalPageBase } from './legal-page-base';
               Plugin-Vertrag die MIT-Lizenz. Geht eine Lizenz weiter als diese Bedingungen, gilt für den Code die Lizenz.
             </p>
 
-            <h2>8. Änderungen und anwendbares Recht</h2>
+            <h2>8. App Stores</h2>
+            <p>
+              Lädst du die App aus Google Play oder dem App Store, gelten zusätzlich die Bedingungen des jeweiligen
+              Stores. Google und Apple sind nicht Partei dieser Bedingungen und nicht für Schuly, seine Inhalte, die
+              Wartung oder den Support verantwortlich. Fragen und Ansprüche zu Schuly richtest du an uns:
+              <a href="mailto:legal&#64;schuly.dev">legal&#64;schuly.dev</a>.
+            </p>
+
+            <h2>9. Änderungen und anwendbares Recht</h2>
             <p>
               Wir passen diese Bedingungen an, wenn sich Funktionen oder rechtliche Anforderungen ändern. Es gilt die hier
               veröffentlichte Fassung mit dem oben genannten Datum. Es gilt Schweizer Recht. Gerichtsstand ist, soweit
@@ -150,7 +158,14 @@ import { LegalPageBase } from './legal-page-base';
               License. Where a license grants more than these terms, the license applies to the code.
             </p>
 
-            <h2>8. Changes and governing law</h2>
+            <h2>8. App stores</h2>
+            <p>
+              If you download the app from Google Play or the App Store, that store's terms also apply. Google and Apple aren't
+              parties to these terms and aren't responsible for Schuly, its content, maintenance, or support. Send questions and
+              claims about Schuly to us: <a href="mailto:legal&#64;schuly.dev">legal&#64;schuly.dev</a>.
+            </p>
+
+            <h2>9. Changes and governing law</h2>
             <p>
               We update these terms when features or legal requirements change. The version published here with the date above
               applies. Swiss law applies. Venue, as far as permitted, is the operator's seat. Mandatory consumer protection rules

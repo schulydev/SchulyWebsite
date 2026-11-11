@@ -10,24 +10,24 @@ import { LegalPageBase } from './legal-page-base';
     <section class="legal">
       <div class="legal-container">
         <h1 class="legal-title">{{ 'legal.impressum' | translate }}</h1>
-        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 28.10.2026</p>
+        <p class="legal-updated">{{ 'legal.lastUpdated' | translate }} 11.11.2026</p>
 
         <div class="legal-body">
           @if (showEn()) {
             <h2>Operator</h2>
             <p>
-              <strong>PianoNic</strong><br />
+              <strong>Niclas Erismann</strong><br />
               Switzerland
             </p>
 
             <h2>Contact</h2>
             <p>
               Email: <a href="mailto:legal&#64;schuly.dev">legal&#64;schuly.dev</a><br />
-              GitHub: <a href="https://github.com/PianoNic" target="_blank" rel="noopener">github.com/PianoNic</a>
+              GitHub: <a href="https://github.com/schulydev" target="_blank" rel="noopener">github.com/schulydev</a>
             </p>
 
             <h2>Responsible for content</h2>
-            <p>PianoNic.</p>
+            <p>Niclas Erismann.</p>
 
             <h2>Disclaimer</h2>
             <p>
@@ -74,18 +74,18 @@ import { LegalPageBase } from './legal-page-base';
             }
             <h2>Anbieter</h2>
             <p>
-              <strong>PianoNic</strong><br />
+              <strong>Niclas Erismann</strong><br />
               Schweiz
             </p>
 
             <h2>Kontakt</h2>
             <p>
               E-Mail: <a href="mailto:legal&#64;schuly.dev">legal&#64;schuly.dev</a><br />
-              GitHub: <a href="https://github.com/PianoNic" target="_blank" rel="noopener">github.com/PianoNic</a>
+              GitHub: <a href="https://github.com/schulydev" target="_blank" rel="noopener">github.com/schulydev</a>
             </p>
 
             <h2>Verantwortlich für den Inhalt</h2>
-            <p>PianoNic.</p>
+            <p>Niclas Erismann.</p>
 
             <h2>Haftungsausschluss</h2>
             <p>
